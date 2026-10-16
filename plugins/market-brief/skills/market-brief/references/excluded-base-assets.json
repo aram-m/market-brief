@@ -1,0 +1,235 @@
+{
+  "schemaVersion": 1,
+  "verifiedAt": "2026-10-16T08:57:07Z",
+  "note": "Pools whose BASE token is one of these exact contracts are excluded as candidate rows; pools quoted in them are kept. Confidence: official = issuer docs; token-list = Wormhole/Jupiter token lists; observed-only = Dexscreener placeholder. Existence and decimals were checked with one Solana RPC call and the Robinhood RPC.",
+  "notIncluded": [
+    "Robinhood Chain has no USDC, USDT, PYUSD, DAI or WBTC deployment in issuer or Robinhood docs (checked 2026-10-16).",
+    "Wormhole Portal USDC/USDT variants (e.g. USDCet A9mUU4qviSctJVPJdBJWkb28deg915LYJKrzQ19ji3FM, USDTet Dn4noZ5jgGfkntzcQSUZ8czkreiZ1ForXYoV2H8Dm7S1), legacy USDv mint Ex5DaKYMCN6QWFA4n67TmMwsH8MJV68RX6YXTmVM532C, Sky USDS, cbBTC, bridged ZEC and other LSTs are not on the list; add them only on request."
+  ],
+  "assets": [
+    {
+      "chain": "solana",
+      "symbol": "WSOL",
+      "name": "Wrapped SOL",
+      "category": "wrapped",
+      "address": "So11111111111111111111111111111111111111112",
+      "confidence": "official",
+      "sources": [
+        "https://solana.com/developers/cookbook/tokens/manage-wrapped-sol",
+        "https://spl.solana.com/token"
+      ]
+    },
+    {
+      "chain": "solana",
+      "symbol": "WSOL",
+      "name": "Wrapped SOL (Token-2022 native mint)",
+      "category": "wrapped",
+      "address": "9pan9bMn5HatX4EJdBwg9VgCa7Uz5HL8N1m5D3NdXejP",
+      "confidence": "official",
+      "sources": [
+        "https://solana.com/developers/cookbook/tokens/manage-wrapped-sol"
+      ]
+    },
+    {
+      "chain": "solana",
+      "symbol": "USDC",
+      "name": "USD Coin",
+      "category": "stablecoin",
+      "address": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+      "confidence": "official",
+      "sources": [
+        "https://developers.circle.com/stablecoins/usdc-contract-addresses"
+      ]
+    },
+    {
+      "chain": "solana",
+      "symbol": "USDT",
+      "name": "Tether USD",
+      "category": "stablecoin",
+      "address": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+      "confidence": "official",
+      "sources": [
+        "https://tether.to/en/supported-protocols/"
+      ]
+    },
+    {
+      "chain": "solana",
+      "symbol": "PYUSD",
+      "name": "PayPal USD",
+      "category": "stablecoin",
+      "address": "2b1kV6DkPAnxd5ixfnxCpjxmKwqjjaYmCZfHsFu24GXo",
+      "confidence": "official",
+      "sources": [
+        "https://docs.paxos.com/guides/stablecoin/pyusd/mainnet"
+      ]
+    },
+    {
+      "chain": "solana",
+      "symbol": "USDG",
+      "name": "Global Dollar",
+      "category": "stablecoin",
+      "address": "2u1tszSeqZ3qBWF3uNGPFc8TzMk2tdiwknnRMWGWjGWH",
+      "confidence": "official",
+      "sources": [
+        "https://docs.paxos.com/guides/stablecoin/usdg/mainnet"
+      ]
+    },
+    {
+      "chain": "solana",
+      "symbol": "DAI",
+      "name": "DAI (Portal)",
+      "category": "stablecoin",
+      "address": "EjmyN6qEC1Tf1JxiG1ae7UTJhUxSwk1TCWNWqxWV4J6o",
+      "confidence": "token-list",
+      "sources": [
+        "https://raw.githubusercontent.com/wormhole-foundation/wormhole-token-list/main/content/by_dest.csv"
+      ]
+    },
+    {
+      "chain": "solana",
+      "symbol": "WBTC",
+      "name": "Wrapped BTC (Portal)",
+      "category": "wrapped",
+      "address": "3NZ9JMVBmGAqocybic2c7LQCJScmgsAZ6vQqTDzcqmJh",
+      "confidence": "token-list",
+      "sources": [
+        "https://raw.githubusercontent.com/wormhole-foundation/wormhole-token-list/main/content/by_dest.csv"
+      ]
+    },
+    {
+      "chain": "solana",
+      "symbol": "WBTC",
+      "name": "Wrapped BTC (BitGo native)",
+      "category": "wrapped",
+      "address": "5XZw2LKTyrfvfiskJ78AMpackRjPcyCif1WhUsPDuVqQ",
+      "confidence": "official",
+      "sources": [
+        "https://openapi.wbtc.network/public/v1/chains"
+      ]
+    },
+    {
+      "chain": "solana",
+      "symbol": "WETH",
+      "name": "Ether (Portal)",
+      "category": "wrapped",
+      "address": "7vfCXTUXx5WJV5JADk17DUJ4ksgau7utNKj4b963voxs",
+      "confidence": "token-list",
+      "sources": [
+        "https://raw.githubusercontent.com/wormhole-foundation/wormhole-token-list/main/content/by_dest.csv"
+      ]
+    },
+    {
+      "chain": "solana",
+      "symbol": "USD1",
+      "name": "World Liberty Financial USD",
+      "category": "stablecoin",
+      "address": "USD1ttGY1N17NEEHLmELoaybftRBUSErhqYiQzvEmuB",
+      "confidence": "official",
+      "sources": [
+        "https://docs.worldlibertyfinancial.com/usd1-token/contract-addresses"
+      ]
+    },
+    {
+      "chain": "solana",
+      "symbol": "USDv",
+      "name": "Solomon USDv",
+      "category": "stablecoin",
+      "address": "USDvUSpnhCr9yBgj3UyVrD239HRUv4RsHwH2FxsWuMk",
+      "confidence": "official",
+      "sources": [
+        "https://docs.solomonlabs.org/usdv",
+        "https://github.com/DefiLlama/peggedassets-server/pull/925"
+      ]
+    },
+    {
+      "chain": "solana",
+      "symbol": "JitoSOL",
+      "name": "Jito Staked SOL",
+      "category": "liquid-staking",
+      "address": "J1toso1uCk3RLmjorhTtrVwY9HJ7X8V9yYac6Y7kGCPn",
+      "confidence": "official",
+      "sources": [
+        "https://github.com/jito-foundation/jito-stake-unstake-reference"
+      ]
+    },
+    {
+      "chain": "solana",
+      "symbol": "mSOL",
+      "name": "Marinade staked SOL (mSOL)",
+      "category": "liquid-staking",
+      "address": "mSoLzYCxHdYgdzU16g5QSh3i5K3z3KZK7ytfqcJm7So",
+      "confidence": "official",
+      "sources": [
+        "https://docs.marinade.finance/developers/contract-addresses"
+      ]
+    },
+    {
+      "chain": "solana",
+      "symbol": "bSOL",
+      "name": "BlazeStake Staked SOL (bSOL)",
+      "category": "liquid-staking",
+      "address": "bSo13r4TkiE4KumL71LsHTPpL2euBYLFx6h9HP3piy1",
+      "confidence": "official",
+      "sources": [
+        "https://stake-docs.solblaze.org/developers/addresses"
+      ]
+    },
+    {
+      "chain": "solana",
+      "symbol": "jupSOL",
+      "name": "Jupiter Staked SOL",
+      "category": "liquid-staking",
+      "address": "jupSoLaHXQiZZTSfEWMTRRgpnyFm8f6sZdosWBjx93v",
+      "confidence": "official",
+      "sources": [
+        "https://docs.jup.ag/user-docs/earn/stake-sol/jupsol"
+      ]
+    },
+    {
+      "chain": "solana",
+      "symbol": "INF",
+      "name": "Infinity (Sanctum)",
+      "category": "liquid-staking",
+      "address": "5oVNBeEEQvYi1cX3ir8Dx5n1P7pdxydbGF2X4TxVusJm",
+      "confidence": "official",
+      "sources": [
+        "https://app.sanctum.so/explore/INF"
+      ]
+    },
+    {
+      "chain": "robinhood",
+      "symbol": "ETH",
+      "name": "Ether (native)",
+      "category": "native",
+      "address": "0x0000000000000000000000000000000000000000",
+      "confidence": "observed-only",
+      "sources": [
+        "https://docs.robinhood.com/chain/connecting"
+      ]
+    },
+    {
+      "chain": "robinhood",
+      "symbol": "WETH",
+      "name": "WETH",
+      "category": "wrapped",
+      "address": "0x0Bd7D308f8E1639FAb988df18A8011f41EAcAD73",
+      "confidence": "official",
+      "sources": [
+        "https://docs.robinhood.com/chain/contracts",
+        "https://docs.robinhood.com/chain/protocol-contracts"
+      ]
+    },
+    {
+      "chain": "robinhood",
+      "symbol": "USDG",
+      "name": "Global Dollar",
+      "category": "stablecoin",
+      "address": "0x5fc5360D0400a0Fd4f2af552ADD042D716F1d168",
+      "confidence": "official",
+      "sources": [
+        "https://docs.robinhood.com/chain/contracts",
+        "https://docs.paxos.com/guides/stablecoin/usdg/mainnet"
+      ]
+    }
+  ]
+}

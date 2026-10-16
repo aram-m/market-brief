@@ -1,0 +1,5 @@
+{
+  "schemaVersion": 1,
+  "note": "Default display preferences: nothing hidden. Copy to <data dir>/preferences.json and add entries to hide tokens from the displayed list. Raw observations always keep hidden rows.",
+  "hidden": []
+}

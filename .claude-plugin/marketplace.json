@@ -1,0 +1,12 @@
+{
+  "name": "market-brief",
+  "owner": {"name": "aram-m"},
+  "metadata": {"description": "Solana and Robinhood token briefs from Dexscreener discovery, with sourced research."},
+  "plugins": [
+    {
+      "name": "market-brief",
+      "source": "./plugins/market-brief",
+      "description": "Daily Solana and Robinhood token briefs: Dexscreener trending discovery, exact-identity pool aggregation, sourced project notes and AI commentary."
+    }
+  ]
+}

@@ -1,0 +1,1380 @@
+[
+  {
+    "status": "fulfilled",
+    "value": {
+      "url": "https://api.dexscreener.com/latest/dex/pairs/robinhood/0x590dcb6a87828bf688b48089a62239b693378f1fb64d2286e6a399ed8c005fdf,0x338fce553e60c8b0acccde1956bc378586ef6f2935339ebae5804d429d461e44,0xf2a0be59ab76b96f957bd5e5b967f2b75e8db269,0xc4a21f9d6485fc5893dd4a491b320a83daf4da1d,0xd42a491087a15e5afd51feb3606066cc152d2b09,0xe2c12a7379706a291cadaaec1d22458be2f7239d,0xc73f3cd3fb68288e63f008e08ef69caa0437224e420963c6aeb4526178e87ad9,0x592e3fb7ea947506b36481025abc15baada8e1839a50fded46ecf08b3182fa96,0xed50bdeea8adc232f159486192a4157281d722ff,0x435ea42b2792a22de296bee4e8013f4fa102f0cc04983443ff79549f847db577,0x486435a1f76cd58193f854c6e6213cd05fd58d637865d02065ff558b387fa6ea,0x4be9657ec9002e528f4f17a5c43edc525a07f888f7b180c2afbf75e096c4f38a,0xa92a3df27a00a276183ff7265fd8affa11df1fe8bb23ddfaf13f6c879a3f818b,0x230bc4a0fb5fb7ab27f6e72350dfa3f2489b0cdbaf34f0189d68672086ccb919,0x654e4143e82a5824445ade0824351c2a9acd95a8,0x628c98ab436ee34a6a7decd606242890582591bdf7c9a35d90e0d08021c31ea0,0x5a3571dca43ecafcd670e87a6eaf6de0e2d70954,0x1791fc651cc794a282e5dbcb56d0b2b38eff8754b677c8876e86901521ecc439",
+      "observedAt": "2026-10-16T06:58:08.221Z",
+      "data": {
+        "schemaVersion": "1.0.0",
+        "pairs": [
+          {
+            "chainId": "robinhood",
+            "dexId": "uniswap",
+            "url": "https://dexscreener.com/robinhood/0x590dcb6a87828bf688b48089a62239b693378f1fb64d2286e6a399ed8c005fdf",
+            "pairAddress": "0x590dcb6a87828bf688b48089a62239b693378f1fb64d2286e6a399ed8c005fdf",
+            "labels": [
+              "v4"
+            ],
+            "baseToken": {
+              "address": "0x18E674231A58c239Dc7DaeDcffE15Ec3A24cff5c",
+              "name": "Hookr.fun",
+              "symbol": "HOOKR"
+            },
+            "quoteToken": {
+              "address": "0x0000000000000000000000000000000000000000",
+              "name": "Ether",
+              "symbol": "ETH"
+            },
+            "priceNative": "0.00001394",
+            "priceUsd": "0.03413",
+            "txns": {
+              "m5": {
+                "buys": 9,
+                "sells": 4
+              },
+              "h1": {
+                "buys": 166,
+                "sells": 186
+              },
+              "h6": {
+                "buys": 618,
+                "sells": 687
+              },
+              "h24": {
+                "buys": 2089,
+                "sells": 2186
+              }
+            },
+            "volume": {
+              "h24": 1869640.55,
+              "h6": 630279.04,
+              "h1": 232260.26,
+              "m5": 3463.67
+            },
+            "priceChange": {
+              "m5": 0.09,
+              "h1": 6.67,
+              "h6": 22.1,
+              "h24": 57.89
+            },
+            "liquidity": {
+              "usd": 1411727.18,
+              "base": 20672096,
+              "quote": 288.5671
+            },
+            "fdv": 33916661,
+            "marketCap": 33916661,
+            "pairCreatedAt": 1785990057000,
+            "info": {
+              "imageUrl": "https://cdn.dexscreener.com/cms/images/8HVsUvtM_VyD-mXb?width=800&height=800&quality=95&format=auto",
+              "header": "https://cdn.dexscreener.com/cms/images/aDdgTAdHk2nRzVIb?width=1500&height=500&quality=95&format=auto",
+              "openGraph": "https://cdn.dexscreener.com/token-images/og/robinhood/0x18e674231a58c239dc7daedcffe15ec3a24cff5c?timestamp=1792133700000",
+              "websites": [
+                {
+                  "url": "https://hookr.fun/",
+                  "label": "Website"
+                },
+                {
+                  "url": "https://hookr.fun/docs",
+                  "label": "Docs"
+                }
+              ],
+              "socials": [
+                {
+                  "url": "https://x.com/nodarj",
+                  "type": "twitter"
+                }
+              ]
+            }
+          },
+          {
+            "chainId": "robinhood",
+            "dexId": "uniswap",
+            "url": "https://dexscreener.com/robinhood/0x338fce553e60c8b0acccde1956bc378586ef6f2935339ebae5804d429d461e44",
+            "pairAddress": "0x338fce553e60c8b0acccde1956bc378586ef6f2935339ebae5804d429d461e44",
+            "labels": [
+              "v4"
+            ],
+            "baseToken": {
+              "address": "0x94641b97010608C3827fB058074889f19868FF33",
+              "name": "Commander Vrax",
+              "symbol": "VRAX"
+            },
+            "quoteToken": {
+              "address": "0x5fc5360D0400a0Fd4f2af552ADD042D716F1d168",
+              "name": "Global Dollar",
+              "symbol": "USDG"
+            },
+            "priceNative": "0.006986",
+            "priceUsd": "0.006986",
+            "txns": {
+              "m5": {
+                "buys": 11,
+                "sells": 3
+              },
+              "h1": {
+                "buys": 52,
+                "sells": 48
+              },
+              "h6": {
+                "buys": 443,
+                "sells": 364
+              },
+              "h24": {
+                "buys": 3170,
+                "sells": 3473
+              }
+            },
+            "volume": {
+              "h24": 1214904.63,
+              "h6": 118106.43,
+              "h1": 15746.65,
+              "m5": 2052
+            },
+            "priceChange": {
+              "m5": 3.89,
+              "h1": 9.32,
+              "h6": 1.29,
+              "h24": 8.9
+            },
+            "liquidity": {
+              "usd": 214818.4,
+              "base": 15556522,
+              "quote": 106130
+            },
+            "fdv": 6986619,
+            "marketCap": 6986619,
+            "pairCreatedAt": 1790724563000,
+            "info": {
+              "imageUrl": "https://cdn.dexscreener.com/cms/images/tUo1cSwJqfca2-Hh?width=800&height=800&quality=95&format=auto",
+              "header": "https://cdn.dexscreener.com/cms/images/0cXALt2HyDCBotGI?width=1500&height=500&quality=95&format=auto",
+              "openGraph": "https://cdn.dexscreener.com/token-images/og/robinhood/0x94641b97010608c3827fb058074889f19868ff33?timestamp=1792133700000",
+              "websites": [],
+              "socials": [
+                {
+                  "url": "https://x.com/1commandervrax",
+                  "type": "twitter"
+                }
+              ]
+            }
+          },
+          {
+            "chainId": "robinhood",
+            "dexId": "ramses",
+            "url": "https://dexscreener.com/robinhood/0xf2a0be59ab76b96f957bd5e5b967f2b75e8db269",
+            "pairAddress": "0xf2A0bE59AB76b96f957bd5E5b967F2B75e8dB269",
+            "labels": [
+              "v3"
+            ],
+            "baseToken": {
+              "address": "0x39dBED3a2bd333467115dE45665cC57F813C4571",
+              "name": "Pons",
+              "symbol": "PONS"
+            },
+            "quoteToken": {
+              "address": "0x5fc5360D0400a0Fd4f2af552ADD042D716F1d168",
+              "name": "Global Dollar",
+              "symbol": "USDG"
+            },
+            "priceNative": "0.3407",
+            "priceUsd": "0.3407",
+            "txns": {
+              "m5": {
+                "buys": 3,
+                "sells": 26
+              },
+              "h1": {
+                "buys": 390,
+                "sells": 422
+              },
+              "h6": {
+                "buys": 2605,
+                "sells": 2492
+              },
+              "h24": {
+                "buys": 11998,
+                "sells": 11155
+              }
+            },
+            "volume": {
+              "h24": 12792999.42,
+              "h6": 2472450.55,
+              "h1": 403737.57,
+              "m5": 11592.24
+            },
+            "priceChange": {
+              "m5": -0.28,
+              "h1": -0.57,
+              "h6": 0.8,
+              "h24": 14.13
+            },
+            "liquidity": {
+              "usd": 1192626.13,
+              "base": 2030506,
+              "quote": 500746
+            },
+            "fdv": 230102809,
+            "marketCap": 230135350,
+            "pairCreatedAt": 1786419242000,
+            "info": {
+              "imageUrl": "https://cdn.dexscreener.com/cms/images/dkmXs8KYMyMXjuU1?width=800&height=800&quality=95&format=auto",
+              "header": "https://cdn.dexscreener.com/cms/images/6IKrI-WtX92dxhL0?width=1500&height=500&quality=95&format=auto",
+              "openGraph": "https://cdn.dexscreener.com/token-images/og/robinhood/0x39dbed3a2bd333467115de45665cc57f813c4571?timestamp=1792133700000",
+              "websites": [
+                {
+                  "url": "https://ponsfamily.com/launchpad",
+                  "label": "Website"
+                }
+              ],
+              "socials": [
+                {
+                  "url": "https://x.com/ponsdotfamily",
+                  "type": "twitter"
+                }
+              ]
+            }
+          },
+          {
+            "chainId": "robinhood",
+            "dexId": "uniswap",
+            "url": "https://dexscreener.com/robinhood/0xc4a21f9d6485fc5893dd4a491b320a83daf4da1d",
+            "pairAddress": "0xc4a21f9d6485FC5893DD4A491B320a83DAF4Da1D",
+            "labels": [
+              "v3"
+            ],
+            "baseToken": {
+              "address": "0x2E8c31162b855A2ffa90F6F8634643Ad6F111e18",
+              "name": "Artificial Inu",
+              "symbol": "AI"
+            },
+            "quoteToken": {
+              "address": "0x0Bd7D308f8E1639FAb988df18A8011f41EAcAD73",
+              "name": "WETH",
+              "symbol": "WETH"
+            },
+            "priceNative": "0.00004500",
+            "priceUsd": "0.1102",
+            "txns": {
+              "m5": {
+                "buys": 0,
+                "sells": 2
+              },
+              "h1": {
+                "buys": 5,
+                "sells": 4
+              },
+              "h6": {
+                "buys": 102,
+                "sells": 55
+              },
+              "h24": {
+                "buys": 759,
+                "sells": 418
+              }
+            },
+            "volume": {
+              "h24": 1016898.55,
+              "h6": 84721.32,
+              "h1": 4544.95,
+              "m5": 264.96
+            },
+            "priceChange": {
+              "m5": 0.26,
+              "h1": -0.38,
+              "h6": 4.08,
+              "h24": 28.19
+            },
+            "liquidity": {
+              "usd": 661148.12,
+              "base": 3393546,
+              "quote": 117.06352
+            },
+            "fdv": 109079051,
+            "marketCap": 109079051,
+            "pairCreatedAt": 1784738253000,
+            "info": {
+              "imageUrl": "https://cdn.dexscreener.com/cms/images/U6RIzs8Fm7Jar6GE?width=800&height=800&quality=95&format=auto",
+              "header": "https://cdn.dexscreener.com/cms/images/gwos4je2c8JZxM-p?width=1500&height=500&quality=95&format=auto",
+              "openGraph": "https://cdn.dexscreener.com/token-images/og/robinhood/0x2e8c31162b855a2ffa90f6f8634643ad6f111e18?timestamp=1792133700000",
+              "websites": [
+                {
+                  "url": "https://artificialinu.com/",
+                  "label": "Website"
+                }
+              ],
+              "socials": [
+                {
+                  "url": "https://x.com/artificiallyinu",
+                  "type": "twitter"
+                }
+              ]
+            }
+          },
+          {
+            "chainId": "robinhood",
+            "dexId": "uniswap",
+            "url": "https://dexscreener.com/robinhood/0xd42a491087a15e5afd51feb3606066cc152d2b09",
+            "pairAddress": "0xd42A491087a15E5afd51FEb3606066Cc152d2b09",
+            "labels": [
+              "v3"
+            ],
+            "baseToken": {
+              "address": "0x020bfC650A365f8BB26819deAAbF3E21291018b4",
+              "name": "Cash Cat",
+              "symbol": "CASHCAT"
+            },
+            "quoteToken": {
+              "address": "0x0Bd7D308f8E1639FAb988df18A8011f41EAcAD73",
+              "name": "WETH",
+              "symbol": "WETH"
+            },
+            "priceNative": "0.00004890",
+            "priceUsd": "0.1196",
+            "txns": {
+              "m5": {
+                "buys": 6,
+                "sells": 0
+              },
+              "h1": {
+                "buys": 88,
+                "sells": 95
+              },
+              "h6": {
+                "buys": 505,
+                "sells": 701
+              },
+              "h24": {
+                "buys": 4040,
+                "sells": 4203
+              }
+            },
+            "volume": {
+              "h24": 4247343.49,
+              "h6": 434605.25,
+              "h1": 39341.39,
+              "m5": 1028.26
+            },
+            "priceChange": {
+              "m5": -0.08,
+              "h1": -0.06,
+              "h6": -3.48,
+              "h24": 9.44
+            },
+            "liquidity": {
+              "usd": 1594552.86,
+              "base": 8965293,
+              "quote": 213.1465
+            },
+            "fdv": 118215350,
+            "marketCap": 118215350,
+            "pairCreatedAt": 1782934722000,
+            "info": {
+              "imageUrl": "https://cdn.dexscreener.com/cms/images/Lq7a3pS9Wn8EuGp0?width=800&height=800&quality=95&format=auto",
+              "header": "https://cdn.dexscreener.com/cms/images/PfcMZWxAGU7_TDa8?width=1500&height=500&quality=95&format=auto",
+              "openGraph": "https://cdn.dexscreener.com/token-images/og/robinhood/0x020bfc650a365f8bb26819deaabf3e21291018b4?timestamp=1792133700000",
+              "websites": [
+                {
+                  "url": "https://cashcat.cc/",
+                  "label": "Website"
+                },
+                {
+                  "url": "https://letscash.fun/",
+                  "label": "Letscash"
+                }
+              ],
+              "socials": [
+                {
+                  "url": "https://x.com/cashcat_token",
+                  "type": "twitter"
+                },
+                {
+                  "url": "https://t.me/cashcat_robinhood",
+                  "type": "telegram"
+                },
+                {
+                  "url": "https://www.reddit.com/r/cashcattoken/s/L8GOOuy9Ch",
+                  "type": "reddit"
+                }
+              ]
+            }
+          },
+          {
+            "chainId": "robinhood",
+            "dexId": "uniswap",
+            "url": "https://dexscreener.com/robinhood/0xe2c12a7379706a291cadaaec1d22458be2f7239d",
+            "pairAddress": "0xE2c12a7379706A291CadAaEc1d22458be2f7239D",
+            "labels": [
+              "v3"
+            ],
+            "baseToken": {
+              "address": "0x385F4f8ae47651ce5F58F5265395a669f8281e18",
+              "name": "A Meme Coin",
+              "symbol": "MEME"
+            },
+            "quoteToken": {
+              "address": "0x0Bd7D308f8E1639FAb988df18A8011f41EAcAD73",
+              "name": "WETH",
+              "symbol": "WETH"
+            },
+            "priceNative": "0.000005216",
+            "priceUsd": "0.01276",
+            "txns": {
+              "m5": {
+                "buys": 12,
+                "sells": 4
+              },
+              "h1": {
+                "buys": 75,
+                "sells": 58
+              },
+              "h6": {
+                "buys": 763,
+                "sells": 448
+              },
+              "h24": {
+                "buys": 4064,
+                "sells": 3421
+              }
+            },
+            "volume": {
+              "h24": 1307107.73,
+              "h6": 185086.65,
+              "h1": 22324.7,
+              "m5": 2845.98
+            },
+            "priceChange": {
+              "m5": -1.63,
+              "h1": -3.73,
+              "h6": -4.37,
+              "h24": 27.68
+            },
+            "liquidity": {
+              "usd": 77652.73,
+              "base": 4556687,
+              "quote": 7.9606
+            },
+            "fdv": 12766208,
+            "marketCap": 12766208,
+            "pairCreatedAt": 1788765547000,
+            "info": {
+              "imageUrl": "https://cdn.dexscreener.com/cms/images/pPWqEwHoGm1tbUMt?width=800&height=800&quality=95&format=auto",
+              "header": "https://cdn.dexscreener.com/cms/images/EgZ4MljLIgeFBbZb?width=1500&height=500&quality=95&format=auto",
+              "openGraph": "https://cdn.dexscreener.com/token-images/og/robinhood/0x385f4f8ae47651ce5f58f5265395a669f8281e18?timestamp=1792133700000",
+              "websites": [],
+              "socials": [
+                {
+                  "url": "https://x.com/amemecoinrh",
+                  "type": "twitter"
+                }
+              ]
+            }
+          },
+          {
+            "chainId": "robinhood",
+            "dexId": "uniswap",
+            "url": "https://dexscreener.com/robinhood/0xc73f3cd3fb68288e63f008e08ef69caa0437224e420963c6aeb4526178e87ad9",
+            "pairAddress": "0xc73f3cd3fb68288e63f008e08ef69caa0437224e420963c6aeb4526178e87ad9",
+            "labels": [
+              "v4"
+            ],
+            "baseToken": {
+              "address": "0x88ad8DdF1E3898412146a534538d418c6F8A9062",
+              "name": "STANDARD",
+              "symbol": "STANDARD"
+            },
+            "quoteToken": {
+              "address": "0x0000000000000000000000000000000000000000",
+              "name": "Ether",
+              "symbol": "ETH"
+            },
+            "priceNative": "0.0001024",
+            "priceUsd": "0.2507",
+            "txns": {
+              "m5": {
+                "buys": 1,
+                "sells": 1
+              },
+              "h1": {
+                "buys": 5,
+                "sells": 12
+              },
+              "h6": {
+                "buys": 29,
+                "sells": 76
+              },
+              "h24": {
+                "buys": 366,
+                "sells": 377
+              }
+            },
+            "volume": {
+              "h24": 1590108.95,
+              "h6": 470765.43,
+              "h1": 60495.98,
+              "m5": 1005.27
+            },
+            "priceChange": {
+              "m5": -0.11,
+              "h1": -1.37,
+              "h6": -5.99,
+              "h24": 0.23
+            },
+            "liquidity": {
+              "usd": 13517348.21,
+              "base": 31827644,
+              "quote": 2262.02215
+            },
+            "fdv": 20684678,
+            "marketCap": 20703043,
+            "pairCreatedAt": 1789434030000,
+            "info": {
+              "imageUrl": "https://cdn.dexscreener.com/cms/images/S2DSMmC5vwc3Zxu7?width=800&height=800&quality=95&format=auto",
+              "header": "https://cdn.dexscreener.com/cms/images/mHCC79yRix1i3di6?width=1500&height=500&quality=95&format=auto",
+              "openGraph": "https://cdn.dexscreener.com/token-images/og/robinhood/0x88ad8ddf1e3898412146a534538d418c6f8a9062?timestamp=1792133700000",
+              "websites": [
+                {
+                  "url": "https://www.standardreserve.xyz/app/",
+                  "label": "Website"
+                }
+              ],
+              "socials": [
+                {
+                  "url": "https://x.com/standard_rsv",
+                  "type": "twitter"
+                }
+              ]
+            }
+          },
+          {
+            "chainId": "robinhood",
+            "dexId": "uniswap",
+            "url": "https://dexscreener.com/robinhood/0x592e3fb7ea947506b36481025abc15baada8e1839a50fded46ecf08b3182fa96",
+            "pairAddress": "0x592e3fb7ea947506b36481025abc15baada8e1839a50fded46ecf08b3182fa96",
+            "labels": [
+              "v4"
+            ],
+            "baseToken": {
+              "address": "0x2E8c31162b855A2ffa90F6F8634643Ad6F111e18",
+              "name": "Artificial Inu",
+              "symbol": "AI"
+            },
+            "quoteToken": {
+              "address": "0x5fc5360D0400a0Fd4f2af552ADD042D716F1d168",
+              "name": "Global Dollar",
+              "symbol": "USDG"
+            },
+            "priceNative": "0.1096",
+            "priceUsd": "0.1096",
+            "txns": {
+              "m5": {
+                "buys": 0,
+                "sells": 1
+              },
+              "h1": {
+                "buys": 80,
+                "sells": 14
+              },
+              "h6": {
+                "buys": 288,
+                "sells": 171
+              },
+              "h24": {
+                "buys": 2698,
+                "sells": 1962
+              }
+            },
+            "volume": {
+              "h24": 2337915.22,
+              "h6": 306928.55,
+              "h1": 21759.46,
+              "m5": 95.84
+            },
+            "priceChange": {
+              "m5": -0.01,
+              "h1": -1.26,
+              "h6": 3.18,
+              "h24": 27.87
+            },
+            "liquidity": {
+              "usd": 555453.62,
+              "base": 3447382,
+              "quote": 177358
+            },
+            "fdv": 108469379,
+            "marketCap": 108469379,
+            "pairCreatedAt": 1789762314000,
+            "info": {
+              "imageUrl": "https://cdn.dexscreener.com/cms/images/U6RIzs8Fm7Jar6GE?width=800&height=800&quality=95&format=auto",
+              "header": "https://cdn.dexscreener.com/cms/images/gwos4je2c8JZxM-p?width=1500&height=500&quality=95&format=auto",
+              "openGraph": "https://cdn.dexscreener.com/token-images/og/robinhood/0x2e8c31162b855a2ffa90f6f8634643ad6f111e18?timestamp=1792133700000",
+              "websites": [
+                {
+                  "url": "https://artificialinu.com/",
+                  "label": "Website"
+                }
+              ],
+              "socials": [
+                {
+                  "url": "https://x.com/artificiallyinu",
+                  "type": "twitter"
+                }
+              ]
+            }
+          },
+          {
+            "chainId": "robinhood",
+            "dexId": "uniswap",
+            "url": "https://dexscreener.com/robinhood/0xed50bdeea8adc232f159486192a4157281d722ff",
+            "pairAddress": "0xEd50bDeeA8aDC232f159486192a4157281D722ff",
+            "labels": [
+              "v3"
+            ],
+            "baseToken": {
+              "address": "0x39dBED3a2bd333467115dE45665cC57F813C4571",
+              "name": "Pons",
+              "symbol": "PONS"
+            },
+            "quoteToken": {
+              "address": "0x0Bd7D308f8E1639FAb988df18A8011f41EAcAD73",
+              "name": "WETH",
+              "symbol": "WETH"
+            },
+            "priceNative": "0.0001394",
+            "priceUsd": "0.3411",
+            "txns": {
+              "m5": {
+                "buys": 0,
+                "sells": 14
+              },
+              "h1": {
+                "buys": 56,
+                "sells": 83
+              },
+              "h6": {
+                "buys": 586,
+                "sells": 562
+              },
+              "h24": {
+                "buys": 2641,
+                "sells": 2455
+              }
+            },
+            "volume": {
+              "h24": 1420221.14,
+              "h6": 256521.37,
+              "h1": 28547.66,
+              "m5": 2227.8
+            },
+            "priceChange": {
+              "m5": -0.08,
+              "h1": -0.31,
+              "h6": 0.78,
+              "h24": 14.36
+            },
+            "liquidity": {
+              "usd": 1866093.77,
+              "base": 4096990,
+              "quote": 191.3965
+            },
+            "fdv": 230381506,
+            "marketCap": 230414087,
+            "pairCreatedAt": 1784216377000,
+            "info": {
+              "imageUrl": "https://cdn.dexscreener.com/cms/images/dkmXs8KYMyMXjuU1?width=800&height=800&quality=95&format=auto",
+              "header": "https://cdn.dexscreener.com/cms/images/6IKrI-WtX92dxhL0?width=1500&height=500&quality=95&format=auto",
+              "openGraph": "https://cdn.dexscreener.com/token-images/og/robinhood/0x39dbed3a2bd333467115de45665cc57f813c4571?timestamp=1792133700000",
+              "websites": [
+                {
+                  "url": "https://ponsfamily.com/launchpad",
+                  "label": "Website"
+                }
+              ],
+              "socials": [
+                {
+                  "url": "https://x.com/ponsdotfamily",
+                  "type": "twitter"
+                }
+              ]
+            }
+          },
+          {
+            "chainId": "robinhood",
+            "dexId": "uniswap",
+            "url": "https://dexscreener.com/robinhood/0x435ea42b2792a22de296bee4e8013f4fa102f0cc04983443ff79549f847db577",
+            "pairAddress": "0x435ea42b2792a22de296bee4e8013f4fa102f0cc04983443ff79549f847db577",
+            "labels": [
+              "v4"
+            ],
+            "baseToken": {
+              "address": "0x94641b97010608C3827fB058074889f19868FF33",
+              "name": "Commander Vrax",
+              "symbol": "VRAX"
+            },
+            "quoteToken": {
+              "address": "0x5fc5360D0400a0Fd4f2af552ADD042D716F1d168",
+              "name": "Global Dollar",
+              "symbol": "USDG"
+            },
+            "priceNative": "0.006897",
+            "priceUsd": "0.006897",
+            "txns": {
+              "m5": {
+                "buys": 16,
+                "sells": 0
+              },
+              "h1": {
+                "buys": 43,
+                "sells": 9
+              },
+              "h6": {
+                "buys": 162,
+                "sells": 159
+              },
+              "h24": {
+                "buys": 941,
+                "sells": 1186
+              }
+            },
+            "volume": {
+              "h24": 1441745.45,
+              "h6": 211301.22,
+              "h1": 44736.84,
+              "m5": 12724.85
+            },
+            "priceChange": {
+              "m5": 3.64,
+              "h1": 7.23,
+              "h6": -0.6,
+              "h24": 6.6
+            },
+            "liquidity": {
+              "usd": 429442.34,
+              "base": 19190872,
+              "quote": 297079
+            },
+            "fdv": 6897151,
+            "marketCap": 6897151,
+            "pairCreatedAt": 1790725837000,
+            "info": {
+              "imageUrl": "https://cdn.dexscreener.com/cms/images/tUo1cSwJqfca2-Hh?width=800&height=800&quality=95&format=auto",
+              "header": "https://cdn.dexscreener.com/cms/images/0cXALt2HyDCBotGI?width=1500&height=500&quality=95&format=auto",
+              "openGraph": "https://cdn.dexscreener.com/token-images/og/robinhood/0x94641b97010608c3827fb058074889f19868ff33?timestamp=1792133700000",
+              "websites": [],
+              "socials": [
+                {
+                  "url": "https://x.com/1commandervrax",
+                  "type": "twitter"
+                }
+              ]
+            }
+          },
+          {
+            "chainId": "robinhood",
+            "dexId": "uniswap",
+            "url": "https://dexscreener.com/robinhood/0x486435a1f76cd58193f854c6e6213cd05fd58d637865d02065ff558b387fa6ea",
+            "pairAddress": "0x486435a1f76cd58193f854c6e6213cd05fd58d637865d02065ff558b387fa6ea",
+            "labels": [
+              "v4"
+            ],
+            "baseToken": {
+              "address": "0x39dBED3a2bd333467115dE45665cC57F813C4571",
+              "name": "Pons",
+              "symbol": "PONS"
+            },
+            "quoteToken": {
+              "address": "0x5fc5360D0400a0Fd4f2af552ADD042D716F1d168",
+              "name": "Global Dollar",
+              "symbol": "USDG"
+            },
+            "priceNative": "0.3411",
+            "priceUsd": "0.3411",
+            "txns": {
+              "m5": {
+                "buys": 1,
+                "sells": 15
+              },
+              "h1": {
+                "buys": 81,
+                "sells": 107
+              },
+              "h6": {
+                "buys": 848,
+                "sells": 733
+              },
+              "h24": {
+                "buys": 2880,
+                "sells": 2336
+              }
+            },
+            "volume": {
+              "h24": 2694578.85,
+              "h6": 741684.47,
+              "h1": 98517.69,
+              "m5": 6329.16
+            },
+            "priceChange": {
+              "m5": -0.22,
+              "h1": -0.34,
+              "h6": 1,
+              "h24": 14.41
+            },
+            "liquidity": {
+              "usd": 2297541.1,
+              "base": 4667284,
+              "quote": 705146
+            },
+            "fdv": 230399693,
+            "marketCap": 230432276,
+            "pairCreatedAt": 1788874168000,
+            "info": {
+              "imageUrl": "https://cdn.dexscreener.com/cms/images/dkmXs8KYMyMXjuU1?width=800&height=800&quality=95&format=auto",
+              "header": "https://cdn.dexscreener.com/cms/images/6IKrI-WtX92dxhL0?width=1500&height=500&quality=95&format=auto",
+              "openGraph": "https://cdn.dexscreener.com/token-images/og/robinhood/0x39dbed3a2bd333467115de45665cc57f813c4571?timestamp=1792133700000",
+              "websites": [
+                {
+                  "url": "https://ponsfamily.com/launchpad",
+                  "label": "Website"
+                }
+              ],
+              "socials": [
+                {
+                  "url": "https://x.com/ponsdotfamily",
+                  "type": "twitter"
+                }
+              ]
+            }
+          },
+          {
+            "chainId": "robinhood",
+            "dexId": "uniswap",
+            "url": "https://dexscreener.com/robinhood/0x4be9657ec9002e528f4f17a5c43edc525a07f888f7b180c2afbf75e096c4f38a",
+            "pairAddress": "0x4be9657ec9002e528f4f17a5c43edc525a07f888f7b180c2afbf75e096c4f38a",
+            "labels": [
+              "v4"
+            ],
+            "baseToken": {
+              "address": "0x39dBED3a2bd333467115dE45665cC57F813C4571",
+              "name": "Pons",
+              "symbol": "PONS"
+            },
+            "quoteToken": {
+              "address": "0x5fc5360D0400a0Fd4f2af552ADD042D716F1d168",
+              "name": "Global Dollar",
+              "symbol": "USDG"
+            },
+            "priceNative": "0.3408",
+            "priceUsd": "0.3408",
+            "txns": {
+              "m5": {
+                "buys": 0,
+                "sells": 7
+              },
+              "h1": {
+                "buys": 72,
+                "sells": 95
+              },
+              "h6": {
+                "buys": 695,
+                "sells": 599
+              },
+              "h24": {
+                "buys": 3064,
+                "sells": 2626
+              }
+            },
+            "volume": {
+              "h24": 1977802.53,
+              "h6": 363725.75,
+              "h1": 49815.7,
+              "m5": 4745.72
+            },
+            "priceChange": {
+              "m5": -0.25,
+              "h1": -0.37,
+              "h6": 0.82,
+              "h24": 14.26
+            },
+            "liquidity": {
+              "usd": 1411036.43,
+              "base": 3241840,
+              "quote": 306013
+            },
+            "fdv": 230183895,
+            "marketCap": 230216448,
+            "pairCreatedAt": 1784338933000,
+            "info": {
+              "imageUrl": "https://cdn.dexscreener.com/cms/images/dkmXs8KYMyMXjuU1?width=800&height=800&quality=95&format=auto",
+              "header": "https://cdn.dexscreener.com/cms/images/6IKrI-WtX92dxhL0?width=1500&height=500&quality=95&format=auto",
+              "openGraph": "https://cdn.dexscreener.com/token-images/og/robinhood/0x39dbed3a2bd333467115de45665cc57f813c4571?timestamp=1792133700000",
+              "websites": [
+                {
+                  "url": "https://ponsfamily.com/launchpad",
+                  "label": "Website"
+                }
+              ],
+              "socials": [
+                {
+                  "url": "https://x.com/ponsdotfamily",
+                  "type": "twitter"
+                }
+              ]
+            }
+          },
+          {
+            "chainId": "robinhood",
+            "dexId": "uniswap",
+            "url": "https://dexscreener.com/robinhood/0xa92a3df27a00a276183ff7265fd8affa11df1fe8bb23ddfaf13f6c879a3f818b",
+            "pairAddress": "0xa92a3df27a00a276183ff7265fd8affa11df1fe8bb23ddfaf13f6c879a3f818b",
+            "labels": [
+              "v4"
+            ],
+            "baseToken": {
+              "address": "0x020bfC650A365f8BB26819deAAbF3E21291018b4",
+              "name": "Cash Cat",
+              "symbol": "CASHCAT"
+            },
+            "quoteToken": {
+              "address": "0x5fc5360D0400a0Fd4f2af552ADD042D716F1d168",
+              "name": "Global Dollar",
+              "symbol": "USDG"
+            },
+            "priceNative": "0.1197",
+            "priceUsd": "0.1197",
+            "txns": {
+              "m5": {
+                "buys": 0,
+                "sells": 1
+              },
+              "h1": {
+                "buys": 52,
+                "sells": 56
+              },
+              "h6": {
+                "buys": 371,
+                "sells": 511
+              },
+              "h24": {
+                "buys": 2754,
+                "sells": 2845
+              }
+            },
+            "volume": {
+              "h24": 1790094.52,
+              "h6": 247308.95,
+              "h1": 19760.79,
+              "m5": 27.13
+            },
+            "priceChange": {
+              "h1": -0.03,
+              "h6": -3.71,
+              "h24": 9.7
+            },
+            "liquidity": {
+              "usd": 470750.61,
+              "base": 2196634,
+              "quote": 207790
+            },
+            "fdv": 118248110,
+            "marketCap": 118248110,
+            "pairCreatedAt": 1784122755000,
+            "info": {
+              "imageUrl": "https://cdn.dexscreener.com/cms/images/Lq7a3pS9Wn8EuGp0?width=800&height=800&quality=95&format=auto",
+              "header": "https://cdn.dexscreener.com/cms/images/PfcMZWxAGU7_TDa8?width=1500&height=500&quality=95&format=auto",
+              "openGraph": "https://cdn.dexscreener.com/token-images/og/robinhood/0x020bfc650a365f8bb26819deaabf3e21291018b4?timestamp=1792133700000",
+              "websites": [
+                {
+                  "url": "https://cashcat.cc/",
+                  "label": "Website"
+                },
+                {
+                  "url": "https://letscash.fun/",
+                  "label": "Letscash"
+                }
+              ],
+              "socials": [
+                {
+                  "url": "https://x.com/cashcat_token",
+                  "type": "twitter"
+                },
+                {
+                  "url": "https://t.me/cashcat_robinhood",
+                  "type": "telegram"
+                },
+                {
+                  "url": "https://www.reddit.com/r/cashcattoken/s/L8GOOuy9Ch",
+                  "type": "reddit"
+                }
+              ]
+            }
+          },
+          {
+            "chainId": "robinhood",
+            "dexId": "uniswap",
+            "url": "https://dexscreener.com/robinhood/0x230bc4a0fb5fb7ab27f6e72350dfa3f2489b0cdbaf34f0189d68672086ccb919",
+            "pairAddress": "0x230bc4a0fb5fb7ab27f6e72350dfa3f2489b0cdbaf34f0189d68672086ccb919",
+            "labels": [
+              "v4"
+            ],
+            "baseToken": {
+              "address": "0x2E8c31162b855A2ffa90F6F8634643Ad6F111e18",
+              "name": "Artificial Inu",
+              "symbol": "AI"
+            },
+            "quoteToken": {
+              "address": "0x39dBED3a2bd333467115dE45665cC57F813C4571",
+              "name": "Pons",
+              "symbol": "PONS"
+            },
+            "priceNative": "0.3211",
+            "priceUsd": "0.1095",
+            "txns": {
+              "m5": {
+                "buys": 6,
+                "sells": 1
+              },
+              "h1": {
+                "buys": 29,
+                "sells": 27
+              },
+              "h6": {
+                "buys": 337,
+                "sells": 305
+              },
+              "h24": {
+                "buys": 1924,
+                "sells": 1748
+              }
+            },
+            "volume": {
+              "h24": 2465836,
+              "h6": 322643.38,
+              "h1": 27156.48,
+              "m5": 2250.47
+            },
+            "priceChange": {
+              "m5": -0.04,
+              "h1": -1.37,
+              "h6": 3.35,
+              "h24": 27.21
+            },
+            "liquidity": {
+              "usd": 719249.5,
+              "base": 2875073,
+              "quote": 1184735
+            },
+            "fdv": 108370579,
+            "marketCap": 108370579,
+            "pairCreatedAt": 1788487119000,
+            "info": {
+              "imageUrl": "https://cdn.dexscreener.com/cms/images/U6RIzs8Fm7Jar6GE?width=800&height=800&quality=95&format=auto",
+              "header": "https://cdn.dexscreener.com/cms/images/gwos4je2c8JZxM-p?width=1500&height=500&quality=95&format=auto",
+              "openGraph": "https://cdn.dexscreener.com/token-images/og/robinhood/0x2e8c31162b855a2ffa90f6f8634643ad6f111e18?timestamp=1792133700000",
+              "websites": [
+                {
+                  "url": "https://artificialinu.com/",
+                  "label": "Website"
+                }
+              ],
+              "socials": [
+                {
+                  "url": "https://x.com/artificiallyinu",
+                  "type": "twitter"
+                }
+              ]
+            }
+          },
+          {
+            "chainId": "robinhood",
+            "dexId": "uniswap",
+            "url": "https://dexscreener.com/robinhood/0x654e4143e82a5824445ade0824351c2a9acd95a8",
+            "pairAddress": "0x654E4143e82a5824445Ade0824351C2A9ACD95a8",
+            "labels": [
+              "v3"
+            ],
+            "baseToken": {
+              "address": "0xdF0992E440dD0be65BD8439b609d6D4366bf1CB5",
+              "name": "Circle Internet Group • Robinhood Token",
+              "symbol": "CRCL"
+            },
+            "quoteToken": {
+              "address": "0x5fc5360D0400a0Fd4f2af552ADD042D716F1d168",
+              "name": "Global Dollar",
+              "symbol": "USDG"
+            },
+            "priceNative": "85.2210",
+            "priceUsd": "85.22",
+            "txns": {
+              "m5": {
+                "buys": 1,
+                "sells": 0
+              },
+              "h1": {
+                "buys": 3,
+                "sells": 26
+              },
+              "h6": {
+                "buys": 93,
+                "sells": 154
+              },
+              "h24": {
+                "buys": 1933,
+                "sells": 1297
+              }
+            },
+            "volume": {
+              "h24": 2933840.56,
+              "h6": 248158.46,
+              "h1": 29231.52,
+              "m5": 1.26
+            },
+            "priceChange": {
+              "h1": -0.3,
+              "h6": -0.83,
+              "h24": 11.06
+            },
+            "liquidity": {
+              "usd": 2494059.32,
+              "base": 14465,
+              "quote": 1261291
+            },
+            "fdv": 9147362,
+            "marketCap": 9191907,
+            "pairCreatedAt": 1786727379000,
+            "info": {
+              "imageUrl": "https://cdn.dexscreener.com/cms/images/jOEYO0vtG-IN76Rl?width=800&height=800&quality=95&format=auto",
+              "header": "https://cdn.dexscreener.com/cms/images/azZPxyGuYwxsiEVc?width=1500&height=500&quality=95&format=auto",
+              "openGraph": "https://cdn.dexscreener.com/token-images/og/robinhood/0xdf0992e440dd0be65bd8439b609d6d4366bf1cb5?timestamp=1792133700000",
+              "websites": [
+                {
+                  "url": "https://crcl.onthechain.lol/",
+                  "label": "Website"
+                }
+              ],
+              "socials": []
+            }
+          },
+          {
+            "chainId": "robinhood",
+            "dexId": "uniswap",
+            "url": "https://dexscreener.com/robinhood/0x628c98ab436ee34a6a7decd606242890582591bdf7c9a35d90e0d08021c31ea0",
+            "pairAddress": "0x628c98ab436ee34a6a7decd606242890582591bdf7c9a35d90e0d08021c31ea0",
+            "labels": [
+              "v4"
+            ],
+            "baseToken": {
+              "address": "0xdF0992E440dD0be65BD8439b609d6D4366bf1CB5",
+              "name": "Circle Internet Group • Robinhood Token",
+              "symbol": "CRCL"
+            },
+            "quoteToken": {
+              "address": "0x5fc5360D0400a0Fd4f2af552ADD042D716F1d168",
+              "name": "Global Dollar",
+              "symbol": "USDG"
+            },
+            "priceNative": "85.2675",
+            "priceUsd": "85.26",
+            "txns": {
+              "m5": {
+                "buys": 0,
+                "sells": 0
+              },
+              "h1": {
+                "buys": 0,
+                "sells": 6
+              },
+              "h6": {
+                "buys": 20,
+                "sells": 65
+              },
+              "h24": {
+                "buys": 714,
+                "sells": 823
+              }
+            },
+            "volume": {
+              "h24": 1584057.23,
+              "h6": 20632.21,
+              "h1": 1734.43,
+              "m5": 0
+            },
+            "priceChange": {
+              "h1": -0.18,
+              "h6": -0.83,
+              "h24": 11.09
+            },
+            "liquidity": {
+              "usd": 659698.67,
+              "base": 1746.3294,
+              "quote": 510793
+            },
+            "fdv": 9152353,
+            "marketCap": 9196922,
+            "pairCreatedAt": 1785251247000,
+            "info": {
+              "imageUrl": "https://cdn.dexscreener.com/cms/images/jOEYO0vtG-IN76Rl?width=800&height=800&quality=95&format=auto",
+              "header": "https://cdn.dexscreener.com/cms/images/azZPxyGuYwxsiEVc?width=1500&height=500&quality=95&format=auto",
+              "openGraph": "https://cdn.dexscreener.com/token-images/og/robinhood/0xdf0992e440dd0be65bd8439b609d6d4366bf1cb5?timestamp=1792133700000",
+              "websites": [
+                {
+                  "url": "https://crcl.onthechain.lol/",
+                  "label": "Website"
+                }
+              ],
+              "socials": []
+            }
+          },
+          {
+            "chainId": "robinhood",
+            "dexId": "metric",
+            "url": "https://dexscreener.com/robinhood/0x5a3571dca43ecafcd670e87a6eaf6de0e2d70954",
+            "pairAddress": "0x5A3571DcA43ECAFCd670e87a6EaF6DE0e2d70954",
+            "baseToken": {
+              "address": "0x39dBED3a2bd333467115dE45665cC57F813C4571",
+              "name": "Pons",
+              "symbol": "PONS"
+            },
+            "quoteToken": {
+              "address": "0x5fc5360D0400a0Fd4f2af552ADD042D716F1d168",
+              "name": "Global Dollar",
+              "symbol": "USDG"
+            },
+            "priceNative": "0.3409",
+            "priceUsd": "0.3409",
+            "txns": {
+              "m5": {
+                "buys": 1,
+                "sells": 0
+              },
+              "h1": {
+                "buys": 10,
+                "sells": 8
+              },
+              "h6": {
+                "buys": 135,
+                "sells": 132
+              },
+              "h24": {
+                "buys": 930,
+                "sells": 945
+              }
+            },
+            "volume": {
+              "h24": 1195816.54,
+              "h6": 172173.24,
+              "h1": 11334.63,
+              "m5": 234.8
+            },
+            "priceChange": {
+              "m5": -0.51,
+              "h1": -0.4,
+              "h6": 0.48,
+              "h24": 13.95
+            },
+            "liquidity": {
+              "usd": 7777.66,
+              "base": 12325,
+              "quote": 3574.88
+            },
+            "fdv": 340989005,
+            "marketCap": 230301751,
+            "pairCreatedAt": 1789663088000,
+            "info": {
+              "imageUrl": "https://cdn.dexscreener.com/cms/images/dkmXs8KYMyMXjuU1?width=800&height=800&quality=95&format=auto",
+              "header": "https://cdn.dexscreener.com/cms/images/6IKrI-WtX92dxhL0?width=1500&height=500&quality=95&format=auto",
+              "openGraph": "https://cdn.dexscreener.com/token-images/og/robinhood/0x39dbed3a2bd333467115de45665cc57f813c4571?timestamp=1792133700000",
+              "websites": [
+                {
+                  "url": "https://ponsfamily.com/launchpad",
+                  "label": "Website"
+                }
+              ],
+              "socials": [
+                {
+                  "url": "https://x.com/ponsdotfamily",
+                  "type": "twitter"
+                }
+              ]
+            }
+          },
+          {
+            "chainId": "robinhood",
+            "dexId": "uniswap",
+            "url": "https://dexscreener.com/robinhood/0x1791fc651cc794a282e5dbcb56d0b2b38eff8754b677c8876e86901521ecc439",
+            "pairAddress": "0x1791fc651cc794a282e5dbcb56d0b2b38eff8754b677c8876e86901521ecc439",
+            "labels": [
+              "v4"
+            ],
+            "baseToken": {
+              "address": "0xad25Ac6C84D497db898fa1E8387bf6Af3532a1c4",
+              "name": "Alibaba • Robinhood Token",
+              "symbol": "BABA"
+            },
+            "quoteToken": {
+              "address": "0x5fc5360D0400a0Fd4f2af552ADD042D716F1d168",
+              "name": "Global Dollar",
+              "symbol": "USDG"
+            },
+            "priceNative": "110.9636",
+            "priceUsd": "110.96",
+            "txns": {
+              "m5": {
+                "buys": 1,
+                "sells": 3
+              },
+              "h1": {
+                "buys": 126,
+                "sells": 103
+              },
+              "h6": {
+                "buys": 610,
+                "sells": 590
+              },
+              "h24": {
+                "buys": 1841,
+                "sells": 1760
+              }
+            },
+            "volume": {
+              "h24": 1043285.88,
+              "h6": 467790.69,
+              "h1": 115383.44,
+              "m5": 416.21
+            },
+            "priceChange": {
+              "m5": -0.08,
+              "h1": -1,
+              "h6": -0.08,
+              "h24": 2.79
+            },
+            "liquidity": {
+              "usd": 58114.83,
+              "base": 263.5667,
+              "quote": 28868
+            },
+            "fdv": 1675497,
+            "marketCap": 1733858,
+            "pairCreatedAt": 1788451184000,
+            "info": {
+              "imageUrl": "https://cdn.dexscreener.com/cms/images/ZWTEpQtOhGSyc_z_?width=800&height=800&quality=95&format=auto",
+              "header": "https://cdn.dexscreener.com/cms/images/QhdfpNb1sdMMKhks?width=1500&height=500&quality=95&format=auto",
+              "openGraph": "https://cdn.dexscreener.com/token-images/og/robinhood/0xad25ac6c84d497db898fa1e8387bf6af3532a1c4?timestamp=1792133700000",
+              "websites": [
+                {
+                  "url": "https://aniu.space",
+                  "label": "Website"
+                }
+              ],
+              "socials": [
+                {
+                  "url": "https://x.com/aniuonRH",
+                  "type": "twitter"
+                }
+              ]
+            }
+          }
+        ],
+        "pair": null
+      }
+    }
+  }
+]
