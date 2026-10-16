@@ -1,6 +1,6 @@
 # Reporting rules (Solana and Robinhood)
 
-These rules carry over the crypto-screener reporting agreement (`docs/dex-chat-reporting.md`, `docs/market-commands.md`), plus the decisions of 16 October 2026. Changing a filter, budget or exclusion requires an explicit request from the user.
+These rules are self-contained: they carry over the author's earlier Market Brief reporting agreement, updated with the decisions of 16 October 2026. Changing a filter, budget or exclusion requires an explicit request from the user.
 
 ## Discovery
 
