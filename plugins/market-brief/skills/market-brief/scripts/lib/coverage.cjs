@@ -13,15 +13,16 @@ function scopeCoverage(runDir, scope) {
   const comparison = readJson(p.comparison, null);
   const displayed = obs ? obs.rows.filter(r => !r.hidden) : [];
   const projects = new Map((research && research.projects || []).map(x => [x.id, x]));
-  const statuses = displayed.map(r => projects.has(r.id) ? overviewStatus(projects.get(r.id)) : "missing");
+  const statuses = displayed.map(r => projects.has(r.id) ? overviewStatus(projects.get(r.id)) : "not researched");
   const count = s => statuses.filter(x => x === s).length;
-  let researchStatus = "not run";
-  if (research) researchStatus = statuses.every(s => s === "complete") ? "complete" : statuses.some(s => s === "complete" || s === "partial") ? "partial" : "incomplete";
+  const researched = statuses.filter(s => s !== "not researched").length;
+  let researchStatus = "not requested";
+  if (researched) researchStatus = researched < displayed.length ? `on request (${researched} of ${displayed.length} rows)` : statuses.every(s => s === "complete") ? "complete" : "all rows researched";
   return {
     discovery: discovery ? {status: discovery.status, reason: discovery.reason, observedAt: discovery.observedAt, rows: discovery.rowCount, method: discovery.method, url: discovery.discoveryUrl, possibleTruncation: discovery.possibleTruncation} : {status: "missing"},
     market: obs ? {status: obs.marketStatus, window: obs.metrics.window, counts: obs.counts, unresolvedPools: obs.unresolvedPools, failedRequests: obs.metrics.failedRequests, excludedPools: obs.excludedPools.length, hidden: obs.rows.filter(r => r.hidden).map(r => ({id: r.id, symbol: r.symbol}))} : {status: "not run"},
     evidence: evidence ? {counts: evidence.counts, chainRead: evidence.chainRecord ? {id: evidence.chainRecord.id, ok: evidence.chainRecord.ok, failureReason: evidence.chainRecord.failureReason || null} : null, failedReads: evidence.reads.filter(r => !r.ok || !r.readable).map(r => ({id: r.id, tokenId: r.tokenId, url: r.finalUrl || r.url, requestedUrl: r.url, reason: r.failureReason || "unreadable"}))} : null,
-    research: {status: researchStatus, completedAt: research ? research.researchCompletedAt || null : null, counts: {displayed: displayed.length, complete: count("complete"), partial: count("partial"), incomplete: count("incomplete"), missing: count("missing")}, gaps: displayed.filter(r => projects.has(r.id)).map(r => ({id: r.id, symbol: r.symbol, status: overviewStatus(projects.get(r.id)), gaps: projects.get(r.id).gaps || []})).filter(x => x.status !== "complete"), webReads: research ? (research.webReads || []).length : 0},
+    research: {status: researchStatus, completedAt: research ? research.researchCompletedAt || null : null, counts: {displayed: displayed.length, researched, complete: count("complete"), partial: count("partial"), incomplete: count("incomplete"), notResearched: count("not researched")}, gaps: displayed.filter(r => projects.has(r.id)).map(r => ({id: r.id, symbol: r.symbol, status: overviewStatus(projects.get(r.id)), gaps: projects.get(r.id).gaps || []})).filter(x => x.status !== "complete"), webReads: research ? (research.webReads || []).length : 0},
     comparison: comparison ? {prior: comparison.prior, reason: comparison.reason || null, newlySurfaced: comparison.newlySurfaced.length, noLongerQualifying: comparison.noLongerQualifying.length} : null,
   };
 }
@@ -48,7 +49,7 @@ function finalizeRun({runDir, config, finishedAt}) {
     if (c.market.counts) lines.push(`- Market: ${c.market.status}; ${c.market.counts.resolvedPools}/${c.market.counts.discoveredPools} pools resolved, ${c.market.counts.excludedPools} stable/wrapped-base pools excluded, ${c.market.counts.tokens} tokens, ${c.market.counts.hiddenTokens} hidden by preference, ${c.market.counts.displayedTokens} displayed. Window ${c.market.window.from} to ${c.market.window.to}.`);
     else lines.push(`- Market: ${c.market.status}.`);
     if (c.evidence) lines.push(`- Evidence: ${c.evidence.counts.reads} reads, ${c.evidence.counts.readable} readable, ${c.evidence.counts.failed} failed; ${c.evidence.counts.rowsWithoutWebsite} rows list no website.`);
-    lines.push(`- Research: ${c.research.status}; ${c.research.counts.complete} complete, ${c.research.counts.partial} partial, ${c.research.counts.incomplete} incomplete${c.research.counts.missing ? `, ${c.research.counts.missing} missing` : ""}.`);
+    lines.push(c.research.counts.researched ? `- Research: ${c.research.status}; ${c.research.counts.complete} complete, ${c.research.counts.partial} partial, ${c.research.counts.incomplete} incomplete, ${c.research.counts.notResearched} not researched.` : "- Research: not requested (list only; deep dives run per row on request).");
     if (c.comparison) lines.push(`- Comparison: ${c.comparison.prior ? `vs ${c.comparison.prior.path}; ${c.comparison.newlySurfaced} newly surfaced, ${c.comparison.noLongerQualifying} no longer qualifying` : c.comparison.reason}.`);
     lines.push("");
   }

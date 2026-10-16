@@ -156,10 +156,15 @@ async function robinhoodRegistry({rows, config, fetchImpl, clock, budget}) {
   return {record, facts};
 }
 
-// Collects primary evidence for every displayed row within the per-project and per-run budgets.
-async function collectEvidence({scope, config, observations, budget, fetchImpl = fetch, clock = () => new Date(), workTextDir}) {
-  const rows = observations.rows.filter(r => !r.hidden);
-  let counter = 0;
+// Collects primary evidence for the requested displayed rows (all by default) within the budgets.
+// A later call merges into the existing evidence: ids continue, rows already read are skipped,
+// and the one chain read per run covers every displayed row the first time it runs.
+async function collectEvidence({scope, config, observations, budget, fetchImpl = fetch, clock = () => new Date(), workTextDir, onlyIds = null, existing = null}) {
+  const displayed = observations.rows.filter(r => !r.hidden);
+  const prior = existing && existing.runId === observations.runId ? existing : null;
+  const done = new Set(prior ? Object.keys(prior.byToken || {}) : []);
+  const rows = displayed.filter(r => (!onlyIds || onlyIds.includes(r.id)) && !done.has(r.id));
+  let counter = prior ? Math.max(0, ...(prior.reads || []).map(r => Number(String(r.id).split("-E")[1]) || 0)) : 0;
   const nextId = () => `${scope}-E${++counter}`;
   const tasks = [];
   const plan = new Map();
@@ -174,18 +179,20 @@ async function collectEvidence({scope, config, observations, budget, fetchImpl =
     if (!budget.take(t.budgetKey, t.limit)) return {record: {id: t.id, tokenId: t.row.id, kind: t.kind, url: t.url, ok: false, failureReason: "request budget exhausted"}, text: ""};
     return readPage({id: t.id, url: t.url, kind: t.kind, row: t.row, config, fetchImpl, clock, workTextDir});
   });
-  const chain = {};
-  let chainRecord = null;
-  if (observations.chain === "solana") {
-    const {record, facts} = await solanaMintFacts({mints: rows.map(r => r.address), config, fetchImpl, clock, budget});
-    chainRecord = record;
-    for (const row of rows) chain[row.id] = facts.get(row.address) || null;
-  } else if (observations.chain === "robinhood") {
-    const {record, facts} = await robinhoodRegistry({rows, config, fetchImpl, clock, budget});
-    chainRecord = record;
-    for (const row of rows) chain[row.id] = facts.has(row.id) ? {registry: facts.get(row.id)} : null;
+  let chain = prior && prior.chainFacts ? {...prior.chainFacts} : {};
+  let chainRecord = prior ? prior.chainRecord : null;
+  if (!chainRecord && rows.length) {
+    if (observations.chain === "solana") {
+      const {record, facts} = await solanaMintFacts({mints: displayed.map(r => r.address), config, fetchImpl, clock, budget});
+      chainRecord = record;
+      for (const row of displayed) chain[row.id] = facts.get(row.address) || null;
+    } else if (observations.chain === "robinhood") {
+      const {record, facts} = await robinhoodRegistry({rows: displayed, config, fetchImpl, clock, budget});
+      chainRecord = record;
+      for (const row of displayed) chain[row.id] = facts.has(row.id) ? {registry: facts.get(row.id)} : null;
+    }
   }
-  const byToken = {};
+  const byToken = prior ? {...prior.byToken} : {};
   for (const row of rows) {
     const links = plan.get(row.id);
     byToken[row.id] = {
@@ -194,10 +201,14 @@ async function collectEvidence({scope, config, observations, budget, fetchImpl =
       links: {pages: links.pages, x: links.x, skippedOverBudget: links.skipped},
       evidenceIds: results.filter(r => r.record.tokenId === row.id).map(r => r.record.id),
       noWebsiteListed: !(row.info.websites || []).length,
+      readAt: clock().toISOString(),
     };
   }
-  const records = results.map(r => r.record);
+  const records = [...(prior ? prior.reads || [] : []), ...results.map(r => r.record)];
+  const covered = displayed.filter(r => byToken[r.id]);
   return {
+    newRowIds: rows.map(r => r.id),
+    skippedRowIds: displayed.filter(r => (!onlyIds || onlyIds.includes(r.id)) && done.has(r.id)).map(r => r.id),
     texts: new Map(results.map(r => [r.record.id, r.text])),
     evidence: {
       schemaVersion: config.schemaVersion,
@@ -210,11 +221,12 @@ async function collectEvidence({scope, config, observations, budget, fetchImpl =
       chainFacts: chain,
       byToken,
       counts: {
+        rowsRead: covered.length,
         reads: records.length,
         ok: records.filter(r => r.ok).length,
         readable: records.filter(r => r.ok && r.readable).length,
         failed: records.filter(r => !r.ok).length,
-        rowsWithoutWebsite: rows.filter(r => !(r.info.websites || []).length).length,
+        rowsWithoutWebsite: covered.filter(r => !(r.info.websites || []).length).length,
       },
     },
   };

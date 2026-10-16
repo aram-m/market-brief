@@ -1,12 +1,12 @@
 # Market Brief
 
-A Claude skill that produces a daily brief of trending Solana and Robinhood Chain tokens from Dexscreener. Each run:
+A Claude skill that produces a daily list of trending Solana and Robinhood Chain tokens from Dexscreener, with sourced deep dives on the tokens you pick. Each run:
 
-- **Discovery:** loads the Dexscreener discovery page (Trending 6H, market cap ≥ $1M, pool age ≥ 72 h, pool 24h volume ≥ $1M, profile enabled) in a real browser.
+- **Discovery:** loads the Dexscreener discovery page (Trending 6H, market cap ≥ $1M, pool age ≥ 72 h, pool 24h volume ≥ $1M on Solana and ≥ $250K on Robinhood, profile enabled) in a real browser.
 - **Market data:** fetches pool metrics from Dexscreener's public pair API in batches.
 - **Aggregation:** aggregates pools by exact token contract and applies your saved display exclusions.
-- **Research:** reads each project's own site, docs, GitHub and listed X account, plus one chain read per scope. Claude then writes short sourced notes and an AI comment for every displayed token.
-- **Report:** saves observations, evidence, coverage failures and the full report, and shows a paginated table in chat.
+- **Report:** saves observations and coverage, and shows the paginated token list in chat.
+- **Deep dive on request:** `research <symbol>` reads that project's own site, docs, GitHub and listed X account, plus one chain read per scope. Claude then writes a short sourced note and an AI comment for that token.
 
 > Not financial advice. Market data comes from Dexscreener. Project statements are the projects' own claims unless marked verified. The skill never trades.
 
@@ -33,12 +33,14 @@ Cloud sessions are not supported. Discovery needs the browser, and the default c
 
 | Say | You get |
 | --- | --- |
-| `sol` / `check sol` / `sol all` | Full Solana brief |
-| `rh` / `check rh` / `rh all` | Full Robinhood brief |
-| `daily` / `market brief` | Both |
-| `sol <project or contract>` | That project's note from the latest saved run |
+| `/market-brief sol` / `check sol` | Solana token list |
+| `/market-brief rh` / `check rh` | Robinhood token list |
+| `/market-brief daily` / `market brief` | Both lists |
+| `research <symbol or contract>` | Deep dive on that row of the latest run |
+| `research all` | Deep dive on every displayed row |
+| `sol <project or contract>` | That project's saved metrics and note |
 
-The brief arrives in two steps. First comes the market table, marked "research pending". Then the final table follows, with notes and an interactive widget: 12 rows per page, names open Dexscreener, and Notes and Research buttons on each row.
+The list shows 12 rows per page, sorted by 24h volume; names open Dexscreener. A deep dive adds a note with what the project says (with sources), measured facts, an AI view and the evidence that's missing. The interactive widget, with Notes and Research buttons on each row, is available on request.
 
 The skill runs these steps through `plugins/market-brief/skills/market-brief/scripts/mb.cjs`:
 

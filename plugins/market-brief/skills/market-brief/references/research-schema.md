@@ -1,6 +1,6 @@
 # Research file: `research-<scope>.json`
 
-Claude writes one file per scope after `mb.cjs evidence`. `mb.cjs validate` checks it, and the renderer builds notes from it. Market data is never written by the model: measured facts come from the scripts.
+Claude writes one file per scope after `mb.cjs evidence`, adding an entry for each row the user asked to research (deep dives can add rows to the same file later in the run). `mb.cjs validate` checks it, and the renderer builds notes from it. Market data is never written by the model: measured facts come from the scripts.
 
 ```json
 {
@@ -31,7 +31,7 @@ Claude writes one file per scope after `mb.cjs evidence`. `mb.cjs validate` chec
 
 ## Rules
 
-- One entry for every displayed (non-hidden) row; none for hidden rows.
+- One entry per researched row, for displayed (non-hidden) rows only. Rows without an entry are shown as "not researched". `mb validate --all` additionally requires every displayed row.
 - `field`: purpose, mechanics, provenance, supply, adoption, launch or risk.
 - `kind`:
   - `project_claim`: what the project's own site, docs, GitHub or listed X account says.

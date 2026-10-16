@@ -42,7 +42,7 @@ function buildDiscovery({scope, scopeCfg, config, pages, method, savedAt}) {
     if (page.checksum && fnv1a(slugs.join("\n")) !== page.checksum) problems.push(`page ${pageIndex + 1}: checksum mismatch (pool list was altered after extraction)`);
     if (!page.checksum) problems.push(`page ${pageIndex + 1}: missing checksum`);
     if (pageIndex === 0 && !sameUrl(page.url, scopeCfg.discoveryUrl)) problems.push(`page 1 URL differs from the configured discovery URL: ${page.url}`);
-    if (pageIndex === 0 && page.rankBy && page.rankBy !== config.filters.rankBy) problems.push(`page ranks by ${page.rankBy}, expected ${config.filters.rankBy}`);
+    if (pageIndex === 0 && page.rankBy && page.rankBy !== scopeCfg.filters.rankBy) problems.push(`page ranks by ${page.rankBy}, expected ${scopeCfg.filters.rankBy}`);
     if (Number.isFinite(page.rowCount) && page.rowCount !== slugs.length) problems.push(`page ${pageIndex + 1}: rowCount ${page.rowCount} != ${slugs.length} slugs`);
     for (const slug of slugs) {
       if (!pattern.test(slug)) { invalid.push(slug); continue; }

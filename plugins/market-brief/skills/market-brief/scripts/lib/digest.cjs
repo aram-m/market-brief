@@ -6,7 +6,7 @@ const {formatUsd, formatPercent} = require("./util.cjs");
 const PART_CHARS = 45000;
 
 // Local research worksheet, split into parts that fit one file read: measured facts plus the text each read returned. Not published.
-function researchDigest({scope, observations, evidence, measuredByToken, comparison, workTextDir, config}) {
+function researchDigest({scope, observations, evidence, measuredByToken, comparison, workTextDir, config, rowIds = null}) {
   const reads = new Map(evidence.reads.map(r => [r.id, r]));
   const out = [
     `# Research input — ${scope} — run ${observations.runId}`,
@@ -22,8 +22,10 @@ function researchDigest({scope, observations, evidence, measuredByToken, compari
   const header = out.join("\n");
   const sections = [];
   observations.rows.filter(r => !r.hidden).forEach((row, i) => {
-    const out = [];
+    if (rowIds && !rowIds.includes(row.id)) return;
     const info = evidence.byToken[row.id];
+    if (!info) return;
+    const out = [];
     out.push(`## ${i + 1}. ${row.name} (${row.symbol}) — ${row.id}`);
     out.push(`Dexscreener ${row.url} · 24h vol ${formatUsd(row.volume24h.value)} · liq ${formatUsd(row.liquidity.value)} · 24h ${formatPercent(row.change24h)} · ${row.valuation.metric || "valuation"} ${formatUsd(row.valuation.value)}`);
     out.push("Measured:");

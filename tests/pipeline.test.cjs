@@ -13,6 +13,7 @@ const {validateResearch, overviewStatus} = require(path.join(LIB, "research.cjs"
 const {measuredFacts} = require(path.join(LIB, "measured.cjs"));
 const {buildBrief, renderMarkdown, renderWidget} = require(path.join(LIB, "render.cjs"));
 const {extractPage} = require(path.join(LIB, "html-extract.cjs"));
+const {collectEvidence} = require(path.join(LIB, "evidence.cjs"));
 
 const FIX = path.join(__dirname, "fixtures", "2026-10-16");
 const config = cfg.loadConfig();
@@ -187,17 +188,35 @@ test("research validation rejects unreadable evidence, verified claims, pool-age
   assert.match(res, /no readable content/);
   assert.match(res, /verified needs a measured fact/);
   assert.match(res, /pool creation does not prove a launch/);
-  assert.match(res, /has no research entry/);
+  assert.doesNotMatch(res, /has no research entry/);
+  assert.match(validateResearch({research, observations: obs, evidence, measuredByToken, config, requireAll: true}).errors.join("\n"), /has no research entry/);
+});
+
+test("research on request: a single researched row validates and the rest are not researched", () => {
+  const {obs, evidence, research, measuredByToken} = researchFixture();
+  research.projects = research.projects.slice(0, 1);
+  const res = validateResearch({research, observations: obs, evidence, measuredByToken, config});
+  assert.deepEqual(res.errors, []);
+  assert.equal(res.researched, 1);
+  assert.equal(res.notResearched, obs.rows.filter(r => !r.hidden).length - 1);
+  const brief = buildBrief({scope: "rh", scopeCfg: config.scopes.rh, config, run: {runId: obs.runId, producer: "claude-test"}, observations: obs, evidence, research, comparison: null, measuredByToken});
+  const md = renderMarkdown(brief);
+  assert.match(md, /\| AI comment \|/);
+  assert.match(md, /not researched/);
+  assert.equal((md.match(/^- \*\*/gm) || []).length, 1);
+  assert.equal(brief.rows.filter(r => r.note.status === "not researched").length, brief.rows.length - 1);
 });
 
 test("markdown paginates at 12 rows and the widget is a fragment", () => {
   const {obs} = fixture("sol");
   const displayed = obs.rows.filter(r => !r.hidden);
   const measuredByToken = Object.fromEntries(displayed.map(r => [r.id, measuredFacts(r, {metricsAt: obs.metrics.window.to})]));
-  const brief = buildBrief({scope: "sol", scopeCfg: config.scopes.sol, config, run: {runId: "test-run", producer: "claude-test"}, observations: obs, evidence: null, research: null, comparison: null, measuredByToken, stage: "market"});
+  const brief = buildBrief({scope: "sol", scopeCfg: config.scopes.sol, config, run: {runId: "test-run", producer: "claude-test"}, observations: obs, evidence: null, research: null, comparison: null, measuredByToken});
   const md = renderMarkdown(brief);
   assert.match(md, /Page 2 of 2/);
-  assert.equal((md.match(/Research pending/g) || []).length, 19);
+  assert.doesNotMatch(md, /AI comment|Research pending|\*\*Notes\*\*/);
+  assert.match(md, /research <symbol>/);
+  assert.equal(brief.stage, "list");
   const widget = renderWidget(brief);
   assert.ok(!/<!doctype|<html|<body/i.test(widget));
   assert.ok(widget.includes("sendPrompt"));
@@ -209,4 +228,44 @@ test("HTML extraction keeps meta and og descriptions from JavaScript-only pages"
   assert.equal(page.ogDescription, "Future-proof store of value.");
   assert.equal(page.metaDescription, "Mine & stake");
   assert.equal(page.text, "");
+});
+
+test("each chain's filters match its discovery URL; Robinhood uses the $250K volume floor", () => {
+  for (const [scope, sc] of Object.entries(config.scopes)) {
+    const q = new URL(sc.discoveryUrl).searchParams;
+    assert.equal(q.get("rankBy"), sc.filters.rankBy, scope);
+    assert.equal(Number(q.get("minMarketCap")), sc.filters.minMarketCapUsd, scope);
+    assert.equal(Number(q.get("minAge")), sc.filters.minPoolAgeHours, scope);
+    assert.equal(Number(q.get("min24HVol")), sc.filters.minPool24hVolumeUsd, scope);
+    assert.equal(q.get("profile") === "1", sc.filters.profileRequired, scope);
+  }
+  assert.equal(config.scopes.rh.filters.minPool24hVolumeUsd, 250000);
+  assert.equal(config.scopes.sol.filters.minPool24hVolumeUsd, 1000000);
+});
+
+test("evidence for one row merges into earlier reads and skips rows already read", async () => {
+  const {obs} = fixture("rh");
+  const displayed = obs.rows.filter(r => !r.hidden);
+  const html = `<html><head><title>T</title><meta name="description" content="A project page"></head><body>${"word ".repeat(60)}</body></html>`;
+  const calls = [];
+  const fakeFetch = async (url, opts) => {
+    calls.push(url);
+    if (url.includes("rhj/assets")) return {ok: true, status: 200, headers: new Map(), json: async () => ({assets: []})};
+    return {ok: true, status: 200, url, headers: new Map([["content-type", "text/html"]]), body: null, text: async () => html};
+  };
+  const used = {};
+  const budget = {take(key, limit) { const max = limit !== undefined ? limit : config.budget[key]; if ((used[key] || 0) >= max) return false; used[key] = (used[key] || 0) + 1; return true; }};
+  const workTextDir = fs.mkdtempSync(path.join(require("node:os").tmpdir(), "mb-test-"));
+  const first = await collectEvidence({scope: "rh", config, observations: obs, budget, fetchImpl: fakeFetch, workTextDir, onlyIds: [displayed[0].id]});
+  assert.deepEqual(Object.keys(first.evidence.byToken), [displayed[0].id]);
+  assert.equal(first.evidence.chainRecord.id, "rh-REG");
+  const registryCalls = calls.filter(u => u.includes("rhj/assets")).length;
+  const second = await collectEvidence({scope: "rh", config, observations: obs, budget, fetchImpl: fakeFetch, workTextDir, onlyIds: [displayed[0].id, displayed[1].id], existing: first.evidence});
+  assert.deepEqual(second.newRowIds, [displayed[1].id]);
+  assert.deepEqual(second.skippedRowIds, [displayed[0].id]);
+  assert.equal(calls.filter(u => u.includes("rhj/assets")).length, registryCalls);
+  const ids = second.evidence.reads.map(r => r.id);
+  assert.equal(new Set(ids).size, ids.length);
+  assert.ok(second.evidence.reads.filter(r => r.tokenId === displayed[0].id).length >= 1);
+  fs.rmSync(workTextDir, {recursive: true, force: true});
 });

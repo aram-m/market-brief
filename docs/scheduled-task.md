@@ -1,4 +1,4 @@
-# Daily schedule (prepared, not active)
+# Daily schedule
 
 The brief runs as a Claude Desktop scheduled task on the Mac. Discovery uses Claude's built-in browser, one fresh load per page (Dexscreener challenges plain HTTP; the built-in browser passed on first loads but was challenged after repeated loads on 16 Oct 2026). There is no cloud routine.
 
@@ -7,21 +7,24 @@ The brief runs as a Claude Desktop scheduled task on the Mac. Discovery uses Cla
 | Name | Daily Market Brief (Claude) |
 | When | Every day at 11:00 Asia/Yerevan (07:00 UTC). Desktop starts tasks a few minutes after the set time. |
 | Folder | `~/Desktop/projects/market-brief` |
-| Needs | Mac awake, Claude Desktop open, `market-brief-data/` checked out on the `reports` branch, git push access to `aram-m/market-brief` |
-| Status | **Not active.** Create it only after the publish step is approved. |
+| Needs | Mac awake and Claude Desktop open at 11:00; `market-brief-data/` checked out on the `reports` branch |
+| Status | **Active** as `market-brief-daily` (created 16 Oct 2026): list only, saved locally, no push. |
 
-Before you activate it, pause the Codex `daily-market-brief` automation (also 11:00) yourself, so both don't load Dexscreener at the same time.
+The Codex `daily-market-brief` automation is no longer present, so only this task loads Dexscreener at 11:00.
 
-## Prompt
+## Prompt (summary of the live task)
 
 ```text
-Run the market-brief skill for the daily brief (both scopes: sol and rh) in this folder.
-Data folder: ./market-brief-data (the reports branch worktree). Use Claude's built-in browser for discovery, one load per page; if it shows a challenge, record discovery as blocked for that scope and do not switch browsers or click the challenge.
-Follow the skill's steps 1-8 exactly: market tables first, then research, validation, the final Markdown briefs and the widgets.
-Publish: in ./market-brief-data, commit only the new run folder (never work/) with the message "brief: <runId>" and push the reports branch. If the push fails, say so; do not retry with other credentials.
-Finish with one line per scope: discovery status, displayed tokens, research complete/partial/incomplete.
+Run the market-brief skill for both scopes (sol and rh) as a LIST ONLY, saved locally.
+Data folder: ./market-brief-data (the reports branch worktree).
+Follow SKILL.md steps 1, 2 and 3, then step 8 (finalize). Skip the deep-dive steps 4-7 and step 9 (publish).
+Discovery: Claude's built-in browser, one load per page; if it shows a challenge, record discovery as blocked for that scope and do not click it or switch browsers.
+Show each brief-<scope>.md, end with the "reply research <symbol>" line and the disclaimer.
+Do not run evidence or web reads, commit, push, change schedules, config, preferences or filters, or place trades.
 ```
 
-## Activating
+To publish each run, add a step: in ./market-brief-data, commit only the new run folder (never work/) and push the reports branch.
 
-Activate it from Claude Desktop (Schedule, then New task), or ask Claude in this folder to create the scheduled task from the prompt above. Use the run-once option to test it before relying on the schedule. The task appears under Scheduled in the sidebar.
+## Changing it
+
+Edit or pause it from Claude Desktop (Scheduled in the sidebar), or ask Claude in this folder to update `market-brief-daily`. Use Run now to test a change before the next 11:00 run.

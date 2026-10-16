@@ -41,7 +41,7 @@ function buildBrief({scope, scopeCfg, config, run, observations, evidence, resea
     const project = projects.get(row.id);
     const measured = measuredByToken[row.id] || [];
     const flag = row.flags.find(f => f.code === "mcapExceedsFdv");
-    const status = stage === "final" ? overviewStatus(project) : "pending";
+    const status = project ? overviewStatus(project) : "not researched";
     const claims = (project && project.claims || []).map(c => ({field: c.field, kind: c.kind, status: c.status, text: c.text, sources: sourcesFor(c.evidence, evidence, research, row)}));
     const aiRefs = project && project.aiView ? project.aiView.basedOn : [];
     return {
@@ -56,7 +56,8 @@ function buildBrief({scope, scopeCfg, config, run, observations, evidence, resea
       change24h: {value: row.change24h, text: formatPercent(row.change24h)},
       price: {value: row.price, text: formatPrice(row.price)},
       pools: row.pools.length,
-      comment: stage === "final" ? (project && project.aiView ? project.aiView.text : "Research missing") : "Research pending",
+      researched: !!project,
+      comment: project && project.aiView ? project.aiView.text : null,
       note: {
         status,
         launchLabel: project && project.launch ? project.launch.label || null : null,
@@ -68,10 +69,11 @@ function buildBrief({scope, scopeCfg, config, run, observations, evidence, resea
     };
   });
   const statuses = rows.map(r => r.note.status);
+  const researched = rows.filter(r => r.researched).length;
   return {
     schemaVersion: config.schemaVersion,
     scope,
-    stage,
+    stage: researched ? "researched" : "list",
     title: `${scopeCfg.label} market brief`,
     chainLabel: scopeCfg.label,
     runId: run.runId,
@@ -84,7 +86,7 @@ function buildBrief({scope, scopeCfg, config, run, observations, evidence, resea
     dateLabel: formatLocalDate(observations.metrics.window.to || observations.discoveryAt, tz),
     timeLabels: {discovery: formatLocalTime(observations.discoveryAt, tz), metrics: formatLocalTime(observations.metrics.window.to, tz), research: research && research.researchCompletedAt ? formatLocalTime(research.researchCompletedAt, tz) : null},
     coverage: {displayed: rows.length, hidden: observations.counts.hiddenTokens, discoveredPools: observations.counts.discoveredPools, resolvedPools: observations.counts.resolvedPools, marketStatus: observations.marketStatus},
-    research: stage === "final" ? {complete: statuses.filter(s => s === "complete").length, partial: statuses.filter(s => s === "partial").length, incomplete: statuses.filter(s => s === "incomplete").length} : null,
+    research: {researched, complete: statuses.filter(s => s === "complete").length, partial: statuses.filter(s => s === "partial").length, incomplete: statuses.filter(s => s === "incomplete").length, notResearched: rows.length - researched},
     comparison: comparison ? {prior: comparison.prior, newlySurfaced: comparison.newlySurfaced, noLongerQualifying: comparison.noLongerQualifying, reason: comparison.reason || null} : null,
     materialLabels: labels,
     pageSize: config.pageSize,
@@ -107,7 +109,7 @@ function headerLine(brief) {
 function renderMarkdown(brief) {
   const lines = [headerLine(brief)];
   for (const l of brief.materialLabels) lines.push(`> ${l}`);
-  if (brief.comparison && brief.comparison.prior && brief.stage === "final") {
+  if (brief.comparison && brief.comparison.prior) {
     const c = brief.comparison;
     const fmt = list => list.map(x => x.symbol || x.name).join(", ") || "none";
     lines.push(`Since ${c.prior.observedAt.slice(0, 10)} scan: new ${fmt(c.newlySurfaced)}; dropped ${fmt(c.noLongerQualifying)}.`);
@@ -117,14 +119,15 @@ function renderMarkdown(brief) {
     const slice = brief.rows.slice(p * brief.pageSize, (p + 1) * brief.pageSize);
     lines.push("");
     if (pages > 1) lines.push(`Page ${p + 1} of ${pages}`, "");
-    lines.push("| # | Token | Mcap | 24h vol | Liquidity | 24h | Pools | AI comment |", "|--:|---|--:|--:|--:|--:|--:|---|");
+    const withComment = brief.research.researched > 0;
+    lines.push(`| # | Token | Mcap | 24h vol | Liquidity | 24h | Pools |${withComment ? " AI comment |" : ""}`, `|--:|---|--:|--:|--:|--:|--:|${withComment ? "---|" : ""}`);
     for (const r of slice) {
-      lines.push(`| ${r.rank} | [${mdCell(r.name)}](${r.url}) ${mdCell(r.symbol)} | ${mdCell(metricText(r.valuation))} | ${mdCell(metricText(r.volume24h))} | ${mdCell(metricText(r.liquidity))} | ${r.change24h.text} | ${r.pools} | ${mdCell(r.comment)} |`);
+      lines.push(`| ${r.rank} | [${mdCell(r.name)}](${r.url}) ${mdCell(r.symbol)} | ${mdCell(metricText(r.valuation))} | ${mdCell(metricText(r.volume24h))} | ${mdCell(metricText(r.liquidity))} | ${r.change24h.text} | ${r.pools} |${withComment ? ` ${mdCell(r.comment || "not researched")} |` : ""}`);
     }
   }
-  if (brief.stage === "final") {
+  if (brief.research.researched > 0) {
     lines.push("", "**Notes**");
-    for (const r of brief.rows) {
+    for (const r of brief.rows.filter(x => x.researched)) {
       const own = r.note.claims.filter(c => c.kind === "project_claim").slice(0, 2).map(c => c.text);
       const third = r.note.claims.filter(c => c.kind === "third_party").slice(0, 1).map(c => `third party: ${c.text}`);
       const bits = [];
@@ -137,6 +140,7 @@ function renderMarkdown(brief) {
       lines.push(`- **${mdCell(r.name)}** (${r.note.status}) — ${bits.join(" · ") || "No project-controlled evidence this run."}`);
     }
   }
+  if (brief.research.notResearched > 0) lines.push("", "Reply `research <symbol>` (or the contract) for a deep dive on any row.");
   lines.push("", `_${brief.disclaimer}_`);
   return lines.join("\n") + "\n";
 }
@@ -171,7 +175,7 @@ function lb(t){return t?' <span class="lbl">'+e(t)+'</span>':''}
 function row(r,i){return '<tr><td class="n">'+(i+1)+'</td><td class="tk"><a href="'+e(r.u)+'" target="_blank" rel="noopener">'+e(r.n)+'</a> <span class="sym">'+e(r.y)+'</span></td><td class="n">'+e(r.v)+lb(r.vl)+'</td><td class="n">'+e(r.o)+lb(r.ol)+'</td><td class="n">'+e(r.l)+lb(r.ll)+'</td><td class="n '+(r.cv>0?'up':r.cv<0?'dn':'')+'">'+e(r.c)+'</td><td class="n">'+r.p+'</td><td class="act"><button type="button" data-notes="'+i+'">Notes</button></td></tr>'}
 function src(a){return a.map(function(x){return '<a href="'+e(x[1])+'" target="_blank" rel="noopener">'+e(x[0])+'</a>'}).join(', ')}
 function ul(a,f){return '<ul>'+a.map(f).join('')+'</ul>'}
-function notes(r,i){var h='<div class="nt"><p class="muted">Overview '+e(r.st==='pending'?'research pending':r.st)+(r.la?' · '+e(r.la):'')+'</p>';
+function notes(r,i){var h='<div class="nt"><p class="muted">'+(r.st==='not researched'?'Not researched yet':'Overview '+e(r.st))+(r.la?' · '+e(r.la):'')+'</p>';
 if(r.k.length){h+='<p class="hd">Project says</p>'+ul(r.k,function(c){return '<li>'+(c[0]?'<span class="muted">Third party: </span>':'')+e(c[1])+(c[2]?' <span class="lbl">verified</span>':'')+(c[3].length?' <span class="muted">('+src(c[3])+')</span>':'')+'</li>'})}
 if(r.m.length){h+='<p class="hd">Measured</p>'+ul(r.m,function(m){return '<li>'+e(m)+'</li>'})}
 if(r.a){h+='<p class="hd">AI view</p><p>'+e(r.a)+'</p>'}

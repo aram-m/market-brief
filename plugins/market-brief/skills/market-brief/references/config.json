@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "skillVersion": "0.1.0",
+  "skillVersion": "0.2.0",
   "timezone": "Asia/Yerevan",
   "pageSize": 12,
   "producer": "claude-local",
@@ -15,6 +15,7 @@
     ],
     "note": "One fresh load per page per run. A run that meets a Cloudflare challenge records discovery as blocked; never click or solve it, never switch browsers automatically. Name claude-in-chrome in the invocation to use your own Chrome profile instead."
   },
+  "filtersNote": "Each scope's filters must match its discoveryUrl (tests check this). The Dexscreener page applies them; scripts re-check them at metric time and record failures, never filtering rows.",
   "scopes": {
     "sol": {
       "chain": "solana",
@@ -22,24 +23,31 @@
       "caseSensitive": true,
       "discoveryUrl": "https://dexscreener.com/solana?rankBy=trendingScoreH6&order=desc&minMarketCap=1000000&minAge=72&min24HVol=1000000&profile=1",
       "pairSlugPattern": "^[1-9A-Za-z]{32,48}$",
-      "explorerTokenUrl": "https://solscan.io/token/{address}"
+      "explorerTokenUrl": "https://solscan.io/token/{address}",
+      "filters": {
+        "rankBy": "trendingScoreH6",
+        "minMarketCapUsd": 1000000,
+        "minPoolAgeHours": 72,
+        "minPool24hVolumeUsd": 1000000,
+        "profileRequired": true
+      }
     },
     "rh": {
       "chain": "robinhood",
       "label": "Robinhood",
       "caseSensitive": false,
-      "discoveryUrl": "https://dexscreener.com/robinhood?rankBy=trendingScoreH6&order=desc&minMarketCap=1000000&minAge=72&min24HVol=1000000&profile=1",
+      "discoveryUrl": "https://dexscreener.com/robinhood?rankBy=trendingScoreH6&order=desc&minMarketCap=1000000&minAge=72&min24HVol=250000&profile=1",
       "pairSlugPattern": "^0x([0-9a-fA-F]{40}|[0-9a-fA-F]{64})$",
-      "explorerTokenUrl": null
+      "explorerTokenUrl": null,
+      "filters": {
+        "rankBy": "trendingScoreH6",
+        "minMarketCapUsd": 1000000,
+        "minPoolAgeHours": 72,
+        "minPool24hVolumeUsd": 250000,
+        "profileRequired": true
+      },
+      "filtersChanged": "2026-10-16: pool 24h volume floor lowered from $1M to $250K at the user's request (Robinhood volume is split across many small pools). Solana unchanged."
     }
-  },
-  "filters": {
-    "rankBy": "trendingScoreH6",
-    "minMarketCapUsd": 1000000,
-    "minPoolAgeHours": 72,
-    "minPool24hVolumeUsd": 1000000,
-    "profileRequired": true,
-    "note": "Applied by the Dexscreener discovery page. Scripts re-check them at metric time and record failures; they never filter rows."
   },
   "dexscreener": {
     "pairsEndpoint": "https://api.dexscreener.com/latest/dex/pairs/{chain}/{addresses}",

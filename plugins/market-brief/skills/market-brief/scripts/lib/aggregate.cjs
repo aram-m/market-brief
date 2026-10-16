@@ -150,7 +150,7 @@ function aggregate({scope, scopeCfg, config, discovery, requests, responses, exc
   rows.sort(compareRows);
   const recheck = [];
   if (metricsAt) for (const row of rows) for (const pool of row.pools) {
-    const failed = filterRecheck(pool, config.filters, metricsAt);
+    const failed = filterRecheck(pool, scopeCfg.filters, metricsAt);
     if (failed.length) recheck.push({tokenId: row.id, pairAddress: pool.pairAddress, failed});
   }
   const failedRequests = requests.filter(r => !r.ok).map(r => ({url: r.url, attempt: r.attempt, error: r.error, addresses: r.addresses ? r.addresses.length : 0}));
@@ -163,6 +163,7 @@ function aggregate({scope, scopeCfg, config, discovery, requests, responses, exc
     runId,
     producer,
     discoveryUrl: discovery.discoveryUrl,
+    filters: scopeCfg.filters,
     discoveryAt: discovery.observedAt,
     discoveryStatus: discovery.status,
     metrics: {

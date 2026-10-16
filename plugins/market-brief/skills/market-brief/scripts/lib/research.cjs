@@ -14,8 +14,9 @@ function overviewStatus(project) {
   return "incomplete";
 }
 
-// Checks that every displayed row has research grounded in this run's evidence, measured facts or web reads.
-function validateResearch({research, observations, evidence, measuredByToken, config}) {
+// Checks that researched rows are grounded in this run's evidence, measured facts or web reads.
+// Research is on request, so rows without an entry are allowed unless requireAll is set.
+function validateResearch({research, observations, evidence, measuredByToken, config, requireAll = false}) {
   const errors = [];
   const warnings = [];
   const err = (id, msg) => errors.push(id ? `${id}: ${msg}` : msg);
@@ -109,8 +110,9 @@ function validateResearch({research, observations, evidence, measuredByToken, co
     if (status !== "complete" && !(p.gaps || []).length) err(id, `overview is ${status}; list the missing evidence in gaps[]`);
     for (const g of p.gaps || []) if (!g.what || !g.reason) err(id, "each gap needs what and reason");
   }
-  for (const row of displayed) if (!seen.has(row.id)) err(row.id, "displayed row has no research entry");
-  return {errors, warnings, statusByToken};
+  const notResearched = displayed.filter(row => !seen.has(row.id)).map(row => row.id);
+  if (requireAll) for (const id of notResearched) err(id, "displayed row has no research entry");
+  return {errors, warnings, statusByToken, researched: seen.size, notResearched: notResearched.length};
 }
 
 module.exports = {validateResearch, overviewStatus};

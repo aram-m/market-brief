@@ -21,10 +21,10 @@ const USAGE = `Market Brief pipeline (Node ${">="}18, no dependencies)
   mb.cjs new-run [--data DIR] [--label daily] [--scopes sol,rh]
   mb.cjs discovery-script                            print the browser extraction script
   mb.cjs save-discovery --run DIR --scope sol --input FILE [--method NAME]
-  mb.cjs collect --run DIR [--scope sol|rh|both]     pair API metrics, aggregation, comparison, market-stage brief
-  mb.cjs evidence --run DIR [--scope ...]            primary reads and chain facts for displayed rows
-  mb.cjs validate --run DIR [--scope ...]            check research-<scope>.json against this run's evidence
-  mb.cjs render --run DIR [--scope ...] [--stage market|final]
+  mb.cjs collect --run DIR [--scope sol|rh|both]     pair API metrics, aggregation, comparison, list brief
+  mb.cjs evidence --run DIR [--scope ...] [--id SYMBOL|ID,...]   primary reads and chain facts; --id for a deep dive on chosen rows
+  mb.cjs validate --run DIR [--scope ...] [--all]    check research-<scope>.json; --all requires every displayed row
+  mb.cjs render --run DIR [--scope ...]              Markdown, widget and HTML from observations plus any research
   mb.cjs finalize --run DIR                          coverage.json and README.md
   mb.cjs aggregate --run DIR --scope sol             recompute observations from saved raw responses
 
@@ -188,14 +188,31 @@ const commands = {
     const budget = cfg.openBudget(runDir, config);
     const results = [];
     for (const scope of scopesFor(args, run, config)) {
-      const {p, observations, comparison} = loadScope(runDir, scope);
+      const {p, observations, evidence: existing, comparison} = loadScope(runDir, scope);
       if (!observations) { results.push({scope, skipped: "no observations"}); continue; }
-      const {evidence} = await collectEvidence({scope, config, observations, budget, workTextDir: p.workText});
-      util.writeJson(p.evidence, evidence);
-      const measured = measuredMap(observations, evidence, comparison, config);
-      const parts = researchDigest({scope, observations, evidence, measuredByToken: measured, comparison, workTextDir: p.workText, config});
-      const digestParts = parts.map((text, i) => util.writeText(p.digest.replace(/\.md$/, `-${i + 1}.md`), text));
-      results.push({scope, counts: evidence.counts, chainRead: evidence.chainRecord ? {id: evidence.chainRecord.id, ok: evidence.chainRecord.ok, reason: evidence.chainRecord.failureReason || null} : null, digestParts, writeResearchTo: p.research});
+      const displayed = observations.rows.filter(r => !r.hidden);
+      let onlyIds = null;
+      if (args.id) {
+        const wanted = String(args.id).split(",").map(x => x.trim()).filter(Boolean);
+        const unknown = [];
+        onlyIds = [];
+        for (const w of wanted) {
+          const hit = displayed.filter(r => r.id === w || r.address.toLowerCase() === w.toLowerCase() || r.id.toLowerCase() === w.toLowerCase() || (r.symbol || "").toLowerCase() === w.toLowerCase());
+          if (hit.length === 1) onlyIds.push(hit[0].id);
+          else if (hit.length > 1) unknown.push(`${w} (ambiguous: ${hit.map(h => h.id).join(", ")})`);
+          else if (args.scope) unknown.push(w);
+        }
+        if (unknown.length) fail(`${scope}: no single displayed row matches ${unknown.join("; ")}`);
+        if (!onlyIds.length) { results.push({scope, skipped: "no requested row in this scope"}); continue; }
+      }
+      const got = await collectEvidence({scope, config, observations, budget, workTextDir: p.workText, onlyIds, existing});
+      util.writeJson(p.evidence, got.evidence);
+      const measured = measuredMap(observations, got.evidence, comparison, config);
+      const rowIds = onlyIds || null;
+      const tag = onlyIds ? `-${onlyIds.map(id => (displayed.find(r => r.id === id).symbol || "row").replace(/[^a-z0-9]/gi, "")).join("-").slice(0, 40)}` : "";
+      const parts = researchDigest({scope, observations, evidence: got.evidence, measuredByToken: measured, comparison, workTextDir: p.workText, config, rowIds});
+      const digestParts = parts.map((text, i) => util.writeText(p.digest.replace(/\.md$/, `${tag}-${i + 1}.md`), text));
+      results.push({scope, rowsReadNow: got.newRowIds.length, alreadyRead: got.skippedRowIds.length, counts: got.evidence.counts, chainRead: got.evidence.chainRecord ? {id: got.evidence.chainRecord.id, ok: got.evidence.chainRecord.ok, reason: got.evidence.chainRecord.failureReason || null} : null, digestParts, writeResearchTo: p.research});
     }
     out({runDir, results});
   },
@@ -207,10 +224,10 @@ const commands = {
     for (const scope of scopesFor(args, run, config)) {
       const {p, observations, evidence, research, comparison} = loadScope(runDir, scope);
       if (!observations) { results.push({scope, skipped: "no observations"}); continue; }
-      if (!research) { failed = true; results.push({scope, errors: [`missing ${p.research}`]}); continue; }
-      const res = validateResearch({research, observations, evidence: evidence || {reads: []}, measuredByToken: measuredMap(observations, evidence, comparison, config), config});
+      if (!research) { results.push({scope, skipped: "no research file (list only)"}); continue; }
+      const res = validateResearch({research, observations, evidence: evidence || {reads: []}, measuredByToken: measuredMap(observations, evidence, comparison, config), config, requireAll: !!args.all});
       if (res.errors.length) failed = true;
-      results.push({scope, errors: res.errors, warnings: res.warnings, statusByToken: res.statusByToken});
+      results.push({scope, errors: res.errors, warnings: res.warnings, researched: res.researched, notResearched: res.notResearched, statusByToken: res.statusByToken});
     }
     out({runDir, ok: !failed, results});
     if (failed) process.exitCode = 1;
