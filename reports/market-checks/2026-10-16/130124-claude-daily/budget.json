@@ -1,0 +1,18 @@
+{
+  "limits": {
+    "discoveryPageLoadsPerScope": 1,
+    "extraDiscoveryPageIfFull": true,
+    "fullPageRows": 100,
+    "pairCallsPerRun": 10,
+    "retriesPerCall": 2,
+    "researchReadsPerProject": 3,
+    "xReadsPerProject": 1,
+    "solanaRpcCallsPerRun": 1,
+    "robinhoodRegistryReadsPerRun": 1,
+    "webSearchesPerIncompleteRow": 1
+  },
+  "used": {
+    "discoveryPageLoads:sol": 1,
+    "discoveryPageLoads:rh": 1
+  }
+}

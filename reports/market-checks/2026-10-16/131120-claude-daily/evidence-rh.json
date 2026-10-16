@@ -1,0 +1,603 @@
+{
+  "schemaVersion": 1,
+  "scope": "rh",
+  "runId": "2026-10-16T131120-claude-daily",
+  "collectedAt": "2026-10-16T09:13:16.997Z",
+  "excerptPolicy": "Saved excerpts are limited to 500 characters; fuller text stays in the local work/ folder and is not published.",
+  "reads": [
+    {
+      "id": "rh-E1",
+      "tokenId": "robinhood:0x39dbed3a2bd333467115de45665cc57f813c4571",
+      "kind": "website",
+      "url": "https://ponsfamily.com/launchpad",
+      "method": "http",
+      "listedInProfile": true,
+      "observedAt": "2026-10-16T09:13:12.890Z",
+      "status": 200,
+      "finalUrl": "https://ponsfamily.com/launchpad",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 445118,
+      "truncated": false,
+      "title": "Pons | Token launchpad on Robinhood Chain",
+      "metaDescription": "Every token launched on Robinhood Chain, live. Browse new launches, the ones about to graduate, and the largest by market cap, then trade them on the curve or launch your own in two steps.",
+      "ogTitle": "Pons | Token launchpad on Robinhood Chain",
+      "ogDescription": "Every token launched on Robinhood Chain, live. New, graduating, graduated, and the largest by market cap.",
+      "twitterDescription": "Pons is the token launchpad on Robinhood Chain. Launch a token in two steps, trade it on a bonding curve, and follow every launch as it raises, graduates, and lists.",
+      "jsonLd": [
+        "Pons is the token launchpad on Robinhood Chain. Launch a token in two steps, trade it on a bonding curve, and follow every launch as it raises, graduates, and lists."
+      ],
+      "hasNextData": true,
+      "textChars": 6123,
+      "excerpt": "Pons / Create a token Launches PLP Analytics Theme Sign in Launches Launchpad Create a token Launches PLP Analytics Profile Resources Docs Support Builders Explorer PONS token Updates on X GitHub Legal Terms of Use Privacy Policy MiCA Whitepaper Takedown Requests Law Enforcement Requests © 2026 Pons Labs, LLC. All rights reserved. Pons is a noncustodial software interface operated by Pons Labs, LLC. Pons does not hold your assets or keys, does not execute or reverse transactions, and is not a ba",
+      "addressOnPage": true,
+      "readable": true,
+      "ok": true
+    },
+    {
+      "id": "rh-E2",
+      "tokenId": "robinhood:0x39dbed3a2bd333467115de45665cc57f813c4571",
+      "kind": "x",
+      "url": "https://x.com/ponsdotfamily",
+      "method": "http",
+      "listedInProfile": true,
+      "observedAt": "2026-10-16T09:13:12.891Z",
+      "status": 200,
+      "finalUrl": "https://x.com/ponsdotfamily",
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 162003,
+      "truncated": false,
+      "title": "Pons (@ponsdotfamily) / X",
+      "metaDescription": "Launch coins on Robinhood via https://t.co/GHMbQqQvUz",
+      "ogTitle": "Pons (@ponsdotfamily) on X",
+      "ogDescription": "Launch coins on Robinhood via https://t.co/GHMbQqQvUz",
+      "twitterDescription": "Launch coins on Robinhood via https://t.co/GHMbQqQvUz",
+      "jsonLd": [],
+      "hasNextData": false,
+      "textChars": 1401,
+      "excerpt": "Log in Sign up Log in Sign up Pons 363 posts Pons @ponsdotfamily Launch coins on Robinhood via ponsfamily.com/launchpad ponsfamily.com/launchpad Joined July 2026 6 Following 92.5K Followers Mention Follow Posts Posts Replies Replies Reposts Reposts Media Media Articles Articles Log in or sign up for X See what’s happening and join the conversation Continue with phone Continue with Apple Continue with Google or Log in with username or email Terms · Privacy · Cookies · Accessibility · Ads Info · M",
+      "addressOnPage": false,
+      "readable": true,
+      "ok": true
+    },
+    {
+      "id": "rh-E3",
+      "tokenId": "robinhood:0x020bfc650a365f8bb26819deaabf3e21291018b4",
+      "kind": "website",
+      "url": "https://cashcat.cc/",
+      "method": "http",
+      "listedInProfile": true,
+      "observedAt": "2026-10-16T09:13:12.892Z",
+      "status": 200,
+      "finalUrl": "https://cashcat.cc/",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 81989,
+      "truncated": false,
+      "title": "$CASHCAT — They Called It Cash Cat First",
+      "metaDescription": "Robinhood was originally called Cash Cat. $CASHCAT is the memecoin honoring the original name, native to the Robinhood chain.",
+      "ogTitle": "$CASHCAT — They Called It Cash Cat First",
+      "ogDescription": "Robinhood was originally called Cash Cat. $CASHCAT is the memecoin honoring the original name, native to the Robinhood chain.",
+      "twitterDescription": "Robinhood was originally called Cash Cat. $CASHCAT is the memecoin honoring the original name, native to the Robinhood chain.",
+      "jsonLd": [],
+      "hasNextData": true,
+      "textChars": 3476,
+      "excerpt": "Lore Exchanges Socials CASHCAT Memes letscash.fun PFP Gen Lore Exchanges Socials Memes letscash.fun PFP Gen They called it Cash Cat first. Now available on robinhood's original name was cash cat $cashcat robinhood's original name was cash cat $cashcat robinhood's original name was cash cat $cashcat robinhood's original name was cash cat $cashcat robinhood's original name was cash cat $cashcat robinhood's original name was cash cat $cashcat robinhood's original name was cash cat $cashcat robinhoo",
+      "addressOnPage": true,
+      "readable": true,
+      "ok": true
+    },
+    {
+      "id": "rh-E4",
+      "tokenId": "robinhood:0x020bfc650a365f8bb26819deaabf3e21291018b4",
+      "kind": "website",
+      "url": "https://letscash.fun/",
+      "method": "http",
+      "listedInProfile": true,
+      "observedAt": "2026-10-16T09:13:12.892Z",
+      "status": 200,
+      "finalUrl": "https://www.letscash.fun/",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 58755,
+      "truncated": false,
+      "title": "letscash.fun: launch and trade memecoins on Robinhood Chain",
+      "metaDescription": "Launch a memecoin in one transaction. Price it in ETH or USDG, set your own tax, pay yourself, split it, or burn it back into the coin. The pool is seeded and the liquidity is locked forever.",
+      "ogTitle": "letscash.fun: launch and trade memecoins on Robinhood Chain",
+      "ogDescription": "Launch a memecoin in one transaction. Price it in ETH or USDG, set your own tax, pay yourself, split it, or burn it back into the coin. The pool is seeded and the liquidity is locked forever.",
+      "twitterDescription": "Launch a memecoin in one transaction. Price it in ETH or USDG, set your own tax, pay yourself, split it, or burn it back into the coin. The pool is seeded and the liquidity is locked forever.",
+      "jsonLd": [
+        "Launch and trade memecoins on Robinhood Chain."
+      ],
+      "hasNextData": true,
+      "textChars": 1519,
+      "excerpt": "▲ NETWORK · ROBINHOOD CHAIN NODES ARE DEGRADED Your coins, your pools and your balances are untouched, and nothing on chain has been lost. The nodes we read Robinhood Chain through are slow and dropping requests at the moment, so pages may load short or empty, figures may lag behind, and a trade, claim or launch may fail to send. Anything that fails to send did not happen, so wait a moment and try it again. Normal service as soon as the nodes recover. letscash .fun Robinhood Chain Board Profile ",
+      "addressOnPage": false,
+      "readable": true,
+      "ok": true
+    },
+    {
+      "id": "rh-E5",
+      "tokenId": "robinhood:0x020bfc650a365f8bb26819deaabf3e21291018b4",
+      "kind": "x",
+      "url": "https://x.com/cashcat_token",
+      "method": "http",
+      "listedInProfile": true,
+      "observedAt": "2026-10-16T09:13:12.893Z",
+      "status": 200,
+      "finalUrl": "https://x.com/cashcat_token",
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 169758,
+      "truncated": false,
+      "title": "Cash Cat (@cashcat_token) / X",
+      "metaDescription": "Robinhood original name was Cash Cat.",
+      "ogTitle": "Cash Cat (@cashcat_token) on X",
+      "ogDescription": "Robinhood original name was Cash Cat.",
+      "twitterDescription": "Robinhood original name was Cash Cat.",
+      "jsonLd": [],
+      "hasNextData": false,
+      "textChars": 1464,
+      "excerpt": "Log in Sign up Log in Sign up Cash Cat 874 posts Cash Cat @cashcat_token Robinhood original name was Cash Cat. Robinhood Chain cashcattoken.xyz Joined June 2026 12 Following 26.3K Followers Mention Follow Posts Posts Replies Replies Reposts Reposts Media Media Articles Articles Log in or sign up for X See what’s happening and join the conversation Continue with phone Continue with Apple Continue with Google or Log in with username or email Terms · Privacy · Cookies · Accessibility · Ads Info · M",
+      "addressOnPage": false,
+      "readable": true,
+      "ok": true
+    },
+    {
+      "id": "rh-E6",
+      "tokenId": "robinhood:0x2e8c31162b855a2ffa90f6f8634643ad6f111e18",
+      "kind": "website",
+      "url": "https://artificialinu.com/",
+      "method": "http",
+      "listedInProfile": true,
+      "observedAt": "2026-10-16T09:13:12.893Z",
+      "status": 200,
+      "finalUrl": "https://artificialinu.com/",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 189276,
+      "truncated": false,
+      "title": "Artificial Inu | The onchain $NVDA community",
+      "metaDescription": "$AI is paired with tokenized $NVDA. Every trade feeds the Vault, and every fee is burned or locked forever.",
+      "ogTitle": "Artificial Inu | The onchain $NVDA community",
+      "ogDescription": "$AI is paired with tokenized $NVDA. Every trade feeds the Vault, and every fee is burned or locked forever.",
+      "twitterDescription": "$AI is paired with tokenized $NVDA. Every trade feeds the Vault, and every fee is burned or locked forever.",
+      "jsonLd": [],
+      "hasNextData": true,
+      "textChars": 2155,
+      "excerpt": "ARTIFICIAL INU Long compute $NVDA $226.34 Home Vault How It Works Memes Trade $AI The onchain $NVDA community. $AI is paired with tokenized $NVDA. Every trade feeds the Vault, and every fee is burned or locked forever. The dog is long compute. Trade $AI How It Works Memes Dexscreener CA 0x2e8c31…111e18 Copy NVDA 0xd0601c…0d9eec Copy $AI × $NVDA VAULT GROWS ON EVERY TRADE FEES BURNED OR LOCKED LONG COMPUTE $AI × $NVDA VAULT GROWS ON EVERY TRADE FEES BURNED OR LOCKED LONG COMPUTE $AI × $NVDA VAULT",
+      "addressOnPage": true,
+      "readable": true,
+      "ok": true
+    },
+    {
+      "id": "rh-E7",
+      "tokenId": "robinhood:0x2e8c31162b855a2ffa90f6f8634643ad6f111e18",
+      "kind": "x",
+      "url": "https://x.com/artificiallyinu",
+      "method": "http",
+      "listedInProfile": true,
+      "observedAt": "2026-10-16T09:13:13.322Z",
+      "status": 200,
+      "finalUrl": "https://x.com/artificiallyinu",
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 240723,
+      "truncated": false,
+      "title": "Artificial Inu (@ArtificiallyInu) / X",
+      "metaDescription": "The ticker is $AI (Artificial Inu) $AI is paired to NVIDIA - AI/NVDA",
+      "ogTitle": "Artificial Inu (@ArtificiallyInu) on X",
+      "ogDescription": "The ticker is $AI (Artificial Inu) $AI is paired to NVIDIA - AI/NVDA",
+      "twitterDescription": "The ticker is $AI (Artificial Inu) $AI is paired to NVIDIA - AI/NVDA",
+      "jsonLd": [],
+      "hasNextData": false,
+      "textChars": 1512,
+      "excerpt": "Log in Sign up Log in Sign up Artificial Inu 2,475 posts Artificial Inu @ArtificiallyInu The ticker is $AI (Artificial Inu) $AI is paired to NVIDIA - AI/NVDA Robinhood Chain artificialinu.com Joined July 2026 189 Following 16K Followers Mention Follow Posts Posts Replies Replies Reposts Reposts Media Media Articles Articles Log in or sign up for X See what’s happening and join the conversation Continue with phone Continue with Apple Continue with Google or Log in with username or email Terms · P",
+      "addressOnPage": true,
+      "readable": true,
+      "ok": true
+    },
+    {
+      "id": "rh-E8",
+      "tokenId": "robinhood:0x94641b97010608c3827fb058074889f19868ff33",
+      "kind": "x",
+      "url": "https://x.com/1commandervrax",
+      "method": "http",
+      "listedInProfile": true,
+      "observedAt": "2026-10-16T09:13:13.472Z",
+      "status": 200,
+      "finalUrl": "https://x.com/1commandervrax",
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 127940,
+      "truncated": false,
+      "title": "Commander Vrax Parody (@1commandervrax) / X",
+      "metaDescription": "CA: 0x94641b97010608c3827fb058074889f19868ff33 All things Vrax. Not actually Commander Vrax. Parody.",
+      "ogTitle": "Commander Vrax Parody (@1commandervrax) on X",
+      "ogDescription": "CA: 0x94641b97010608c3827fb058074889f19868ff33 All things Vrax. Not actually Commander Vrax. Parody.",
+      "twitterDescription": "CA: 0x94641b97010608c3827fb058074889f19868ff33 All things Vrax. Not actually Commander Vrax. Parody.",
+      "jsonLd": [],
+      "hasNextData": false,
+      "textChars": 1170,
+      "excerpt": "Log in Sign up Log in Sign up Commander Vrax Parody 8 posts Commander Vrax Parody @1commandervrax CA: 0x94641b97010608c3827fb058074889f19868ff33 All things Vrax. Not actually Commander Vrax. Parody. Joined October 2026 5 Following 63 Followers Mention Follow Posts Posts Replies Replies Reposts Reposts Media Media Log in or sign up for X See what’s happening and join the conversation Continue with phone Continue with Apple Continue with Google or Log in with username or email Terms · Privacy · Co",
+      "addressOnPage": true,
+      "readable": true,
+      "ok": true
+    },
+    {
+      "id": "rh-E9",
+      "tokenId": "robinhood:0x5b81efe5e0ba2b31c0ed843b908a2c45fe6e14c5",
+      "kind": "x",
+      "url": "https://x.com/elonmusk/status/2097366345390186641",
+      "method": "http",
+      "listedInProfile": true,
+      "observedAt": "2026-10-16T09:13:13.573Z",
+      "status": 200,
+      "finalUrl": "https://x.com/elonmusk/status/2097366345390186641",
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 125516,
+      "truncated": false,
+      "title": "Elon Musk on X: \"RT @luismbat: SpaceX launches vs. kids painting astronauts\" / X",
+      "metaDescription": "RT @luismbat: SpaceX launches vs. kids painting astronauts",
+      "ogTitle": "Elon Musk (@elonmusk) on X",
+      "ogDescription": "RT @luismbat: SpaceX launches vs. kids painting astronauts",
+      "twitterDescription": "RT @luismbat: SpaceX launches vs. kids painting astronauts",
+      "jsonLd": [],
+      "hasNextData": false,
+      "textChars": 1077,
+      "excerpt": "Post Log in Sign up Post Log in Sign up Elon Musk on X: \"RT @luismbat: SpaceX launches vs. kids painting astronauts\" Elon Musk reposted Luis Batalha @luismbat Sep 8 SpaceX launches vs. kids painting astronauts Riley Walz @rtwlz Sep 8 I scraped 100 million pictures of kids' drawings, and made them searchable so you can see the trends of the last 20 years walzr.com/kids-trends 118 189 1.6K 657K Log in or sign up for X See what’s happening and join the conversation Continue with phone Continue with",
+      "addressOnPage": false,
+      "readable": true,
+      "ok": true
+    },
+    {
+      "id": "rh-E10",
+      "tokenId": "robinhood:0x18e674231a58c239dc7daedcffe15ec3a24cff5c",
+      "kind": "website",
+      "url": "https://hookr.fun/",
+      "method": "http",
+      "listedInProfile": true,
+      "observedAt": "2026-10-16T09:13:13.842Z",
+      "status": 200,
+      "finalUrl": "https://hookr.fun/",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 411948,
+      "truncated": false,
+      "title": "Hookr.fun: Modular infrastructure for Uniswap v4 hooks",
+      "metaDescription": "Modular infrastructure for surfacing, composing and integrating custom Uniswap hooks. Combine Hook Blocks. Deploy your custom hook.",
+      "ogTitle": "Hookr.fun: Modular infrastructure for Uniswap v4 hooks",
+      "ogDescription": "Modular infrastructure for surfacing, composing and integrating custom Uniswap hooks. Combine Hook Blocks. Deploy your custom hook.",
+      "twitterDescription": "Modular infrastructure for surfacing, composing and integrating custom Uniswap hooks. Combine Hook Blocks. Deploy your custom hook.",
+      "jsonLd": [
+        "Modular infrastructure for surfacing, composing and integrating custom Uniswap hooks. Explore active Uniswap v4 pools, analyze their hooks, and create new hooked pools from one app.",
+        "Modular infrastructure for surfacing, composing and integrating custom Uniswap hooks. Combine Hook Blocks. Deploy your custom hook."
+      ],
+      "hasNextData": true,
+      "textChars": 15589,
+      "excerpt": "Hookr.fun Discover Hooks Builder Docs FAQ Robinhood Chain 4663 Open app Discover Hooks Builder Docs FAQ HOOKR on MCG Signal New New primitive: Pair Tokens , with StonkBrokers, now live Live on Robinhood Chain 4663 Built on Uniswap Modular infrastructure for surfacing, composing and integrating custom Uniswap hooks. Combine Hook Blocks. Deploy your custom hook. Initialize new pools, or integrate with your project. Launch with a hook See live pools Address Token / pool Source Robinhood Robinhood C",
+      "addressOnPage": true,
+      "readable": true,
+      "ok": true
+    },
+    {
+      "id": "rh-E11",
+      "tokenId": "robinhood:0x18e674231a58c239dc7daedcffe15ec3a24cff5c",
+      "kind": "docs",
+      "url": "https://hookr.fun/docs",
+      "method": "http",
+      "listedInProfile": true,
+      "observedAt": "2026-10-16T09:13:13.873Z",
+      "status": 200,
+      "finalUrl": "https://hookr.fun/docs",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 133283,
+      "truncated": false,
+      "title": "Hookr developer docs · Hookr.fun",
+      "metaDescription": "Guides for swapping, providing liquidity and opening a market, with the concepts, the reference and the contract addresses behind them.",
+      "ogTitle": "Hookr developer docs",
+      "ogDescription": "Guides for swapping, providing liquidity and opening a market, with the concepts, the reference and the contract addresses behind them.",
+      "twitterDescription": "Guides for swapping, providing liquidity and opening a market, with the concepts, the reference and the contract addresses behind them.",
+      "jsonLd": [
+        "Modular infrastructure for surfacing, composing and integrating custom Uniswap hooks. Explore active Uniswap v4 pools, analyze their hooks, and create new hooked pools from one app.",
+        "Guides for swapping, providing liquidity and opening a market, with the concepts, the reference and the contract addresses behind them."
+      ],
+      "hasNextData": true,
+      "textChars": 3401,
+      "excerpt": "Skip to content Hookr Hookr.fun Docs Menu / Open the app Documentation Close Overview − What Hookr does Hookr developer docs New pools − Overview Core blocks King of the Pool Wallet Cap Launch-day blocks Multi-pool launch Dev buy Launch lock Fees The Hookr minimum Saved hooks Owned roots LP Time-Lock Boost Referrals Programs SDK Concepts − Architecture Fee model Guard window Native mechanics Pool lifecycle Protocol share Ownership Quote assets Arb recapture Earlier release Earlier pools Guides −",
+      "addressOnPage": false,
+      "readable": true,
+      "ok": true
+    },
+    {
+      "id": "rh-E12",
+      "tokenId": "robinhood:0x18e674231a58c239dc7daedcffe15ec3a24cff5c",
+      "kind": "x",
+      "url": "https://x.com/nodarj",
+      "method": "http",
+      "listedInProfile": true,
+      "observedAt": "2026-10-16T09:13:13.969Z",
+      "status": 200,
+      "finalUrl": "https://x.com/nodarj",
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 230455,
+      "truncated": false,
+      "title": "Nodar (@NodarJ) / X",
+      "metaDescription": "Creator of DeFi Zaps. Currently building @hookrfun powered by OpenZaps Prev. Co-founder @zapper_fi",
+      "ogTitle": "Nodar (@NodarJ) on X",
+      "ogDescription": "Creator of DeFi Zaps. Currently building @hookrfun powered by OpenZaps Prev. Co-founder @zapper_fi",
+      "twitterDescription": "Creator of DeFi Zaps. Currently building @hookrfun powered by OpenZaps Prev. Co-founder @zapper_fi",
+      "jsonLd": [],
+      "hasNextData": false,
+      "textChars": 3002,
+      "excerpt": "Log in Sign up Log in Sign up Nodar 4,647 posts Nodar @NodarJ Creator of DeFi Zaps. Currently building @ hookrfun powered by OpenZaps Prev. Co-founder @ zapper_fi hookr.fun Joined May 2012 2,192 Following 11.6K Followers Mention Follow Posts Posts Replies Replies Reposts Reposts Media Media Articles Articles Log in or sign up for X See what’s happening and join the conversation Continue with phone Continue with Apple Continue with Google or Log in with username or email Terms · Privacy · Cookies",
+      "addressOnPage": false,
+      "readable": true,
+      "ok": true
+    },
+    {
+      "id": "rh-E13",
+      "tokenId": "robinhood:0x385f4f8ae47651ce5f58f5265395a669f8281e18",
+      "kind": "x",
+      "url": "https://x.com/amemecoinrh",
+      "method": "http",
+      "listedInProfile": true,
+      "observedAt": "2026-10-16T09:13:14.171Z",
+      "status": 200,
+      "finalUrl": "https://x.com/amemecoinrh",
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 177038,
+      "truncated": false,
+      "title": "A Meme Coin (@amemecoinrh) / X",
+      "metaDescription": "The theater was a front. It was A Meme Coin all along. 🍿🎬 $MEME Paired with $AMC. 0x385f4f8ae47651ce5f58f5265395a669f8281e18",
+      "ogTitle": "A Meme Coin (@amemecoinrh) on X",
+      "ogDescription": "The theater was a front. It was A Meme Coin all along. 🍿🎬 $MEME Paired with $AMC. 0x385f4f8ae47651ce5f58f5265395a669f8281e18",
+      "twitterDescription": "The theater was a front. It was A Meme Coin all along. 🍿🎬 $MEME Paired with $AMC. 0x385f4f8ae47651ce5f58f5265395a669f8281e18",
+      "jsonLd": [],
+      "hasNextData": false,
+      "textChars": 2342,
+      "excerpt": "Log in Sign up Log in Sign up A Meme Coin 167 posts A Meme Coin @amemecoinrh The theater was a front. It was A Meme Coin all along. 🍿🎬 $MEME Paired with $AMC . 0x385f4f8ae47651ce5f58f5265395a669f8281e18 RH Joined September 2026 2 Following 13.2K Followers Mention Follow Posts Posts Replies Replies Reposts Reposts Media Media Log in or sign up for X See what’s happening and join the conversation Continue with phone Continue with Apple Continue with Google or Log in with username or email Terms ",
+      "addressOnPage": true,
+      "readable": true,
+      "ok": true
+    },
+    {
+      "id": "rh-E14",
+      "tokenId": "robinhood:0x88ad8ddf1e3898412146a534538d418c6f8a9062",
+      "kind": "website",
+      "url": "https://www.standardreserve.xyz/app/",
+      "method": "http",
+      "listedInProfile": true,
+      "observedAt": "2026-10-16T09:13:14.223Z",
+      "status": 200,
+      "finalUrl": "https://www.standardreserve.xyz/liquidity/",
+      "contentType": "text/html",
+      "bytes": 7107,
+      "truncated": false,
+      "title": "King of the Markets | The Standard Reserve",
+      "metaDescription": "Trade tokens paired with $SPCX, $BABA and $SKHY through the Reserve’s pools, and score points for your country in King of the Markets.",
+      "ogTitle": "King of the Markets | The Standard Reserve",
+      "ogDescription": "Trade tokens paired with $SPCX, $BABA and $SKHY through the Reserve’s pools, and score points for your country in King of the Markets.",
+      "twitterDescription": "Trade tokens paired with $SPCX, $BABA and $SKHY through the Reserve’s pools, and score points for your country in King of the Markets.",
+      "jsonLd": [
+        "The liquidity engine for onchain capital markets. Only on Robinhood Chain."
+      ],
+      "hasNextData": false,
+      "textChars": 0,
+      "excerpt": "",
+      "addressOnPage": false,
+      "readable": true,
+      "ok": true
+    },
+    {
+      "id": "rh-E15",
+      "tokenId": "robinhood:0x88ad8ddf1e3898412146a534538d418c6f8a9062",
+      "kind": "x",
+      "url": "https://x.com/standard_rsv",
+      "method": "http",
+      "listedInProfile": true,
+      "observedAt": "2026-10-16T09:13:14.468Z",
+      "status": 200,
+      "finalUrl": "https://x.com/standard_rsv",
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 144960,
+      "truncated": false,
+      "title": "The Standard Reserve (@standard_rsv) / X",
+      "metaDescription": "The sovereign onchain central bank. All CAs are on the site. Beware of scams.",
+      "ogTitle": "The Standard Reserve (@standard_rsv) on X",
+      "ogDescription": "The sovereign onchain central bank. All CAs are on the site. Beware of scams.",
+      "twitterDescription": "The sovereign onchain central bank. All CAs are on the site. Beware of scams.",
+      "jsonLd": [],
+      "hasNextData": false,
+      "textChars": 1677,
+      "excerpt": "Log in Sign up Log in Sign up The Standard Reserve 47 posts The Standard Reserve @standard_rsv The sovereign onchain central bank. All CAs are on the site. Beware of scams. standardreserve.xyz Joined August 2026 0 Following 34.7K Followers Mention Follow Posts Posts Replies Replies Reposts Reposts Media Media Articles Articles Log in or sign up for X See what’s happening and join the conversation Continue with phone Continue with Apple Continue with Google or Log in with username or email Terms ",
+      "addressOnPage": false,
+      "readable": true,
+      "ok": true
+    }
+  ],
+  "chainRecord": {
+    "id": "rh-REG",
+    "kind": "registry",
+    "method": "http",
+    "url": "https://api.robinhood.com/rhj/assets",
+    "observedAt": "2026-10-16T09:13:16.248Z",
+    "status": 200,
+    "ok": true,
+    "assets": 195
+  },
+  "chainFacts": {
+    "robinhood:0x39dbed3a2bd333467115de45665cc57f813c4571": {
+      "registry": {
+        "self": null,
+        "quotes": []
+      }
+    },
+    "robinhood:0x020bfc650a365f8bb26819deaabf3e21291018b4": {
+      "registry": {
+        "self": null,
+        "quotes": []
+      }
+    },
+    "robinhood:0x2e8c31162b855a2ffa90f6f8634643ad6f111e18": {
+      "registry": {
+        "self": null,
+        "quotes": []
+      }
+    },
+    "robinhood:0x94641b97010608c3827fb058074889f19868ff33": {
+      "registry": {
+        "self": null,
+        "quotes": []
+      }
+    },
+    "robinhood:0x5b81efe5e0ba2b31c0ed843b908a2c45fe6e14c5": {
+      "registry": {
+        "self": null,
+        "quotes": []
+      }
+    },
+    "robinhood:0x18e674231a58c239dc7daedcffe15ec3a24cff5c": {
+      "registry": {
+        "self": null,
+        "quotes": []
+      }
+    },
+    "robinhood:0x385f4f8ae47651ce5f58f5265395a669f8281e18": {
+      "registry": {
+        "self": null,
+        "quotes": []
+      }
+    },
+    "robinhood:0x88ad8ddf1e3898412146a534538d418c6f8a9062": {
+      "registry": {
+        "self": null,
+        "quotes": []
+      }
+    }
+  },
+  "byToken": {
+    "robinhood:0x39dbed3a2bd333467115de45665cc57f813c4571": {
+      "name": "Pons",
+      "symbol": "PONS",
+      "links": {
+        "pages": [
+          "https://ponsfamily.com/launchpad"
+        ],
+        "x": "https://x.com/ponsdotfamily",
+        "skippedOverBudget": []
+      },
+      "evidenceIds": [
+        "rh-E1",
+        "rh-E2"
+      ],
+      "noWebsiteListed": false
+    },
+    "robinhood:0x020bfc650a365f8bb26819deaabf3e21291018b4": {
+      "name": "Cash Cat",
+      "symbol": "CASHCAT",
+      "links": {
+        "pages": [
+          "https://cashcat.cc/",
+          "https://letscash.fun/"
+        ],
+        "x": "https://x.com/cashcat_token",
+        "skippedOverBudget": []
+      },
+      "evidenceIds": [
+        "rh-E3",
+        "rh-E4",
+        "rh-E5"
+      ],
+      "noWebsiteListed": false
+    },
+    "robinhood:0x2e8c31162b855a2ffa90f6f8634643ad6f111e18": {
+      "name": "Artificial Inu",
+      "symbol": "AI",
+      "links": {
+        "pages": [
+          "https://artificialinu.com/"
+        ],
+        "x": "https://x.com/artificiallyinu",
+        "skippedOverBudget": []
+      },
+      "evidenceIds": [
+        "rh-E6",
+        "rh-E7"
+      ],
+      "noWebsiteListed": false
+    },
+    "robinhood:0x94641b97010608c3827fb058074889f19868ff33": {
+      "name": "Commander Vrax",
+      "symbol": "VRAX",
+      "links": {
+        "pages": [],
+        "x": "https://x.com/1commandervrax",
+        "skippedOverBudget": []
+      },
+      "evidenceIds": [
+        "rh-E8"
+      ],
+      "noWebsiteListed": true
+    },
+    "robinhood:0x5b81efe5e0ba2b31c0ed843b908a2c45fe6e14c5": {
+      "name": "astronaut",
+      "symbol": "astro",
+      "links": {
+        "pages": [],
+        "x": "https://x.com/elonmusk/status/2097366345390186641",
+        "skippedOverBudget": []
+      },
+      "evidenceIds": [
+        "rh-E9"
+      ],
+      "noWebsiteListed": true
+    },
+    "robinhood:0x18e674231a58c239dc7daedcffe15ec3a24cff5c": {
+      "name": "Hookr.fun",
+      "symbol": "HOOKR",
+      "links": {
+        "pages": [
+          "https://hookr.fun/",
+          "https://hookr.fun/docs"
+        ],
+        "x": "https://x.com/nodarj",
+        "skippedOverBudget": []
+      },
+      "evidenceIds": [
+        "rh-E10",
+        "rh-E11",
+        "rh-E12"
+      ],
+      "noWebsiteListed": false
+    },
+    "robinhood:0x385f4f8ae47651ce5f58f5265395a669f8281e18": {
+      "name": "A Meme Coin",
+      "symbol": "MEME",
+      "links": {
+        "pages": [],
+        "x": "https://x.com/amemecoinrh",
+        "skippedOverBudget": []
+      },
+      "evidenceIds": [
+        "rh-E13"
+      ],
+      "noWebsiteListed": true
+    },
+    "robinhood:0x88ad8ddf1e3898412146a534538d418c6f8a9062": {
+      "name": "STANDARD",
+      "symbol": "STANDARD",
+      "links": {
+        "pages": [
+          "https://www.standardreserve.xyz/app/"
+        ],
+        "x": "https://x.com/standard_rsv",
+        "skippedOverBudget": []
+      },
+      "evidenceIds": [
+        "rh-E14",
+        "rh-E15"
+      ],
+      "noWebsiteListed": false
+    }
+  },
+  "counts": {
+    "reads": 15,
+    "ok": 15,
+    "readable": 15,
+    "failed": 0,
+    "rowsWithoutWebsite": 3
+  }
+}

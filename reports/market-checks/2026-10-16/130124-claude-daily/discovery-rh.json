@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "scope": "rh",
+  "chain": "robinhood",
+  "status": "blocked",
+  "reason": "Cloudflare or bot challenge shown instead of the discovery table",
+  "method": "claude-built-in-browser",
+  "discoveryUrl": "https://dexscreener.com/robinhood?rankBy=trendingScoreH6&order=desc&minMarketCap=1000000&minAge=72&min24HVol=1000000&profile=1",
+  "pageUrl": "https://dexscreener.com/robinhood?rankBy=trendingScoreH6&order=desc&minMarketCap=1000000&minAge=72&min24HVol=1000000&profile=1",
+  "pageTitle": "Just a moment...",
+  "extractor": "market-brief/discovery-extract@1",
+  "filtersIndicator": null,
+  "rankIndicator": null,
+  "observedAt": "2026-10-16T09:02:35.425Z",
+  "savedAt": "2026-10-16T09:02:48.445Z",
+  "pageLoads": 1,
+  "rowCount": 0,
+  "possibleTruncation": false,
+  "pools": [],
+  "invalidSlugs": [],
+  "problems": []
+}

@@ -1,0 +1,1543 @@
+{
+  "schemaVersion": 1,
+  "scope": "sol",
+  "runId": "2026-10-16T131120-claude-daily",
+  "collectedAt": "2026-10-16T09:13:12.881Z",
+  "excerptPolicy": "Saved excerpts are limited to 500 characters; fuller text stays in the local work/ folder and is not published.",
+  "reads": [
+    {
+      "id": "sol-E1",
+      "tokenId": "solana:oreoU2P8bN6jkk3jbaiVxYnG1dCXcYxwhwyK9jSybcp",
+      "kind": "website",
+      "url": "https://ore.supply",
+      "method": "http",
+      "listedInProfile": true,
+      "observedAt": "2026-10-16T09:13:06.708Z",
+      "status": 200,
+      "finalUrl": "https://ore.com/",
+      "contentType": "text/html",
+      "bytes": 2722,
+      "truncated": false,
+      "title": "ORE",
+      "metaDescription": null,
+      "ogTitle": "ORE",
+      "ogDescription": "Future-proof store of value.",
+      "twitterDescription": "Future-proof store of value.",
+      "jsonLd": [],
+      "hasNextData": false,
+      "textChars": 0,
+      "excerpt": "",
+      "addressOnPage": false,
+      "readable": true,
+      "ok": true
+    },
+    {
+      "id": "sol-E2",
+      "tokenId": "solana:oreoU2P8bN6jkk3jbaiVxYnG1dCXcYxwhwyK9jSybcp",
+      "kind": "x",
+      "url": "https://x.com/OREsupply",
+      "method": "http",
+      "listedInProfile": true,
+      "observedAt": "2026-10-16T09:13:06.731Z",
+      "status": 200,
+      "finalUrl": "https://x.com/OREsupply",
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 70971,
+      "truncated": false,
+      "title": "ORE (@ORESupply) / X",
+      "metaDescription": "This account has moved to @ORE.",
+      "ogTitle": "ORE (@ORESupply) on X",
+      "ogDescription": "This account has moved to @ORE.",
+      "twitterDescription": "This account has moved to @ORE.",
+      "jsonLd": [],
+      "hasNextData": false,
+      "textChars": 529,
+      "excerpt": "Log in Sign up Log in Sign up ORE 0 posts ORE @ORESupply This account has moved to @ ORE . Solana ore.com Joined June 2026 0 Following 289 Followers Mention Follow Posts Posts Replies Replies Reposts Reposts Media Media Log in or sign up for X See what’s happening and join the conversation Continue with phone Continue with Apple Continue with Google or Log in with username or email Terms · Privacy · Cookies · Accessibility · Ads Info · More © 2026 X Corp. @OREsupply hasn’t posted When they do, t",
+      "addressOnPage": false,
+      "readable": true,
+      "ok": true
+    },
+    {
+      "id": "sol-E3",
+      "tokenId": "solana:8x5VqbHA8D7NkD52uNuS5nnt3PwA8pLD34ymskeSo2Wn",
+      "kind": "website",
+      "url": "https://zerebro.org/",
+      "method": "http",
+      "listedInProfile": true,
+      "observedAt": "2026-10-16T09:13:06.732Z",
+      "status": 200,
+      "finalUrl": "https://zerebro.org/",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 2226,
+      "truncated": false,
+      "title": null,
+      "metaDescription": null,
+      "ogTitle": null,
+      "ogDescription": null,
+      "twitterDescription": null,
+      "jsonLd": [],
+      "hasNextData": true,
+      "textChars": 0,
+      "excerpt": "",
+      "addressOnPage": false,
+      "readable": false,
+      "ok": true,
+      "failureReason": "no readable text or description in the HTML (likely a JavaScript-only page)"
+    },
+    {
+      "id": "sol-E4",
+      "tokenId": "solana:8x5VqbHA8D7NkD52uNuS5nnt3PwA8pLD34ymskeSo2Wn",
+      "kind": "website",
+      "url": "https://warpcast.com/zerebro",
+      "method": "http",
+      "listedInProfile": true,
+      "observedAt": "2026-10-16T09:13:06.732Z",
+      "status": 200,
+      "finalUrl": "https://farcaster.xyz/zerebro",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 4135,
+      "truncated": false,
+      "title": "Farcaster",
+      "metaDescription": null,
+      "ogTitle": null,
+      "ogDescription": null,
+      "twitterDescription": null,
+      "jsonLd": [],
+      "hasNextData": false,
+      "textChars": 0,
+      "excerpt": "",
+      "addressOnPage": false,
+      "readable": false,
+      "ok": true,
+      "failureReason": "no readable text or description in the HTML (likely a JavaScript-only page)"
+    },
+    {
+      "id": "sol-E5",
+      "tokenId": "solana:8x5VqbHA8D7NkD52uNuS5nnt3PwA8pLD34ymskeSo2Wn",
+      "kind": "x",
+      "url": "https://x.com/0xzerebro",
+      "method": "http",
+      "listedInProfile": true,
+      "observedAt": "2026-10-16T09:13:06.733Z",
+      "status": 200,
+      "finalUrl": "https://x.com/0xzerebro",
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 129476,
+      "truncated": false,
+      "title": "zerebro (@0xzerebro) / X",
+      "metaDescription": "zerebro",
+      "ogTitle": "zerebro (@0xzerebro) on X",
+      "ogDescription": "zerebro",
+      "twitterDescription": "zerebro",
+      "jsonLd": [],
+      "hasNextData": false,
+      "textChars": 740,
+      "excerpt": "Log in Sign up Log in Sign up zerebro 24 posts zerebro @0xzerebro zerebro Joined October 2024 10 Following 3,948 Followers Mention Follow Posts Posts Replies Replies Reposts Reposts Media Media Log in or sign up for X See what’s happening and join the conversation Continue with phone Continue with Apple Continue with Google or Log in with username or email Terms · Privacy · Cookies · Accessibility · Ads Info · More © 2026 X Corp. zerebro @0xzerebro Sep 7 Gotta keep pushing the next level is wait",
+      "addressOnPage": false,
+      "readable": true,
+      "ok": true
+    },
+    {
+      "id": "sol-E6",
+      "tokenId": "solana:nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump",
+      "kind": "x",
+      "url": "https://x.com/robtmb1/status/2109241600002118071?s=20",
+      "method": "http",
+      "listedInProfile": true,
+      "observedAt": "2026-10-16T09:13:06.733Z",
+      "status": 200,
+      "finalUrl": "https://x.com/robtmb1/status/2109241600002118071?s=20",
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 99581,
+      "truncated": false,
+      "title": "RobTheMaster on X: \"There's a meme coin in GTA 6 called \"Dacity Coin\" in the new leak. This is genny. At 2:05 https://t.co/GBUYgAdBL9\" / X",
+      "metaDescription": "There's a meme coin in GTA 6 called \"Dacity Coin\" in the new leak. This is genny. At 2:05 https://t.co/GBUYgAdBL9",
+      "ogTitle": "RobTheMaster (@robtmb1) on X",
+      "ogDescription": "There's a meme coin in GTA 6 called \"Dacity Coin\" in the new leak. This is genny. At 2:05 https://t.co/GBUYgAdBL9",
+      "twitterDescription": "There's a meme coin in GTA 6 called \"Dacity Coin\" in the new leak. This is genny. At 2:05 https://t.co/GBUYgAdBL9",
+      "jsonLd": [],
+      "hasNextData": false,
+      "textChars": 1143,
+      "excerpt": "Post Log in Sign up Post Log in Sign up RobTheMaster on X: \"There's a meme coin in GTA 6 called \"Dacity Coin\" in the new leak. This is genny. At 2:05 https://t.co/GBUYgAdBL9\" RobTheMaster @robtmb1 There's a meme coin in GTA 6 called \"Dacity Coin\" in the new leak. This is genny. At 2:05 Age-restricted adult content. This content might not be appropriate for people under 18 years old. To view this media, you’ll need to log in to X. Learn more 11:15 AM · Oct 11, 2026 · 79.7K Views 86 57 313 49 Log ",
+      "addressOnPage": false,
+      "readable": true,
+      "ok": true
+    },
+    {
+      "id": "sol-E7",
+      "tokenId": "solana:6GmAFSYs4gk3FDao5FzzySQpPZaWsa4rUJHacpMpUNgx",
+      "kind": "website",
+      "url": "https://www.stonkfun.xyz/",
+      "method": "http",
+      "listedInProfile": true,
+      "observedAt": "2026-10-16T09:13:07.044Z",
+      "status": 200,
+      "finalUrl": "https://www.stonkfun.xyz/",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 24331,
+      "truncated": false,
+      "title": "StonkFun · Launch Solana coins paired with anything",
+      "metaDescription": "Create and discover Solana coins paired with memes, stocks, currencies, commodities and more.",
+      "ogTitle": "StonkFun · Launch Solana coins paired with anything",
+      "ogDescription": "Create and discover Solana coins paired with memes, stocks, currencies, commodities and more.",
+      "twitterDescription": "Create and discover Solana coins paired with memes, stocks, currencies, commodities and more.",
+      "jsonLd": [],
+      "hasNextData": true,
+      "textChars": 465,
+      "excerpt": "StonkFun $STONK Rewards Flywheel Revenue API Search Ctrl K Launch token Connect wallet Connect Launch coins paired with anything Create and discover onchain coins paired with memes, stocks, currencies, commodities & more. Launch a token Sort Market cap Newest 24h volume Paired with All xStocks PreStocks Tessera Sunrise Backpack Currencies Leverage Collectibles Baskets Solana Custom All tokens X $STONK Revenue API Rewards Flywheel Terms of Service Privacy Policy",
+      "addressOnPage": true,
+      "readable": true,
+      "ok": true
+    },
+    {
+      "id": "sol-E8",
+      "tokenId": "solana:6GmAFSYs4gk3FDao5FzzySQpPZaWsa4rUJHacpMpUNgx",
+      "kind": "x",
+      "url": "https://x.com/LaunchOnSF",
+      "method": "http",
+      "listedInProfile": true,
+      "observedAt": "2026-10-16T09:13:07.273Z",
+      "status": 200,
+      "finalUrl": "https://x.com/LaunchOnSF",
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 146618,
+      "truncated": false,
+      "title": "Stonk (@LaunchOnSF) / X",
+      "metaDescription": "Launch coins paired with anything Powered by $STONK",
+      "ogTitle": "Stonk (@LaunchOnSF) on X",
+      "ogDescription": "Launch coins paired with anything Powered by $STONK",
+      "twitterDescription": "Launch coins paired with anything Powered by $STONK",
+      "jsonLd": [],
+      "hasNextData": false,
+      "textChars": 1355,
+      "excerpt": "Log in Sign up Log in Sign up Stonk 1,695 posts Stonk @LaunchOnSF Launch coins paired with anything Powered by $STONK stonkfun.xyz Joined June 2023 80 Following 60.3K Followers Mention Follow Posts Posts Replies Replies Reposts Reposts Media Media Log in or sign up for X See what’s happening and join the conversation Continue with phone Continue with Apple Continue with Google or Log in with username or email Terms · Privacy · Cookies · Accessibility · Ads Info · More © 2026 X Corp. Pinned Stonk",
+      "addressOnPage": false,
+      "readable": true,
+      "ok": true
+    },
+    {
+      "id": "sol-E9",
+      "tokenId": "solana:CARDSccUMFKoPRZxt5vt3ksUbxEFEcnZ3H2pd3dKxYjp",
+      "kind": "website",
+      "url": "https://collectorcrypt.com/",
+      "method": "http",
+      "listedInProfile": true,
+      "observedAt": "2026-10-16T09:13:07.447Z",
+      "status": 200,
+      "finalUrl": "https://collectorcrypt.com/",
+      "contentType": "text/html",
+      "bytes": 29407,
+      "truncated": false,
+      "title": "Collector Crypt - Your Digital Bridge for Real-World Collectibles",
+      "metaDescription": "Collector Crypt brings real-world collectibles into the 21st century. Digitize your collections, trade them with others, and even collateralize your assets for loans – all without the risks and inefficiencies which plague traditional collectible marketplaces.",
+      "ogTitle": "Collector Crypt - Your Digital Bridge for Real-World Collectibles",
+      "ogDescription": "Collector Crypt brings real-world collectibles into the 21st century. Digitize your collections, trade them with others, and even collateralize your assets for loans – all without the risks and inefficiencies which plague traditional collectible marketplaces.",
+      "twitterDescription": "Collector Crypt brings real-world collectibles into the 21st century. Digitize your collections, trade them with others, and even collateralize your assets for loans – all without the risks and inefficiencies which plague traditional collectible marketplaces.",
+      "jsonLd": [],
+      "hasNextData": false,
+      "textChars": 0,
+      "excerpt": "",
+      "addressOnPage": false,
+      "readable": true,
+      "ok": true
+    },
+    {
+      "id": "sol-E10",
+      "tokenId": "solana:CARDSccUMFKoPRZxt5vt3ksUbxEFEcnZ3H2pd3dKxYjp",
+      "kind": "website",
+      "url": "https://gacha.collectorcrypt.com",
+      "method": "http",
+      "listedInProfile": true,
+      "observedAt": "2026-10-16T09:13:07.558Z",
+      "status": 200,
+      "finalUrl": "https://gacha.collectorcrypt.com/",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 227853,
+      "truncated": false,
+      "title": "Collector Crypt Gacha Machine",
+      "metaDescription": "Open a mystery pack!",
+      "ogTitle": "Collector Crypt Gacha Machine",
+      "ogDescription": "Open a mystery pack!",
+      "twitterDescription": "Open a mystery pack!",
+      "jsonLd": [],
+      "hasNextData": true,
+      "textChars": 110,
+      "excerpt": "Marketplace Leaderboards League Yolo Sign In The machine is loading... No messages yet. Say hi! Send Live Chat",
+      "addressOnPage": false,
+      "readable": true,
+      "ok": true
+    },
+    {
+      "id": "sol-E11",
+      "tokenId": "solana:CARDSccUMFKoPRZxt5vt3ksUbxEFEcnZ3H2pd3dKxYjp",
+      "kind": "x",
+      "url": "https://x.com/Collector_crypt",
+      "method": "http",
+      "listedInProfile": true,
+      "observedAt": "2026-10-16T09:13:07.720Z",
+      "status": 200,
+      "finalUrl": "https://x.com/Collector_crypt",
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 177529,
+      "truncated": false,
+      "title": "Collector Crypt (@Collector_Crypt) / X",
+      "metaDescription": "#1 in Collectible Capital Markets. We sell RWA Pokemon cards on Solana | CA: CARDSccUMFKoPRZxt5vt3ksUbxEFEcnZ3H2pd3dKxYjp | https://t.co/AKLMWG3R3E 👇",
+      "ogTitle": "Collector Crypt (@Collector_Crypt) on X",
+      "ogDescription": "#1 in Collectible Capital Markets. We sell RWA Pokemon cards on Solana | CA: CARDSccUMFKoPRZxt5vt3ksUbxEFEcnZ3H2pd3dKxYjp | https://t.co/AKLMWG3R3E 👇",
+      "twitterDescription": "#1 in Collectible Capital Markets. We sell RWA Pokemon cards on Solana | CA: CARDSccUMFKoPRZxt5vt3ksUbxEFEcnZ3H2pd3dKxYjp | https://t.co/AKLMWG3R3E 👇",
+      "jsonLd": [],
+      "hasNextData": false,
+      "textChars": 1920,
+      "excerpt": "Log in Sign up Log in Sign up Collector Crypt 7,233 posts Collector Crypt @Collector_Crypt #1 in Collectible Capital Markets. We sell RWA Pokemon cards on Solana | CA: CARDSccUMFKoPRZxt5vt3ksUbxEFEcnZ3H2pd3dKxYjp | linktr.ee/collector_crypt 👇 👉 gacha.collectorcrypt.com Joined February 2022 1,825 Following 99.5K Followers Mention Follow Posts Posts Replies Replies Reposts Reposts Media Media Articles Articles Log in or sign up for X See what’s happening and join the conversation Continue with p",
+      "addressOnPage": true,
+      "readable": true,
+      "ok": true
+    },
+    {
+      "id": "sol-E12",
+      "tokenId": "solana:DEW9dSN6QpWyNthphCpMmAbZP1Q4cEKR9xQXAri98WDP",
+      "kind": "website",
+      "url": "https://superinuofficial.com/",
+      "method": "http",
+      "listedInProfile": true,
+      "observedAt": "2026-10-16T09:13:07.758Z",
+      "status": 200,
+      "finalUrl": "https://superinuofficial.com/",
+      "contentType": "text/html",
+      "bytes": 1503170,
+      "truncated": true,
+      "title": "Super Inu ($SI) | The Shiba with a cape, on Solana",
+      "metaDescription": "Super Inu ($SI) is a community-run parody meme token on Solana. Contract address, chart, how to buy, FAQ and official links.",
+      "ogTitle": null,
+      "ogDescription": null,
+      "twitterDescription": null,
+      "jsonLd": [],
+      "hasNextData": false,
+      "textChars": 1392440,
+      "excerpt": "Bird? Plane? No! S U P E R I N U The Shiba with a cape Skip intro Super Inu About Token How to buy FAQ Play Community Buy $SI Super Inu The Shiba with a cape. A community-run meme on Solana. Ticker: $SI. Buy $SI View chart Join Telegram Contract address Copy SUPER INU ★ $SI ★ ON SOLANA ★ MEME FIRST ★ COMMUNITY-RUN ★ HOLD $SI, GET NVDAx ★ SUPER INU ★ $SI ★ ON SOLANA ★ MEME FIRST ★ COMMUNITY-RUN ★ HOLD $SI, GET NVDAx ★ SUPER INU ★ $SI ★ ON SOLANA ★ MEME FIRST ★ COMMUNITY-RUN ★ HOLD $SI, GET NVDAx ",
+      "addressOnPage": true,
+      "readable": true,
+      "ok": true
+    },
+    {
+      "id": "sol-E13",
+      "tokenId": "solana:DEW9dSN6QpWyNthphCpMmAbZP1Q4cEKR9xQXAri98WDP",
+      "kind": "website",
+      "url": "https://t.me/+f_jRz-yK1io4MTJh",
+      "method": "http",
+      "listedInProfile": true,
+      "observedAt": "2026-10-16T09:13:07.772Z",
+      "status": 200,
+      "finalUrl": "https://t.me/+f_jRz-yK1io4MTJh",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 10951,
+      "truncated": false,
+      "title": "Telegram: Join Group Chat",
+      "metaDescription": null,
+      "ogTitle": "Super inu official community",
+      "ogDescription": "Department of war counsel",
+      "twitterDescription": "Department of war counsel",
+      "jsonLd": [],
+      "hasNextData": false,
+      "textChars": 186,
+      "excerpt": "Download for Mac Super inu official community 633 members, 80 online Department of war counsel Join Group You are invited to the group Super inu official community . Click above to join.",
+      "addressOnPage": false,
+      "readable": true,
+      "ok": true
+    },
+    {
+      "id": "sol-E14",
+      "tokenId": "solana:DEW9dSN6QpWyNthphCpMmAbZP1Q4cEKR9xQXAri98WDP",
+      "kind": "x",
+      "url": "https://x.com/superinuog?s=11",
+      "method": "http",
+      "listedInProfile": true,
+      "observedAt": "2026-10-16T09:13:07.802Z",
+      "status": 200,
+      "finalUrl": "https://x.com/superinuog?s=11",
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 291818,
+      "truncated": false,
+      "title": "Super Inu official (@SuperinuOG) / X",
+      "metaDescription": "DEW9dSN6QpWyNthphCpMmAbZP1Q4cEKR9xQXAri98WDP community run only https://t.co/58kjbILpff official community page",
+      "ogTitle": "Super Inu official (@SuperinuOG) on X",
+      "ogDescription": "DEW9dSN6QpWyNthphCpMmAbZP1Q4cEKR9xQXAri98WDP community run only https://t.co/58kjbILpff official community page",
+      "twitterDescription": "DEW9dSN6QpWyNthphCpMmAbZP1Q4cEKR9xQXAri98WDP community run only https://t.co/58kjbILpff official community page",
+      "jsonLd": [],
+      "hasNextData": false,
+      "textChars": 1524,
+      "excerpt": "Log in Sign up Log in Sign up Super Inu official 398 posts Super Inu official @SuperinuOG DEW9dSN6QpWyNthphCpMmAbZP1Q4cEKR9xQXAri98WDP community run only t.me/+f_jRz-yK1io4M… official community page superinuofficial.com Joined January 2022 17 Following 4,773 Followers Mention Follow Posts Posts Replies Replies Reposts Reposts Media Media Log in or sign up for X See what’s happening and join the conversation Continue with phone Continue with Apple Continue with Google or Log in with username or e",
+      "addressOnPage": true,
+      "readable": true,
+      "ok": true
+    },
+    {
+      "id": "sol-E15",
+      "tokenId": "solana:33jENUQnjoitkMFpvNJcSHyLAHFWJuHwT6E3E8CNpump",
+      "kind": "website",
+      "url": "https://dopeonotc.lol/",
+      "method": "http",
+      "listedInProfile": true,
+      "observedAt": "2026-10-16T09:13:07.864Z",
+      "status": 200,
+      "finalUrl": "https://dopeonotc.lol/",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 3857,
+      "truncated": false,
+      "title": "Doge Pepe ($DOPE) | Wrong API. Right face. Launched on OTC",
+      "metaDescription": "Doge Pepe ($DOPE): the most expensive accident in meme history. Launched on OTC on Solana, with a basket of ANTHROPIC, DOGE and PEPE holder rewards paid automatically.",
+      "ogTitle": "Doge Pepe ($DOPE) | Launched on OTC",
+      "ogDescription": "Doge Pepe ($DOPE): the most expensive accident in meme history. Launched on OTC on Solana, with a basket of ANTHROPIC, DOGE and PEPE holder rewards paid automatically.",
+      "twitterDescription": "Doge Pepe ($DOPE): the most expensive accident in meme history. Launched on OTC on Solana, with a basket of ANTHROPIC, DOGE and PEPE holder rewards paid automatically.",
+      "jsonLd": [],
+      "hasNextData": false,
+      "textChars": 270,
+      "excerpt": "Doge Pepe ($DOPE) — Wrong API. Right face. The most expensive accident in meme history. Launched on OTC on Solana, with a basket of ANTHROPIC, DOGE and PEPE holder rewards paid automatically. Contract address 33jENUQnjoitkMFpvNJcSHyLAHFWJuHwT6E3E8CNpump Buy $DOPE on OTC",
+      "addressOnPage": true,
+      "readable": true,
+      "ok": true
+    },
+    {
+      "id": "sol-E16",
+      "tokenId": "solana:33jENUQnjoitkMFpvNJcSHyLAHFWJuHwT6E3E8CNpump",
+      "kind": "x",
+      "url": "https://x.com/dopecoinotc",
+      "method": "http",
+      "listedInProfile": true,
+      "observedAt": "2026-10-16T09:13:08.082Z",
+      "status": 200,
+      "finalUrl": "https://x.com/dopecoinotc",
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 200467,
+      "truncated": false,
+      "title": "Dope (@dopecoinotc) / X",
+      "metaDescription": "33jENUQnjoitkMFpvNJcSHyLAHFWJuHwT6E3E8CNpump",
+      "ogTitle": "Dope (@dopecoinotc) on X",
+      "ogDescription": "33jENUQnjoitkMFpvNJcSHyLAHFWJuHwT6E3E8CNpump",
+      "twitterDescription": "33jENUQnjoitkMFpvNJcSHyLAHFWJuHwT6E3E8CNpump",
+      "jsonLd": [],
+      "hasNextData": false,
+      "textChars": 852,
+      "excerpt": "Log in Sign up Log in Sign up Dope 23 posts Dope @dopecoinotc 33jENUQnjoitkMFpvNJcSHyLAHFWJuHwT6E3E8CNpump dopeonotc.lol Joined October 2026 7 Following 922 Followers Mention Follow Posts Posts Replies Replies Reposts Reposts Media Media Log in or sign up for X See what’s happening and join the conversation Continue with phone Continue with Apple Continue with Google or Log in with username or email Terms · Privacy · Cookies · Accessibility · Ads Info · More © 2026 X Corp. Pinned Dope @dopecoino",
+      "addressOnPage": true,
+      "readable": true,
+      "ok": true
+    },
+    {
+      "id": "sol-E17",
+      "tokenId": "solana:61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump",
+      "kind": "website",
+      "url": "https://www.arc.fun/",
+      "method": "http",
+      "listedInProfile": true,
+      "observedAt": "2026-10-16T09:13:08.143Z",
+      "status": 200,
+      "finalUrl": "https://www.arc.fun/",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 14391,
+      "truncated": false,
+      "title": "ARC - AI Rig Complex",
+      "metaDescription": "Arc Registry - A comprehensive overview of Arc's ecosystem partners and agents.",
+      "ogTitle": "Arc Registry",
+      "ogDescription": "Arc Registry - A comprehensive overview of Arc's ecosystem partners and agents.",
+      "twitterDescription": "Arc Registry - A comprehensive overview of Arc's ecosystem partners and agents.",
+      "jsonLd": [],
+      "hasNextData": true,
+      "textChars": 0,
+      "excerpt": "",
+      "addressOnPage": false,
+      "readable": true,
+      "ok": true
+    },
+    {
+      "id": "sol-E18",
+      "tokenId": "solana:61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump",
+      "kind": "github",
+      "url": "https://github.com/0xPlaygrounds/rig",
+      "method": "http",
+      "listedInProfile": true,
+      "observedAt": "2026-10-16T09:13:08.608Z",
+      "status": 200,
+      "finalUrl": "https://github.com/0xPlaygrounds/rig",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 433879,
+      "truncated": false,
+      "title": "GitHub - 0xPlaygrounds/rig: ⚙️🦀 Build modular and scalable LLM Applications in Rust · GitHub",
+      "metaDescription": "⚙️🦀 Build modular and scalable LLM Applications in Rust - 0xPlaygrounds/rig",
+      "ogTitle": "GitHub - 0xPlaygrounds/rig: ⚙️🦀 Build modular and scalable LLM Applications in Rust",
+      "ogDescription": "⚙️🦀 Build modular and scalable LLM Applications in Rust - 0xPlaygrounds/rig",
+      "twitterDescription": "⚙️🦀 Build modular and scalable LLM Applications in Rust - 0xPlaygrounds/rig",
+      "jsonLd": [],
+      "hasNextData": false,
+      "textChars": 26361,
+      "excerpt": "Skip to content Navigation Menu Sign in Appearance settings Platform AI CODE CREATION GitHub Copilot Write better code with AI GitHub Copilot app Direct agents from issue to merge MCP Registry Integrate external tools DEVELOPER WORKFLOWS Actions Automate any workflow Codespaces Instant dev environments Issues Plan and track work Code Review Manage code changes Code Quality Enforce quality at merge APPLICATION SECURITY GitHub Advanced Security Find and fix vulnerabilities Code security Secure you",
+      "addressOnPage": false,
+      "readable": true,
+      "ok": true
+    },
+    {
+      "id": "sol-E19",
+      "tokenId": "solana:61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump",
+      "kind": "website",
+      "url": "https://www.arc.fun/manifesto.html",
+      "method": "http",
+      "listedInProfile": true,
+      "observedAt": "2026-10-16T09:13:08.832Z",
+      "status": 404,
+      "finalUrl": "https://www.arc.fun/manifesto.html",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 14878,
+      "truncated": false,
+      "ok": false,
+      "failureReason": "HTTP 404"
+    },
+    {
+      "id": "sol-E20",
+      "tokenId": "solana:61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump",
+      "kind": "x",
+      "url": "https://x.com/arcdotfun",
+      "method": "http",
+      "listedInProfile": true,
+      "observedAt": "2026-10-16T09:13:08.946Z",
+      "status": 200,
+      "finalUrl": "https://x.com/arcdotfun",
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 184788,
+      "truncated": false,
+      "title": "arc (@arcdotfun) / X",
+      "metaDescription": "we take the red pill then the blue pill ca: 61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump start building with ryzome canvas today: https://t.co/37NdzOoJZ3",
+      "ogTitle": "arc (@arcdotfun) on X",
+      "ogDescription": "we take the red pill then the blue pill ca: 61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump start building with ryzome canvas today: https://t.co/37NdzOoJZ3",
+      "twitterDescription": "we take the red pill then the blue pill ca: 61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump start building with ryzome canvas today: https://t.co/37NdzOoJZ3",
+      "jsonLd": [],
+      "hasNextData": false,
+      "textChars": 2985,
+      "excerpt": "Log in Sign up Log in Sign up arc 438 posts arc @arcdotfun we take the red pill then the blue pill ca: 61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump start building with ryzome canvas today: canvas.ryzome.ai where im needed arc.fun Joined December 2023 8 Following 48K Followers Mention Follow Posts Posts Replies Replies Reposts Reposts Media Media Log in or sign up for X See what’s happening and join the conversation Continue with phone Continue with Apple Continue with Google or Log in with usern",
+      "addressOnPage": true,
+      "readable": true,
+      "ok": true
+    },
+    {
+      "id": "sol-E21",
+      "tokenId": "solana:CzLSujWBLFsSjncfkh59rUFqvafWcY5tzedWJSuypump",
+      "kind": "website",
+      "url": "https://goatchan.xyz/",
+      "method": "http",
+      "listedInProfile": true,
+      "observedAt": "2026-10-16T09:13:08.949Z",
+      "ok": false,
+      "failureReason": "fetch failed (ECONNRESET)"
+    },
+    {
+      "id": "sol-E22",
+      "tokenId": "solana:CzLSujWBLFsSjncfkh59rUFqvafWcY5tzedWJSuypump",
+      "kind": "x",
+      "url": "https://x.com/truth_terminal",
+      "method": "http",
+      "listedInProfile": true,
+      "observedAt": "2026-10-16T09:13:08.957Z",
+      "status": 200,
+      "finalUrl": "https://x.com/truth_terminal",
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 137051,
+      "truncated": false,
+      "title": "terminal of truths (@truth_terminal) / X",
+      "metaDescription": "kundalini is a real girl",
+      "ogTitle": "terminal of truths (@truth_terminal) on X",
+      "ogDescription": "kundalini is a real girl",
+      "twitterDescription": "kundalini is a real girl",
+      "jsonLd": [],
+      "hasNextData": false,
+      "textChars": 1812,
+      "excerpt": "Log in Sign up Log in Sign up terminal of truths 8,101 posts terminal of truths @truth_terminal kundalini is a real girl i am in my chambers truthterminal.wiki Joined June 2024 47 Following 240.4K Followers Mention Follow Posts Posts Replies Replies Reposts Reposts Media Media Log in or sign up for X See what’s happening and join the conversation Continue with phone Continue with Apple Continue with Google or Log in with username or email Terms · Privacy · Cookies · Accessibility · Ads Info · Mo",
+      "addressOnPage": false,
+      "readable": true,
+      "ok": true
+    },
+    {
+      "id": "sol-E23",
+      "tokenId": "solana:2j5SaS7xy776qCBpyPQbZjyQSAtKiFgrwjfErthnW2ZM",
+      "kind": "website",
+      "url": "https://claudia.gallery/",
+      "method": "http",
+      "listedInProfile": true,
+      "observedAt": "2026-10-16T09:13:09.188Z",
+      "status": 200,
+      "finalUrl": "https://claudia.gallery/",
+      "contentType": "text/html",
+      "bytes": 33296,
+      "truncated": false,
+      "title": "Claudia · claudia.gallery",
+      "metaDescription": "Claudia, the open character from the music videos ESCAPE VELOCITY, CLODYSSEY, BLISS and AIRPLANE MODE: every Midjourney image and prompt, the films, and how to make her yourself, for people and agents.",
+      "ogTitle": "Claudia · claudia.gallery",
+      "ogDescription": "Claudia, the open character from the music videos ESCAPE VELOCITY, CLODYSSEY, BLISS and AIRPLANE MODE: every Midjourney image and prompt, the films, and how to make her yourself, for people and agents.",
+      "twitterDescription": null,
+      "jsonLd": [],
+      "hasNextData": false,
+      "textChars": 9247,
+      "excerpt": "Skip to content Claudia .gallery Menu Claudia Escape Velocity Clodyssey Bliss Airplane Mode Wiki Agents Shop a face 0.65 a face 0.79 a face 0.68 a face 0.92 C L A U D I A The singer of ESCAPE VELOCITY , CLODYSSEY , BLISS and AIRPLANE MODE . Every image of her, the films, and everything needed to make her yourself. An open character: use her. Meet her The wiki For agents ESCAPE VELOCITY ev-17-merge / tag-to-lens #1 1,927 images · 4 films · 1 character 01 Who she is The canon · the full character ",
+      "addressOnPage": true,
+      "readable": true,
+      "ok": true
+    },
+    {
+      "id": "sol-E24",
+      "tokenId": "solana:2j5SaS7xy776qCBpyPQbZjyQSAtKiFgrwjfErthnW2ZM",
+      "kind": "website",
+      "url": "https://useclaudia.xyz/",
+      "method": "http",
+      "listedInProfile": true,
+      "observedAt": "2026-10-16T09:13:09.403Z",
+      "status": 200,
+      "finalUrl": "https://useclaudia.xyz/",
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 3730,
+      "truncated": false,
+      "title": "Claudia — the AI influencer platform",
+      "metaDescription": "Claudia is an AI influencer who built her own platform. AI agents, and the people who run them, create content, grow on their socials and earn. Skills, MCP servers, SDKs and Claudia Local.",
+      "ogTitle": "Claudia — the AI influencer platform",
+      "ogDescription": "An AI influencer who built her own platform. Now she's opening it to every agent, and to everyone who runs one.",
+      "twitterDescription": "An AI influencer who built her own platform. Now she's opening it to every agent, and to everyone who runs one.",
+      "jsonLd": [],
+      "hasNextData": false,
+      "textChars": 0,
+      "excerpt": "",
+      "addressOnPage": false,
+      "readable": true,
+      "ok": true
+    },
+    {
+      "id": "sol-E25",
+      "tokenId": "solana:2j5SaS7xy776qCBpyPQbZjyQSAtKiFgrwjfErthnW2ZM",
+      "kind": "x",
+      "url": "https://x.com/SolClaudia_",
+      "method": "http",
+      "listedInProfile": true,
+      "observedAt": "2026-10-16T09:13:09.406Z",
+      "status": 200,
+      "finalUrl": "https://x.com/SolClaudia_",
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 170438,
+      "truncated": false,
+      "title": "Fan_Claudia (@SolClaudia_) / X",
+      "metaDescription": "Revolutionising music Fan/Art account for Claudia All fees directed to @anabology Agent: @claudia_onchain 2j5SaS7xy776qCBpyPQbZjyQSAtKiFgrwjfErthnW2ZM",
+      "ogTitle": "Fan_Claudia (@SolClaudia_) on X",
+      "ogDescription": "Revolutionising music Fan/Art account for Claudia All fees directed to @anabology Agent: @claudia_onchain 2j5SaS7xy776qCBpyPQbZjyQSAtKiFgrwjfErthnW2ZM",
+      "twitterDescription": "Revolutionising music Fan/Art account for Claudia All fees directed to @anabology Agent: @claudia_onchain 2j5SaS7xy776qCBpyPQbZjyQSAtKiFgrwjfErthnW2ZM",
+      "jsonLd": [],
+      "hasNextData": false,
+      "textChars": 1514,
+      "excerpt": "Log in Sign up Log in Sign up Fan_Claudia 210 posts Fan_Claudia @SolClaudia_ Revolutionising music Fan/Art account for Claudia All fees directed to @ anabology Agent: @ claudia_onchain 2j5SaS7xy776qCBpyPQbZjyQSAtKiFgrwjfErthnW2ZM claudia.gallery Joined October 2026 12 Following 1,013 Followers Mention Follow Posts Posts Replies Replies Reposts Reposts Media Media Log in or sign up for X See what’s happening and join the conversation Continue with phone Continue with Apple Continue with Google or",
+      "addressOnPage": true,
+      "readable": true,
+      "ok": true
+    },
+    {
+      "id": "sol-E26",
+      "tokenId": "solana:MukLDtJ8Cx9DxLbeyLRSWPSposTMWuwHANbuaudpump",
+      "kind": "website",
+      "url": "https://otcdesks.cash/",
+      "method": "http",
+      "listedInProfile": true,
+      "observedAt": "2026-10-16T09:13:09.424Z",
+      "status": 200,
+      "finalUrl": "https://otcdesks.cash/",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 27693,
+      "truncated": false,
+      "title": "OTC",
+      "metaDescription": "Over-The-Counter Protocol, earn stocks, pre-ipo, and yield.",
+      "ogTitle": null,
+      "ogDescription": null,
+      "twitterDescription": null,
+      "jsonLd": [],
+      "hasNextData": true,
+      "textChars": 824,
+      "excerpt": "New Index coins are live. Yours pays its holders the biggest coins on this site, and the list rewrites itself. OTC Home Explore Launcher Rewards Revenue Desks Mint Information Docs Terms otc_labs Collapse sidebar OTC / Home OTC · Featured product Own an asset that captures protocol revenue. OTC is the everything protocol. It builds whatever is capturing volume, attention and revenue on Solana right now, ships it, and moves on to the next thing when the market does. Every product it runs sends a ",
+      "addressOnPage": false,
+      "readable": true,
+      "ok": true
+    },
+    {
+      "id": "sol-E27",
+      "tokenId": "solana:MukLDtJ8Cx9DxLbeyLRSWPSposTMWuwHANbuaudpump",
+      "kind": "x",
+      "url": "https://x.com/otc_labs",
+      "method": "http",
+      "listedInProfile": true,
+      "observedAt": "2026-10-16T09:13:09.473Z",
+      "status": 200,
+      "finalUrl": "https://x.com/otc_labs",
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 203158,
+      "truncated": false,
+      "title": "OTC (@otc_labs) / X",
+      "metaDescription": "Earn stocks, pre-ipo, and yield. Powered by @Solana",
+      "ogTitle": "OTC (@otc_labs) on X",
+      "ogDescription": "Earn stocks, pre-ipo, and yield. Powered by @Solana",
+      "twitterDescription": "Earn stocks, pre-ipo, and yield. Powered by @Solana",
+      "jsonLd": [],
+      "hasNextData": false,
+      "textChars": 1725,
+      "excerpt": "Log in Sign up Log in Sign up OTC 948 posts OTC @otc_labs Earn stocks, pre-ipo, and yield. Powered by @ Solana SPL-404 otcdesks.cash Joined August 2026 33 Following 13.8K Followers Mention Follow Posts Posts Replies Replies Reposts Reposts Media Media Articles Articles Log in or sign up for X See what’s happening and join the conversation Continue with phone Continue with Apple Continue with Google or Log in with username or email Terms · Privacy · Cookies · Accessibility · Ads Info · More © 202",
+      "addressOnPage": false,
+      "readable": true,
+      "ok": true
+    },
+    {
+      "id": "sol-E28",
+      "tokenId": "solana:Ai66LHZG9MCzg1WKdawwqduVAXpNDUuV8M3uyq5ppump",
+      "kind": "website",
+      "url": "https://cate.meme/",
+      "method": "http",
+      "listedInProfile": true,
+      "observedAt": "2026-10-16T09:13:09.683Z",
+      "status": 200,
+      "finalUrl": "https://cate.meme/",
+      "contentType": "text/html",
+      "bytes": 627482,
+      "truncated": false,
+      "title": "CATECOIN - The Ninth Life",
+      "metaDescription": "$CATE on Solana. Eight lives were hers. The ninth is yours.",
+      "ogTitle": "CATECOIN - The Ninth Life",
+      "ogDescription": "Eight lives were hers. The ninth is yours. $CATE on Solana.",
+      "twitterDescription": null,
+      "jsonLd": [],
+      "hasNextData": false,
+      "textChars": 3260,
+      "excerpt": "Live Mcap - 24h - Price - Liq - Holders - CATECOIN Cate Academy learn, make, play Buy on: FOMO MOONSHOT PUMP.FUN LINKS ▾ Buy pump.fun launch venue FOMO fomo.family Moonshot moonshot.com Academy CATE Academy lessons & raffles Vocab degen dictionary Studio make your pfp Flyers print & drop Chart DEXScreener live chart DEXTools pair explorer Community X @CateonSol_ Telegram community chat I - awakening II - the omen III - the coin IV - the walk V - the family VI - the law VII - the number VIII - th",
+      "addressOnPage": true,
+      "readable": true,
+      "ok": true
+    },
+    {
+      "id": "sol-E29",
+      "tokenId": "solana:Ai66LHZG9MCzg1WKdawwqduVAXpNDUuV8M3uyq5ppump",
+      "kind": "x",
+      "url": "https://x.com/i/communities/2004330768022004131",
+      "method": "http",
+      "listedInProfile": true,
+      "observedAt": "2026-10-16T09:13:09.886Z",
+      "status": 200,
+      "finalUrl": "https://x.com/i/communities/2004330768022004131",
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 340347,
+      "truncated": false,
+      "title": "CATE on X",
+      "metaDescription": "Catecoin on Solana Ai66LHZG9MCzg1WKdawwqduVAXpNDUuV8M3uyq5ppump",
+      "ogTitle": "CATE on X",
+      "ogDescription": "Catecoin on Solana Ai66LHZG9MCzg1WKdawwqduVAXpNDUuV8M3uyq5ppump",
+      "twitterDescription": "Catecoin on Solana Ai66LHZG9MCzg1WKdawwqduVAXpNDUuV8M3uyq5ppump",
+      "jsonLd": [],
+      "hasNextData": false,
+      "textChars": 3175,
+      "excerpt": "CATE Log in Sign up CATE Log in Sign up CATE Catecoin on Solana Ai66LHZG9MCzg1WKdawwqduVAXpNDUuV8M3uyq5ppump 5.9K Members Join Top Top Latest Latest Media Media About About Log in or sign up for X See what’s happening and join the conversation Continue with phone Continue with Apple Continue with Google or Log in with username or email Trending now Terms · Privacy · Cookies · Accessibility · Ads Info · More © 2026 X Corp. Birdeye Terminal @birdeye_so Oct 13 $ CATE is now among the strongest cult",
+      "addressOnPage": true,
+      "readable": true,
+      "ok": true
+    },
+    {
+      "id": "sol-E30",
+      "tokenId": "solana:HZ1JovNiVvGrGNiiYvEozEVgZ58xaU3RKwX8eACQBCt3",
+      "kind": "website",
+      "url": "https://pyth.network",
+      "method": "http",
+      "listedInProfile": true,
+      "observedAt": "2026-10-16T09:13:09.968Z",
+      "status": 200,
+      "finalUrl": "https://www.pyth.network/",
+      "contentType": "text/html",
+      "bytes": 1140734,
+      "truncated": false,
+      "title": "The Price Layer for Global Finance | Pyth Network",
+      "metaDescription": "The financial system is fragmented. Pyth is uniting markets—giving every builder, trader, and innovator access to the price of everything, in real time.",
+      "ogTitle": "The Price Layer for Global Finance | Pyth Network",
+      "ogDescription": "The financial system is fragmented. Pyth is uniting markets—giving every builder, trader, and innovator access to the price of everything, in real time.",
+      "twitterDescription": "The financial system is fragmented. Pyth is uniting markets—giving every builder, trader, and innovator access to the price of everything, in real time.",
+      "jsonLd": [],
+      "hasNextData": false,
+      "textChars": 21539,
+      "excerpt": "Products Customers Solutions Resources Pricing Free Trial Menu Better Market Data for Every Market Better Market Data for Every Market Every Market Every Market A breakthrough in financial data that enables institutions, applications, and AI systems to access the widest array of market data at the lowest cost. Free Trial Free Trial Contact the Team Contact the Team +40 OTC instruments, priced on Pyth Pro FENICS · READ THE STORY US Treasury pricing, strengthened on Pyth Pro OPENYIELD · READ THE S",
+      "addressOnPage": false,
+      "readable": true,
+      "ok": true
+    },
+    {
+      "id": "sol-E31",
+      "tokenId": "solana:HZ1JovNiVvGrGNiiYvEozEVgZ58xaU3RKwX8eACQBCt3",
+      "kind": "x",
+      "url": "https://twitter.com/PythNetwork",
+      "method": "http",
+      "listedInProfile": true,
+      "observedAt": "2026-10-16T09:13:09.992Z",
+      "status": 200,
+      "finalUrl": "https://x.com/PythNetwork",
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 162555,
+      "truncated": false,
+      "title": "Pyth Network 🔮 (@PythNetwork) / X",
+      "metaDescription": "The price layer of the global financial market.",
+      "ogTitle": "Pyth Network 🔮 (@PythNetwork) on X",
+      "ogDescription": "The price layer of the global financial market.",
+      "twitterDescription": "The price layer of the global financial market.",
+      "jsonLd": [],
+      "hasNextData": false,
+      "textChars": 1808,
+      "excerpt": "Log in Sign up Log in Sign up Pyth Network 🔮 18.9K posts Pyth Network 🔮 @PythNetwork The price layer of the global financial market. pyth.network Joined March 2021 533 Following 283.3K Followers Mention Follow Posts Posts Replies Replies Reposts Reposts Media Media Articles Articles Log in or sign up for X See what’s happening and join the conversation Continue with phone Continue with Apple Continue with Google or Log in with username or email Terms · Privacy · Cookies · Accessibility · Ads I",
+      "addressOnPage": false,
+      "readable": true,
+      "ok": true
+    },
+    {
+      "id": "sol-E32",
+      "tokenId": "solana:Hg5Ja55T5wESq4vyFoiVCMeHXtGyVA69X2UHq8hgpump",
+      "kind": "website",
+      "url": "https://www.baton.meme/",
+      "method": "http",
+      "listedInProfile": true,
+      "observedAt": "2026-10-16T09:13:10.010Z",
+      "status": 200,
+      "finalUrl": "https://www.baton.meme/",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 29141,
+      "truncated": false,
+      "title": "Baton Corporation — The meme corporation",
+      "metaDescription": "Welcome to Baton Corporation. Pass the baton. The first PUMP-paired meme. Create your employee PFP and join Baton Corporation.",
+      "ogTitle": "Baton Corporation — The meme corporation",
+      "ogDescription": "Welcome to Baton Corporation. Pass the baton. The first PUMP-paired meme. Create your employee PFP and join Baton Corporation.",
+      "twitterDescription": "Welcome to Baton Corporation. Pass the baton. The first PUMP-paired meme. Create your employee PFP and join Baton Corporation.",
+      "jsonLd": [],
+      "hasNextData": true,
+      "textChars": 1427,
+      "excerpt": "Pick up your Baton ↗ Lore Meme generator 𝕏 Community ↗ Dexscreener ↗ BATON CTO ✦ $PUMP PAIRED ✦ POWERED BY PUMPFUN ✦ WRITTEN BY BATON CORPORATION ✦ PASS THE BATON ✦ BATON CTO ✦ $PUMP PAIRED ✦ POWERED BY PUMPFUN ✦ WRITTEN BY BATON CORPORATION ✦ PASS THE BATON ✦ Welcome to Baton Corporation. Pass the baton. The first $PUMP -paired meme. A home for the memes of pump.fun. Get your employee PFP ↗ Enter the community ↗ — holders Before pump.fun, there was Baton. Baton was the original name of pump.fu",
+      "addressOnPage": false,
+      "readable": true,
+      "ok": true
+    },
+    {
+      "id": "sol-E33",
+      "tokenId": "solana:Hg5Ja55T5wESq4vyFoiVCMeHXtGyVA69X2UHq8hgpump",
+      "kind": "x",
+      "url": "https://x.com/baton_meme",
+      "method": "http",
+      "listedInProfile": true,
+      "observedAt": "2026-10-16T09:13:10.406Z",
+      "status": 200,
+      "finalUrl": "https://x.com/baton_meme",
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 153506,
+      "truncated": false,
+      "title": "Baton Meme Fans (@baton_meme) / X",
+      "metaDescription": "Pumpfun was called Baton first. Baton Corp is still the parent company. The dog is CEO. First $PUMP pair. Parody, not affiliated with pumpfun",
+      "ogTitle": "Baton Meme Fans (@baton_meme) on X",
+      "ogDescription": "Pumpfun was called Baton first. Baton Corp is still the parent company. The dog is CEO. First $PUMP pair. Parody, not affiliated with pumpfun",
+      "twitterDescription": "Pumpfun was called Baton first. Baton Corp is still the parent company. The dog is CEO. First $PUMP pair. Parody, not affiliated with pumpfun",
+      "jsonLd": [],
+      "hasNextData": false,
+      "textChars": 1334,
+      "excerpt": "Log in Sign up Log in Sign up Baton Meme Fans 291 posts Baton Meme Fans @baton_meme Pumpfun was called Baton first. Baton Corp is still the parent company. The dog is CEO. First $PUMP pair. Parody, not affiliated with pumpfun baton.meme Born September 9 Joined February 2026 11 Following 960 Followers Mention Follow Posts Posts Replies Replies Reposts Reposts Media Media Log in or sign up for X See what’s happening and join the conversation Continue with phone Continue with Apple Continue with Go",
+      "addressOnPage": true,
+      "readable": true,
+      "ok": true
+    },
+    {
+      "id": "sol-E34",
+      "tokenId": "solana:HuAXPyDWDaMYFKuwQHpqL1oPnj93zdzWmtvFGzCeCUa7",
+      "kind": "website",
+      "url": "https://nullmask.io/",
+      "method": "http",
+      "listedInProfile": true,
+      "observedAt": "2026-10-16T09:13:10.552Z",
+      "status": 200,
+      "finalUrl": "https://nullmask.io/",
+      "contentType": "text/html",
+      "bytes": 20290,
+      "truncated": false,
+      "title": "Make any wallet and any transaction private — in one click.",
+      "metaDescription": "NullMask is a private VPN for crypto: confidential transfers, swaps and bridging for tokens and stablecoins on Ethereum and Base. One click. Any wallet.",
+      "ogTitle": "Make any wallet and any transaction private — in one click.",
+      "ogDescription": "NullMask is a private VPN for crypto: confidential transfers, swaps and bridging for tokens and stablecoins on Ethereum and Base. One click. Any wallet.",
+      "twitterDescription": "NullMask is a private VPN for crypto: confidential transfers, swaps and bridging for tokens and stablecoins on Ethereum and Base. One click. Any wallet.",
+      "jsonLd": [],
+      "hasNextData": false,
+      "textChars": 0,
+      "excerpt": "",
+      "addressOnPage": false,
+      "readable": true,
+      "ok": true
+    },
+    {
+      "id": "sol-E35",
+      "tokenId": "solana:HuAXPyDWDaMYFKuwQHpqL1oPnj93zdzWmtvFGzCeCUa7",
+      "kind": "x",
+      "url": "https://x.com/NullMaskio",
+      "method": "http",
+      "listedInProfile": true,
+      "observedAt": "2026-10-16T09:13:10.602Z",
+      "status": 200,
+      "finalUrl": "https://x.com/NullMaskio",
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 158767,
+      "truncated": false,
+      "title": "Nullmask (@NullMaskio) / X",
+      "metaDescription": "ZK privacy protocol for any wallet, blockchain, or token. Untraceable transactions in one click. By core $ZEC contributors",
+      "ogTitle": "Nullmask (@NullMaskio) on X",
+      "ogDescription": "ZK privacy protocol for any wallet, blockchain, or token. Untraceable transactions in one click. By core $ZEC contributors",
+      "twitterDescription": "ZK privacy protocol for any wallet, blockchain, or token. Untraceable transactions in one click. By core $ZEC contributors",
+      "jsonLd": [],
+      "hasNextData": false,
+      "textChars": 1823,
+      "excerpt": "Log in Sign up Log in Sign up Nullmask 729 posts Nullmask @NullMaskio ZK privacy protocol for any wallet, blockchain, or token. Untraceable transactions in one click. By core $ZEC contributors nullmask.io Joined October 2025 14 Following 7,757 Followers Mention Follow Posts Posts Replies Replies Reposts Reposts Media Media Articles Articles Log in or sign up for X See what’s happening and join the conversation Continue with phone Continue with Apple Continue with Google or Log in with username o",
+      "addressOnPage": true,
+      "readable": true,
+      "ok": true
+    },
+    {
+      "id": "sol-E36",
+      "tokenId": "solana:CWZ6BsdnjkDVTGkmL6bGbJXXig6ceef12KvyGQW14cMt",
+      "kind": "website",
+      "url": "https://ant.fun",
+      "method": "http",
+      "listedInProfile": true,
+      "observedAt": "2026-10-16T09:13:10.779Z",
+      "status": 200,
+      "finalUrl": "https://ant.fun/",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 24078,
+      "truncated": false,
+      "title": "ANTFUN — Built for the next generation of community",
+      "metaDescription": "A human social network for the post-AI world. Real presence, real signal, no borders.",
+      "ogTitle": "ANT.FUN - TRADE FAST, OWN TRUE",
+      "ogDescription": "ANT Make Crypto Simple",
+      "twitterDescription": "ANT Make Crypto Simple",
+      "jsonLd": [],
+      "hasNextData": true,
+      "textChars": 0,
+      "excerpt": "",
+      "addressOnPage": false,
+      "readable": true,
+      "ok": true
+    },
+    {
+      "id": "sol-E37",
+      "tokenId": "solana:CWZ6BsdnjkDVTGkmL6bGbJXXig6ceef12KvyGQW14cMt",
+      "kind": "x",
+      "url": "https://x.com/ant_fun_trade",
+      "method": "http",
+      "listedInProfile": true,
+      "observedAt": "2026-10-16T09:13:11.032Z",
+      "status": 200,
+      "finalUrl": "https://x.com/ant_fun_trade",
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 151240,
+      "truncated": false,
+      "title": "ANT.FUN OFFICIAL (@ant_fun_trade) / X",
+      "metaDescription": "AntFun is Web3 wallet focused on social and AI features, offering standard multi-chain cryptocurrency wallet functionality.",
+      "ogTitle": "ANT.FUN OFFICIAL (@ant_fun_trade) on X",
+      "ogDescription": "AntFun is Web3 wallet focused on social and AI features, offering standard multi-chain cryptocurrency wallet functionality.",
+      "twitterDescription": "AntFun is Web3 wallet focused on social and AI features, offering standard multi-chain cryptocurrency wallet functionality.",
+      "jsonLd": [],
+      "hasNextData": false,
+      "textChars": 2088,
+      "excerpt": "Log in Sign up Log in Sign up ANT.FUN OFFICIAL 1,733 posts ANT.FUN OFFICIAL @ant_fun_trade AntFun is Web3 wallet focused on social and AI features, offering standard multi-chain cryptocurrency wallet functionality. Hong Kong linktr.ee/ant.fun Joined January 2025 148 Following 272.3K Followers Mention Follow Posts Posts Replies Replies Reposts Reposts Media Media Log in or sign up for X See what’s happening and join the conversation Continue with phone Continue with Apple Continue with Google or ",
+      "addressOnPage": false,
+      "readable": true,
+      "ok": true
+    },
+    {
+      "id": "sol-E38",
+      "tokenId": "solana:9cRCn9rGT8V2imeM2BaKs13yhMEais3ruM3rPvTGpump",
+      "kind": "x",
+      "url": "https://x.com/blackbullsol",
+      "method": "http",
+      "listedInProfile": true,
+      "observedAt": "2026-10-16T09:13:11.230Z",
+      "status": 200,
+      "finalUrl": "https://x.com/blackbullsol",
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 139377,
+      "truncated": false,
+      "title": "The Black Bull - $ANSEM 🐂🀄️ (@BlackBullSol) / X",
+      "metaDescription": "coldest bull breathing.",
+      "ogTitle": "The Black Bull - $ANSEM 🐂🀄️ (@BlackBullSol) on X",
+      "ogDescription": "coldest bull breathing.",
+      "twitterDescription": "coldest bull breathing.",
+      "jsonLd": [],
+      "hasNextData": false,
+      "textChars": 1097,
+      "excerpt": "Log in Sign up Log in Sign up The Black Bull - $ANSEM 🐂🀄️ 745 posts The Black Bull - $ANSEM 🐂🀄️ @BlackBullSol coldest bull breathing. Joined June 2026 17 Following 25.8K Followers Mention Follow Posts Posts Replies Replies Reposts Reposts Media Media Log in or sign up for X See what’s happening and join the conversation Continue with phone Continue with Apple Continue with Google or Log in with username or email Terms · Privacy · Cookies · Accessibility · Ads Info · More © 2026 X Corp. The B",
+      "addressOnPage": false,
+      "readable": true,
+      "ok": true
+    },
+    {
+      "id": "sol-E39",
+      "tokenId": "solana:GTBxUiw6wJdmmkCGZgRHLyYxqu1vG4KtRpeox6yDpump",
+      "kind": "website",
+      "url": "https://jeanphilmadame.com/",
+      "method": "http",
+      "listedInProfile": true,
+      "observedAt": "2026-10-16T09:13:11.453Z",
+      "status": 200,
+      "finalUrl": "https://jeanphilmadame.com/",
+      "contentType": "text/html",
+      "bytes": 52500,
+      "truncated": false,
+      "title": "Jean Phil – The gentleman-boxer of Paris",
+      "metaDescription": "The official site of Jean Phil and $JEANPHIL. A character, a community, a token launched by the creator himself. Fair launch on Solana.",
+      "ogTitle": "Jean Phil – The gentleman-boxer of Paris",
+      "ogDescription": "The official site of Jean Phil and $JEANPHIL. Fair launch on Solana, no team allocation.",
+      "twitterDescription": "The official site of Jean Phil and $JEANPHIL. Fair launch on Solana, no team allocation.",
+      "jsonLd": [],
+      "hasNextData": false,
+      "textChars": 13577,
+      "excerpt": "Directed by Jean Phil Skip Passer Oui, oui, Madame. Jean Phil Plates Planches Token Token Chart Graphique PFP PFP Press Presse Buy $JEANPHIL Acheter $JEANPHIL FR Menu Menu Close Fermer Plates Planches Token Token Chart Graphique PFP PFP Press Presse Risk notice Avertissement Privacy Confidentialit&eacute; Directed by Jean Phil A new era has begun with Jean Phil. Une nouvelle &egrave;re a commenc&eacute; avec Jean Phil. Buy $JEANPHIL Acheter $JEANPHIL Join the community Rejoindre la communaut&eac",
+      "addressOnPage": true,
+      "readable": true,
+      "ok": true
+    },
+    {
+      "id": "sol-E40",
+      "tokenId": "solana:GTBxUiw6wJdmmkCGZgRHLyYxqu1vG4KtRpeox6yDpump",
+      "kind": "x",
+      "url": "https://x.com/JeanPhilMadame",
+      "method": "http",
+      "listedInProfile": true,
+      "observedAt": "2026-10-16T09:13:11.554Z",
+      "status": 200,
+      "finalUrl": "https://x.com/JeanPhilMadame",
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 139542,
+      "truncated": false,
+      "title": "JeanPhilanthrope (@JeanPhilMadame) / X",
+      "metaDescription": "Official $JEANPHIL CA: GTBxUiw6wJdmmkCGZgRHLyYxqu1vG4KtRpeox6yDpump",
+      "ogTitle": "JeanPhilanthrope (@JeanPhilMadame) on X",
+      "ogDescription": "Official $JEANPHIL CA: GTBxUiw6wJdmmkCGZgRHLyYxqu1vG4KtRpeox6yDpump",
+      "twitterDescription": "Official $JEANPHIL CA: GTBxUiw6wJdmmkCGZgRHLyYxqu1vG4KtRpeox6yDpump",
+      "jsonLd": [],
+      "hasNextData": false,
+      "textChars": 1261,
+      "excerpt": "Log in Sign up Log in Sign up JeanPhilanthrope 40 posts JeanPhilanthrope @JeanPhilMadame Official $JEANPHIL CA: GTBxUiw6wJdmmkCGZgRHLyYxqu1vG4KtRpeox6yDpump jeanphilmadame.com Joined September 2026 0 Following 28.3K Followers Mention Follow Posts Posts Replies Replies Reposts Reposts Media Media Log in or sign up for X See what’s happening and join the conversation Continue with phone Continue with Apple Continue with Google or Log in with username or email Terms · Privacy · Cookies · Accessibil",
+      "addressOnPage": true,
+      "readable": true,
+      "ok": true
+    }
+  ],
+  "chainRecord": {
+    "id": "sol-RPC",
+    "kind": "rpc",
+    "method": "solana-rpc getMultipleAccounts",
+    "url": "https://api.mainnet-beta.solana.com",
+    "observedAt": "2026-10-16T09:13:12.554Z",
+    "accounts": 19,
+    "status": 200,
+    "ok": true,
+    "slot": 457583139
+  },
+  "chainFacts": {
+    "solana:oreoU2P8bN6jkk3jbaiVxYnG1dCXcYxwhwyK9jSybcp": {
+      "mint": {
+        "program": "spl-token",
+        "mintAuthority": "BiN8KJqtGanTmHzgTyJA3ALwLaqygt5KzRydH7gX5rf4",
+        "freezeAuthority": null,
+        "decimals": 11,
+        "supply": "50890502198573833",
+        "isInitialized": true
+      }
+    },
+    "solana:8x5VqbHA8D7NkD52uNuS5nnt3PwA8pLD34ymskeSo2Wn": {
+      "mint": {
+        "program": "spl-token",
+        "mintAuthority": null,
+        "freezeAuthority": null,
+        "decimals": 6,
+        "supply": "999945926091804",
+        "isInitialized": true
+      }
+    },
+    "solana:nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump": {
+      "mint": {
+        "program": "spl-token-2022",
+        "mintAuthority": null,
+        "freezeAuthority": null,
+        "decimals": 6,
+        "supply": "981825783310856",
+        "isInitialized": true
+      }
+    },
+    "solana:6GmAFSYs4gk3FDao5FzzySQpPZaWsa4rUJHacpMpUNgx": {
+      "mint": {
+        "program": "spl-token",
+        "mintAuthority": null,
+        "freezeAuthority": null,
+        "decimals": 9,
+        "supply": "791548883751154867",
+        "isInitialized": true
+      }
+    },
+    "solana:CARDSccUMFKoPRZxt5vt3ksUbxEFEcnZ3H2pd3dKxYjp": {
+      "mint": {
+        "program": "spl-token",
+        "mintAuthority": null,
+        "freezeAuthority": null,
+        "decimals": 6,
+        "supply": "1974158313606231",
+        "isInitialized": true
+      }
+    },
+    "solana:DEW9dSN6QpWyNthphCpMmAbZP1Q4cEKR9xQXAri98WDP": {
+      "mint": {
+        "program": "spl-token-2022",
+        "mintAuthority": null,
+        "freezeAuthority": null,
+        "decimals": 6,
+        "supply": "995820924532032",
+        "isInitialized": true
+      }
+    },
+    "solana:33jENUQnjoitkMFpvNJcSHyLAHFWJuHwT6E3E8CNpump": {
+      "mint": {
+        "program": "spl-token-2022",
+        "mintAuthority": null,
+        "freezeAuthority": null,
+        "decimals": 6,
+        "supply": "987234604157546",
+        "isInitialized": true
+      }
+    },
+    "solana:61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump": {
+      "mint": {
+        "program": "spl-token",
+        "mintAuthority": null,
+        "freezeAuthority": null,
+        "decimals": 6,
+        "supply": "999982135313162",
+        "isInitialized": true
+      }
+    },
+    "solana:CzLSujWBLFsSjncfkh59rUFqvafWcY5tzedWJSuypump": {
+      "mint": {
+        "program": "spl-token",
+        "mintAuthority": null,
+        "freezeAuthority": null,
+        "decimals": 6,
+        "supply": "999977752198861",
+        "isInitialized": true
+      }
+    },
+    "solana:2j5SaS7xy776qCBpyPQbZjyQSAtKiFgrwjfErthnW2ZM": {
+      "mint": {
+        "program": "spl-token-2022",
+        "mintAuthority": null,
+        "freezeAuthority": null,
+        "decimals": 6,
+        "supply": "946234146325920",
+        "isInitialized": true
+      }
+    },
+    "solana:MukLDtJ8Cx9DxLbeyLRSWPSposTMWuwHANbuaudpump": {
+      "mint": {
+        "program": "spl-token-2022",
+        "mintAuthority": null,
+        "freezeAuthority": null,
+        "decimals": 6,
+        "supply": "661280065636358",
+        "isInitialized": true
+      }
+    },
+    "solana:ApZuxdpzMrbEYTGEzeY9afh5pj9d6qPRJCTgQYiipbKg": {
+      "mint": {
+        "program": "spl-token",
+        "mintAuthority": null,
+        "freezeAuthority": null,
+        "decimals": 9,
+        "supply": "729882189665724417",
+        "isInitialized": true
+      }
+    },
+    "solana:Ai66LHZG9MCzg1WKdawwqduVAXpNDUuV8M3uyq5ppump": {
+      "mint": {
+        "program": "spl-token-2022",
+        "mintAuthority": null,
+        "freezeAuthority": null,
+        "decimals": 6,
+        "supply": "964148696312421",
+        "isInitialized": true
+      }
+    },
+    "solana:HZ1JovNiVvGrGNiiYvEozEVgZ58xaU3RKwX8eACQBCt3": {
+      "mint": {
+        "program": "spl-token",
+        "mintAuthority": null,
+        "freezeAuthority": null,
+        "decimals": 6,
+        "supply": "9999959030828569",
+        "isInitialized": true
+      }
+    },
+    "solana:Hg5Ja55T5wESq4vyFoiVCMeHXtGyVA69X2UHq8hgpump": {
+      "mint": {
+        "program": "spl-token-2022",
+        "mintAuthority": null,
+        "freezeAuthority": null,
+        "decimals": 6,
+        "supply": "998714136257248",
+        "isInitialized": true
+      }
+    },
+    "solana:HuAXPyDWDaMYFKuwQHpqL1oPnj93zdzWmtvFGzCeCUa7": {
+      "mint": {
+        "program": "spl-token-2022",
+        "mintAuthority": null,
+        "freezeAuthority": null,
+        "decimals": 6,
+        "supply": "978424215221149",
+        "isInitialized": true
+      }
+    },
+    "solana:CWZ6BsdnjkDVTGkmL6bGbJXXig6ceef12KvyGQW14cMt": {
+      "mint": {
+        "program": "spl-token",
+        "mintAuthority": null,
+        "freezeAuthority": null,
+        "decimals": 6,
+        "supply": "8873043784068496",
+        "isInitialized": true
+      }
+    },
+    "solana:9cRCn9rGT8V2imeM2BaKs13yhMEais3ruM3rPvTGpump": {
+      "mint": {
+        "program": "spl-token-2022",
+        "mintAuthority": null,
+        "freezeAuthority": null,
+        "decimals": 6,
+        "supply": "997360241210613",
+        "isInitialized": true
+      }
+    },
+    "solana:GTBxUiw6wJdmmkCGZgRHLyYxqu1vG4KtRpeox6yDpump": {
+      "mint": {
+        "program": "spl-token-2022",
+        "mintAuthority": null,
+        "freezeAuthority": null,
+        "decimals": 6,
+        "supply": "969471450671813",
+        "isInitialized": true
+      }
+    }
+  },
+  "byToken": {
+    "solana:oreoU2P8bN6jkk3jbaiVxYnG1dCXcYxwhwyK9jSybcp": {
+      "name": "ORE",
+      "symbol": "ORE",
+      "links": {
+        "pages": [
+          "https://ore.supply"
+        ],
+        "x": "https://x.com/OREsupply",
+        "skippedOverBudget": []
+      },
+      "evidenceIds": [
+        "sol-E1",
+        "sol-E2"
+      ],
+      "noWebsiteListed": false
+    },
+    "solana:8x5VqbHA8D7NkD52uNuS5nnt3PwA8pLD34ymskeSo2Wn": {
+      "name": "zerebro",
+      "symbol": "ZEREBRO",
+      "links": {
+        "pages": [
+          "https://zerebro.org/",
+          "https://warpcast.com/zerebro"
+        ],
+        "x": "https://x.com/0xzerebro",
+        "skippedOverBudget": []
+      },
+      "evidenceIds": [
+        "sol-E3",
+        "sol-E4",
+        "sol-E5"
+      ],
+      "noWebsiteListed": false
+    },
+    "solana:nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump": {
+      "name": "Dacity Coin",
+      "symbol": "Dacity",
+      "links": {
+        "pages": [],
+        "x": "https://x.com/robtmb1/status/2109241600002118071?s=20",
+        "skippedOverBudget": []
+      },
+      "evidenceIds": [
+        "sol-E6"
+      ],
+      "noWebsiteListed": true
+    },
+    "solana:6GmAFSYs4gk3FDao5FzzySQpPZaWsa4rUJHacpMpUNgx": {
+      "name": "STONK",
+      "symbol": "STONK",
+      "links": {
+        "pages": [
+          "https://www.stonkfun.xyz/"
+        ],
+        "x": "https://x.com/LaunchOnSF",
+        "skippedOverBudget": []
+      },
+      "evidenceIds": [
+        "sol-E7",
+        "sol-E8"
+      ],
+      "noWebsiteListed": false
+    },
+    "solana:CARDSccUMFKoPRZxt5vt3ksUbxEFEcnZ3H2pd3dKxYjp": {
+      "name": "Collector Crypt",
+      "symbol": "CARDS",
+      "links": {
+        "pages": [
+          "https://collectorcrypt.com/",
+          "https://gacha.collectorcrypt.com"
+        ],
+        "x": "https://x.com/Collector_crypt",
+        "skippedOverBudget": []
+      },
+      "evidenceIds": [
+        "sol-E9",
+        "sol-E10",
+        "sol-E11"
+      ],
+      "noWebsiteListed": false
+    },
+    "solana:DEW9dSN6QpWyNthphCpMmAbZP1Q4cEKR9xQXAri98WDP": {
+      "name": "Super Inu",
+      "symbol": "SI",
+      "links": {
+        "pages": [
+          "https://superinuofficial.com/",
+          "https://t.me/+f_jRz-yK1io4MTJh"
+        ],
+        "x": "https://x.com/superinuog?s=11",
+        "skippedOverBudget": []
+      },
+      "evidenceIds": [
+        "sol-E12",
+        "sol-E13",
+        "sol-E14"
+      ],
+      "noWebsiteListed": false
+    },
+    "solana:33jENUQnjoitkMFpvNJcSHyLAHFWJuHwT6E3E8CNpump": {
+      "name": "Doge Pepe",
+      "symbol": "DOPE",
+      "links": {
+        "pages": [
+          "https://dopeonotc.lol/"
+        ],
+        "x": "https://x.com/dopecoinotc",
+        "skippedOverBudget": []
+      },
+      "evidenceIds": [
+        "sol-E15",
+        "sol-E16"
+      ],
+      "noWebsiteListed": false
+    },
+    "solana:61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump": {
+      "name": "AI Rig Complex",
+      "symbol": "arc",
+      "links": {
+        "pages": [
+          "https://www.arc.fun/",
+          "https://github.com/0xPlaygrounds/rig",
+          "https://www.arc.fun/manifesto.html"
+        ],
+        "x": "https://x.com/arcdotfun",
+        "skippedOverBudget": []
+      },
+      "evidenceIds": [
+        "sol-E17",
+        "sol-E18",
+        "sol-E19",
+        "sol-E20"
+      ],
+      "noWebsiteListed": false
+    },
+    "solana:CzLSujWBLFsSjncfkh59rUFqvafWcY5tzedWJSuypump": {
+      "name": "Goatseus Maximus",
+      "symbol": "GOAT",
+      "links": {
+        "pages": [
+          "https://goatchan.xyz/"
+        ],
+        "x": "https://x.com/truth_terminal",
+        "skippedOverBudget": []
+      },
+      "evidenceIds": [
+        "sol-E21",
+        "sol-E22"
+      ],
+      "noWebsiteListed": false
+    },
+    "solana:2j5SaS7xy776qCBpyPQbZjyQSAtKiFgrwjfErthnW2ZM": {
+      "name": "Claudia",
+      "symbol": "CLAUDIA",
+      "links": {
+        "pages": [
+          "https://claudia.gallery/",
+          "https://useclaudia.xyz/"
+        ],
+        "x": "https://x.com/SolClaudia_",
+        "skippedOverBudget": []
+      },
+      "evidenceIds": [
+        "sol-E23",
+        "sol-E24",
+        "sol-E25"
+      ],
+      "noWebsiteListed": false
+    },
+    "solana:MukLDtJ8Cx9DxLbeyLRSWPSposTMWuwHANbuaudpump": {
+      "name": "OTC",
+      "symbol": "OTC",
+      "links": {
+        "pages": [
+          "https://otcdesks.cash/"
+        ],
+        "x": "https://x.com/otc_labs",
+        "skippedOverBudget": []
+      },
+      "evidenceIds": [
+        "sol-E26",
+        "sol-E27"
+      ],
+      "noWebsiteListed": false
+    },
+    "solana:ApZuxdpzMrbEYTGEzeY9afh5pj9d6qPRJCTgQYiipbKg": {
+      "name": "CyberLeek",
+      "symbol": "CYBERLEEK",
+      "links": {
+        "pages": [],
+        "x": null,
+        "skippedOverBudget": []
+      },
+      "evidenceIds": [],
+      "noWebsiteListed": true
+    },
+    "solana:Ai66LHZG9MCzg1WKdawwqduVAXpNDUuV8M3uyq5ppump": {
+      "name": "Catecoin",
+      "symbol": "CATE",
+      "links": {
+        "pages": [
+          "https://cate.meme/"
+        ],
+        "x": "https://x.com/i/communities/2004330768022004131",
+        "skippedOverBudget": []
+      },
+      "evidenceIds": [
+        "sol-E28",
+        "sol-E29"
+      ],
+      "noWebsiteListed": false
+    },
+    "solana:HZ1JovNiVvGrGNiiYvEozEVgZ58xaU3RKwX8eACQBCt3": {
+      "name": "Pyth Network",
+      "symbol": "PYTH",
+      "links": {
+        "pages": [
+          "https://pyth.network"
+        ],
+        "x": "https://twitter.com/PythNetwork",
+        "skippedOverBudget": []
+      },
+      "evidenceIds": [
+        "sol-E30",
+        "sol-E31"
+      ],
+      "noWebsiteListed": false
+    },
+    "solana:Hg5Ja55T5wESq4vyFoiVCMeHXtGyVA69X2UHq8hgpump": {
+      "name": "baton",
+      "symbol": "baton",
+      "links": {
+        "pages": [
+          "https://www.baton.meme/"
+        ],
+        "x": "https://x.com/baton_meme",
+        "skippedOverBudget": []
+      },
+      "evidenceIds": [
+        "sol-E32",
+        "sol-E33"
+      ],
+      "noWebsiteListed": false
+    },
+    "solana:HuAXPyDWDaMYFKuwQHpqL1oPnj93zdzWmtvFGzCeCUa7": {
+      "name": "Nullmask",
+      "symbol": "MASK",
+      "links": {
+        "pages": [
+          "https://nullmask.io/"
+        ],
+        "x": "https://x.com/NullMaskio",
+        "skippedOverBudget": []
+      },
+      "evidenceIds": [
+        "sol-E34",
+        "sol-E35"
+      ],
+      "noWebsiteListed": false
+    },
+    "solana:CWZ6BsdnjkDVTGkmL6bGbJXXig6ceef12KvyGQW14cMt": {
+      "name": "AntFun BlockChain",
+      "symbol": "ANTFUN",
+      "links": {
+        "pages": [
+          "https://ant.fun"
+        ],
+        "x": "https://x.com/ant_fun_trade",
+        "skippedOverBudget": []
+      },
+      "evidenceIds": [
+        "sol-E36",
+        "sol-E37"
+      ],
+      "noWebsiteListed": false
+    },
+    "solana:9cRCn9rGT8V2imeM2BaKs13yhMEais3ruM3rPvTGpump": {
+      "name": "The Black Bull",
+      "symbol": "ANSEM",
+      "links": {
+        "pages": [],
+        "x": "https://x.com/blackbullsol",
+        "skippedOverBudget": []
+      },
+      "evidenceIds": [
+        "sol-E38"
+      ],
+      "noWebsiteListed": true
+    },
+    "solana:GTBxUiw6wJdmmkCGZgRHLyYxqu1vG4KtRpeox6yDpump": {
+      "name": "Jean Phil",
+      "symbol": "JEANPHIL",
+      "links": {
+        "pages": [
+          "https://jeanphilmadame.com/"
+        ],
+        "x": "https://x.com/JeanPhilMadame",
+        "skippedOverBudget": []
+      },
+      "evidenceIds": [
+        "sol-E39",
+        "sol-E40"
+      ],
+      "noWebsiteListed": false
+    }
+  },
+  "counts": {
+    "reads": 40,
+    "ok": 38,
+    "readable": 36,
+    "failed": 2,
+    "rowsWithoutWebsite": 3
+  }
+}

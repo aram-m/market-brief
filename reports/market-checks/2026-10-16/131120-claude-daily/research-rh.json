@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "scope": "rh",
+  "runId": "2026-10-16T131120-claude-daily",
+  "researchStartedAt": "2026-10-16T09:14:00.000Z",
+  "researchCompletedAt": "2026-10-16T09:20:00.000Z",
+  "webReads": [
+    {"id": "W1", "tokenId": "robinhood:0x94641b97010608c3827fb058074889f19868ff33", "method": "websearch", "query": "\"Commander Vrax\" Robinhood Chain VRAX token", "observedAt": "2026-10-16T09:16:40.000Z", "status": "ok", "note": "Aggregator and news listings (Phantom, CoinGape, DexTools) describe a Robinhood Chain cat-character memecoin; no project site or docs found"},
+    {"id": "W2", "tokenId": "robinhood:0x5b81efe5e0ba2b31c0ed843b908a2c45fe6e14c5", "method": "websearch", "query": "astronaut astro token Robinhood Chain 0x5b81efe5e0ba2b31c0ed843b908a2c45fe6e14c5", "observedAt": "2026-10-16T09:16:40.000Z", "status": "ok", "note": "Search summary cites a Blockspot listing with this contract: space-themed Robinhood Chain memecoin, 1B supply; project site URL not given"},
+    {"id": "W3", "tokenId": "robinhood:0x5b81efe5e0ba2b31c0ed843b908a2c45fe6e14c5", "method": "webfetch", "url": "https://blockspot.io/coin/astronaut-astro/", "observedAt": "2026-10-16T09:17:30.000Z", "status": "failed", "note": "HTTP 403 Forbidden"}
+  ],
+  "projects": [
+    {
+      "id": "robinhood:0x39dbed3a2bd333467115de45665cc57f813c4571",
+      "claims": [
+        {"field": "purpose", "kind": "project_claim", "status": "claimed_unverified", "text": "Describes Pons as the token launchpad on Robinhood Chain: launch a token in two steps and follow each launch as it raises, graduates and lists.", "evidence": ["rh-E1"]},
+        {"field": "mechanics", "kind": "project_claim", "status": "claimed_unverified", "text": "Says new tokens trade on a bonding curve until they graduate; its X says launches pair with supported assets on Uniswap v4 and earn creator fees.", "evidence": ["rh-E1", "rh-E2"]},
+        {"field": "adoption", "kind": "project_claim", "status": "claimed_unverified", "text": "Its X claims Pons accounts for about 16.7% of Robinhood Chain's cumulative DEX volume.", "evidence": ["rh-E2"]},
+        {"field": "risk", "kind": "project_claim", "status": "claimed_unverified", "text": "The site says Pons is noncustodial, tokens are issued by their creators, and Pons is not affiliated with Robinhood Markets.", "evidence": ["rh-E1"]}
+      ],
+      "aiView": {"text": "Volume runs 2.8× liquidity across five pools, and FDV ranges $229M–$339M between pools, so the valuation depends on which pool is read. PONS is also the quote asset in an AI pool not counted here.", "basedOn": ["measured:volumeToLiquidity", "measured:fdvSpread", "measured:alsoQuotedIn"]},
+      "launch": {"label": null, "evidence": []},
+      "gaps": []
+    },
+    {
+      "id": "robinhood:0x020bfc650a365f8bb26819deaabf3e21291018b4",
+      "claims": [
+        {"field": "purpose", "kind": "project_claim", "status": "claimed_unverified", "text": "Describes $CASHCAT as a memecoin honoring Robinhood's original name, Cash Cat, native to Robinhood Chain.", "evidence": ["rh-E3"]},
+        {"field": "mechanics", "kind": "project_claim", "status": "claimed_unverified", "text": "letscash.fun, linked from its site, says launched coins get permanently locked pools and the platform's cut buys back and burns CASHCAT.", "evidence": ["rh-E4"]},
+        {"field": "adoption", "kind": "project_claim", "status": "claimed_unverified", "text": "Its X says CASHCAT was listed in the Robinhood app on Aug 6 and that perpetual futures went live on Coinbase and Deribit.", "evidence": ["rh-E5"]}
+      ],
+      "aiView": {"text": "Volume runs 3× liquidity across two pools. The buyback-and-burn depends on letscash.fun activity, and that page itself reported degraded Robinhood Chain nodes at read time; the burn flow is not measured.", "basedOn": ["measured:volumeToLiquidity", "rh-E4"]},
+      "launch": {"label": null, "evidence": []},
+      "gaps": []
+    },
+    {
+      "id": "robinhood:0x2e8c31162b855a2ffa90f6f8634643ad6f111e18",
+      "claims": [
+        {"field": "purpose", "kind": "project_claim", "status": "claimed_unverified", "text": "Describes Artificial Inu as 'the onchain $NVDA community': a memecoin paired with tokenized NVDA stock.", "evidence": ["rh-E6", "rh-E7"]},
+        {"field": "mechanics", "kind": "project_claim", "status": "claimed_unverified", "text": "Says every trade routes a cut into a community Vault holding NVDA, and fees collected in $AI are burned or locked permanently.", "evidence": ["rh-E6"]},
+        {"field": "adoption", "kind": "project_claim", "status": "claimed_unverified", "text": "The site shows a Vault of 1,264.28 NVDA and 10,512 NVDA in liquidity pools; these are the site's figures.", "evidence": ["rh-E6"]}
+      ],
+      "aiView": {"text": "The qualifying pools are quoted in PONS and USDG, so the NVDA pairing the site centres on is not among the pools this scan measured. Volume runs 3.6× liquidity.", "basedOn": ["measured:pools", "measured:volumeToLiquidity", "rh-E6"]},
+      "launch": {"label": null, "evidence": []},
+      "gaps": []
+    },
+    {
+      "id": "robinhood:0x94641b97010608c3827fb058074889f19868ff33",
+      "claims": [
+        {"field": "purpose", "kind": "project_claim", "status": "claimed_unverified", "text": "Its listed X is a self-described parody account ('Not actually Commander Vrax') that posts the contract and character memes.", "evidence": ["rh-E8"]},
+        {"field": "provenance", "kind": "project_claim", "status": "claimed_unverified", "text": "Says the account replaced @VraxOnRobinhood, which it says was suspended after impersonation reports.", "evidence": ["rh-E8"]},
+        {"field": "purpose", "kind": "third_party", "status": "claimed_unverified", "text": "Search results (Phantom, CoinGape, DexTools) describe a Robinhood Chain cat-character memecoin; listings disagree on market cap.", "evidence": ["W1"]}
+      ],
+      "aiView": {"text": "Volume runs 4.5× liquidity in pools about 16 days old, and the only listed channel is an October-2026 parody account created after a suspension. No page describes token mechanics.", "basedOn": ["measured:volumeToLiquidity", "measured:poolAge", "rh-E8"]},
+      "launch": {"label": null, "evidence": []},
+      "gaps": [
+        {"what": "mechanics", "reason": "no website in the Dexscreener profile; the X profile and one web search describe no token mechanics", "source": "https://x.com/1commandervrax"}
+      ]
+    },
+    {
+      "id": "robinhood:0x5b81efe5e0ba2b31c0ed843b908a2c45fe6e14c5",
+      "claims": [
+        {"field": "provenance", "kind": "third_party", "status": "claimed_unverified", "text": "The profile's only social link is an Elon Musk repost about kids painting astronauts; it does not mention the token.", "evidence": ["rh-E9"]},
+        {"field": "purpose", "kind": "third_party", "status": "claimed_unverified", "text": "A search summary cites a Blockspot listing with this contract describing a space-themed Robinhood Chain memecoin with 1B supply.", "evidence": ["W2"]}
+      ],
+      "aiView": {"text": "Volume runs 15.1× its single WETH pool's liquidity, so modest orders move price. The profile links only a celebrity repost, leaving no project-owned site or account to check claims against.", "basedOn": ["measured:volumeToLiquidity", "measured:pools", "rh-E9"]},
+      "launch": {"label": null, "evidence": []},
+      "gaps": [
+        {"what": "purpose", "reason": "no website listed; the listed social is an unrelated Elon Musk repost", "source": "https://x.com/elonmusk/status/2097366345390186641"},
+        {"what": "mechanics", "reason": "no project page found; the Blockspot listing returned HTTP 403", "source": "https://blockspot.io/coin/astronaut-astro/"}
+      ]
+    },
+    {
+      "id": "robinhood:0x18e674231a58c239dc7daedcffe15ec3a24cff5c",
+      "claims": [
+        {"field": "purpose", "kind": "project_claim", "status": "claimed_unverified", "text": "Describes Hookr.fun as modular infrastructure for surfacing, composing and integrating custom Uniswap v4 hooks, live on Robinhood Chain.", "evidence": ["rh-E10"]},
+        {"field": "mechanics", "kind": "project_claim", "status": "claimed_unverified", "text": "Says pools combine 'Hook Blocks' such as anti-snipe caps, dynamic fees, auto-burn, LP rewards and arbitrage recapture; docs list an SDK and contracts.", "evidence": ["rh-E10", "rh-E11"]},
+        {"field": "provenance", "kind": "project_claim", "status": "claimed_unverified", "text": "The listed X belongs to Nodar, who describes himself as creator of DeFi Zaps and a former Zapper co-founder, now building Hookr.", "evidence": ["rh-E12"]}
+      ],
+      "aiView": {"text": "One of few rows with developer docs and a named builder. Volume is only 1.4× liquidity, deeper than most rows; the text read does not explain how the HOOKR token captures hook fees.", "basedOn": ["rh-E11", "rh-E12", "measured:volumeToLiquidity"]},
+      "launch": {"label": null, "evidence": []},
+      "gaps": []
+    },
+    {
+      "id": "robinhood:0x385f4f8ae47651ce5f58f5265395a669f8281e18",
+      "claims": [
+        {"field": "purpose", "kind": "project_claim", "status": "claimed_unverified", "text": "Its X presents $MEME, 'A Meme Coin', as an AMC-themed meme ('The theater was a front') and says it is paired with $AMC.", "evidence": ["rh-E13"]},
+        {"field": "risk", "kind": "project_claim", "status": "claimed_unverified", "text": "Its posts engage AMC CEO Adam Aron's objection to Robinhood creating AMC stock tokens without AMC's consent.", "evidence": ["rh-E13"]}
+      ],
+      "aiView": {"text": "The X says it is paired with $AMC, but the only qualifying pool is quoted in WETH, and volume runs 16.7× that pool's liquidity, so price is fragile to modest trades.", "basedOn": ["measured:pools", "measured:volumeToLiquidity", "rh-E13"]},
+      "launch": {"label": null, "evidence": []},
+      "gaps": [
+        {"what": "mechanics", "reason": "no website listed; the X names an AMC pairing but describes no other mechanics", "source": "https://x.com/amemecoinrh"}
+      ]
+    },
+    {
+      "id": "robinhood:0x88ad8ddf1e3898412146a534538d418c6f8a9062",
+      "claims": [
+        {"field": "purpose", "kind": "project_claim", "status": "claimed_unverified", "text": "Describes The Standard Reserve as 'the sovereign onchain central bank' and a liquidity engine for onchain capital markets on Robinhood Chain.", "evidence": ["rh-E14", "rh-E15"]},
+        {"field": "mechanics", "kind": "project_claim", "status": "claimed_unverified", "text": "Says traders swap tokens paired with $SPCX, $BABA and $SKHY through the Reserve's pools, and that burns outpace issuance with ~$1M put into buybacks.", "evidence": ["rh-E14", "rh-E15"]},
+        {"field": "adoption", "kind": "project_claim", "status": "claimed_unverified", "text": "Its X says King of the Markets, its launchpad and stock-token liquidity pilot, runs a rewards pool starting at 1M+ USDG.", "evidence": ["rh-E15"]}
+      ],
+      "aiView": {"text": "Liquidity is about 10× daily volume, the inverse of most rows, which fits the X claim that the Reserve owns deep pools; ownership is not measured, and neither page read shows this contract.", "basedOn": ["measured:volumeToLiquidity", "rh-E14", "rh-E15"]},
+      "launch": {"label": null, "evidence": []},
+      "gaps": []
+    }
+  ]
+}

@@ -1,0 +1,1023 @@
+{
+  "schemaVersion": 1,
+  "scope": "rh",
+  "chain": "robinhood",
+  "runId": "2026-10-16T131120-claude-daily",
+  "producer": "claude-local",
+  "discoveryUrl": "https://dexscreener.com/robinhood?rankBy=trendingScoreH6&order=desc&minMarketCap=1000000&minAge=72&min24HVol=1000000&profile=1",
+  "discoveryAt": "2026-10-16T09:12:14.808Z",
+  "discoveryStatus": "ok",
+  "metrics": {
+    "window": {
+      "from": "2026-10-16T09:12:32.161Z",
+      "to": "2026-10-16T09:12:32.161Z"
+    },
+    "requests": 1,
+    "failedRequests": []
+  },
+  "marketStatus": "complete",
+  "counts": {
+    "discoveredPools": 18,
+    "resolvedPools": 18,
+    "unresolvedPools": 0,
+    "unexpectedPools": 0,
+    "excludedPools": 0,
+    "tokens": 10,
+    "hiddenTokens": 2,
+    "displayedTokens": 8
+  },
+  "unresolvedPools": [],
+  "unexpectedPools": [],
+  "excludedPools": [],
+  "filterRecheck": [],
+  "rows": [
+    {
+      "id": "robinhood:0x39dbed3a2bd333467115de45665cc57f813c4571",
+      "chain": "robinhood",
+      "address": "0x39dBED3a2bd333467115dE45665cC57F813C4571",
+      "name": "Pons",
+      "symbol": "PONS",
+      "url": "https://dexscreener.com/robinhood/0x486435a1f76cd58193f854c6e6213cd05fd58d637865d02065ff558b387fa6ea",
+      "discoveryRank": 3,
+      "volume24h": {
+        "value": 19130440.81,
+        "poolsWithValue": 5,
+        "poolsTotal": 5,
+        "partial": false
+      },
+      "liquidity": {
+        "value": 6797357.84,
+        "poolsWithValue": 5,
+        "poolsTotal": 5,
+        "partial": false
+      },
+      "price": 0.3395,
+      "change24h": 8.61,
+      "change24hRange": [
+        8.61,
+        9.42
+      ],
+      "marketCap": 229362491,
+      "fdv": 229319686,
+      "valuation": {
+        "metric": "marketCap",
+        "value": 229362491,
+        "source": {
+          "pairAddress": "0x486435a1f76cd58193f854c6e6213cd05fd58d637865d02065ff558b387fa6ea",
+          "dexId": "uniswap",
+          "quoteSymbol": "USDG",
+          "rule": "most liquid returned pool"
+        }
+      },
+      "oldestPoolAt": "2026-07-16T15:39:37.000Z",
+      "oldestPoolAtLabel": "pool creation time (not a project launch date)",
+      "flags": [
+        {
+          "code": "fdvSpread",
+          "min": 229319686,
+          "max": 339112118
+        }
+      ],
+      "pools": [
+        {
+          "pairAddress": "0x486435a1f76cd58193f854c6e6213cd05fd58d637865d02065ff558b387fa6ea",
+          "discoverySlug": "0x486435a1f76cd58193f854c6e6213cd05fd58d637865d02065ff558b387fa6ea",
+          "dexId": "uniswap",
+          "url": "https://dexscreener.com/robinhood/0x486435a1f76cd58193f854c6e6213cd05fd58d637865d02065ff558b387fa6ea",
+          "labels": [
+            "v4"
+          ],
+          "quote": {
+            "address": "0x5fc5360D0400a0Fd4f2af552ADD042D716F1d168",
+            "symbol": "USDG",
+            "name": "Global Dollar"
+          },
+          "volume24h": 2645395.41,
+          "liquidityUsd": 2332517.24,
+          "priceUsd": 0.3395,
+          "change24h": 8.61,
+          "marketCap": 229362491,
+          "fdv": 229319686,
+          "pairCreatedAt": "2026-09-08T13:29:28.000Z"
+        },
+        {
+          "pairAddress": "0xEd50bDeeA8aDC232f159486192a4157281D722ff",
+          "discoverySlug": "0xed50bdeea8adc232f159486192a4157281d722ff",
+          "dexId": "uniswap",
+          "url": "https://dexscreener.com/robinhood/0xed50bdeea8adc232f159486192a4157281d722ff",
+          "labels": [
+            "v3"
+          ],
+          "quote": {
+            "address": "0x0Bd7D308f8E1639FAb988df18A8011f41EAcAD73",
+            "symbol": "WETH",
+            "name": "WETH"
+          },
+          "volume24h": 1384475.95,
+          "liquidityUsd": 1864466.56,
+          "priceUsd": 0.3402,
+          "change24h": 9.42,
+          "marketCap": 229793039,
+          "fdv": 229748944,
+          "pairCreatedAt": "2026-07-16T15:39:37.000Z"
+        },
+        {
+          "pairAddress": "0x4be9657ec9002e528f4f17a5c43edc525a07f888f7b180c2afbf75e096c4f38a",
+          "discoverySlug": "0x4be9657ec9002e528f4f17a5c43edc525a07f888f7b180c2afbf75e096c4f38a",
+          "dexId": "uniswap",
+          "url": "https://dexscreener.com/robinhood/0x4be9657ec9002e528f4f17a5c43edc525a07f888f7b180c2afbf75e096c4f38a",
+          "labels": [
+            "v4"
+          ],
+          "quote": {
+            "address": "0x5fc5360D0400a0Fd4f2af552ADD042D716F1d168",
+            "symbol": "USDG",
+            "name": "Global Dollar"
+          },
+          "volume24h": 1877967.47,
+          "liquidityUsd": 1400744.39,
+          "priceUsd": 0.3399,
+          "change24h": 9.3,
+          "marketCap": 229574890,
+          "fdv": 229532045,
+          "pairCreatedAt": "2026-07-18T01:42:13.000Z"
+        },
+        {
+          "pairAddress": "0xf2A0bE59AB76b96f957bd5E5b967F2B75e8dB269",
+          "discoverySlug": "0xf2a0be59ab76b96f957bd5e5b967f2b75e8db269",
+          "dexId": "ramses",
+          "url": "https://dexscreener.com/robinhood/0xf2a0be59ab76b96f957bd5e5b967f2b75e8db269",
+          "labels": [
+            "v3"
+          ],
+          "quote": {
+            "address": "0x5fc5360D0400a0Fd4f2af552ADD042D716F1d168",
+            "symbol": "USDG",
+            "name": "Global Dollar"
+          },
+          "volume24h": 12106569.59,
+          "liquidityUsd": 1191887.48,
+          "priceUsd": 0.3398,
+          "change24h": 9.4,
+          "marketCap": 229545811,
+          "fdv": 229501763,
+          "pairCreatedAt": "2026-08-11T03:34:02.000Z"
+        },
+        {
+          "pairAddress": "0x5A3571DcA43ECAFCd670e87a6EaF6DE0e2d70954",
+          "discoverySlug": "0x5a3571dca43ecafcd670e87a6eaf6de0e2d70954",
+          "dexId": "metric",
+          "url": "https://dexscreener.com/robinhood/0x5a3571dca43ecafcd670e87a6eaf6de0e2d70954",
+          "labels": [],
+          "quote": {
+            "address": "0x5fc5360D0400a0Fd4f2af552ADD042D716F1d168",
+            "symbol": "USDG",
+            "name": "Global Dollar"
+          },
+          "volume24h": 1116032.39,
+          "liquidityUsd": 7742.17,
+          "priceUsd": 0.3391,
+          "change24h": 9.08,
+          "marketCap": 229034113,
+          "fdv": 339112118,
+          "pairCreatedAt": "2026-09-17T16:38:08.000Z"
+        }
+      ],
+      "alsoQuotedIn": [
+        {
+          "pairAddress": "0x230bc4a0fb5fb7ab27f6e72350dfa3f2489b0cdbaf34f0189d68672086ccb919",
+          "baseId": "robinhood:0x2e8c31162b855a2ffa90f6f8634643ad6f111e18",
+          "baseSymbol": "AI",
+          "volume24h": 2333862.67,
+          "liquidityUsd": 717799.83,
+          "baseExcluded": false
+        }
+      ],
+      "info": {
+        "websites": [
+          {
+            "url": "https://ponsfamily.com/launchpad",
+            "label": "Website"
+          }
+        ],
+        "socials": [
+          {
+            "url": "https://x.com/ponsdotfamily",
+            "type": "twitter"
+          }
+        ]
+      },
+      "hidden": false,
+      "hiddenReason": null
+    },
+    {
+      "id": "robinhood:0x020bfc650a365f8bb26819deaabf3e21291018b4",
+      "chain": "robinhood",
+      "address": "0x020bfC650A365f8BB26819deAAbF3E21291018b4",
+      "name": "Cash Cat",
+      "symbol": "CASHCAT",
+      "url": "https://dexscreener.com/robinhood/0xd42a491087a15e5afd51feb3606066cc152d2b09",
+      "discoveryRank": 4,
+      "volume24h": {
+        "value": 6093946.51,
+        "poolsWithValue": 2,
+        "poolsTotal": 2,
+        "partial": false
+      },
+      "liquidity": {
+        "value": 2062752.47,
+        "poolsWithValue": 2,
+        "poolsTotal": 2,
+        "partial": false
+      },
+      "price": 0.1194,
+      "change24h": 8.34,
+      "change24hRange": [
+        8.34,
+        8.41
+      ],
+      "marketCap": 117965673,
+      "fdv": 117965673,
+      "valuation": {
+        "metric": "marketCap",
+        "value": 117965673,
+        "source": {
+          "pairAddress": "0xd42A491087a15E5afd51FEb3606066Cc152d2b09",
+          "dexId": "uniswap",
+          "quoteSymbol": "WETH",
+          "rule": "most liquid returned pool"
+        }
+      },
+      "oldestPoolAt": "2026-07-01T19:38:42.000Z",
+      "oldestPoolAtLabel": "pool creation time (not a project launch date)",
+      "flags": [],
+      "pools": [
+        {
+          "pairAddress": "0xd42A491087a15E5afd51FEb3606066Cc152d2b09",
+          "discoverySlug": "0xd42a491087a15e5afd51feb3606066cc152d2b09",
+          "dexId": "uniswap",
+          "url": "https://dexscreener.com/robinhood/0xd42a491087a15e5afd51feb3606066cc152d2b09",
+          "labels": [
+            "v3"
+          ],
+          "quote": {
+            "address": "0x0Bd7D308f8E1639FAb988df18A8011f41EAcAD73",
+            "symbol": "WETH",
+            "name": "WETH"
+          },
+          "volume24h": 4281714.65,
+          "liquidityUsd": 1592497.19,
+          "priceUsd": 0.1194,
+          "change24h": 8.34,
+          "marketCap": 117965673,
+          "fdv": 117965673,
+          "pairCreatedAt": "2026-07-01T19:38:42.000Z"
+        },
+        {
+          "pairAddress": "0xa92a3df27a00a276183ff7265fd8affa11df1fe8bb23ddfaf13f6c879a3f818b",
+          "discoverySlug": "0xa92a3df27a00a276183ff7265fd8affa11df1fe8bb23ddfaf13f6c879a3f818b",
+          "dexId": "uniswap",
+          "url": "https://dexscreener.com/robinhood/0xa92a3df27a00a276183ff7265fd8affa11df1fe8bb23ddfaf13f6c879a3f818b",
+          "labels": [
+            "v4"
+          ],
+          "quote": {
+            "address": "0x5fc5360D0400a0Fd4f2af552ADD042D716F1d168",
+            "symbol": "USDG",
+            "name": "Global Dollar"
+          },
+          "volume24h": 1812231.86,
+          "liquidityUsd": 470255.28,
+          "priceUsd": 0.1194,
+          "change24h": 8.41,
+          "marketCap": 117946843,
+          "fdv": 117946843,
+          "pairCreatedAt": "2026-07-15T13:39:15.000Z"
+        }
+      ],
+      "alsoQuotedIn": [],
+      "info": {
+        "websites": [
+          {
+            "url": "https://cashcat.cc/",
+            "label": "Website"
+          },
+          {
+            "url": "https://letscash.fun/",
+            "label": "Letscash"
+          }
+        ],
+        "socials": [
+          {
+            "url": "https://x.com/cashcat_token",
+            "type": "twitter"
+          },
+          {
+            "url": "https://t.me/cashcat_robinhood",
+            "type": "telegram"
+          },
+          {
+            "url": "https://www.reddit.com/r/cashcattoken/s/L8GOOuy9Ch",
+            "type": "reddit"
+          }
+        ]
+      },
+      "hidden": false,
+      "hiddenReason": null
+    },
+    {
+      "id": "robinhood:0x2e8c31162b855a2ffa90f6f8634643ad6f111e18",
+      "chain": "robinhood",
+      "address": "0x2E8c31162b855A2ffa90F6F8634643Ad6F111e18",
+      "name": "Artificial Inu",
+      "symbol": "AI",
+      "url": "https://dexscreener.com/robinhood/0x230bc4a0fb5fb7ab27f6e72350dfa3f2489b0cdbaf34f0189d68672086ccb919",
+      "discoveryRank": 7,
+      "volume24h": {
+        "value": 4561996.02,
+        "poolsWithValue": 2,
+        "poolsTotal": 2,
+        "partial": false
+      },
+      "liquidity": {
+        "value": 1270699.96,
+        "poolsWithValue": 2,
+        "poolsTotal": 2,
+        "partial": false
+      },
+      "price": 0.1098,
+      "change24h": 21.61,
+      "change24hRange": [
+        21.61,
+        22.22
+      ],
+      "marketCap": 108638396,
+      "fdv": 108638396,
+      "valuation": {
+        "metric": "marketCap",
+        "value": 108638396,
+        "source": {
+          "pairAddress": "0x230bc4a0fb5fb7ab27f6e72350dfa3f2489b0cdbaf34f0189d68672086ccb919",
+          "dexId": "uniswap",
+          "quoteSymbol": "PONS",
+          "rule": "most liquid returned pool"
+        }
+      },
+      "oldestPoolAt": "2026-09-04T01:58:39.000Z",
+      "oldestPoolAtLabel": "pool creation time (not a project launch date)",
+      "flags": [],
+      "pools": [
+        {
+          "pairAddress": "0x230bc4a0fb5fb7ab27f6e72350dfa3f2489b0cdbaf34f0189d68672086ccb919",
+          "discoverySlug": "0x230bc4a0fb5fb7ab27f6e72350dfa3f2489b0cdbaf34f0189d68672086ccb919",
+          "dexId": "uniswap",
+          "url": "https://dexscreener.com/robinhood/0x230bc4a0fb5fb7ab27f6e72350dfa3f2489b0cdbaf34f0189d68672086ccb919",
+          "labels": [
+            "v4"
+          ],
+          "quote": {
+            "address": "0x39dBED3a2bd333467115dE45665cC57F813C4571",
+            "symbol": "PONS",
+            "name": "Pons"
+          },
+          "volume24h": 2333862.67,
+          "liquidityUsd": 717799.83,
+          "priceUsd": 0.1098,
+          "change24h": 21.61,
+          "marketCap": 108638396,
+          "fdv": 108638396,
+          "pairCreatedAt": "2026-09-04T01:58:39.000Z"
+        },
+        {
+          "pairAddress": "0x592e3fb7ea947506b36481025abc15baada8e1839a50fded46ecf08b3182fa96",
+          "discoverySlug": "0x592e3fb7ea947506b36481025abc15baada8e1839a50fded46ecf08b3182fa96",
+          "dexId": "uniswap",
+          "url": "https://dexscreener.com/robinhood/0x592e3fb7ea947506b36481025abc15baada8e1839a50fded46ecf08b3182fa96",
+          "labels": [
+            "v4"
+          ],
+          "quote": {
+            "address": "0x5fc5360D0400a0Fd4f2af552ADD042D716F1d168",
+            "symbol": "USDG",
+            "name": "Global Dollar"
+          },
+          "volume24h": 2228133.35,
+          "liquidityUsd": 552900.13,
+          "priceUsd": 0.1097,
+          "change24h": 22.22,
+          "marketCap": 108524525,
+          "fdv": 108524525,
+          "pairCreatedAt": "2026-09-18T20:11:54.000Z"
+        }
+      ],
+      "alsoQuotedIn": [],
+      "info": {
+        "websites": [
+          {
+            "url": "https://artificialinu.com/",
+            "label": "Website"
+          }
+        ],
+        "socials": [
+          {
+            "url": "https://x.com/artificiallyinu",
+            "type": "twitter"
+          }
+        ]
+      },
+      "hidden": false,
+      "hiddenReason": null
+    },
+    {
+      "id": "robinhood:0xdf0992e440dd0be65bd8439b609d6d4366bf1cb5",
+      "chain": "robinhood",
+      "address": "0xdF0992E440dD0be65BD8439b609d6D4366bf1CB5",
+      "name": "Circle Internet Group • Robinhood Token",
+      "symbol": "CRCL",
+      "url": "https://dexscreener.com/robinhood/0x654e4143e82a5824445ade0824351c2a9acd95a8",
+      "discoveryRank": 14,
+      "volume24h": {
+        "value": 4488136.31,
+        "poolsWithValue": 2,
+        "poolsTotal": 2,
+        "partial": false
+      },
+      "liquidity": {
+        "value": 3173104.59,
+        "poolsWithValue": 2,
+        "poolsTotal": 2,
+        "partial": false
+      },
+      "price": 85.35,
+      "change24h": 10.53,
+      "change24hRange": [
+        10.53,
+        10.62
+      ],
+      "marketCap": 9206190,
+      "fdv": 9161575,
+      "valuation": {
+        "metric": "marketCap",
+        "value": 9206190,
+        "source": {
+          "pairAddress": "0x654E4143e82a5824445Ade0824351C2A9ACD95a8",
+          "dexId": "uniswap",
+          "quoteSymbol": "USDG",
+          "rule": "most liquid returned pool"
+        }
+      },
+      "oldestPoolAt": "2026-07-28T15:07:27.000Z",
+      "oldestPoolAtLabel": "pool creation time (not a project launch date)",
+      "flags": [],
+      "pools": [
+        {
+          "pairAddress": "0x654E4143e82a5824445Ade0824351C2A9ACD95a8",
+          "discoverySlug": "0x654e4143e82a5824445ade0824351c2a9acd95a8",
+          "dexId": "uniswap",
+          "url": "https://dexscreener.com/robinhood/0x654e4143e82a5824445ade0824351c2a9acd95a8",
+          "labels": [
+            "v3"
+          ],
+          "quote": {
+            "address": "0x5fc5360D0400a0Fd4f2af552ADD042D716F1d168",
+            "symbol": "USDG",
+            "name": "Global Dollar"
+          },
+          "volume24h": 2908858.86,
+          "liquidityUsd": 2508336.73,
+          "priceUsd": 85.35,
+          "change24h": 10.53,
+          "marketCap": 9206190,
+          "fdv": 9161575,
+          "pairCreatedAt": "2026-08-14T17:09:39.000Z"
+        },
+        {
+          "pairAddress": "0x628c98ab436ee34a6a7decd606242890582591bdf7c9a35d90e0d08021c31ea0",
+          "discoverySlug": "0x628c98ab436ee34a6a7decd606242890582591bdf7c9a35d90e0d08021c31ea0",
+          "dexId": "uniswap",
+          "url": "https://dexscreener.com/robinhood/0x628c98ab436ee34a6a7decd606242890582591bdf7c9a35d90e0d08021c31ea0",
+          "labels": [
+            "v4"
+          ],
+          "quote": {
+            "address": "0x5fc5360D0400a0Fd4f2af552ADD042D716F1d168",
+            "symbol": "USDG",
+            "name": "Global Dollar"
+          },
+          "volume24h": 1579277.45,
+          "liquidityUsd": 664767.86,
+          "priceUsd": 85.33,
+          "change24h": 10.62,
+          "marketCap": 9203806,
+          "fdv": 9159203,
+          "pairCreatedAt": "2026-07-28T15:07:27.000Z"
+        }
+      ],
+      "alsoQuotedIn": [],
+      "info": {
+        "websites": [
+          {
+            "url": "https://crcl.onthechain.lol/",
+            "label": "Website"
+          }
+        ],
+        "socials": []
+      },
+      "hidden": true,
+      "hiddenReason": "user display preference"
+    },
+    {
+      "id": "robinhood:0x94641b97010608c3827fb058074889f19868ff33",
+      "chain": "robinhood",
+      "address": "0x94641b97010608C3827fB058074889f19868FF33",
+      "name": "Commander Vrax",
+      "symbol": "VRAX",
+      "url": "https://dexscreener.com/robinhood/0x435ea42b2792a22de296bee4e8013f4fa102f0cc04983443ff79549f847db577",
+      "discoveryRank": 2,
+      "volume24h": {
+        "value": 2659426.96,
+        "poolsWithValue": 2,
+        "poolsTotal": 2,
+        "partial": false
+      },
+      "liquidity": {
+        "value": 590554.95,
+        "poolsWithValue": 2,
+        "poolsTotal": 2,
+        "partial": false
+      },
+      "price": 0.006704,
+      "change24h": -4.06,
+      "change24hRange": [
+        -4.18,
+        -4.06
+      ],
+      "marketCap": 6704857,
+      "fdv": 6704857,
+      "valuation": {
+        "metric": "marketCap",
+        "value": 6704857,
+        "source": {
+          "pairAddress": "0x435ea42b2792a22de296bee4e8013f4fa102f0cc04983443ff79549f847db577",
+          "dexId": "uniswap",
+          "quoteSymbol": "USDG",
+          "rule": "most liquid returned pool"
+        }
+      },
+      "oldestPoolAt": "2026-09-29T23:29:23.000Z",
+      "oldestPoolAtLabel": "pool creation time (not a project launch date)",
+      "flags": [],
+      "pools": [
+        {
+          "pairAddress": "0x435ea42b2792a22de296bee4e8013f4fa102f0cc04983443ff79549f847db577",
+          "discoverySlug": "0x435ea42b2792a22de296bee4e8013f4fa102f0cc04983443ff79549f847db577",
+          "dexId": "uniswap",
+          "url": "https://dexscreener.com/robinhood/0x435ea42b2792a22de296bee4e8013f4fa102f0cc04983443ff79549f847db577",
+          "labels": [
+            "v4"
+          ],
+          "quote": {
+            "address": "0x5fc5360D0400a0Fd4f2af552ADD042D716F1d168",
+            "symbol": "USDG",
+            "name": "Global Dollar"
+          },
+          "volume24h": 1456395.55,
+          "liquidityUsd": 379073.42,
+          "priceUsd": 0.006704,
+          "change24h": -4.06,
+          "marketCap": 6704857,
+          "fdv": 6704857,
+          "pairCreatedAt": "2026-09-29T23:50:37.000Z"
+        },
+        {
+          "pairAddress": "0x338fce553e60c8b0acccde1956bc378586ef6f2935339ebae5804d429d461e44",
+          "discoverySlug": "0x338fce553e60c8b0acccde1956bc378586ef6f2935339ebae5804d429d461e44",
+          "dexId": "uniswap",
+          "url": "https://dexscreener.com/robinhood/0x338fce553e60c8b0acccde1956bc378586ef6f2935339ebae5804d429d461e44",
+          "labels": [
+            "v4"
+          ],
+          "quote": {
+            "address": "0x5fc5360D0400a0Fd4f2af552ADD042D716F1d168",
+            "symbol": "USDG",
+            "name": "Global Dollar"
+          },
+          "volume24h": 1203031.41,
+          "liquidityUsd": 211481.53,
+          "priceUsd": 0.006772,
+          "change24h": -4.18,
+          "marketCap": 6772213,
+          "fdv": 6772213,
+          "pairCreatedAt": "2026-09-29T23:29:23.000Z"
+        }
+      ],
+      "alsoQuotedIn": [],
+      "info": {
+        "websites": [],
+        "socials": [
+          {
+            "url": "https://x.com/1commandervrax",
+            "type": "twitter"
+          }
+        ]
+      },
+      "hidden": false,
+      "hiddenReason": null
+    },
+    {
+      "id": "robinhood:0x5b81efe5e0ba2b31c0ed843b908a2c45fe6e14c5",
+      "chain": "robinhood",
+      "address": "0x5b81efE5E0ba2b31c0Ed843B908a2c45Fe6E14c5",
+      "name": "astronaut",
+      "symbol": "astro",
+      "url": "https://dexscreener.com/robinhood/0x3416b8d8aa6ae642ffdc2f65165ff479d4bd3007",
+      "discoveryRank": 17,
+      "volume24h": {
+        "value": 1979628.71,
+        "poolsWithValue": 1,
+        "poolsTotal": 1,
+        "partial": false
+      },
+      "liquidity": {
+        "value": 130734.52,
+        "poolsWithValue": 1,
+        "poolsTotal": 1,
+        "partial": false
+      },
+      "price": 0.002954,
+      "change24h": -66.93,
+      "change24hRange": null,
+      "marketCap": 1703784,
+      "fdv": 1703784,
+      "valuation": {
+        "metric": "marketCap",
+        "value": 1703784,
+        "source": {
+          "pairAddress": "0x3416B8D8aA6ae642fFDC2F65165ff479D4bD3007",
+          "dexId": "uniswap",
+          "quoteSymbol": "WETH",
+          "rule": "most liquid returned pool"
+        }
+      },
+      "oldestPoolAt": "2026-09-08T17:01:52.000Z",
+      "oldestPoolAtLabel": "pool creation time (not a project launch date)",
+      "flags": [],
+      "pools": [
+        {
+          "pairAddress": "0x3416B8D8aA6ae642fFDC2F65165ff479D4bD3007",
+          "discoverySlug": "0x3416b8d8aa6ae642ffdc2f65165ff479d4bd3007",
+          "dexId": "uniswap",
+          "url": "https://dexscreener.com/robinhood/0x3416b8d8aa6ae642ffdc2f65165ff479d4bd3007",
+          "labels": [
+            "v2"
+          ],
+          "quote": {
+            "address": "0x0Bd7D308f8E1639FAb988df18A8011f41EAcAD73",
+            "symbol": "WETH",
+            "name": "WETH"
+          },
+          "volume24h": 1979628.71,
+          "liquidityUsd": 130734.52,
+          "priceUsd": 0.002954,
+          "change24h": -66.93,
+          "marketCap": 1703784,
+          "fdv": 1703784,
+          "pairCreatedAt": "2026-09-08T17:01:52.000Z"
+        }
+      ],
+      "alsoQuotedIn": [],
+      "info": {
+        "websites": [],
+        "socials": [
+          {
+            "url": "https://x.com/elonmusk/status/2097366345390186641",
+            "type": "twitter"
+          }
+        ]
+      },
+      "hidden": false,
+      "hiddenReason": null
+    },
+    {
+      "id": "robinhood:0x18e674231a58c239dc7daedcffe15ec3a24cff5c",
+      "chain": "robinhood",
+      "address": "0x18E674231A58c239Dc7DaeDcffE15Ec3A24cff5c",
+      "name": "Hookr.fun",
+      "symbol": "HOOKR",
+      "url": "https://dexscreener.com/robinhood/0x590dcb6a87828bf688b48089a62239b693378f1fb64d2286e6a399ed8c005fdf",
+      "discoveryRank": 1,
+      "volume24h": {
+        "value": 1867973.24,
+        "poolsWithValue": 1,
+        "poolsTotal": 1,
+        "partial": false
+      },
+      "liquidity": {
+        "value": 1356438.23,
+        "poolsWithValue": 1,
+        "poolsTotal": 1,
+        "partial": false
+      },
+      "price": 0.03144,
+      "change24h": 29.96,
+      "change24hRange": null,
+      "marketCap": 31248048,
+      "fdv": 31248048,
+      "valuation": {
+        "metric": "marketCap",
+        "value": 31248048,
+        "source": {
+          "pairAddress": "0x590dcb6a87828bf688b48089a62239b693378f1fb64d2286e6a399ed8c005fdf",
+          "dexId": "uniswap",
+          "quoteSymbol": "ETH",
+          "rule": "most liquid returned pool"
+        }
+      },
+      "oldestPoolAt": "2026-08-06T04:20:57.000Z",
+      "oldestPoolAtLabel": "pool creation time (not a project launch date)",
+      "flags": [],
+      "pools": [
+        {
+          "pairAddress": "0x590dcb6a87828bf688b48089a62239b693378f1fb64d2286e6a399ed8c005fdf",
+          "discoverySlug": "0x590dcb6a87828bf688b48089a62239b693378f1fb64d2286e6a399ed8c005fdf",
+          "dexId": "uniswap",
+          "url": "https://dexscreener.com/robinhood/0x590dcb6a87828bf688b48089a62239b693378f1fb64d2286e6a399ed8c005fdf",
+          "labels": [
+            "v4"
+          ],
+          "quote": {
+            "address": "0x0000000000000000000000000000000000000000",
+            "symbol": "ETH",
+            "name": "Ether"
+          },
+          "volume24h": 1867973.24,
+          "liquidityUsd": 1356438.23,
+          "priceUsd": 0.03144,
+          "change24h": 29.96,
+          "marketCap": 31248048,
+          "fdv": 31248048,
+          "pairCreatedAt": "2026-08-06T04:20:57.000Z"
+        }
+      ],
+      "alsoQuotedIn": [],
+      "info": {
+        "websites": [
+          {
+            "url": "https://hookr.fun/",
+            "label": "Website"
+          },
+          {
+            "url": "https://hookr.fun/docs",
+            "label": "Docs"
+          }
+        ],
+        "socials": [
+          {
+            "url": "https://x.com/nodarj",
+            "type": "twitter"
+          }
+        ]
+      },
+      "hidden": false,
+      "hiddenReason": null
+    },
+    {
+      "id": "robinhood:0x385f4f8ae47651ce5f58f5265395a669f8281e18",
+      "chain": "robinhood",
+      "address": "0x385F4f8ae47651ce5F58F5265395a669f8281e18",
+      "name": "A Meme Coin",
+      "symbol": "MEME",
+      "url": "https://dexscreener.com/robinhood/0xe2c12a7379706a291cadaaec1d22458be2f7239d",
+      "discoveryRank": 6,
+      "volume24h": {
+        "value": 1326461.87,
+        "poolsWithValue": 1,
+        "poolsTotal": 1,
+        "partial": false
+      },
+      "liquidity": {
+        "value": 79212.42,
+        "poolsWithValue": 1,
+        "poolsTotal": 1,
+        "partial": false
+      },
+      "price": 0.01309,
+      "change24h": 28.02,
+      "change24hRange": null,
+      "marketCap": 13099282,
+      "fdv": 13099282,
+      "valuation": {
+        "metric": "marketCap",
+        "value": 13099282,
+        "source": {
+          "pairAddress": "0xE2c12a7379706A291CadAaEc1d22458be2f7239D",
+          "dexId": "uniswap",
+          "quoteSymbol": "WETH",
+          "rule": "most liquid returned pool"
+        }
+      },
+      "oldestPoolAt": "2026-09-07T07:19:07.000Z",
+      "oldestPoolAtLabel": "pool creation time (not a project launch date)",
+      "flags": [],
+      "pools": [
+        {
+          "pairAddress": "0xE2c12a7379706A291CadAaEc1d22458be2f7239D",
+          "discoverySlug": "0xe2c12a7379706a291cadaaec1d22458be2f7239d",
+          "dexId": "uniswap",
+          "url": "https://dexscreener.com/robinhood/0xe2c12a7379706a291cadaaec1d22458be2f7239d",
+          "labels": [
+            "v3"
+          ],
+          "quote": {
+            "address": "0x0Bd7D308f8E1639FAb988df18A8011f41EAcAD73",
+            "symbol": "WETH",
+            "name": "WETH"
+          },
+          "volume24h": 1326461.87,
+          "liquidityUsd": 79212.42,
+          "priceUsd": 0.01309,
+          "change24h": 28.02,
+          "marketCap": 13099282,
+          "fdv": 13099282,
+          "pairCreatedAt": "2026-09-07T07:19:07.000Z"
+        }
+      ],
+      "alsoQuotedIn": [],
+      "info": {
+        "websites": [],
+        "socials": [
+          {
+            "url": "https://x.com/amemecoinrh",
+            "type": "twitter"
+          }
+        ]
+      },
+      "hidden": false,
+      "hiddenReason": null
+    },
+    {
+      "id": "robinhood:0x88ad8ddf1e3898412146a534538d418c6f8a9062",
+      "chain": "robinhood",
+      "address": "0x88ad8DdF1E3898412146a534538d418c6F8A9062",
+      "name": "STANDARD",
+      "symbol": "STANDARD",
+      "url": "https://dexscreener.com/robinhood/0xc73f3cd3fb68288e63f008e08ef69caa0437224e420963c6aeb4526178e87ad9",
+      "discoveryRank": 5,
+      "volume24h": {
+        "value": 1279817.93,
+        "poolsWithValue": 1,
+        "poolsTotal": 1,
+        "partial": false
+      },
+      "liquidity": {
+        "value": 13359498.5,
+        "poolsWithValue": 1,
+        "poolsTotal": 1,
+        "partial": false
+      },
+      "price": 0.2454,
+      "change24h": -9.94,
+      "change24hRange": null,
+      "marketCap": 20261687,
+      "fdv": 20243708,
+      "valuation": {
+        "metric": "marketCap",
+        "value": 20261687,
+        "source": {
+          "pairAddress": "0xc73f3cd3fb68288e63f008e08ef69caa0437224e420963c6aeb4526178e87ad9",
+          "dexId": "uniswap",
+          "quoteSymbol": "ETH",
+          "rule": "most liquid returned pool"
+        }
+      },
+      "oldestPoolAt": "2026-09-15T01:00:30.000Z",
+      "oldestPoolAtLabel": "pool creation time (not a project launch date)",
+      "flags": [],
+      "pools": [
+        {
+          "pairAddress": "0xc73f3cd3fb68288e63f008e08ef69caa0437224e420963c6aeb4526178e87ad9",
+          "discoverySlug": "0xc73f3cd3fb68288e63f008e08ef69caa0437224e420963c6aeb4526178e87ad9",
+          "dexId": "uniswap",
+          "url": "https://dexscreener.com/robinhood/0xc73f3cd3fb68288e63f008e08ef69caa0437224e420963c6aeb4526178e87ad9",
+          "labels": [
+            "v4"
+          ],
+          "quote": {
+            "address": "0x0000000000000000000000000000000000000000",
+            "symbol": "ETH",
+            "name": "Ether"
+          },
+          "volume24h": 1279817.93,
+          "liquidityUsd": 13359498.5,
+          "priceUsd": 0.2454,
+          "change24h": -9.94,
+          "marketCap": 20261687,
+          "fdv": 20243708,
+          "pairCreatedAt": "2026-09-15T01:00:30.000Z"
+        }
+      ],
+      "alsoQuotedIn": [],
+      "info": {
+        "websites": [
+          {
+            "url": "https://www.standardreserve.xyz/app/",
+            "label": "Website"
+          }
+        ],
+        "socials": [
+          {
+            "url": "https://x.com/standard_rsv",
+            "type": "twitter"
+          }
+        ]
+      },
+      "hidden": false,
+      "hiddenReason": null
+    },
+    {
+      "id": "robinhood:0xad25ac6c84d497db898fa1e8387bf6af3532a1c4",
+      "chain": "robinhood",
+      "address": "0xad25Ac6C84D497db898fa1E8387bf6Af3532a1c4",
+      "name": "Alibaba • Robinhood Token",
+      "symbol": "BABA",
+      "url": "https://dexscreener.com/robinhood/0x1791fc651cc794a282e5dbcb56d0b2b38eff8754b677c8876e86901521ecc439",
+      "discoveryRank": 18,
+      "volume24h": {
+        "value": 1006015.49,
+        "poolsWithValue": 1,
+        "poolsTotal": 1,
+        "partial": false
+      },
+      "liquidity": {
+        "value": 65131.91,
+        "poolsWithValue": 1,
+        "poolsTotal": 1,
+        "partial": false
+      },
+      "price": 111.074,
+      "change24h": 1.94,
+      "change24hRange": null,
+      "marketCap": 1735593,
+      "fdv": 1690427,
+      "valuation": {
+        "metric": "marketCap",
+        "value": 1735593,
+        "source": {
+          "pairAddress": "0x1791fc651cc794a282e5dbcb56d0b2b38eff8754b677c8876e86901521ecc439",
+          "dexId": "uniswap",
+          "quoteSymbol": "USDG",
+          "rule": "most liquid returned pool"
+        }
+      },
+      "oldestPoolAt": "2026-09-03T15:59:44.000Z",
+      "oldestPoolAtLabel": "pool creation time (not a project launch date)",
+      "flags": [
+        {
+          "code": "mcapExceedsFdv",
+          "ratio": 1.03
+        }
+      ],
+      "pools": [
+        {
+          "pairAddress": "0x1791fc651cc794a282e5dbcb56d0b2b38eff8754b677c8876e86901521ecc439",
+          "discoverySlug": "0x1791fc651cc794a282e5dbcb56d0b2b38eff8754b677c8876e86901521ecc439",
+          "dexId": "uniswap",
+          "url": "https://dexscreener.com/robinhood/0x1791fc651cc794a282e5dbcb56d0b2b38eff8754b677c8876e86901521ecc439",
+          "labels": [
+            "v4"
+          ],
+          "quote": {
+            "address": "0x5fc5360D0400a0Fd4f2af552ADD042D716F1d168",
+            "symbol": "USDG",
+            "name": "Global Dollar"
+          },
+          "volume24h": 1006015.49,
+          "liquidityUsd": 65131.91,
+          "priceUsd": 111.074,
+          "change24h": 1.94,
+          "marketCap": 1735593,
+          "fdv": 1690427,
+          "pairCreatedAt": "2026-09-03T15:59:44.000Z"
+        }
+      ],
+      "alsoQuotedIn": [],
+      "info": {
+        "websites": [
+          {
+            "url": "https://aniu.space",
+            "label": "Website"
+          }
+        ],
+        "socials": [
+          {
+            "url": "https://x.com/aniuonRH",
+            "type": "twitter"
+          }
+        ]
+      },
+      "hidden": true,
+      "hiddenReason": "user display preference"
+    }
+  ],
+  "compatibilityKey": "d71d90ecad49b755"
+}

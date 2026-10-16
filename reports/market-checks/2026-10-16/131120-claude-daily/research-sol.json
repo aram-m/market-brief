@@ -1,0 +1,253 @@
+{
+  "schemaVersion": 1,
+  "scope": "sol",
+  "runId": "2026-10-16T131120-claude-daily",
+  "researchStartedAt": "2026-10-16T09:14:00.000Z",
+  "researchCompletedAt": "2026-10-16T09:24:00.000Z",
+  "webReads": [
+    {"id": "W1", "tokenId": "solana:oreoU2P8bN6jkk3jbaiVxYnG1dCXcYxwhwyK9jSybcp", "method": "websearch", "query": "ORE ore.com Solana mining protocol docs how ORE works", "observedAt": "2026-10-16T09:16:40.000Z", "status": "ok", "note": "Third-party guides (QuickNode, Value the Markets, GetBlock) on ORE mining; no official docs page in results"},
+    {"id": "W2", "tokenId": "solana:oreoU2P8bN6jkk3jbaiVxYnG1dCXcYxwhwyK9jSybcp", "method": "webfetch", "url": "https://github.com/regolith-labs/ore", "observedAt": "2026-10-16T09:17:30.000Z", "status": "ok", "note": "README: 'Hard Money for the Digital Age'; instructions deploy SOL to claim board space, claim mining rewards, treasury mints/burns/escrows ORE; links ore.com; mint address not shown"},
+    {"id": "W3", "tokenId": "solana:8x5VqbHA8D7NkD52uNuS5nnt3PwA8pLD34ymskeSo2Wn", "method": "websearch", "query": "zerebro AI agent Solana token 8x5VqbHA8D7NkD52uNuS5nnt3PwA8pLD34ymskeSo2Wn", "observedAt": "2026-10-16T09:16:40.000Z", "status": "ok", "note": "Bankless, FXEmpire, Solflare, Coinbase listings tie this mint to the Zerebro AI agent; no official docs found"},
+    {"id": "W4", "tokenId": "solana:CzLSujWBLFsSjncfkh59rUFqvafWcY5tzedWJSuypump", "method": "websearch", "query": "Goatseus Maximus GOAT token truth_terminal CzLSujWBLFsSjncfkh59rUFqvafWcY5tzedWJSuypump", "observedAt": "2026-10-16T09:16:40.000Z", "status": "ok", "note": "2024 coverage (Cointelegraph, Know Your Meme, Blockworks): created on Pump.fun Oct 10, 2024, promoted by Truth Terminal; contract not confirmed in results"},
+    {"id": "W5", "tokenId": "solana:CzLSujWBLFsSjncfkh59rUFqvafWcY5tzedWJSuypump", "method": "webfetch", "url": "https://goatchan.xyz/", "observedAt": "2026-10-16T09:17:30.000Z", "status": "failed", "note": "Socket is closed (site also failed in the script's read with ECONNRESET)"},
+    {"id": "W6", "tokenId": "solana:ApZuxdpzMrbEYTGEzeY9afh5pj9d6qPRJCTgQYiipbKg", "method": "websearch", "query": "CyberLeek CYBERLEEK Solana ApZuxdpzMrbEYTGEzeY9afh5pj9d6qPRJCTgQYiipbKg", "observedAt": "2026-10-16T09:16:40.000Z", "status": "ok", "note": "Only DexPaprika pages for same-name CyberLeek tokens on other contracts; nothing for this mint"},
+    {"id": "W7", "tokenId": "solana:9cRCn9rGT8V2imeM2BaKs13yhMEais3ruM3rPvTGpump", "method": "websearch", "query": "\"The Black Bull\" ANSEM Solana memecoin 9cRCn9rGT8V2imeM2BaKs13yhMEais3ruM3rPvTGpump", "observedAt": "2026-10-16T09:16:40.000Z", "status": "ok", "note": "Coinranking, MEXC, Phantom, Bitget listings for this mint; Pump.fun meme tied to influencer Ansem"},
+    {"id": "W8", "tokenId": "solana:9cRCn9rGT8V2imeM2BaKs13yhMEais3ruM3rPvTGpump", "method": "webfetch", "url": "https://www.mexc.com/crypto-pulse/article/what-is-the-black-bull-how-it-became-one-of-solana-s-hottest-meme-coins-124996", "observedAt": "2026-10-16T09:17:30.000Z", "status": "ok", "note": "MEXC article: contract matches; anonymous dev created it and airdropped supply to Ansem; quotes site as 'a liquidity and index layer for creator ecosystems on Solana'; names blackbullsol.com"},
+    {"id": "W9", "tokenId": "solana:9cRCn9rGT8V2imeM2BaKs13yhMEais3ruM3rPvTGpump", "method": "webfetch", "url": "https://www.blackbullsol.com/", "observedAt": "2026-10-16T09:18:20.000Z", "status": "failed", "note": "Only the page title 'The Black Bull | $ANSEM' was readable; JavaScript page with no text"},
+    {"id": "W10", "tokenId": "solana:nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump", "method": "websearch", "query": "\"Dacity Coin\" GTA 6 Solana memecoin", "observedAt": "2026-10-16T09:16:40.000Z", "status": "ok", "note": "No result mentions Dacity Coin; only general GTA 6 memecoin coverage (Decrypt)"}
+  ],
+  "projects": [
+    {
+      "id": "solana:oreoU2P8bN6jkk3jbaiVxYnG1dCXcYxwhwyK9jSybcp",
+      "claims": [
+        {"field": "purpose", "kind": "project_claim", "status": "claimed_unverified", "text": "Its site describes ORE as a 'future-proof store of value'; its GitHub README calls it 'Hard Money for the Digital Age'.", "evidence": ["sol-E1", "W2"]},
+        {"field": "mechanics", "kind": "project_claim", "status": "claimed_unverified", "text": "Its GitHub lists program instructions that deploy SOL to claim space on a board, claim ORE mining rewards, and mint, burn and escrow ORE via a treasury.", "evidence": ["W2"]},
+        {"field": "mechanics", "kind": "third_party", "status": "claimed_unverified", "text": "Third-party guides describe rounds of about a minute where SOL is placed on a 5×5 grid, with winners sharing losing stakes plus newly minted ORE.", "evidence": ["W1"]},
+        {"field": "supply", "kind": "measured", "status": "verified", "text": "Mint authority is still set on the SPL mint (not renounced); freeze authority is none.", "evidence": ["sol-RPC", "measured:mintAuthority"]},
+        {"field": "risk", "kind": "measured", "status": "verified", "text": "Reported market cap exceeds FDV (1.89×) on the most liquid pool, so the valuation is unreconciled.", "evidence": ["measured:valuation"]}
+      ],
+      "aiView": {"text": "Volume is 128.6× its $143K pooled liquidity. The set mint authority fits the GitHub's described mining mint but means supply can grow; market cap above FDV is unreconciled.", "basedOn": ["measured:volumeToLiquidity", "measured:mintAuthority", "measured:valuation", "W2"]},
+      "launch": {"label": null, "evidence": []},
+      "gaps": [
+        {"what": "listed X", "reason": "@OREsupply has moved to @ORE and has no posts; the site is JavaScript-only beyond its tagline", "source": "https://x.com/OREsupply"}
+      ]
+    },
+    {
+      "id": "solana:8x5VqbHA8D7NkD52uNuS5nnt3PwA8pLD34ymskeSo2Wn",
+      "claims": [
+        {"field": "purpose", "kind": "third_party", "status": "claimed_unverified", "text": "Search results (Bankless, FXEmpire) describe Zerebro as an autonomous AI agent that creates and distributes content such as music and art.", "evidence": ["W3"]},
+        {"field": "supply", "kind": "measured", "status": "verified", "text": "Mint authority and freeze authority are both none on the SPL mint.", "evidence": ["sol-RPC", "measured:mintAuthority"]}
+      ],
+      "aiView": {"text": "Volume runs 3.4× liquidity in a single SOL pool almost two years old; the project's own pages gave no readable text, so its purpose here comes only from third-party coverage.", "basedOn": ["measured:volumeToLiquidity", "measured:poolAge", "W3"]},
+      "launch": {"label": null, "evidence": []},
+      "gaps": [
+        {"what": "purpose", "reason": "zerebro.org and farcaster.xyz/zerebro returned no readable text", "source": "https://zerebro.org/"},
+        {"what": "mechanics", "reason": "listed X posts are slogans only; no docs found by one web search", "source": "https://x.com/0xzerebro"}
+      ]
+    },
+    {
+      "id": "solana:nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump",
+      "claims": [
+        {"field": "provenance", "kind": "third_party", "status": "claimed_unverified", "text": "The profile's only link is a streamer's X post claiming a meme coin called 'Dacity Coin' appears in a GTA 6 leak; a web search found no source on it.", "evidence": ["sol-E6", "W10"]},
+        {"field": "risk", "kind": "measured", "status": "verified", "text": "24h change ranges from +458% to +1094% across its two pools.", "evidence": ["measured:changeSpread"]},
+        {"field": "supply", "kind": "measured", "status": "verified", "text": "Token-2022 mint with mint authority and freeze authority none.", "evidence": ["sol-RPC", "measured:mintAuthority"]}
+      ],
+      "aiView": {"text": "A pool first seen 4.9 days ago trades 37× its liquidity, with a >600-point change gap between pools, on a GTA 6 leak rumour that one search did not corroborate.", "basedOn": ["measured:poolAge", "measured:volumeToLiquidity", "measured:changeSpread", "W10"]},
+      "launch": {"label": "launch date unverified", "evidence": ["measured:poolAge"]},
+      "gaps": [
+        {"what": "purpose", "reason": "no website listed; the listed X link is a third-party streamer's post", "source": "https://x.com/robtmb1/status/2109241600002118071"},
+        {"what": "mechanics", "reason": "no project page exists to read; web search returned nothing on Dacity Coin", "source": null}
+      ]
+    },
+    {
+      "id": "solana:6GmAFSYs4gk3FDao5FzzySQpPZaWsa4rUJHacpMpUNgx",
+      "claims": [
+        {"field": "purpose", "kind": "project_claim", "status": "claimed_unverified", "text": "Describes StonkFun as a Solana launchpad for coins paired with anything: memes, stocks, currencies, commodities and more.", "evidence": ["sol-E7", "sol-E8"]},
+        {"field": "mechanics", "kind": "project_claim", "status": "claimed_unverified", "text": "Its X reports Oct 15 revenue of $159,090 with $94,629 used for buybacks and 876.73K STONK burned, and says it added multi-asset Baskets.", "evidence": ["sol-E8"]},
+        {"field": "supply", "kind": "measured", "status": "verified", "text": "Mint authority and freeze authority are both none on the SPL mint.", "evidence": ["sol-RPC", "measured:mintAuthority"]}
+      ],
+      "aiView": {"text": "STONK is also the quote asset in an ORE pool not counted here, so its liquidity partly backs other launches. Buyback and burn figures are self-reported revenue posts, not measured.", "basedOn": ["measured:alsoQuotedIn", "sol-E8"]},
+      "launch": {"label": null, "evidence": []},
+      "gaps": []
+    },
+    {
+      "id": "solana:CARDSccUMFKoPRZxt5vt3ksUbxEFEcnZ3H2pd3dKxYjp",
+      "claims": [
+        {"field": "purpose", "kind": "project_claim", "status": "claimed_unverified", "text": "Describes Collector Crypt as a bridge for real-world collectibles: digitize collections, trade them and collateralize them for loans.", "evidence": ["sol-E9"]},
+        {"field": "mechanics", "kind": "project_claim", "status": "claimed_unverified", "text": "Its X says it sells RWA Pokémon cards on Solana and runs gacha machines with $50, $100 and $250 packs.", "evidence": ["sol-E11", "sol-E10"]},
+        {"field": "supply", "kind": "measured", "status": "verified", "text": "Mint authority and freeze authority are both none on the SPL mint.", "evidence": ["sol-RPC", "measured:mintAuthority"]}
+      ],
+      "aiView": {"text": "Among the oldest pools here (over a year) with volume only 1.5× liquidity in USDC pairs; the pages read give no token role, so how CARDS ties to card sales is unstated.", "basedOn": ["measured:poolAge", "measured:volumeToLiquidity", "sol-E9", "sol-E11"]},
+      "launch": {"label": null, "evidence": []},
+      "gaps": []
+    },
+    {
+      "id": "solana:DEW9dSN6QpWyNthphCpMmAbZP1Q4cEKR9xQXAri98WDP",
+      "claims": [
+        {"field": "purpose", "kind": "project_claim", "status": "claimed_unverified", "text": "Describes Super Inu as a community-run parody meme token on Solana, built on the September 2026 'SI' (super intelligence) meme.", "evidence": ["sol-E12"]},
+        {"field": "mechanics", "kind": "project_claim", "status": "claimed_unverified", "text": "Says NVDAx (tokenized NVIDIA stock) is sent to $SI holders, citing over $3M distributed as of Oct 5 per Stonk; says rewards are not guaranteed.", "evidence": ["sol-E12"]},
+        {"field": "risk", "kind": "project_claim", "status": "claimed_unverified", "text": "The site says it is not affiliated with Donald Trump, any political figure or the U.S. government.", "evidence": ["sol-E12"]},
+        {"field": "supply", "kind": "measured", "status": "verified", "text": "Token-2022 mint with mint authority and freeze authority none.", "evidence": ["sol-RPC", "measured:mintAuthority"]}
+      ],
+      "aiView": {"text": "Three pools including an NVDAx pair, consistent with the NVDAx holder-reward claim; the $3M distribution figure is attributed to Stonk and not measured here.", "basedOn": ["measured:pools", "sol-E12"]},
+      "launch": {"label": null, "evidence": []},
+      "gaps": []
+    },
+    {
+      "id": "solana:33jENUQnjoitkMFpvNJcSHyLAHFWJuHwT6E3E8CNpump",
+      "claims": [
+        {"field": "purpose", "kind": "project_claim", "status": "claimed_unverified", "text": "Describes Doge Pepe as a meme launched on OTC on Solana, 'the most expensive accident in meme history'.", "evidence": ["sol-E15"]},
+        {"field": "mechanics", "kind": "project_claim", "status": "claimed_unverified", "text": "Says holders receive a basket of ANTHROPIC, DOGE and PEPE rewards paid automatically.", "evidence": ["sol-E15"]},
+        {"field": "supply", "kind": "measured", "status": "verified", "text": "Token-2022 mint with mint authority and freeze authority none.", "evidence": ["sol-RPC", "measured:mintAuthority"]}
+      ],
+      "aiView": {"text": "A pool first seen 4.8 days ago with volume 6.2× liquidity; the reward basket is the site's claim, and payouts are not measured in this run.", "basedOn": ["measured:poolAge", "measured:volumeToLiquidity", "sol-E15"]},
+      "launch": {"label": "launch date unverified", "evidence": ["measured:poolAge"]},
+      "gaps": []
+    },
+    {
+      "id": "solana:61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump",
+      "claims": [
+        {"field": "purpose", "kind": "project_claim", "status": "claimed_unverified", "text": "Its site presents AI Rig Complex as the 'Arc Registry' of ecosystem partners and agents; its X says 'we build rig'.", "evidence": ["sol-E17", "sol-E20"]},
+        {"field": "mechanics", "kind": "project_claim", "status": "claimed_unverified", "text": "Its linked GitHub hosts Rig, a Rust library to 'build modular and scalable LLM applications'; its X cites two million downloads.", "evidence": ["sol-E18", "sol-E20"]},
+        {"field": "supply", "kind": "measured", "status": "verified", "text": "Mint authority and freeze authority are both none on the SPL mint.", "evidence": ["sol-RPC", "measured:mintAuthority"]}
+      ],
+      "aiView": {"text": "Tied to a public open-source library, unlike most rows, but no page read explains what the arc token does within Rig. Volume runs 1.2× liquidity.", "basedOn": ["sol-E18", "measured:volumeToLiquidity"]},
+      "launch": {"label": null, "evidence": []},
+      "gaps": [
+        {"what": "token role", "reason": "manifesto page returned HTTP 404; no page read explains the token's function", "source": "https://www.arc.fun/manifesto.html"}
+      ]
+    },
+    {
+      "id": "solana:CzLSujWBLFsSjncfkh59rUFqvafWcY5tzedWJSuypump",
+      "claims": [
+        {"field": "provenance", "kind": "third_party", "status": "claimed_unverified", "text": "2024 coverage (Cointelegraph) says GOAT was created on Pump.fun on Oct 10, 2024 by another user, and the AI account Truth Terminal promoted rather than launched it.", "evidence": ["W4"]},
+        {"field": "supply", "kind": "measured", "status": "verified", "text": "Mint authority and freeze authority are both none on the SPL mint.", "evidence": ["sol-RPC", "measured:mintAuthority"]}
+      ],
+      "aiView": {"text": "The oldest pool dates to 2024-10-10, the day press says it was created on Pump.fun. The listed X is an AI account with no token details, and the site failed twice.", "basedOn": ["measured:poolAge", "W4"]},
+      "launch": {"label": null, "evidence": []},
+      "gaps": [
+        {"what": "purpose", "reason": "goatchan.xyz failed (ECONNRESET in the script read, socket closed on WebFetch)", "source": "https://goatchan.xyz/"},
+        {"what": "mechanics", "reason": "listed X (@truth_terminal) posts do not describe the token", "source": "https://x.com/truth_terminal"}
+      ]
+    },
+    {
+      "id": "solana:2j5SaS7xy776qCBpyPQbZjyQSAtKiFgrwjfErthnW2ZM",
+      "claims": [
+        {"field": "purpose", "kind": "project_claim", "status": "claimed_unverified", "text": "claudia.gallery describes Claudia as an open AI character, singer of four music videos it says were made with Claude in Sep–Oct 2026.", "evidence": ["sol-E23"]},
+        {"field": "mechanics", "kind": "project_claim", "status": "claimed_unverified", "text": "Its listed X calls itself a fan/art account and says all fees go to @anabology; useclaudia.xyz describes an AI influencer platform for agents.", "evidence": ["sol-E25", "sol-E24"]},
+        {"field": "supply", "kind": "measured", "status": "verified", "text": "Token-2022 mint with mint authority and freeze authority none.", "evidence": ["sol-RPC", "measured:mintAuthority"]}
+      ],
+      "aiView": {"text": "The character site shows this contract, while the listed X calls itself a fan account routing fees to @anabology; who issued the token is not stated. Volume runs 8× liquidity in one pool.", "basedOn": ["sol-E23", "sol-E25", "measured:volumeToLiquidity"]},
+      "launch": {"label": null, "evidence": []},
+      "gaps": []
+    },
+    {
+      "id": "solana:MukLDtJ8Cx9DxLbeyLRSWPSposTMWuwHANbuaudpump",
+      "claims": [
+        {"field": "purpose", "kind": "project_claim", "status": "claimed_unverified", "text": "Describes OTC as 'the everything protocol' that builds whatever captures volume and revenue on Solana; its X says 'earn stocks, pre-ipo, and yield'.", "evidence": ["sol-E26", "sol-E27"]},
+        {"field": "mechanics", "kind": "project_claim", "status": "claimed_unverified", "text": "Says every product sends a share of earnings to owners of minted 'desks'; its X reports 690.9 SOL paid to holders and 1.4M OTC bought back on Oct 15.", "evidence": ["sol-E26", "sol-E27"]},
+        {"field": "supply", "kind": "measured", "status": "verified", "text": "Token-2022 mint with mint authority and freeze authority none.", "evidence": ["sol-RPC", "measured:mintAuthority"]}
+      ],
+      "aiView": {"text": "Neither the site nor the X shows this contract, so the link between the desks programme and the OTC token is not confirmed by the pages read; revenue figures are self-reported.", "basedOn": ["sol-E26", "sol-E27"]},
+      "launch": {"label": null, "evidence": []},
+      "gaps": []
+    },
+    {
+      "id": "solana:ApZuxdpzMrbEYTGEzeY9afh5pj9d6qPRJCTgQYiipbKg",
+      "claims": [
+        {"field": "risk", "kind": "third_party", "status": "claimed_unverified", "text": "A web search found several 'CyberLeek' tokens on other contracts (DexPaprika) but no page for this one, so copycats share the name.", "evidence": ["W6"]},
+        {"field": "supply", "kind": "measured", "status": "verified", "text": "Mint authority and freeze authority are both none on the SPL mint.", "evidence": ["sol-RPC", "measured:mintAuthority"]}
+      ],
+      "aiView": {"text": "No website or socials are listed, and search found only same-name tokens on other contracts, so nothing identifies who is behind this mint. Volume runs 2.4× liquidity.", "basedOn": ["W6", "measured:volumeToLiquidity"]},
+      "launch": {"label": null, "evidence": []},
+      "gaps": [
+        {"what": "purpose", "reason": "no website or socials in the Dexscreener profile", "source": null},
+        {"what": "mechanics", "reason": "one web search found no page for this contract", "source": null}
+      ]
+    },
+    {
+      "id": "solana:Ai66LHZG9MCzg1WKdawwqduVAXpNDUuV8M3uyq5ppump",
+      "claims": [
+        {"field": "purpose", "kind": "project_claim", "status": "claimed_unverified", "text": "Describes Catecoin as the 'cat sister of Dogecoin', a meme fair-launched on pump.fun with no presale or team allocation.", "evidence": ["sol-E28"]},
+        {"field": "mechanics", "kind": "project_claim", "status": "claimed_unverified", "text": "Says the mint authority is revoked, the liquidity pool is burned, supply is fixed at one billion, and buy and sell tax are 0%.", "evidence": ["sol-E28"]},
+        {"field": "supply", "kind": "measured", "status": "verified", "text": "Mint authority and freeze authority are none, consistent with the site's revoked-mint claim.", "evidence": ["sol-RPC", "measured:mintAuthority"]},
+        {"field": "adoption", "kind": "third_party", "status": "claimed_unverified", "text": "A Birdeye post shown in its X community claims over 140,000 holders.", "evidence": ["sol-E29"]}
+      ],
+      "aiView": {"text": "Liquidity is about 2.5× daily volume, deep for a meme; the revoked mint checks out on chain, while the burned-LP claim is not measured.", "basedOn": ["measured:volumeToLiquidity", "measured:mintAuthority", "sol-E28"]},
+      "launch": {"label": null, "evidence": []},
+      "gaps": []
+    },
+    {
+      "id": "solana:HZ1JovNiVvGrGNiiYvEozEVgZ58xaU3RKwX8eACQBCt3",
+      "claims": [
+        {"field": "purpose", "kind": "project_claim", "status": "claimed_unverified", "text": "Describes Pyth as 'the price layer for global finance', delivering real-time market data across crypto, equities, FX and commodities.", "evidence": ["sol-E30", "sol-E31"]},
+        {"field": "mechanics", "kind": "project_claim", "status": "claimed_unverified", "text": "Says over 130 publishers supply data through Pyth Pro APIs; its X says under 'The 100% Rule' every dollar the DAO receives buys PYTH monthly.", "evidence": ["sol-E30", "sol-E31"]},
+        {"field": "supply", "kind": "measured", "status": "verified", "text": "Mint authority and freeze authority are both none on the SPL mint.", "evidence": ["sol-RPC", "measured:mintAuthority"]}
+      ],
+      "aiView": {"text": "A large-cap token whose one qualifying Solana pool is small, so this scan sees only a slice of PYTH trading; the DAO buyback rule is stated policy, not measured here.", "basedOn": ["measured:pools", "measured:volumeToLiquidity", "sol-E31"]},
+      "launch": {"label": null, "evidence": []},
+      "gaps": []
+    },
+    {
+      "id": "solana:Hg5Ja55T5wESq4vyFoiVCMeHXtGyVA69X2UHq8hgpump",
+      "claims": [
+        {"field": "purpose", "kind": "project_claim", "status": "claimed_unverified", "text": "Describes Baton as a community meme named for pump.fun's original name, 'the first $PUMP-paired meme', not affiliated with pump.fun.", "evidence": ["sol-E32", "sol-E33"]},
+        {"field": "mechanics", "kind": "project_claim", "status": "claimed_unverified", "text": "Its X says it carries a 1% tax and claims $518K in holder dividends, 'number one holder rewards on Pumpfun'.", "evidence": ["sol-E33"]},
+        {"field": "supply", "kind": "measured", "status": "verified", "text": "Token-2022 mint with mint authority and freeze authority none.", "evidence": ["sol-RPC", "measured:mintAuthority"]}
+      ],
+      "aiView": {"text": "Its only qualifying pool is quoted in PUMP rather than SOL, so its price also moves with PUMP. The dividend total is self-reported.", "basedOn": ["measured:pools", "sol-E33"]},
+      "launch": {"label": null, "evidence": []},
+      "gaps": []
+    },
+    {
+      "id": "solana:HuAXPyDWDaMYFKuwQHpqL1oPnj93zdzWmtvFGzCeCUa7",
+      "claims": [
+        {"field": "purpose", "kind": "project_claim", "status": "claimed_unverified", "text": "Describes NullMask as a private 'VPN for crypto' for confidential transfers, swaps and bridging from any wallet, built by core $ZEC contributors.", "evidence": ["sol-E34", "sol-E35"]},
+        {"field": "mechanics", "kind": "project_claim", "status": "claimed_unverified", "text": "Its X calls it a ZK privacy protocol and says $30K of 24h revenue was swapped for MASK and burned, with daily buybacks to continue.", "evidence": ["sol-E35"]},
+        {"field": "supply", "kind": "measured", "status": "verified", "text": "Token-2022 mint with mint authority and freeze authority none.", "evidence": ["sol-RPC", "measured:mintAuthority"]}
+      ],
+      "aiView": {"text": "The site names Ethereum and Base and the X BNB Chain, yet this token trades on Solana in a ZEC-quoted pool; the burn is self-reported with a cited transaction, not checked here.", "basedOn": ["sol-E34", "sol-E35", "measured:pools"]},
+      "launch": {"label": null, "evidence": []},
+      "gaps": []
+    },
+    {
+      "id": "solana:CWZ6BsdnjkDVTGkmL6bGbJXXig6ceef12KvyGQW14cMt",
+      "claims": [
+        {"field": "purpose", "kind": "project_claim", "status": "claimed_unverified", "text": "Its X describes AntFun as a Web3 wallet focused on social and AI features; the site calls it 'a human social network for the post-AI world'.", "evidence": ["sol-E37", "sol-E36"]},
+        {"field": "mechanics", "kind": "project_claim", "status": "claimed_unverified", "text": "Says it offers standard multi-chain wallet functionality, and its X announces a token-listing vote with Bingan running Oct 16 to Nov 26.", "evidence": ["sol-E37"]},
+        {"field": "supply", "kind": "measured", "status": "verified", "text": "Mint authority and freeze authority are both none on the SPL mint.", "evidence": ["sol-RPC", "measured:mintAuthority"]}
+      ],
+      "aiView": {"text": "Liquidity is about 11× daily volume in one USDT pool, unusual depth for its size; neither page read shows this contract or the token's role in the wallet.", "basedOn": ["measured:volumeToLiquidity", "measured:pools", "sol-E36", "sol-E37"]},
+      "launch": {"label": null, "evidence": []},
+      "gaps": [
+        {"what": "token role", "reason": "site body was JavaScript-only; neither page shows the contract or explains what the token does", "source": "https://ant.fun/"}
+      ]
+    },
+    {
+      "id": "solana:9cRCn9rGT8V2imeM2BaKs13yhMEais3ruM3rPvTGpump",
+      "claims": [
+        {"field": "purpose", "kind": "project_claim", "status": "claimed_unverified", "text": "Its listed X presents $ANSEM as a meme ('coldest bull breathing') and posts slogans such as 'all time highs by christmas'.", "evidence": ["sol-E38"]},
+        {"field": "provenance", "kind": "third_party", "status": "claimed_unverified", "text": "A MEXC article says an anonymous developer created it on Pump.fun and airdropped supply to influencer Ansem, who did not create it.", "evidence": ["W8"]},
+        {"field": "mechanics", "kind": "third_party", "status": "claimed_unverified", "text": "The same article says Ansem pledged weekly random airdrops of creator fees, and quotes the site as 'a liquidity and index layer for creator ecosystems'.", "evidence": ["W8"]},
+        {"field": "supply", "kind": "measured", "status": "verified", "text": "Token-2022 mint with mint authority and freeze authority none.", "evidence": ["sol-RPC", "measured:mintAuthority"]}
+      ],
+      "aiView": {"text": "A nine-figure meme whose one qualifying pool holds $603K; its own site was JavaScript-only, so the 'index layer' description comes only from a MEXC article.", "basedOn": ["measured:pools", "W8"]},
+      "launch": {"label": null, "evidence": []},
+      "gaps": [
+        {"what": "mechanics", "reason": "no website in the Dexscreener profile; blackbullsol.com returned only a page title", "source": "https://www.blackbullsol.com/"}
+      ]
+    },
+    {
+      "id": "solana:GTBxUiw6wJdmmkCGZgRHLyYxqu1vG4KtRpeox6yDpump",
+      "claims": [
+        {"field": "purpose", "kind": "project_claim", "status": "claimed_unverified", "text": "Describes $JEANPHIL as the token of Jean Phil, a Paris 'gentleman-boxer' internet character, launched by the creator himself.", "evidence": ["sol-E39"]},
+        {"field": "mechanics", "kind": "project_claim", "status": "claimed_unverified", "text": "Says it was a fair launch on Solana with no team allocation.", "evidence": ["sol-E39"]},
+        {"field": "risk", "kind": "project_claim", "status": "claimed_unverified", "text": "Its X says the linked Instagram account was temporarily suspended after many reports.", "evidence": ["sol-E40"]},
+        {"field": "supply", "kind": "measured", "status": "verified", "text": "Token-2022 mint with mint authority and freeze authority none.", "evidence": ["sol-RPC", "measured:mintAuthority"]}
+      ],
+      "aiView": {"text": "A creator-launched character token in a pool about 27 days old; 'no team allocation' can't be checked from this run's reads, and the listed Instagram was reported suspended.", "basedOn": ["measured:poolAge", "sol-E39", "sol-E40"]},
+      "launch": {"label": null, "evidence": []},
+      "gaps": []
+    }
+  ]
+}

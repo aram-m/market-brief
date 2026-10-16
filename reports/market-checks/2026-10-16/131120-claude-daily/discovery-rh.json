@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "scope": "rh",
+  "chain": "robinhood",
+  "status": "ok",
+  "reason": null,
+  "method": "claude-built-in-browser",
+  "discoveryUrl": "https://dexscreener.com/robinhood?rankBy=trendingScoreH6&order=desc&minMarketCap=1000000&minAge=72&min24HVol=1000000&profile=1",
+  "pageUrl": "https://dexscreener.com/robinhood?rankBy=trendingScoreH6&order=desc&minMarketCap=1000000&minAge=72&min24HVol=1000000&profile=1",
+  "pageTitle": "Robinhood DEX Screener",
+  "extractor": "market-brief/discovery-extract@1",
+  "filtersIndicator": "Filters\n4",
+  "rankIndicator": "Trending\n5M",
+  "observedAt": "2026-10-16T09:12:14.808Z",
+  "savedAt": "2026-10-16T09:12:27.036Z",
+  "pageLoads": 1,
+  "rowCount": 18,
+  "possibleTruncation": false,
+  "pools": [
+    {
+      "rank": 1,
+      "slug": "0x590dcb6a87828bf688b48089a62239b693378f1fb64d2286e6a399ed8c005fdf",
+      "page": 1
+    },
+    {
+      "rank": 2,
+      "slug": "0x338fce553e60c8b0acccde1956bc378586ef6f2935339ebae5804d429d461e44",
+      "page": 1
+    },
+    {
+      "rank": 3,
+      "slug": "0xf2a0be59ab76b96f957bd5e5b967f2b75e8db269",
+      "page": 1
+    },
+    {
+      "rank": 4,
+      "slug": "0xd42a491087a15e5afd51feb3606066cc152d2b09",
+      "page": 1
+    },
+    {
+      "rank": 5,
+      "slug": "0xc73f3cd3fb68288e63f008e08ef69caa0437224e420963c6aeb4526178e87ad9",
+      "page": 1
+    },
+    {
+      "rank": 6,
+      "slug": "0xe2c12a7379706a291cadaaec1d22458be2f7239d",
+      "page": 1
+    },
+    {
+      "rank": 7,
+      "slug": "0x592e3fb7ea947506b36481025abc15baada8e1839a50fded46ecf08b3182fa96",
+      "page": 1
+    },
+    {
+      "rank": 8,
+      "slug": "0xed50bdeea8adc232f159486192a4157281d722ff",
+      "page": 1
+    },
+    {
+      "rank": 9,
+      "slug": "0x435ea42b2792a22de296bee4e8013f4fa102f0cc04983443ff79549f847db577",
+      "page": 1
+    },
+    {
+      "rank": 10,
+      "slug": "0x4be9657ec9002e528f4f17a5c43edc525a07f888f7b180c2afbf75e096c4f38a",
+      "page": 1
+    },
+    {
+      "rank": 11,
+      "slug": "0x230bc4a0fb5fb7ab27f6e72350dfa3f2489b0cdbaf34f0189d68672086ccb919",
+      "page": 1
+    },
+    {
+      "rank": 12,
+      "slug": "0x486435a1f76cd58193f854c6e6213cd05fd58d637865d02065ff558b387fa6ea",
+      "page": 1
+    },
+    {
+      "rank": 13,
+      "slug": "0xa92a3df27a00a276183ff7265fd8affa11df1fe8bb23ddfaf13f6c879a3f818b",
+      "page": 1
+    },
+    {
+      "rank": 14,
+      "slug": "0x654e4143e82a5824445ade0824351c2a9acd95a8",
+      "page": 1
+    },
+    {
+      "rank": 15,
+      "slug": "0x628c98ab436ee34a6a7decd606242890582591bdf7c9a35d90e0d08021c31ea0",
+      "page": 1
+    },
+    {
+      "rank": 16,
+      "slug": "0x5a3571dca43ecafcd670e87a6eaf6de0e2d70954",
+      "page": 1
+    },
+    {
+      "rank": 17,
+      "slug": "0x3416b8d8aa6ae642ffdc2f65165ff479d4bd3007",
+      "page": 1
+    },
+    {
+      "rank": 18,
+      "slug": "0x1791fc651cc794a282e5dbcb56d0b2b38eff8754b677c8876e86901521ecc439",
+      "page": 1
+    }
+  ],
+  "invalidSlugs": [],
+  "problems": []
+}

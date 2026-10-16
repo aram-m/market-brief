@@ -1,0 +1,8 @@
+{
+  "scope": "rh",
+  "prior": null,
+  "reason": "no compatible prior Claude scan (same scope, discovery URL and schema) is available",
+  "newlySurfaced": [],
+  "noLongerQualifying": [],
+  "priorByToken": {}
+}

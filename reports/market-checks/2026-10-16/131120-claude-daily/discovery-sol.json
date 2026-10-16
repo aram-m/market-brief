@@ -1,0 +1,318 @@
+{
+  "schemaVersion": 1,
+  "scope": "sol",
+  "chain": "solana",
+  "status": "ok",
+  "reason": null,
+  "method": "claude-built-in-browser",
+  "discoveryUrl": "https://dexscreener.com/solana?rankBy=trendingScoreH6&order=desc&minMarketCap=1000000&minAge=72&min24HVol=1000000&profile=1",
+  "pageUrl": "https://dexscreener.com/solana?rankBy=trendingScoreH6&order=desc&minMarketCap=1000000&minAge=72&min24HVol=1000000&profile=1",
+  "pageTitle": "Solana DEX Screener",
+  "extractor": "market-brief/discovery-extract@1",
+  "filtersIndicator": "Filters\n4",
+  "rankIndicator": "Trending\n5M",
+  "observedAt": "2026-10-16T09:11:34.111Z",
+  "savedAt": "2026-10-16T09:12:27.007Z",
+  "pageLoads": 1,
+  "rowCount": 59,
+  "possibleTruncation": false,
+  "pools": [
+    {
+      "rank": 1,
+      "slug": "da4pm4xsdy4m9v4cgakkbvh1pw1ysctqqa5nekghukpt",
+      "page": 1
+    },
+    {
+      "rank": 2,
+      "slug": "6iep3egqksbzwgzmbcyajtivtvykcgl9bnpbewlr8agq",
+      "page": 1
+    },
+    {
+      "rank": 3,
+      "slug": "fe7bpdycs74gqicuf14hwgumtopkv1d9mdyvx5btohfr",
+      "page": 1
+    },
+    {
+      "rank": 4,
+      "slug": "g2uurbmvdzdfp4qyobjrskbxsi7d6v4bpp9thps36y4b",
+      "page": 1
+    },
+    {
+      "rank": 5,
+      "slug": "zxtpi4btawx3mgdapoezkmd1hxx8cdecfrqxmwvsclx",
+      "page": 1
+    },
+    {
+      "rank": 6,
+      "slug": "ckp1kwzqosalu1h3zwtuambubywm7lx3cxyezrvin7p2",
+      "page": 1
+    },
+    {
+      "rank": 7,
+      "slug": "3sjnocnkkhwpvxygdtem8rccihsgc9jsfzuuazkbvrvp",
+      "page": 1
+    },
+    {
+      "rank": 8,
+      "slug": "4r8cimnjwdnoes3fqi1ccpfjygpxazahawphrn3rzenj",
+      "page": 1
+    },
+    {
+      "rank": 9,
+      "slug": "3ndjn1njvukgrjbc1hhvper6kwtzkhdydrpycjyx3cxk",
+      "page": 1
+    },
+    {
+      "rank": 10,
+      "slug": "b4vfuruhhzyt8yzbgbv9jiarbvjh1ebmabrnbnnqaxud",
+      "page": 1
+    },
+    {
+      "rank": 11,
+      "slug": "cb7zrgplhji3th7htxykeqbxvnjppetvckxuwakbuhxu",
+      "page": 1
+    },
+    {
+      "rank": 12,
+      "slug": "54vp27ulaw4wnlo5n7r4fcc6zlamoqc28xbarjss4euj",
+      "page": 1
+    },
+    {
+      "rank": 13,
+      "slug": "4gwh5sakgzoukhhj4rh3p5fmpu6ypuaexv6fah5jqyfm",
+      "page": 1
+    },
+    {
+      "rank": 14,
+      "slug": "hmzvseemtzhhvznw9uwbag85hctmfnkbhzux16cy7ca3",
+      "page": 1
+    },
+    {
+      "rank": 15,
+      "slug": "hnhpjpjgbg2kwnimtnw8cvbhvk1hfog3rc3kjnyc23td",
+      "page": 1
+    },
+    {
+      "rank": 16,
+      "slug": "g8kgi7aupex8evr8vmkrth9skev5bietwc33ujaiimgh",
+      "page": 1
+    },
+    {
+      "rank": 17,
+      "slug": "2axxcn6on9bbt5owwmth53c7qhuxvhleu718kqt8rvy2",
+      "page": 1
+    },
+    {
+      "rank": 18,
+      "slug": "bofa2viusudpbtums2krug6ahnemawjnfwqtjdgx5bkw",
+      "page": 1
+    },
+    {
+      "rank": 19,
+      "slug": "c1mglojnlwbkadvu9bhdtgzz1ozx4dz5zgdgcgvvw8wz",
+      "page": 1
+    },
+    {
+      "rank": 20,
+      "slug": "2uf4xh61rdwxng9woyxsvqp7zua6klfpb3nvnrqeoisd",
+      "page": 1
+    },
+    {
+      "rank": 21,
+      "slug": "j3b6dvhes2y1cbmtvz5tcwxnegsjjdbukxduvdpoqms7",
+      "page": 1
+    },
+    {
+      "rank": 22,
+      "slug": "3c5ye97hadpdxzehyq9cis8axr9anyrusczkze1ndbw9",
+      "page": 1
+    },
+    {
+      "rank": 23,
+      "slug": "8uwfmfcudi61rgt1e6buudefaucn6rosol7qhkp2nthk",
+      "page": 1
+    },
+    {
+      "rank": 24,
+      "slug": "45sspkuqs1ssbedqxd2mzrmdjyaxf7gyqyhs5xdxuwc5",
+      "page": 1
+    },
+    {
+      "rank": 25,
+      "slug": "afrddtgywcveqb1gxcahr8i48o6qtxyqksdvkeludehg",
+      "page": 1
+    },
+    {
+      "rank": 26,
+      "slug": "fprcdzegihlpo4lptwdkhq86fcuwoejfxnmoh9cszz6q",
+      "page": 1
+    },
+    {
+      "rank": 27,
+      "slug": "6qz7thwqvcjf3hydglukalbuk6eyjkezxzmwlaeiwfjd",
+      "page": 1
+    },
+    {
+      "rank": 28,
+      "slug": "ag1ehpjsbrkxqwkviulxf6pqnhwfr9f9sdnneeoykcej",
+      "page": 1
+    },
+    {
+      "rank": 29,
+      "slug": "9tb2ohu5p16bpbarqd3n27wnkf51ukfs8z1gzzldxvzw",
+      "page": 1
+    },
+    {
+      "rank": 30,
+      "slug": "77xsiqhxyh43u9rjr3fsupvzzuhh9wwweg6k3cce9sjr",
+      "page": 1
+    },
+    {
+      "rank": 31,
+      "slug": "6e7v9eegchw997t72mxgwwjipz6gjyzf8nvjkzt1rvpn",
+      "page": 1
+    },
+    {
+      "rank": 32,
+      "slug": "bxykfpucn3qvi9gcyhkpyqo8l5mz9miyauzfq7yghchi",
+      "page": 1
+    },
+    {
+      "rank": 33,
+      "slug": "gyyigqg8vdemkdnttvl6at2msbhdtdwyb6bccyr238u",
+      "page": 1
+    },
+    {
+      "rank": 34,
+      "slug": "2n1knulst167p6p9p8hycistvttv4vytm8qjbbtv1xyu",
+      "page": 1
+    },
+    {
+      "rank": 35,
+      "slug": "fhdw3y6ea6hxkbkgkt5ysavtdnd5qj8usevmapyer45s",
+      "page": 1
+    },
+    {
+      "rank": 36,
+      "slug": "9n3dslrerzqp95dhxywft7xv8d8xngflauhtehqvaxac",
+      "page": 1
+    },
+    {
+      "rank": 37,
+      "slug": "6ummuiyobjsrhakaobjw8bvkmjtdvxaebtbt7rxwo1mg",
+      "page": 1
+    },
+    {
+      "rank": 38,
+      "slug": "6imksfakkvxs6e1q4hyharqkln3hflrwto1jstlw5q2p",
+      "page": 1
+    },
+    {
+      "rank": 39,
+      "slug": "9d9mb8kooffad3sctgztkxqypkshx6ezhbkio89ixyy2",
+      "page": 1
+    },
+    {
+      "rank": 40,
+      "slug": "9txiurrw7kbejlhzxtxdxys2ree43uh2e7k1kocgdm9b",
+      "page": 1
+    },
+    {
+      "rank": 41,
+      "slug": "c8gr6auuq9hedsyjzoepncdjpojpzwqg5mtqbeounnwg",
+      "page": 1
+    },
+    {
+      "rank": 42,
+      "slug": "czfq3xzzdmsdgduyrnltrhgc47cxcztlg4crryfu44ze",
+      "page": 1
+    },
+    {
+      "rank": 43,
+      "slug": "58oqchx4ywmvkdwllzzbi4chocc2fqcuwbkwmihlyqo2",
+      "page": 1
+    },
+    {
+      "rank": 44,
+      "slug": "8pm2kzpnxd3hommt4bjstx2pw2z9abpbhzzxmpqxpmie",
+      "page": 1
+    },
+    {
+      "rank": 45,
+      "slug": "7xfh5ppd6j2qxvjbcudrngcdhqex4f3fwa2s1n2nqams",
+      "page": 1
+    },
+    {
+      "rank": 46,
+      "slug": "3ucnos4nbumplznwztqghnffgkhermbqavemeeomsuxv",
+      "page": 1
+    },
+    {
+      "rank": 47,
+      "slug": "3nmfwzxwy1s1m5s8vyahqd4wgs4isxxe4lroummyqegf",
+      "page": 1
+    },
+    {
+      "rank": 48,
+      "slug": "htvjzsfx3yu6buodcjz5vzkuraxmdtrbs3cjaq43ashr",
+      "page": 1
+    },
+    {
+      "rank": 49,
+      "slug": "gf7sxmop8irw4iixmj1nq4vxcrycbgxy5rl8a8lntd3v",
+      "page": 1
+    },
+    {
+      "rank": 50,
+      "slug": "bztgqeys6exuxicyphecyq7pybqodxqmvkjubp4r8muu",
+      "page": 1
+    },
+    {
+      "rank": 51,
+      "slug": "cybd9ratoymtwka7qzyolahnhdwq553vm62lh6qwtuxq",
+      "page": 1
+    },
+    {
+      "rank": 52,
+      "slug": "5rcf1dm8ljktw4yqhnolcngyzyennqqztsctogyhas6",
+      "page": 1
+    },
+    {
+      "rank": 53,
+      "slug": "hryejwdo3bz1tpxkwkcezqiwsv2ywuh4lxma2pzocng6",
+      "page": 1
+    },
+    {
+      "rank": 54,
+      "slug": "bgm1tav58ogcsqjehl9wxbfxf7d27vzskefj4xjkd5y",
+      "page": 1
+    },
+    {
+      "rank": 55,
+      "slug": "aqagyqsdu853wakhxm79cgndoyhrrwxvyhx6qrdyc1fs",
+      "page": 1
+    },
+    {
+      "rank": 56,
+      "slug": "bvrbyljjfsbcoyiyfuxbgkynwuifaf9csxea5vdsz9hh",
+      "page": 1
+    },
+    {
+      "rank": 57,
+      "slug": "8k7zfgzyvb7nuhhabaxndxubdzdvbklgadkxtooffrq2",
+      "page": 1
+    },
+    {
+      "rank": 58,
+      "slug": "6wtbshsrtqfqnipe8xyukbdnk31jvxwhaeeqwkmn8mtr",
+      "page": 1
+    },
+    {
+      "rank": 59,
+      "slug": "96iq9i3atpwmjxunjlczwmzunv1mj5wnh951wamcestj",
+      "page": 1
+    }
+  ],
+  "invalidSlugs": [],
+  "problems": []
+}

@@ -1,0 +1,2771 @@
+{
+  "schemaVersion": 1,
+  "scope": "sol",
+  "chain": "solana",
+  "runId": "2026-10-16T131120-claude-daily",
+  "producer": "claude-local",
+  "discoveryUrl": "https://dexscreener.com/solana?rankBy=trendingScoreH6&order=desc&minMarketCap=1000000&minAge=72&min24HVol=1000000&profile=1",
+  "discoveryAt": "2026-10-16T09:11:34.111Z",
+  "discoveryStatus": "ok",
+  "metrics": {
+    "window": {
+      "from": "2026-10-16T09:12:31.540Z",
+      "to": "2026-10-16T09:12:31.831Z"
+    },
+    "requests": 2,
+    "failedRequests": []
+  },
+  "marketStatus": "complete",
+  "counts": {
+    "discoveredPools": 59,
+    "resolvedPools": 59,
+    "unresolvedPools": 0,
+    "unexpectedPools": 0,
+    "excludedPools": 15,
+    "tokens": 26,
+    "hiddenTokens": 7,
+    "displayedTokens": 19
+  },
+  "unresolvedPools": [],
+  "unexpectedPools": [],
+  "excludedPools": [
+    {
+      "pairAddress": "9tXiuRRw7kbejLhZXtxDxYs2REe43uH2e7k1kocgdM9B",
+      "base": {
+        "id": "solana:2b1kV6DkPAnxd5ixfnxCpjxmKwqjjaYmCZfHsFu24GXo",
+        "symbol": "PYUSD"
+      },
+      "quote": {
+        "id": "solana:EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+        "symbol": "USDC"
+      },
+      "reason": "base is PYUSD (stablecoin), excluded by contract"
+    },
+    {
+      "pairAddress": "Czfq3xZZDmsdGdUyrNLtRhGc47cXcZtLG4crryfu44zE",
+      "base": {
+        "id": "solana:So11111111111111111111111111111111111111112",
+        "symbol": "SOL"
+      },
+      "quote": {
+        "id": "solana:EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+        "symbol": "USDC"
+      },
+      "reason": "base is WSOL (wrapped), excluded by contract"
+    },
+    {
+      "pairAddress": "58oQChx4yWmvKdwLLZzBi4ChoCc2fqCUWBkwMihLYQo2",
+      "base": {
+        "id": "solana:So11111111111111111111111111111111111111112",
+        "symbol": "SOL"
+      },
+      "quote": {
+        "id": "solana:EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+        "symbol": "USDC"
+      },
+      "reason": "base is WSOL (wrapped), excluded by contract"
+    },
+    {
+      "pairAddress": "8Pm2kZpnxD3hoMmt4bjStX2Pw2Z9abpbHzZxMPqxPmie",
+      "base": {
+        "id": "solana:So11111111111111111111111111111111111111112",
+        "symbol": "SOL"
+      },
+      "quote": {
+        "id": "solana:EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+        "symbol": "USDC"
+      },
+      "reason": "base is WSOL (wrapped), excluded by contract"
+    },
+    {
+      "pairAddress": "3ucNos4NbumPLZNWztqGHNFFgkHeRMBQAVemeeomsUxv",
+      "base": {
+        "id": "solana:So11111111111111111111111111111111111111112",
+        "symbol": "SOL"
+      },
+      "quote": {
+        "id": "solana:EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+        "symbol": "USDC"
+      },
+      "reason": "base is WSOL (wrapped), excluded by contract"
+    },
+    {
+      "pairAddress": "3nMFwZXwY1s1M5s8vYAHqd4wGs4iSxXE4LRoUMMYqEgF",
+      "base": {
+        "id": "solana:So11111111111111111111111111111111111111112",
+        "symbol": "SOL"
+      },
+      "quote": {
+        "id": "solana:Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+        "symbol": "USDT"
+      },
+      "reason": "base is WSOL (wrapped), excluded by contract"
+    },
+    {
+      "pairAddress": "HTvjzsfX3yU6BUodCjZ5vZkUrAxMDTrBs3CJaq43ashR",
+      "base": {
+        "id": "solana:So11111111111111111111111111111111111111112",
+        "symbol": "SOL"
+      },
+      "quote": {
+        "id": "solana:EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+        "symbol": "USDC"
+      },
+      "reason": "base is WSOL (wrapped), excluded by contract"
+    },
+    {
+      "pairAddress": "Gf7sXMoP8iRw4iiXmJ1nq4vxcRycbGXy5RL8a8LnTd3v",
+      "base": {
+        "id": "solana:So11111111111111111111111111111111111111112",
+        "symbol": "SOL"
+      },
+      "quote": {
+        "id": "solana:EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+        "symbol": "USDC"
+      },
+      "reason": "base is WSOL (wrapped), excluded by contract"
+    },
+    {
+      "pairAddress": "BZtgQEyS6eXUXicYPHecYQ7PybqodXQMvkjUbP4R8mUU",
+      "base": {
+        "id": "solana:EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+        "symbol": "USDC"
+      },
+      "quote": {
+        "id": "solana:Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+        "symbol": "USDT"
+      },
+      "reason": "base is USDC (stablecoin), excluded by contract"
+    },
+    {
+      "pairAddress": "CYbD9RaToYMtWKA7QZyoLahnHdWq553Vm62Lh6qWtuxq",
+      "base": {
+        "id": "solana:So11111111111111111111111111111111111111112",
+        "symbol": "SOL"
+      },
+      "quote": {
+        "id": "solana:EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+        "symbol": "USDC"
+      },
+      "reason": "base is WSOL (wrapped), excluded by contract"
+    },
+    {
+      "pairAddress": "5rCf1DM8LjKTw4YqhnoLcngyZYeNnQqztScTogYHAS6",
+      "base": {
+        "id": "solana:So11111111111111111111111111111111111111112",
+        "symbol": "SOL"
+      },
+      "quote": {
+        "id": "solana:EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+        "symbol": "USDC"
+      },
+      "reason": "base is WSOL (wrapped), excluded by contract"
+    },
+    {
+      "pairAddress": "HRYEjwdo3bZ1TpXKWKcezqiwSV2Ywuh4LxMa2PzoCnG6",
+      "base": {
+        "id": "solana:So11111111111111111111111111111111111111112",
+        "symbol": "SOL"
+      },
+      "quote": {
+        "id": "solana:EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+        "symbol": "USDC"
+      },
+      "reason": "base is WSOL (wrapped), excluded by contract"
+    },
+    {
+      "pairAddress": "BGm1tav58oGcsQJehL9WXBFXF7D27vZsKefj4xJKD5Y",
+      "base": {
+        "id": "solana:So11111111111111111111111111111111111111112",
+        "symbol": "SOL"
+      },
+      "quote": {
+        "id": "solana:EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+        "symbol": "USDC"
+      },
+      "reason": "base is WSOL (wrapped), excluded by contract"
+    },
+    {
+      "pairAddress": "AQAGYQsdU853WAKhXM79CgNdoyhrRwXvYHX6qrDyC1FS",
+      "base": {
+        "id": "solana:So11111111111111111111111111111111111111112",
+        "symbol": "SOL"
+      },
+      "quote": {
+        "id": "solana:USD1ttGY1N17NEEHLmELoaybftRBUSErhqYiQzvEmuB",
+        "symbol": "USD1"
+      },
+      "reason": "base is WSOL (wrapped), excluded by contract"
+    },
+    {
+      "pairAddress": "BVRbyLjjfSBcoyiYFuxbgKYnWuiFaF9CSXEa5vdSZ9Hh",
+      "base": {
+        "id": "solana:So11111111111111111111111111111111111111112",
+        "symbol": "SOL"
+      },
+      "quote": {
+        "id": "solana:EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+        "symbol": "USDC"
+      },
+      "reason": "base is WSOL (wrapped), excluded by contract"
+    }
+  ],
+  "filterRecheck": [],
+  "rows": [
+    {
+      "id": "solana:oreoU2P8bN6jkk3jbaiVxYnG1dCXcYxwhwyK9jSybcp",
+      "chain": "solana",
+      "address": "oreoU2P8bN6jkk3jbaiVxYnG1dCXcYxwhwyK9jSybcp",
+      "name": "ORE",
+      "symbol": "ORE",
+      "url": "https://dexscreener.com/solana/6imksfakkvxs6e1q4hyharqkln3hflrwto1jstlw5q2p",
+      "discoveryRank": 38,
+      "volume24h": {
+        "value": 18451342.15,
+        "poolsWithValue": 4,
+        "poolsTotal": 4,
+        "partial": false
+      },
+      "liquidity": {
+        "value": 143488.19,
+        "poolsWithValue": 4,
+        "poolsTotal": 4,
+        "partial": false
+      },
+      "price": 121.94,
+      "change24h": 13.38,
+      "change24hRange": [
+        13.38,
+        14.53
+      ],
+      "marketCap": 61998816,
+      "fdv": 32727233,
+      "valuation": {
+        "metric": "marketCap",
+        "value": 61998816,
+        "source": {
+          "pairAddress": "6iMKsFAkkvXS6E1Q4hyHARQkLn3HFLrwTo1JStLw5q2p",
+          "dexId": "meteora",
+          "quoteSymbol": "GLDx",
+          "rule": "most liquid returned pool"
+        }
+      },
+      "oldestPoolAt": "2026-09-01T16:49:09.000Z",
+      "oldestPoolAtLabel": "pool creation time (not a project launch date)",
+      "flags": [
+        {
+          "code": "mcapExceedsFdv",
+          "ratio": 1.89
+        }
+      ],
+      "pools": [
+        {
+          "pairAddress": "6iMKsFAkkvXS6E1Q4hyHARQkLn3HFLrwTo1JStLw5q2p",
+          "discoverySlug": "6imksfakkvxs6e1q4hyharqkln3hflrwto1jstlw5q2p",
+          "dexId": "meteora",
+          "url": "https://dexscreener.com/solana/6imksfakkvxs6e1q4hyharqkln3hflrwto1jstlw5q2p",
+          "labels": [
+            "DLMM"
+          ],
+          "quote": {
+            "address": "Xsv9hRk1z5ystj9MhnA7Lq4vjSsLwzL2nxrwmwtD3re",
+            "symbol": "GLDx",
+            "name": "Gold xStock"
+          },
+          "volume24h": 9418885.68,
+          "liquidityUsd": 104289,
+          "priceUsd": 121.94,
+          "change24h": 13.38,
+          "marketCap": 61998816,
+          "fdv": 32727233,
+          "pairCreatedAt": "2026-09-14T17:49:15.000Z"
+        },
+        {
+          "pairAddress": "6WTbShSrtQfqNipe8xYUKbdNk31jVXwhaEeQWkMn8mtR",
+          "discoverySlug": "6wtbshsrtqfqnipe8xyukbdnk31jvxwhaeeqwkmn8mtr",
+          "dexId": "meteora",
+          "url": "https://dexscreener.com/solana/6wtbshsrtqfqnipe8xyukbdnk31jvxwhaeeqwkmn8mtr",
+          "labels": [
+            "DLMM"
+          ],
+          "quote": {
+            "address": "J1toso1uCk3RLmjorhTtrVwY9HJ7X8V9yYac6Y7kGCPn",
+            "symbol": "JitoSOL",
+            "name": "Jito Staked SOL"
+          },
+          "volume24h": 2009090.63,
+          "liquidityUsd": 22676.31,
+          "priceUsd": 121.57,
+          "change24h": 13.52,
+          "marketCap": 61807846,
+          "fdv": 32626426,
+          "pairCreatedAt": "2026-10-07T16:32:46.000Z"
+        },
+        {
+          "pairAddress": "96iq9i3atPwMJxUNJLCzwMZunV1Mj5Wnh951wamCestJ",
+          "discoverySlug": "96iq9i3atpwmjxunjlczwmzunv1mj5wnh951wamcestj",
+          "dexId": "meteora",
+          "url": "https://dexscreener.com/solana/96iq9i3atpwmjxunjlczwmzunv1mj5wnh951wamcestj",
+          "labels": [
+            "DLMM"
+          ],
+          "quote": {
+            "address": "USDvUSpnhCr9yBgj3UyVrD239HRUv4RsHwH2FxsWuMk",
+            "symbol": "USDv",
+            "name": "USDv"
+          },
+          "volume24h": 4716920.37,
+          "liquidityUsd": 8477.59,
+          "priceUsd": 122.45,
+          "change24h": 14.53,
+          "marketCap": 62254186,
+          "fdv": 32862035,
+          "pairCreatedAt": "2026-10-06T20:03:30.000Z"
+        },
+        {
+          "pairAddress": "7xFh5PPd6j2QXVjBCudRngcdhQeX4f3fWA2s1N2nQams",
+          "discoverySlug": "7xfh5ppd6j2qxvjbcudrngcdhqex4f3fwa2s1n2nqams",
+          "dexId": "orca",
+          "url": "https://dexscreener.com/solana/7xfh5ppd6j2qxvjbcudrngcdhqex4f3fwa2s1n2nqams",
+          "labels": [
+            "wp"
+          ],
+          "quote": {
+            "address": "6GmAFSYs4gk3FDao5FzzySQpPZaWsa4rUJHacpMpUNgx",
+            "symbol": "STONK",
+            "name": "STONK"
+          },
+          "volume24h": 2306445.47,
+          "liquidityUsd": 8045.29,
+          "priceUsd": 121.92,
+          "change24h": 13.95,
+          "marketCap": 61986189,
+          "fdv": 32720568,
+          "pairCreatedAt": "2026-09-01T16:49:09.000Z"
+        }
+      ],
+      "alsoQuotedIn": [],
+      "info": {
+        "websites": [
+          {
+            "url": "https://ore.supply",
+            "label": "Website"
+          }
+        ],
+        "socials": [
+          {
+            "url": "https://x.com/OREsupply",
+            "type": "twitter"
+          },
+          {
+            "url": "https://discord.com/ore-supply",
+            "type": "discord"
+          }
+        ]
+      },
+      "hidden": false,
+      "hiddenReason": null
+    },
+    {
+      "id": "solana:6p6xgHyF7AeE6TZkSmFsko444wqoP15icUSqi2jfGiPN",
+      "chain": "solana",
+      "address": "6p6xgHyF7AeE6TZkSmFsko444wqoP15icUSqi2jfGiPN",
+      "name": "OFFICIAL TRUMP",
+      "symbol": "TRUMP",
+      "url": "https://dexscreener.com/solana/9d9mb8kooffad3sctgztkxqypkshx6ezhbkio89ixyy2",
+      "discoveryRank": 6,
+      "volume24h": {
+        "value": 13901064.62,
+        "poolsWithValue": 3,
+        "poolsTotal": 3,
+        "partial": false
+      },
+      "liquidity": {
+        "value": 16905071.82,
+        "poolsWithValue": 3,
+        "poolsTotal": 3,
+        "partial": false
+      },
+      "price": 1.87,
+      "change24h": 3.55,
+      "change24hRange": [
+        3.03,
+        3.55
+      ],
+      "marketCap": 527866470,
+      "fdv": 1872743140,
+      "valuation": {
+        "metric": "marketCap",
+        "value": 527866470,
+        "source": {
+          "pairAddress": "9d9mb8kooFfaD3SctgZtkxQypkshx6ezhbKio89ixyy2",
+          "dexId": "meteora",
+          "quoteSymbol": "USDC",
+          "rule": "most liquid returned pool"
+        }
+      },
+      "oldestPoolAt": "2025-01-18T09:11:03.000Z",
+      "oldestPoolAtLabel": "pool creation time (not a project launch date)",
+      "flags": [],
+      "pools": [
+        {
+          "pairAddress": "9d9mb8kooFfaD3SctgZtkxQypkshx6ezhbKio89ixyy2",
+          "discoverySlug": "9d9mb8kooffad3sctgztkxqypkshx6ezhbkio89ixyy2",
+          "dexId": "meteora",
+          "url": "https://dexscreener.com/solana/9d9mb8kooffad3sctgztkxqypkshx6ezhbkio89ixyy2",
+          "labels": [
+            "DLMM"
+          ],
+          "quote": {
+            "address": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+            "symbol": "USDC",
+            "name": "USD Coin"
+          },
+          "volume24h": 1170027.1,
+          "liquidityUsd": 10425452.49,
+          "priceUsd": 1.87,
+          "change24h": 3.55,
+          "marketCap": 527866470,
+          "fdv": 1872743140,
+          "pairCreatedAt": "2025-01-18T10:39:31.000Z"
+        },
+        {
+          "pairAddress": "3C5YE97HADPDxZehYq9Cis8AXr9aNyrUsczKzE1nDbW9",
+          "discoverySlug": "3c5ye97hadpdxzehyq9cis8axr9anyrusczkze1ndbw9",
+          "dexId": "meteora",
+          "url": "https://dexscreener.com/solana/3c5ye97hadpdxzehyq9cis8axr9anyrusczkze1ndbw9",
+          "labels": [
+            "DLMM"
+          ],
+          "quote": {
+            "address": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+            "symbol": "USDC",
+            "name": "USD Coin"
+          },
+          "volume24h": 8180783.4,
+          "liquidityUsd": 6237760.19,
+          "priceUsd": 1.86,
+          "change24h": 3.05,
+          "marketCap": 525907736,
+          "fdv": 1865794024,
+          "pairCreatedAt": "2025-01-18T09:11:03.000Z"
+        },
+        {
+          "pairAddress": "Ckp1kwZqosaLU1h3zWtuaMBubyWM7LX3cxYezRVin7p2",
+          "discoverySlug": "ckp1kwzqosalu1h3zwtuambubywm7lx3cxyezrvin7p2",
+          "dexId": "orca",
+          "url": "https://dexscreener.com/solana/ckp1kwzqosalu1h3zwtuambubywm7lx3cxyezrvin7p2",
+          "labels": [
+            "wp"
+          ],
+          "quote": {
+            "address": "So11111111111111111111111111111111111111112",
+            "symbol": "SOL",
+            "name": "Wrapped SOL"
+          },
+          "volume24h": 4550254.12,
+          "liquidityUsd": 241859.14,
+          "priceUsd": 1.86,
+          "change24h": 3.03,
+          "marketCap": 526229683,
+          "fdv": 1866936215,
+          "pairCreatedAt": "2025-01-18T15:51:40.000Z"
+        }
+      ],
+      "alsoQuotedIn": [],
+      "info": {
+        "websites": [
+          {
+            "url": "https://x.com/realDonaldTrump/status/1880446012168249386",
+            "label": "Website"
+          }
+        ],
+        "socials": [
+          {
+            "url": "https://x.com/GetTrumpMemes",
+            "type": "twitter"
+          }
+        ]
+      },
+      "hidden": true,
+      "hiddenReason": "user display preference"
+    },
+    {
+      "id": "solana:8x5VqbHA8D7NkD52uNuS5nnt3PwA8pLD34ymskeSo2Wn",
+      "chain": "solana",
+      "address": "8x5VqbHA8D7NkD52uNuS5nnt3PwA8pLD34ymskeSo2Wn",
+      "name": "zerebro",
+      "symbol": "ZEREBRO",
+      "url": "https://dexscreener.com/solana/3sjnocnkkhwpvxygdtem8rccihsgc9jsfzuuazkbvrvp",
+      "discoveryRank": 7,
+      "volume24h": {
+        "value": 13297785.86,
+        "poolsWithValue": 1,
+        "poolsTotal": 1,
+        "partial": false
+      },
+      "liquidity": {
+        "value": 3857969.07,
+        "poolsWithValue": 1,
+        "poolsTotal": 1,
+        "partial": false
+      },
+      "price": 0.04819,
+      "change24h": 5.59,
+      "change24hRange": null,
+      "marketCap": 48191928,
+      "fdv": 48193040,
+      "valuation": {
+        "metric": "marketCap",
+        "value": 48191928,
+        "source": {
+          "pairAddress": "3sjNoCnkkhWPVXYGDtem8rCciHSGc9jSFZuUAzKbvRVp",
+          "dexId": "raydium",
+          "quoteSymbol": "SOL",
+          "rule": "most liquid returned pool"
+        }
+      },
+      "oldestPoolAt": "2024-10-28T19:08:27.000Z",
+      "oldestPoolAtLabel": "pool creation time (not a project launch date)",
+      "flags": [],
+      "pools": [
+        {
+          "pairAddress": "3sjNoCnkkhWPVXYGDtem8rCciHSGc9jSFZuUAzKbvRVp",
+          "discoverySlug": "3sjnocnkkhwpvxygdtem8rccihsgc9jsfzuuazkbvrvp",
+          "dexId": "raydium",
+          "url": "https://dexscreener.com/solana/3sjnocnkkhwpvxygdtem8rccihsgc9jsfzuuazkbvrvp",
+          "labels": [],
+          "quote": {
+            "address": "So11111111111111111111111111111111111111112",
+            "symbol": "SOL",
+            "name": "Wrapped SOL"
+          },
+          "volume24h": 13297785.86,
+          "liquidityUsd": 3857969.07,
+          "priceUsd": 0.04819,
+          "change24h": 5.59,
+          "marketCap": 48191928,
+          "fdv": 48193040,
+          "pairCreatedAt": "2024-10-28T19:08:27.000Z"
+        }
+      ],
+      "alsoQuotedIn": [],
+      "info": {
+        "websites": [
+          {
+            "url": "https://zerebro.org/",
+            "label": "Website"
+          },
+          {
+            "url": "https://warpcast.com/zerebro",
+            "label": "warpcast"
+          }
+        ],
+        "socials": [
+          {
+            "url": "https://x.com/0xzerebro",
+            "type": "twitter"
+          },
+          {
+            "url": "https://t.me/zerebro0",
+            "type": "telegram"
+          }
+        ]
+      },
+      "hidden": false,
+      "hiddenReason": null
+    },
+    {
+      "id": "solana:pumpCmXqMfrsAkQ5r49WcJnRayYRqmXz6ae8H7H9Dfn",
+      "chain": "solana",
+      "address": "pumpCmXqMfrsAkQ5r49WcJnRayYRqmXz6ae8H7H9Dfn",
+      "name": "Pump",
+      "symbol": "PUMP",
+      "url": "https://dexscreener.com/solana/2uf4xh61rdwxng9woyxsvqp7zua6klfpb3nvnrqeoisd",
+      "discoveryRank": 18,
+      "volume24h": {
+        "value": 10511715.87,
+        "poolsWithValue": 3,
+        "poolsTotal": 3,
+        "partial": false
+      },
+      "liquidity": {
+        "value": 26289486.58,
+        "poolsWithValue": 3,
+        "poolsTotal": 3,
+        "partial": false
+      },
+      "price": 0.004501,
+      "change24h": 4.38,
+      "change24hRange": [
+        4.32,
+        4.72
+      ],
+      "marketCap": 2084431642,
+      "fdv": 3726078617,
+      "valuation": {
+        "metric": "marketCap",
+        "value": 2084431642,
+        "source": {
+          "pairAddress": "2uF4Xh61rDwxnG9woyxsVQP7zuA6kLFpb3NvnRQeoiSd",
+          "dexId": "pumpswap",
+          "quoteSymbol": "USDC",
+          "rule": "most liquid returned pool"
+        }
+      },
+      "oldestPoolAt": "2025-07-14T16:55:49.000Z",
+      "oldestPoolAtLabel": "pool creation time (not a project launch date)",
+      "flags": [
+        {
+          "code": "fdvSpread",
+          "min": 3726078617,
+          "max": 4498734006
+        }
+      ],
+      "pools": [
+        {
+          "pairAddress": "2uF4Xh61rDwxnG9woyxsVQP7zuA6kLFpb3NvnRQeoiSd",
+          "discoverySlug": "2uf4xh61rdwxng9woyxsvqp7zua6klfpb3nvnrqeoisd",
+          "dexId": "pumpswap",
+          "url": "https://dexscreener.com/solana/2uf4xh61rdwxng9woyxsvqp7zua6klfpb3nvnrqeoisd",
+          "labels": [],
+          "quote": {
+            "address": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+            "symbol": "USDC",
+            "name": "USD Coin"
+          },
+          "volume24h": 3874640.15,
+          "liquidityUsd": 23610991.38,
+          "priceUsd": 0.004501,
+          "change24h": 4.38,
+          "marketCap": 2084431642,
+          "fdv": 3726078617,
+          "pairCreatedAt": "2025-07-14T16:55:49.000Z"
+        },
+        {
+          "pairAddress": "BofA2ViUSudPBTUms2KRuG6AHNeMawjNfwqTJDgx5BKW",
+          "discoverySlug": "bofa2viusudpbtums2krug6ahnemawjnfwqtjdgx5bkw",
+          "dexId": "orca",
+          "url": "https://dexscreener.com/solana/bofa2viusudpbtums2krug6ahnemawjnfwqtjdgx5bkw",
+          "labels": [
+            "wp"
+          ],
+          "quote": {
+            "address": "So11111111111111111111111111111111111111112",
+            "symbol": "SOL",
+            "name": "Wrapped SOL"
+          },
+          "volume24h": 4071940.67,
+          "liquidityUsd": 1892960.67,
+          "priceUsd": 0.004498,
+          "change24h": 4.72,
+          "marketCap": 2083175213,
+          "fdv": 4498734006,
+          "pairCreatedAt": "2025-09-15T15:34:18.000Z"
+        },
+        {
+          "pairAddress": "45ssPkUQs1ssbeDqxD2mZrMdJYAXF7GyQyhS5xDXuWC5",
+          "discoverySlug": "45sspkuqs1ssbedqxd2mzrmdjyaxf7gyqyhs5xdxuwc5",
+          "dexId": "raydium",
+          "url": "https://dexscreener.com/solana/45sspkuqs1ssbedqxd2mzrmdjyaxf7gyqyhs5xdxuwc5",
+          "labels": [
+            "CLMM"
+          ],
+          "quote": {
+            "address": "So11111111111111111111111111111111111111112",
+            "symbol": "SOL",
+            "name": "Wrapped SOL"
+          },
+          "volume24h": 2565135.05,
+          "liquidityUsd": 785534.53,
+          "priceUsd": 0.004489,
+          "change24h": 4.32,
+          "marketCap": 2078912070,
+          "fdv": 4489527508,
+          "pairCreatedAt": "2025-07-14T17:12:19.000Z"
+        }
+      ],
+      "alsoQuotedIn": [
+        {
+          "pairAddress": "Cb7ZRgPLhji3Th7htXyKEqbXvNjPpeTvckXuWakBUhXu",
+          "baseId": "solana:Hg5Ja55T5wESq4vyFoiVCMeHXtGyVA69X2UHq8hgpump",
+          "baseSymbol": "baton",
+          "volume24h": 1135736.36,
+          "liquidityUsd": 598654.41,
+          "baseExcluded": false
+        }
+      ],
+      "info": {
+        "websites": [
+          {
+            "url": "https://pump.fun",
+            "label": "Website"
+          }
+        ],
+        "socials": [
+          {
+            "url": "https://x.com/pumpfun",
+            "type": "twitter"
+          }
+        ]
+      },
+      "hidden": true,
+      "hiddenReason": "user display preference"
+    },
+    {
+      "id": "solana:nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump",
+      "chain": "solana",
+      "address": "nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump",
+      "name": "Dacity Coin",
+      "symbol": "Dacity",
+      "url": "https://dexscreener.com/solana/g2uurbmvdzdfp4qyobjrskbxsi7d6v4bpp9thps36y4b",
+      "discoveryRank": 4,
+      "volume24h": {
+        "value": 9952703.31,
+        "poolsWithValue": 2,
+        "poolsTotal": 2,
+        "partial": false
+      },
+      "liquidity": {
+        "value": 268509.52,
+        "poolsWithValue": 2,
+        "poolsTotal": 2,
+        "partial": false
+      },
+      "price": 0.001519,
+      "change24h": 1094,
+      "change24hRange": [
+        458,
+        1094
+      ],
+      "marketCap": 1492311,
+      "fdv": 1492311,
+      "valuation": {
+        "metric": "marketCap",
+        "value": 1492311,
+        "source": {
+          "pairAddress": "G2UuRbmVDzDFP4qyoBJrSKBXSi7d6V4bPP9tHPs36y4b",
+          "dexId": "pumpswap",
+          "quoteSymbol": "TTWO",
+          "rule": "most liquid returned pool"
+        }
+      },
+      "oldestPoolAt": "2026-10-11T11:16:59.000Z",
+      "oldestPoolAtLabel": "pool creation time (not a project launch date)",
+      "flags": [
+        {
+          "code": "changeSpread",
+          "min": 458,
+          "max": 1094
+        }
+      ],
+      "pools": [
+        {
+          "pairAddress": "G2UuRbmVDzDFP4qyoBJrSKBXSi7d6V4bPP9tHPs36y4b",
+          "discoverySlug": "g2uurbmvdzdfp4qyobjrskbxsi7d6v4bpp9thps36y4b",
+          "dexId": "pumpswap",
+          "url": "https://dexscreener.com/solana/g2uurbmvdzdfp4qyobjrskbxsi7d6v4bpp9thps36y4b",
+          "labels": [],
+          "quote": {
+            "address": "TTWofwAge91oFhZs7kpQdyrVRkmevgM88xijGvQFbKo",
+            "symbol": "TTWO",
+            "name": "Take-Two Interactive Software - Backpack Securities"
+          },
+          "volume24h": 8460017.62,
+          "liquidityUsd": 142122.75,
+          "priceUsd": 0.001519,
+          "change24h": 1094,
+          "marketCap": 1492311,
+          "fdv": 1492311,
+          "pairCreatedAt": "2026-10-11T11:16:59.000Z"
+        },
+        {
+          "pairAddress": "BxyKfpuCn3qVi9gCYHKPYqo8L5mz9MiyAuZfQ7YGHchi",
+          "discoverySlug": "bxykfpucn3qvi9gcyhkpyqo8l5mz9miyauzfq7yghchi",
+          "dexId": "meteora",
+          "url": "https://dexscreener.com/solana/bxykfpucn3qvi9gcyhkpyqo8l5mz9miyauzfq7yghchi",
+          "labels": [
+            "DLMM"
+          ],
+          "quote": {
+            "address": "So11111111111111111111111111111111111111112",
+            "symbol": "SOL",
+            "name": "Wrapped SOL"
+          },
+          "volume24h": 1492685.69,
+          "liquidityUsd": 126386.77,
+          "priceUsd": 0.00153,
+          "change24h": 458,
+          "marketCap": 1502658,
+          "fdv": 1502658,
+          "pairCreatedAt": "2026-10-11T11:31:29.000Z"
+        }
+      ],
+      "alsoQuotedIn": [],
+      "info": {
+        "websites": [],
+        "socials": [
+          {
+            "url": "https://x.com/robtmb1/status/2109241600002118071?s=20",
+            "type": "twitter"
+          }
+        ]
+      },
+      "hidden": false,
+      "hiddenReason": null
+    },
+    {
+      "id": "solana:KMNo3nJsBXfcpJTVhZcXLW7RmTwTt4GVFE7suUBo9sS",
+      "chain": "solana",
+      "address": "KMNo3nJsBXfcpJTVhZcXLW7RmTwTt4GVFE7suUBo9sS",
+      "name": "Kamino",
+      "symbol": "KMNO",
+      "url": "https://dexscreener.com/solana/3ndjn1njvukgrjbc1hhvper6kwtzkhdydrpycjyx3cxk",
+      "discoveryRank": 9,
+      "volume24h": {
+        "value": 8955834.02,
+        "poolsWithValue": 1,
+        "poolsTotal": 1,
+        "partial": false
+      },
+      "liquidity": {
+        "value": 2007444.45,
+        "poolsWithValue": 1,
+        "poolsTotal": 1,
+        "partial": false
+      },
+      "price": 0.04034,
+      "change24h": 20.82,
+      "change24hRange": null,
+      "marketCap": 232609880,
+      "fdv": 403433044,
+      "valuation": {
+        "metric": "marketCap",
+        "value": 232609880,
+        "source": {
+          "pairAddress": "3ndjN1nJVUKGrJBc1hhVpER6kWTZKHdyDrPyCJyX3CXK",
+          "dexId": "orca",
+          "quoteSymbol": "USDC",
+          "rule": "most liquid returned pool"
+        }
+      },
+      "oldestPoolAt": "2024-10-10T10:16:55.000Z",
+      "oldestPoolAtLabel": "pool creation time (not a project launch date)",
+      "flags": [],
+      "pools": [
+        {
+          "pairAddress": "3ndjN1nJVUKGrJBc1hhVpER6kWTZKHdyDrPyCJyX3CXK",
+          "discoverySlug": "3ndjn1njvukgrjbc1hhvper6kwtzkhdydrpycjyx3cxk",
+          "dexId": "orca",
+          "url": "https://dexscreener.com/solana/3ndjn1njvukgrjbc1hhvper6kwtzkhdydrpycjyx3cxk",
+          "labels": [
+            "wp"
+          ],
+          "quote": {
+            "address": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+            "symbol": "USDC",
+            "name": "USD Coin"
+          },
+          "volume24h": 8955834.02,
+          "liquidityUsd": 2007444.45,
+          "priceUsd": 0.04034,
+          "change24h": 20.82,
+          "marketCap": 232609880,
+          "fdv": 403433044,
+          "pairCreatedAt": "2024-10-10T10:16:55.000Z"
+        }
+      ],
+      "alsoQuotedIn": [],
+      "info": {
+        "websites": [],
+        "socials": [
+          {
+            "url": "https://x.com/KaminoFinance",
+            "type": "twitter"
+          }
+        ]
+      },
+      "hidden": true,
+      "hiddenReason": "user display preference"
+    },
+    {
+      "id": "solana:3ZLekZYq2qkZiSpnSvabjit34tUkjSwD1JFuW9as9wBG",
+      "chain": "solana",
+      "address": "3ZLekZYq2qkZiSpnSvabjit34tUkjSwD1JFuW9as9wBG",
+      "name": "NEAR",
+      "symbol": "NEAR",
+      "url": "https://dexscreener.com/solana/gyyigqg8vdemkdnttvl6at2msbhdtdwyb6bccyr238u",
+      "discoveryRank": 30,
+      "volume24h": {
+        "value": 8271217.44,
+        "poolsWithValue": 4,
+        "poolsTotal": 4,
+        "partial": false
+      },
+      "liquidity": {
+        "value": 6714629.74,
+        "poolsWithValue": 4,
+        "poolsTotal": 4,
+        "partial": false
+      },
+      "price": 5.23,
+      "change24h": 11.33,
+      "change24hRange": [
+        11.11,
+        11.39
+      ],
+      "marketCap": 6719629939,
+      "fdv": 6719629939,
+      "valuation": {
+        "metric": "marketCap",
+        "value": 6719629939,
+        "source": {
+          "pairAddress": "gyYigqG8vdEMkDNTTVL6at2msbHdTDWyb6bccyR238U",
+          "dexId": "raydium",
+          "quoteSymbol": "USDC",
+          "rule": "most liquid returned pool"
+        }
+      },
+      "oldestPoolAt": "2025-02-25T13:25:42.000Z",
+      "oldestPoolAtLabel": "pool creation time (not a project launch date)",
+      "flags": [],
+      "pools": [
+        {
+          "pairAddress": "gyYigqG8vdEMkDNTTVL6at2msbHdTDWyb6bccyR238U",
+          "discoverySlug": "gyyigqg8vdemkdnttvl6at2msbhdtdwyb6bccyr238u",
+          "dexId": "raydium",
+          "url": "https://dexscreener.com/solana/gyyigqg8vdemkdnttvl6at2msbhdtdwyb6bccyr238u",
+          "labels": [
+            "CPMM"
+          ],
+          "quote": {
+            "address": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+            "symbol": "USDC",
+            "name": "USD Coin"
+          },
+          "volume24h": 1014491.18,
+          "liquidityUsd": 2790949.96,
+          "priceUsd": 5.23,
+          "change24h": 11.33,
+          "marketCap": 6719629939,
+          "fdv": 6719629939,
+          "pairCreatedAt": "2025-02-25T13:25:42.000Z"
+        },
+        {
+          "pairAddress": "FhdW3Y6Ea6hXKbkGkt5YSAVtDNd5qJ8USevMaPyEr45S",
+          "discoverySlug": "fhdw3y6ea6hxkbkgkt5ysavtdnd5qj8usevmapyer45s",
+          "dexId": "meteora",
+          "url": "https://dexscreener.com/solana/fhdw3y6ea6hxkbkgkt5ysavtdnd5qj8usevmapyer45s",
+          "labels": [
+            "DLMM"
+          ],
+          "quote": {
+            "address": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+            "symbol": "USDC",
+            "name": "USD Coin"
+          },
+          "volume24h": 1781309.78,
+          "liquidityUsd": 1636313.31,
+          "priceUsd": 5.23,
+          "change24h": 11.39,
+          "marketCap": 6713024957,
+          "fdv": 6713024957,
+          "pairCreatedAt": "2025-12-17T17:45:58.000Z"
+        },
+        {
+          "pairAddress": "77xSiQHXyH43U9RJr3FSupVzzuhh9WwweG6k3cce9sjR",
+          "discoverySlug": "77xsiqhxyh43u9rjr3fsupvzzuhh9wwweg6k3cce9sjr",
+          "dexId": "orca",
+          "url": "https://dexscreener.com/solana/77xsiqhxyh43u9rjr3fsupvzzuhh9wwweg6k3cce9sjr",
+          "labels": [
+            "wp"
+          ],
+          "quote": {
+            "address": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+            "symbol": "USDC",
+            "name": "USD Coin"
+          },
+          "volume24h": 4393174.39,
+          "liquidityUsd": 1392095.59,
+          "priceUsd": 5.22,
+          "change24h": 11.33,
+          "marketCap": 6702328498,
+          "fdv": 6702328498,
+          "pairCreatedAt": "2026-09-12T13:51:44.000Z"
+        },
+        {
+          "pairAddress": "8K7ZfGZYvB7NuHhabAxNdxubDzDVbkLgADKxtooFFrQ2",
+          "discoverySlug": "8k7zfgzyvb7nuhhabaxndxubdzdvbklgadkxtooffrq2",
+          "dexId": "raydium",
+          "url": "https://dexscreener.com/solana/8k7zfgzyvb7nuhhabaxndxubdzdvbklgadkxtooffrq2",
+          "labels": [
+            "CLMM"
+          ],
+          "quote": {
+            "address": "A7bdiYdS5GjqGFtxf17ppRHtDKPkkRqbKtR27dxvQXaS",
+            "symbol": "ZEC",
+            "name": "Zcash"
+          },
+          "volume24h": 1082242.09,
+          "liquidityUsd": 895270.88,
+          "priceUsd": 5.23,
+          "change24h": 11.11,
+          "marketCap": 6709438367,
+          "fdv": 6709438367,
+          "pairCreatedAt": "2026-10-06T14:01:27.000Z"
+        }
+      ],
+      "alsoQuotedIn": [],
+      "info": {
+        "websites": [
+          {
+            "url": "https://near.org/",
+            "label": "Website"
+          },
+          {
+            "url": "https://docs.near.org/",
+            "label": "Docs"
+          }
+        ],
+        "socials": [
+          {
+            "url": "https://x.com/nearprotocol",
+            "type": "twitter"
+          },
+          {
+            "url": "https://t.me/cryptonear",
+            "type": "telegram"
+          }
+        ]
+      },
+      "hidden": true,
+      "hiddenReason": "user display preference"
+    },
+    {
+      "id": "solana:6GmAFSYs4gk3FDao5FzzySQpPZaWsa4rUJHacpMpUNgx",
+      "chain": "solana",
+      "address": "6GmAFSYs4gk3FDao5FzzySQpPZaWsa4rUJHacpMpUNgx",
+      "name": "STONK",
+      "symbol": "STONK",
+      "url": "https://dexscreener.com/solana/zxtpi4btawx3mgdapoezkmd1hxx8cdecfrqxmwvsclx",
+      "discoveryRank": 5,
+      "volume24h": {
+        "value": 7626451.6,
+        "poolsWithValue": 2,
+        "poolsTotal": 2,
+        "partial": false
+      },
+      "liquidity": {
+        "value": 5094166.19,
+        "poolsWithValue": 2,
+        "poolsTotal": 2,
+        "partial": false
+      },
+      "price": 0.1214,
+      "change24h": 13.06,
+      "change24hRange": [
+        12.71,
+        13.06
+      ],
+      "marketCap": 96256162,
+      "fdv": 121453560,
+      "valuation": {
+        "metric": "marketCap",
+        "value": 96256162,
+        "source": {
+          "pairAddress": "zxTpi4BtaWX3mgdAPoezkMD1hxx8CdeCfrqXMWvSCLX",
+          "dexId": "meteora",
+          "quoteSymbol": "SOL",
+          "rule": "most liquid returned pool"
+        }
+      },
+      "oldestPoolAt": "2026-08-05T03:58:13.000Z",
+      "oldestPoolAtLabel": "pool creation time (not a project launch date)",
+      "flags": [],
+      "pools": [
+        {
+          "pairAddress": "zxTpi4BtaWX3mgdAPoezkMD1hxx8CdeCfrqXMWvSCLX",
+          "discoverySlug": "zxtpi4btawx3mgdapoezkmd1hxx8cdecfrqxmwvsclx",
+          "dexId": "meteora",
+          "url": "https://dexscreener.com/solana/zxtpi4btawx3mgdapoezkmd1hxx8cdecfrqxmwvsclx",
+          "labels": [
+            "DLMM"
+          ],
+          "quote": {
+            "address": "So11111111111111111111111111111111111111112",
+            "symbol": "SOL",
+            "name": "Wrapped SOL"
+          },
+          "volume24h": 6063146.42,
+          "liquidityUsd": 2562932.07,
+          "priceUsd": 0.1214,
+          "change24h": 13.06,
+          "marketCap": 96256162,
+          "fdv": 121453560,
+          "pairCreatedAt": "2026-08-12T10:51:40.000Z"
+        },
+        {
+          "pairAddress": "AfrddTGYwCVEQB1gxCAhR8i48o6qtxYqksdVkeLudEhg",
+          "discoverySlug": "afrddtgywcveqb1gxcahr8i48o6qtxyqksdvkeludehg",
+          "dexId": "orca",
+          "url": "https://dexscreener.com/solana/afrddtgywcveqb1gxcahr8i48o6qtxyqksdvkeludehg",
+          "labels": [
+            "wp"
+          ],
+          "quote": {
+            "address": "So11111111111111111111111111111111111111112",
+            "symbol": "SOL",
+            "name": "Wrapped SOL"
+          },
+          "volume24h": 1563305.18,
+          "liquidityUsd": 2531234.12,
+          "priceUsd": 0.1216,
+          "change24h": 12.71,
+          "marketCap": 96385153,
+          "fdv": 121616318,
+          "pairCreatedAt": "2026-08-05T03:58:13.000Z"
+        }
+      ],
+      "alsoQuotedIn": [
+        {
+          "pairAddress": "7xFh5PPd6j2QXVjBCudRngcdhQeX4f3fWA2s1N2nQams",
+          "baseId": "solana:oreoU2P8bN6jkk3jbaiVxYnG1dCXcYxwhwyK9jSybcp",
+          "baseSymbol": "ORE",
+          "volume24h": 2306445.47,
+          "liquidityUsd": 8045.29,
+          "baseExcluded": false
+        }
+      ],
+      "info": {
+        "websites": [
+          {
+            "url": "https://www.stonkfun.xyz/",
+            "label": "Website"
+          }
+        ],
+        "socials": [
+          {
+            "url": "https://x.com/LaunchOnSF",
+            "type": "twitter"
+          },
+          {
+            "url": "https://t.me/StonkFunXyz",
+            "type": "telegram"
+          }
+        ]
+      },
+      "hidden": false,
+      "hiddenReason": null
+    },
+    {
+      "id": "solana:CARDSccUMFKoPRZxt5vt3ksUbxEFEcnZ3H2pd3dKxYjp",
+      "chain": "solana",
+      "address": "CARDSccUMFKoPRZxt5vt3ksUbxEFEcnZ3H2pd3dKxYjp",
+      "name": "Collector Crypt",
+      "symbol": "CARDS",
+      "url": "https://dexscreener.com/solana/hnhpjpjgbg2kwnimtnw8cvbhvk1hfog3rc3kjnyc23td",
+      "discoveryRank": 15,
+      "volume24h": {
+        "value": 7326653.19,
+        "poolsWithValue": 2,
+        "poolsTotal": 2,
+        "partial": false
+      },
+      "liquidity": {
+        "value": 4835195.9,
+        "poolsWithValue": 2,
+        "poolsTotal": 2,
+        "partial": false
+      },
+      "price": 0.3408,
+      "change24h": 16.5,
+      "change24hRange": [
+        16.4,
+        16.5
+      ],
+      "marketCap": 307655501,
+      "fdv": 681708020,
+      "valuation": {
+        "metric": "marketCap",
+        "value": 307655501,
+        "source": {
+          "pairAddress": "HnhpJPJgBG2KwniMTNW8cVBHvk1hFog3RC3kjnyc23tD",
+          "dexId": "raydium",
+          "quoteSymbol": "USDC",
+          "rule": "most liquid returned pool"
+        }
+      },
+      "oldestPoolAt": "2025-08-29T18:54:46.000Z",
+      "oldestPoolAtLabel": "pool creation time (not a project launch date)",
+      "flags": [],
+      "pools": [
+        {
+          "pairAddress": "HnhpJPJgBG2KwniMTNW8cVBHvk1hFog3RC3kjnyc23tD",
+          "discoverySlug": "hnhpjpjgbg2kwnimtnw8cvbhvk1hfog3rc3kjnyc23td",
+          "dexId": "raydium",
+          "url": "https://dexscreener.com/solana/hnhpjpjgbg2kwnimtnw8cvbhvk1hfog3rc3kjnyc23td",
+          "labels": [
+            "CLMM"
+          ],
+          "quote": {
+            "address": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+            "symbol": "USDC",
+            "name": "USD Coin"
+          },
+          "volume24h": 6100306.99,
+          "liquidityUsd": 4558853.51,
+          "priceUsd": 0.3408,
+          "change24h": 16.5,
+          "marketCap": 307655501,
+          "fdv": 681708020,
+          "pairCreatedAt": "2025-08-29T18:54:46.000Z"
+        },
+        {
+          "pairAddress": "2N1KNuLSt167P6p9P8HYcisTvTTv4vYTM8QJBbtv1xYU",
+          "discoverySlug": "2n1knulst167p6p9p8hycistvttv4vytm8qjbbtv1xyu",
+          "dexId": "meteora",
+          "url": "https://dexscreener.com/solana/2n1knulst167p6p9p8hycistvttv4vytm8qjbbtv1xyu",
+          "labels": [
+            "DLMM"
+          ],
+          "quote": {
+            "address": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+            "symbol": "USDC",
+            "name": "USD Coin"
+          },
+          "volume24h": 1226346.2,
+          "liquidityUsd": 276342.39,
+          "priceUsd": 0.3406,
+          "change24h": 16.4,
+          "marketCap": 307460106,
+          "fdv": 681275060,
+          "pairCreatedAt": "2025-09-03T03:49:49.000Z"
+        }
+      ],
+      "alsoQuotedIn": [],
+      "info": {
+        "websites": [
+          {
+            "url": "https://collectorcrypt.com/",
+            "label": "Website"
+          },
+          {
+            "url": "https://gacha.collectorcrypt.com",
+            "label": "Gacha"
+          }
+        ],
+        "socials": [
+          {
+            "url": "https://x.com/Collector_crypt",
+            "type": "twitter"
+          }
+        ]
+      },
+      "hidden": false,
+      "hiddenReason": null
+    },
+    {
+      "id": "solana:4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R",
+      "chain": "solana",
+      "address": "4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R",
+      "name": "Raydium",
+      "symbol": "RAY",
+      "url": "https://dexscreener.com/solana/6ummuiyobjsrhakaobjw8bvkmjtdvxaebtbt7rxwo1mg",
+      "discoveryRank": 17,
+      "volume24h": {
+        "value": 7216950.8,
+        "poolsWithValue": 2,
+        "poolsTotal": 2,
+        "partial": false
+      },
+      "liquidity": {
+        "value": 8841145.34,
+        "poolsWithValue": 2,
+        "poolsTotal": 2,
+        "partial": false
+      },
+      "price": 1.86,
+      "change24h": 3.41,
+      "change24hRange": [
+        3.41,
+        3.47
+      ],
+      "marketCap": 504292359,
+      "fdv": 1036739214,
+      "valuation": {
+        "metric": "marketCap",
+        "value": 504292359,
+        "source": {
+          "pairAddress": "6UmmUiYoBjSrhakAobJw8BvkmJtDVxaeBtbt7rxWo1mg",
+          "dexId": "raydium",
+          "quoteSymbol": "USDC",
+          "rule": "most liquid returned pool"
+        }
+      },
+      "oldestPoolAt": "2022-11-28T02:25:11.000Z",
+      "oldestPoolAtLabel": "pool creation time (not a project launch date)",
+      "flags": [],
+      "pools": [
+        {
+          "pairAddress": "6UmmUiYoBjSrhakAobJw8BvkmJtDVxaeBtbt7rxWo1mg",
+          "discoverySlug": "6ummuiyobjsrhakaobjw8bvkmjtdvxaebtbt7rxwo1mg",
+          "dexId": "raydium",
+          "url": "https://dexscreener.com/solana/6ummuiyobjsrhakaobjw8bvkmjtdvxaebtbt7rxwo1mg",
+          "labels": [],
+          "quote": {
+            "address": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+            "symbol": "USDC",
+            "name": "USD Coin"
+          },
+          "volume24h": 1188142.84,
+          "liquidityUsd": 6581973.81,
+          "priceUsd": 1.86,
+          "change24h": 3.41,
+          "marketCap": 504292359,
+          "fdv": 1036739214,
+          "pairCreatedAt": "2022-11-28T02:25:11.000Z"
+        },
+        {
+          "pairAddress": "2AXXcN6oN9bBT5owwmTH53C7QHUXvhLeu718Kqt8rvY2",
+          "discoverySlug": "2axxcn6on9bbt5owwmth53c7qhuxvhleu718kqt8rvy2",
+          "dexId": "raydium",
+          "url": "https://dexscreener.com/solana/2axxcn6on9bbt5owwmth53c7qhuxvhleu718kqt8rvy2",
+          "labels": [
+            "CLMM"
+          ],
+          "quote": {
+            "address": "So11111111111111111111111111111111111111112",
+            "symbol": "SOL",
+            "name": "Wrapped SOL"
+          },
+          "volume24h": 6028807.96,
+          "liquidityUsd": 2259171.53,
+          "priceUsd": 1.86,
+          "change24h": 3.47,
+          "marketCap": 503025603,
+          "fdv": 1034134980,
+          "pairCreatedAt": "2024-08-15T05:21:36.000Z"
+        }
+      ],
+      "alsoQuotedIn": [],
+      "info": {
+        "websites": [],
+        "socials": [
+          {
+            "url": "https://x.com/raydiumprotocol",
+            "type": "twitter"
+          }
+        ]
+      },
+      "hidden": true,
+      "hiddenReason": "user display preference"
+    },
+    {
+      "id": "solana:DEW9dSN6QpWyNthphCpMmAbZP1Q4cEKR9xQXAri98WDP",
+      "chain": "solana",
+      "address": "DEW9dSN6QpWyNthphCpMmAbZP1Q4cEKR9xQXAri98WDP",
+      "name": "Super Inu",
+      "symbol": "SI",
+      "url": "https://dexscreener.com/solana/ag1ehpjsbrkxqwkviulxf6pqnhwfr9f9sdnneeoykcej",
+      "discoveryRank": 10,
+      "volume24h": {
+        "value": 4750068.04,
+        "poolsWithValue": 3,
+        "poolsTotal": 3,
+        "partial": false
+      },
+      "liquidity": {
+        "value": 1665806.19,
+        "poolsWithValue": 3,
+        "poolsTotal": 3,
+        "partial": false
+      },
+      "price": 0.01707,
+      "change24h": 23.56,
+      "change24hRange": [
+        23.56,
+        26
+      ],
+      "marketCap": 17008816,
+      "fdv": 17079058,
+      "valuation": {
+        "metric": "marketCap",
+        "value": 17008816,
+        "source": {
+          "pairAddress": "AG1EhPjsBrkxQWkViuLXF6pQnHwfr9f9sdNneeoykcEJ",
+          "dexId": "meteora",
+          "quoteSymbol": "SOL",
+          "rule": "most liquid returned pool"
+        }
+      },
+      "oldestPoolAt": "2026-09-21T15:45:01.000Z",
+      "oldestPoolAtLabel": "pool creation time (not a project launch date)",
+      "flags": [],
+      "pools": [
+        {
+          "pairAddress": "AG1EhPjsBrkxQWkViuLXF6pQnHwfr9f9sdNneeoykcEJ",
+          "discoverySlug": "ag1ehpjsbrkxqwkviulxf6pqnhwfr9f9sdnneeoykcej",
+          "dexId": "meteora",
+          "url": "https://dexscreener.com/solana/ag1ehpjsbrkxqwkviulxf6pqnhwfr9f9sdnneeoykcej",
+          "labels": [
+            "DLMM"
+          ],
+          "quote": {
+            "address": "So11111111111111111111111111111111111111112",
+            "symbol": "SOL",
+            "name": "Wrapped SOL"
+          },
+          "volume24h": 1102137.77,
+          "liquidityUsd": 707335.24,
+          "priceUsd": 0.01707,
+          "change24h": 23.56,
+          "marketCap": 17008816,
+          "fdv": 17079058,
+          "pairCreatedAt": "2026-09-21T16:26:48.000Z"
+        },
+        {
+          "pairAddress": "B4VFURUHHzyt8YzBGBV9jiarBvjh1EbMAbRNBnNqaxUD",
+          "discoverySlug": "b4vfuruhhzyt8yzbgbv9jiarbvjh1ebmabrnbnnqaxud",
+          "dexId": "raydium",
+          "url": "https://dexscreener.com/solana/b4vfuruhhzyt8yzbgbv9jiarbvjh1ebmabrnbnnqaxud",
+          "labels": [
+            "CPMM"
+          ],
+          "quote": {
+            "address": "Xsc9qvGR1efVDFGLrVsmkzv3qi45LTBjeUKSPmx9qEh",
+            "symbol": "NVDAx",
+            "name": "NVIDIA xStock"
+          },
+          "volume24h": 1000894.19,
+          "liquidityUsd": 591923.4,
+          "priceUsd": 0.01733,
+          "change24h": 26,
+          "marketCap": 17265059,
+          "fdv": 17336360,
+          "pairCreatedAt": "2026-09-21T15:45:01.000Z"
+        },
+        {
+          "pairAddress": "8uwFMFCUDi61rgT1e6bUuDEfaUcN6roSoL7qHkp2NtHk",
+          "discoverySlug": "8uwfmfcudi61rgt1e6buudefaucn6rosol7qhkp2nthk",
+          "dexId": "meteora",
+          "url": "https://dexscreener.com/solana/8uwfmfcudi61rgt1e6buudefaucn6rosol7qhkp2nthk",
+          "labels": [
+            "DLMM"
+          ],
+          "quote": {
+            "address": "So11111111111111111111111111111111111111112",
+            "symbol": "SOL",
+            "name": "Wrapped SOL"
+          },
+          "volume24h": 2647036.08,
+          "liquidityUsd": 366547.55,
+          "priceUsd": 0.01728,
+          "change24h": 25.04,
+          "marketCap": 17210531,
+          "fdv": 17281606,
+          "pairCreatedAt": "2026-09-29T18:50:53.000Z"
+        }
+      ],
+      "alsoQuotedIn": [],
+      "info": {
+        "websites": [
+          {
+            "url": "https://superinuofficial.com/",
+            "label": "Website"
+          },
+          {
+            "url": "https://t.me/+f_jRz-yK1io4MTJh",
+            "label": "Telegram"
+          }
+        ],
+        "socials": [
+          {
+            "url": "https://x.com/superinuog?s=11",
+            "type": "twitter"
+          }
+        ]
+      },
+      "hidden": false,
+      "hiddenReason": null
+    },
+    {
+      "id": "solana:33jENUQnjoitkMFpvNJcSHyLAHFWJuHwT6E3E8CNpump",
+      "chain": "solana",
+      "address": "33jENUQnjoitkMFpvNJcSHyLAHFWJuHwT6E3E8CNpump",
+      "name": "Doge Pepe",
+      "symbol": "DOPE",
+      "url": "https://dexscreener.com/solana/fprcdzegihlpo4lptwdkhq86fcuwoejfxnmoh9cszz6q",
+      "discoveryRank": 2,
+      "volume24h": {
+        "value": 4522850.62,
+        "poolsWithValue": 2,
+        "poolsTotal": 2,
+        "partial": false
+      },
+      "liquidity": {
+        "value": 731849.75,
+        "poolsWithValue": 2,
+        "poolsTotal": 2,
+        "partial": false
+      },
+      "price": 0.004983,
+      "change24h": 7.44,
+      "change24hRange": [
+        7.44,
+        8.85
+      ],
+      "marketCap": 4921776,
+      "fdv": 4921776,
+      "valuation": {
+        "metric": "marketCap",
+        "value": 4921776,
+        "source": {
+          "pairAddress": "FpRcdzEgiHLpo4LPTWDkhq86fCuwoejFXnmoH9cSZZ6Q",
+          "dexId": "meteora",
+          "quoteSymbol": "SOL",
+          "rule": "most liquid returned pool"
+        }
+      },
+      "oldestPoolAt": "2026-10-11T13:33:08.000Z",
+      "oldestPoolAtLabel": "pool creation time (not a project launch date)",
+      "flags": [],
+      "pools": [
+        {
+          "pairAddress": "FpRcdzEgiHLpo4LPTWDkhq86fCuwoejFXnmoH9cSZZ6Q",
+          "discoverySlug": "fprcdzegihlpo4lptwdkhq86fcuwoejfxnmoh9cszz6q",
+          "dexId": "meteora",
+          "url": "https://dexscreener.com/solana/fprcdzegihlpo4lptwdkhq86fcuwoejfxnmoh9cszz6q",
+          "labels": [
+            "DLMM"
+          ],
+          "quote": {
+            "address": "So11111111111111111111111111111111111111112",
+            "symbol": "SOL",
+            "name": "Wrapped SOL"
+          },
+          "volume24h": 1486479.41,
+          "liquidityUsd": 449734.5,
+          "priceUsd": 0.004983,
+          "change24h": 7.44,
+          "marketCap": 4921776,
+          "fdv": 4921776,
+          "pairCreatedAt": "2026-10-11T17:48:34.000Z"
+        },
+        {
+          "pairAddress": "6iep3EgqksbZwgzMBCyAJtiVtVYkCgL9BnPBEwLR8AGQ",
+          "discoverySlug": "6iep3egqksbzwgzmbcyajtivtvykcgl9bnpbewlr8agq",
+          "dexId": "pumpswap",
+          "url": "https://dexscreener.com/solana/6iep3egqksbzwgzmbcyajtivtvykcgl9bnpbewlr8agq",
+          "labels": [],
+          "quote": {
+            "address": "So11111111111111111111111111111111111111112",
+            "symbol": "SOL",
+            "name": "Wrapped SOL"
+          },
+          "volume24h": 3036371.21,
+          "liquidityUsd": 282115.25,
+          "priceUsd": 0.005032,
+          "change24h": 8.85,
+          "marketCap": 4968538,
+          "fdv": 4968538,
+          "pairCreatedAt": "2026-10-11T13:33:08.000Z"
+        }
+      ],
+      "alsoQuotedIn": [],
+      "info": {
+        "websites": [
+          {
+            "url": "https://dopeonotc.lol/",
+            "label": "Website"
+          }
+        ],
+        "socials": [
+          {
+            "url": "https://x.com/dopecoinotc",
+            "type": "twitter"
+          },
+          {
+            "url": "https://t.me/DOPE_OTC",
+            "type": "telegram"
+          },
+          {
+            "url": "https://www.tiktok.com/@dopecoin_?_",
+            "type": "tiktok"
+          }
+        ]
+      },
+      "hidden": false,
+      "hiddenReason": null
+    },
+    {
+      "id": "solana:61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump",
+      "chain": "solana",
+      "address": "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump",
+      "name": "AI Rig Complex",
+      "symbol": "arc",
+      "url": "https://dexscreener.com/solana/j3b6dvhes2y1cbmtvz5tcwxnegsjjdbukxduvdpoqms7",
+      "discoveryRank": 21,
+      "volume24h": {
+        "value": 4166233.28,
+        "poolsWithValue": 1,
+        "poolsTotal": 1,
+        "partial": false
+      },
+      "liquidity": {
+        "value": 3546950.68,
+        "poolsWithValue": 1,
+        "poolsTotal": 1,
+        "partial": false
+      },
+      "price": 0.03882,
+      "change24h": -5.27,
+      "change24hRange": null,
+      "marketCap": 38823211,
+      "fdv": 38823211,
+      "valuation": {
+        "metric": "marketCap",
+        "value": 38823211,
+        "source": {
+          "pairAddress": "J3b6dvheS2Y1cbMtVz5TCWXNegSjJDbUKxdUVDPoqmS7",
+          "dexId": "raydium",
+          "quoteSymbol": "SOL",
+          "rule": "most liquid returned pool"
+        }
+      },
+      "oldestPoolAt": "2024-12-10T21:14:47.000Z",
+      "oldestPoolAtLabel": "pool creation time (not a project launch date)",
+      "flags": [],
+      "pools": [
+        {
+          "pairAddress": "J3b6dvheS2Y1cbMtVz5TCWXNegSjJDbUKxdUVDPoqmS7",
+          "discoverySlug": "j3b6dvhes2y1cbmtvz5tcwxnegsjjdbukxduvdpoqms7",
+          "dexId": "raydium",
+          "url": "https://dexscreener.com/solana/j3b6dvhes2y1cbmtvz5tcwxnegsjjdbukxduvdpoqms7",
+          "labels": [],
+          "quote": {
+            "address": "So11111111111111111111111111111111111111112",
+            "symbol": "SOL",
+            "name": "Wrapped SOL"
+          },
+          "volume24h": 4166233.28,
+          "liquidityUsd": 3546950.68,
+          "priceUsd": 0.03882,
+          "change24h": -5.27,
+          "marketCap": 38823211,
+          "fdv": 38823211,
+          "pairCreatedAt": "2024-12-10T21:14:47.000Z"
+        }
+      ],
+      "alsoQuotedIn": [],
+      "info": {
+        "websites": [
+          {
+            "url": "https://www.arc.fun/",
+            "label": "Website"
+          },
+          {
+            "url": "https://www.arc.fun/manifesto.html",
+            "label": "Docs"
+          },
+          {
+            "url": "https://github.com/0xPlaygrounds/rig",
+            "label": "Rig"
+          }
+        ],
+        "socials": [
+          {
+            "url": "https://x.com/arcdotfun",
+            "type": "twitter"
+          },
+          {
+            "url": "https://t.me/arcfunportal",
+            "type": "telegram"
+          }
+        ]
+      },
+      "hidden": false,
+      "hiddenReason": null
+    },
+    {
+      "id": "solana:JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN",
+      "chain": "solana",
+      "address": "JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN",
+      "name": "Jupiter",
+      "symbol": "JUP",
+      "url": "https://dexscreener.com/solana/c8gr6auuq9hedsyjzoepncdjpojpzwqg5mtqbeounnwg",
+      "discoveryRank": 19,
+      "volume24h": {
+        "value": 3657143.8,
+        "poolsWithValue": 2,
+        "poolsTotal": 2,
+        "partial": false
+      },
+      "liquidity": {
+        "value": 2782796.16,
+        "poolsWithValue": 2,
+        "poolsTotal": 2,
+        "partial": false
+      },
+      "price": 0.3111,
+      "change24h": 3.87,
+      "change24hRange": [
+        3.87,
+        4.1
+      ],
+      "marketCap": 1032779815,
+      "fdv": 2177954911,
+      "valuation": {
+        "metric": "marketCap",
+        "value": 1032779815,
+        "source": {
+          "pairAddress": "C8Gr6AUuq9hEdSYJzoEpNcdjpojPZwqG5MtQbeouNNwg",
+          "dexId": "meteora",
+          "quoteSymbol": "SOL",
+          "rule": "most liquid returned pool"
+        }
+      },
+      "oldestPoolAt": "2024-01-31T04:35:25.000Z",
+      "oldestPoolAtLabel": "pool creation time (not a project launch date)",
+      "flags": [],
+      "pools": [
+        {
+          "pairAddress": "C8Gr6AUuq9hEdSYJzoEpNcdjpojPZwqG5MtQbeouNNwg",
+          "discoverySlug": "c8gr6auuq9hedsyjzoepncdjpojpzwqg5mtqbeounnwg",
+          "dexId": "meteora",
+          "url": "https://dexscreener.com/solana/c8gr6auuq9hedsyjzoepncdjpojpzwqg5mtqbeounnwg",
+          "labels": [
+            "DLMM"
+          ],
+          "quote": {
+            "address": "So11111111111111111111111111111111111111112",
+            "symbol": "SOL",
+            "name": "Wrapped SOL"
+          },
+          "volume24h": 1916891.17,
+          "liquidityUsd": 2058781.7,
+          "priceUsd": 0.3111,
+          "change24h": 3.87,
+          "marketCap": 1032779815,
+          "fdv": 2177954911,
+          "pairCreatedAt": "2024-01-31T14:59:53.000Z"
+        },
+        {
+          "pairAddress": "C1MgLojNLWBKADvu9BHdtgzz1oZX4dZ5zGdGcgvvW8Wz",
+          "discoverySlug": "c1mglojnlwbkadvu9bhdtgzz1ozx4dz5zgdgcgvvw8wz",
+          "dexId": "orca",
+          "url": "https://dexscreener.com/solana/c1mglojnlwbkadvu9bhdtgzz1ozx4dz5zgdgcgvvw8wz",
+          "labels": [
+            "wp"
+          ],
+          "quote": {
+            "address": "So11111111111111111111111111111111111111112",
+            "symbol": "SOL",
+            "name": "Wrapped SOL"
+          },
+          "volume24h": 1740252.63,
+          "liquidityUsd": 724014.46,
+          "priceUsd": 0.3112,
+          "change24h": 4.1,
+          "marketCap": 1033067487,
+          "fdv": 2178561562,
+          "pairCreatedAt": "2024-01-31T04:35:25.000Z"
+        }
+      ],
+      "alsoQuotedIn": [],
+      "info": {
+        "websites": [
+          {
+            "url": "https://jup.ag",
+            "label": "Website"
+          }
+        ],
+        "socials": [
+          {
+            "url": "https://twitter.com/JupiterExchange",
+            "type": "twitter"
+          },
+          {
+            "url": "https://discord.gg/jup",
+            "type": "discord"
+          }
+        ]
+      },
+      "hidden": true,
+      "hiddenReason": "user display preference"
+    },
+    {
+      "id": "solana:CzLSujWBLFsSjncfkh59rUFqvafWcY5tzedWJSuypump",
+      "chain": "solana",
+      "address": "CzLSujWBLFsSjncfkh59rUFqvafWcY5tzedWJSuypump",
+      "name": "Goatseus Maximus",
+      "symbol": "GOAT",
+      "url": "https://dexscreener.com/solana/9tb2ohu5p16bpbarqd3n27wnkf51ukfs8z1gzzldxvzw",
+      "discoveryRank": 29,
+      "volume24h": {
+        "value": 2725206.11,
+        "poolsWithValue": 1,
+        "poolsTotal": 1,
+        "partial": false
+      },
+      "liquidity": {
+        "value": 1536868.14,
+        "poolsWithValue": 1,
+        "poolsTotal": 1,
+        "partial": false
+      },
+      "price": 0.01548,
+      "change24h": 2.87,
+      "change24hRange": null,
+      "marketCap": 15482834,
+      "fdv": 15482834,
+      "valuation": {
+        "metric": "marketCap",
+        "value": 15482834,
+        "source": {
+          "pairAddress": "9Tb2ohu5P16BpBarqd3N27WnkF51Ukfs8Z1GzzLDxVZW",
+          "dexId": "raydium",
+          "quoteSymbol": "SOL",
+          "rule": "most liquid returned pool"
+        }
+      },
+      "oldestPoolAt": "2024-10-10T21:19:04.000Z",
+      "oldestPoolAtLabel": "pool creation time (not a project launch date)",
+      "flags": [],
+      "pools": [
+        {
+          "pairAddress": "9Tb2ohu5P16BpBarqd3N27WnkF51Ukfs8Z1GzzLDxVZW",
+          "discoverySlug": "9tb2ohu5p16bpbarqd3n27wnkf51ukfs8z1gzzldxvzw",
+          "dexId": "raydium",
+          "url": "https://dexscreener.com/solana/9tb2ohu5p16bpbarqd3n27wnkf51ukfs8z1gzzldxvzw",
+          "labels": [],
+          "quote": {
+            "address": "So11111111111111111111111111111111111111112",
+            "symbol": "SOL",
+            "name": "Wrapped SOL"
+          },
+          "volume24h": 2725206.11,
+          "liquidityUsd": 1536868.14,
+          "priceUsd": 0.01548,
+          "change24h": 2.87,
+          "marketCap": 15482834,
+          "fdv": 15482834,
+          "pairCreatedAt": "2024-10-10T21:19:04.000Z"
+        }
+      ],
+      "alsoQuotedIn": [],
+      "info": {
+        "websites": [
+          {
+            "url": "https://goatchan.xyz/",
+            "label": "Website"
+          }
+        ],
+        "socials": [
+          {
+            "url": "https://x.com/truth_terminal",
+            "type": "twitter"
+          },
+          {
+            "url": "https://t.me/GoatseusMaximusSolanaPortal",
+            "type": "telegram"
+          }
+        ]
+      },
+      "hidden": false,
+      "hiddenReason": null
+    },
+    {
+      "id": "solana:2j5SaS7xy776qCBpyPQbZjyQSAtKiFgrwjfErthnW2ZM",
+      "chain": "solana",
+      "address": "2j5SaS7xy776qCBpyPQbZjyQSAtKiFgrwjfErthnW2ZM",
+      "name": "Claudia",
+      "symbol": "CLAUDIA",
+      "url": "https://dexscreener.com/solana/fe7bpdycs74gqicuf14hwgumtopkv1d9mdyvx5btohfr",
+      "discoveryRank": 3,
+      "volume24h": {
+        "value": 2514188.63,
+        "poolsWithValue": 1,
+        "poolsTotal": 1,
+        "partial": false
+      },
+      "liquidity": {
+        "value": 313939.84,
+        "poolsWithValue": 1,
+        "poolsTotal": 1,
+        "partial": false
+      },
+      "price": 0.005648,
+      "change24h": 61,
+      "change24hRange": null,
+      "marketCap": 5345020,
+      "fdv": 5345018,
+      "valuation": {
+        "metric": "marketCap",
+        "value": 5345020,
+        "source": {
+          "pairAddress": "Fe7bpDYCs74GqiCUF14HwgUMToPKV1d9mDYVX5BTohFr",
+          "dexId": "pumpswap",
+          "quoteSymbol": "SOL",
+          "rule": "most liquid returned pool"
+        }
+      },
+      "oldestPoolAt": "2026-10-07T01:44:30.000Z",
+      "oldestPoolAtLabel": "pool creation time (not a project launch date)",
+      "flags": [],
+      "pools": [
+        {
+          "pairAddress": "Fe7bpDYCs74GqiCUF14HwgUMToPKV1d9mDYVX5BTohFr",
+          "discoverySlug": "fe7bpdycs74gqicuf14hwgumtopkv1d9mdyvx5btohfr",
+          "dexId": "pumpswap",
+          "url": "https://dexscreener.com/solana/fe7bpdycs74gqicuf14hwgumtopkv1d9mdyvx5btohfr",
+          "labels": [],
+          "quote": {
+            "address": "So11111111111111111111111111111111111111112",
+            "symbol": "SOL",
+            "name": "Wrapped SOL"
+          },
+          "volume24h": 2514188.63,
+          "liquidityUsd": 313939.84,
+          "priceUsd": 0.005648,
+          "change24h": 61,
+          "marketCap": 5345020,
+          "fdv": 5345018,
+          "pairCreatedAt": "2026-10-07T01:44:30.000Z"
+        }
+      ],
+      "alsoQuotedIn": [],
+      "info": {
+        "websites": [
+          {
+            "url": "https://claudia.gallery/",
+            "label": "Website"
+          },
+          {
+            "url": "https://useclaudia.xyz/",
+            "label": "UseClaudia"
+          },
+          {
+            "url": "https://x.com/claudia_onchain",
+            "label": "Art"
+          }
+        ],
+        "socials": [
+          {
+            "url": "https://x.com/SolClaudia_",
+            "type": "twitter"
+          }
+        ]
+      },
+      "hidden": false,
+      "hiddenReason": null
+    },
+    {
+      "id": "solana:MukLDtJ8Cx9DxLbeyLRSWPSposTMWuwHANbuaudpump",
+      "chain": "solana",
+      "address": "MukLDtJ8Cx9DxLbeyLRSWPSposTMWuwHANbuaudpump",
+      "name": "OTC",
+      "symbol": "OTC",
+      "url": "https://dexscreener.com/solana/da4pm4xsdy4m9v4cgakkbvh1pw1ysctqqa5nekghukpt",
+      "discoveryRank": 1,
+      "volume24h": {
+        "value": 1865396.12,
+        "poolsWithValue": 1,
+        "poolsTotal": 1,
+        "partial": false
+      },
+      "liquidity": {
+        "value": 593267.88,
+        "poolsWithValue": 1,
+        "poolsTotal": 1,
+        "partial": false
+      },
+      "price": 0.009218,
+      "change24h": 44.62,
+      "change24hRange": null,
+      "marketCap": 6125340,
+      "fdv": 6095955,
+      "valuation": {
+        "metric": "marketCap",
+        "value": 6125340,
+        "source": {
+          "pairAddress": "DA4pM4xSDY4M9V4CgAKKBVH1pw1yscTQQa5nEkGHuKpt",
+          "dexId": "pumpswap",
+          "quoteSymbol": "SOL",
+          "rule": "most liquid returned pool"
+        }
+      },
+      "oldestPoolAt": "2026-08-28T13:33:10.000Z",
+      "oldestPoolAtLabel": "pool creation time (not a project launch date)",
+      "flags": [],
+      "pools": [
+        {
+          "pairAddress": "DA4pM4xSDY4M9V4CgAKKBVH1pw1yscTQQa5nEkGHuKpt",
+          "discoverySlug": "da4pm4xsdy4m9v4cgakkbvh1pw1ysctqqa5nekghukpt",
+          "dexId": "pumpswap",
+          "url": "https://dexscreener.com/solana/da4pm4xsdy4m9v4cgakkbvh1pw1ysctqqa5nekghukpt",
+          "labels": [],
+          "quote": {
+            "address": "So11111111111111111111111111111111111111112",
+            "symbol": "SOL",
+            "name": "Wrapped SOL"
+          },
+          "volume24h": 1865396.12,
+          "liquidityUsd": 593267.88,
+          "priceUsd": 0.009218,
+          "change24h": 44.62,
+          "marketCap": 6125340,
+          "fdv": 6095955,
+          "pairCreatedAt": "2026-08-28T13:33:10.000Z"
+        }
+      ],
+      "alsoQuotedIn": [],
+      "info": {
+        "websites": [
+          {
+            "url": "https://otcdesks.cash/",
+            "label": "Website"
+          }
+        ],
+        "socials": [
+          {
+            "url": "https://x.com/otc_labs",
+            "type": "twitter"
+          }
+        ]
+      },
+      "hidden": false,
+      "hiddenReason": null
+    },
+    {
+      "id": "solana:BPxxfRCXkUVhig4HS1Lh7kZqV6SPJhzfEk4x6fVBjPCy",
+      "chain": "solana",
+      "address": "BPxxfRCXkUVhig4HS1Lh7kZqV6SPJhzfEk4x6fVBjPCy",
+      "name": "Backpack",
+      "symbol": "BP",
+      "url": "https://dexscreener.com/solana/6qz7thwqvcjf3hydglukalbuk6eyjkezxzmwlaeiwfjd",
+      "discoveryRank": 27,
+      "volume24h": {
+        "value": 1718555.2,
+        "poolsWithValue": 1,
+        "poolsTotal": 1,
+        "partial": false
+      },
+      "liquidity": {
+        "value": 6194367.56,
+        "poolsWithValue": 1,
+        "poolsTotal": 1,
+        "partial": false
+      },
+      "price": 1.043,
+      "change24h": 12.72,
+      "change24hRange": null,
+      "marketCap": 260831523,
+      "fdv": 1043326091,
+      "valuation": {
+        "metric": "marketCap",
+        "value": 260831523,
+        "source": {
+          "pairAddress": "6qz7THwQvcjF3HyDGLuKaLBUk6EyJKeZXZMWLAeiwfjd",
+          "dexId": "meteora",
+          "quoteSymbol": "USDC",
+          "rule": "most liquid returned pool"
+        }
+      },
+      "oldestPoolAt": "2026-03-23T12:41:09.000Z",
+      "oldestPoolAtLabel": "pool creation time (not a project launch date)",
+      "flags": [],
+      "pools": [
+        {
+          "pairAddress": "6qz7THwQvcjF3HyDGLuKaLBUk6EyJKeZXZMWLAeiwfjd",
+          "discoverySlug": "6qz7thwqvcjf3hydglukalbuk6eyjkezxzmwlaeiwfjd",
+          "dexId": "meteora",
+          "url": "https://dexscreener.com/solana/6qz7thwqvcjf3hydglukalbuk6eyjkezxzmwlaeiwfjd",
+          "labels": [
+            "DLMM"
+          ],
+          "quote": {
+            "address": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+            "symbol": "USDC",
+            "name": "USD Coin"
+          },
+          "volume24h": 1718555.2,
+          "liquidityUsd": 6194367.56,
+          "priceUsd": 1.043,
+          "change24h": 12.72,
+          "marketCap": 260831523,
+          "fdv": 1043326091,
+          "pairCreatedAt": "2026-03-23T12:41:09.000Z"
+        }
+      ],
+      "alsoQuotedIn": [],
+      "info": {
+        "websites": [
+          {
+            "url": "https://backpack.exchange/",
+            "label": "Website"
+          },
+          {
+            "url": "https://learn.backpack.exchange/blog/backpack-token-ticker-bp",
+            "label": "Docs"
+          }
+        ],
+        "socials": [
+          {
+            "url": "https://x.com/Backpack",
+            "type": "twitter"
+          },
+          {
+            "url": "https://discord.gg/backpack",
+            "type": "discord"
+          }
+        ]
+      },
+      "hidden": true,
+      "hiddenReason": "user display preference"
+    },
+    {
+      "id": "solana:ApZuxdpzMrbEYTGEzeY9afh5pj9d6qPRJCTgQYiipbKg",
+      "chain": "solana",
+      "address": "ApZuxdpzMrbEYTGEzeY9afh5pj9d6qPRJCTgQYiipbKg",
+      "name": "CyberLeek",
+      "symbol": "CYBERLEEK",
+      "url": "https://dexscreener.com/solana/g8kgi7aupex8evr8vmkrth9skev5bietwc33ujaiimgh",
+      "discoveryRank": 16,
+      "volume24h": {
+        "value": 1246943.55,
+        "poolsWithValue": 1,
+        "poolsTotal": 1,
+        "partial": false
+      },
+      "liquidity": {
+        "value": 526051.51,
+        "poolsWithValue": 1,
+        "poolsTotal": 1,
+        "partial": false
+      },
+      "price": 0.002631,
+      "change24h": 66.52,
+      "change24hRange": null,
+      "marketCap": 1920483,
+      "fdv": 2631205,
+      "valuation": {
+        "metric": "marketCap",
+        "value": 1920483,
+        "source": {
+          "pairAddress": "G8kgi7aUpeX8EVR8VMkrth9SKEv5BietWC33UjAiiMGh",
+          "dexId": "raydium",
+          "quoteSymbol": "SOL",
+          "rule": "most liquid returned pool"
+        }
+      },
+      "oldestPoolAt": "2026-08-15T21:07:26.000Z",
+      "oldestPoolAtLabel": "pool creation time (not a project launch date)",
+      "flags": [],
+      "pools": [
+        {
+          "pairAddress": "G8kgi7aUpeX8EVR8VMkrth9SKEv5BietWC33UjAiiMGh",
+          "discoverySlug": "g8kgi7aupex8evr8vmkrth9skev5bietwc33ujaiimgh",
+          "dexId": "raydium",
+          "url": "https://dexscreener.com/solana/g8kgi7aupex8evr8vmkrth9skev5bietwc33ujaiimgh",
+          "labels": [
+            "CPMM"
+          ],
+          "quote": {
+            "address": "So11111111111111111111111111111111111111112",
+            "symbol": "SOL",
+            "name": "Wrapped SOL"
+          },
+          "volume24h": 1246943.55,
+          "liquidityUsd": 526051.51,
+          "priceUsd": 0.002631,
+          "change24h": 66.52,
+          "marketCap": 1920483,
+          "fdv": 2631205,
+          "pairCreatedAt": "2026-08-15T21:07:26.000Z"
+        }
+      ],
+      "alsoQuotedIn": [],
+      "info": {
+        "websites": [],
+        "socials": []
+      },
+      "hidden": false,
+      "hiddenReason": null
+    },
+    {
+      "id": "solana:Ai66LHZG9MCzg1WKdawwqduVAXpNDUuV8M3uyq5ppump",
+      "chain": "solana",
+      "address": "Ai66LHZG9MCzg1WKdawwqduVAXpNDUuV8M3uyq5ppump",
+      "name": "Catecoin",
+      "symbol": "CATE",
+      "url": "https://dexscreener.com/solana/hmzvseemtzhhvznw9uwbag85hctmfnkbhzux16cy7ca3",
+      "discoveryRank": 14,
+      "volume24h": {
+        "value": 1210413.99,
+        "poolsWithValue": 1,
+        "poolsTotal": 1,
+        "partial": false
+      },
+      "liquidity": {
+        "value": 2935725.09,
+        "poolsWithValue": 1,
+        "poolsTotal": 1,
+        "partial": false
+      },
+      "price": 0.06552,
+      "change24h": 8.73,
+      "change24hRange": null,
+      "marketCap": 63178221,
+      "fdv": 63176785,
+      "valuation": {
+        "metric": "marketCap",
+        "value": 63178221,
+        "source": {
+          "pairAddress": "HMzvsEEmtzHhvZNw9uwbaG85HCTmFnkbhzUx16cy7ca3",
+          "dexId": "pumpswap",
+          "quoteSymbol": "SOL",
+          "rule": "most liquid returned pool"
+        }
+      },
+      "oldestPoolAt": "2026-07-26T16:32:43.000Z",
+      "oldestPoolAtLabel": "pool creation time (not a project launch date)",
+      "flags": [],
+      "pools": [
+        {
+          "pairAddress": "HMzvsEEmtzHhvZNw9uwbaG85HCTmFnkbhzUx16cy7ca3",
+          "discoverySlug": "hmzvseemtzhhvznw9uwbag85hctmfnkbhzux16cy7ca3",
+          "dexId": "pumpswap",
+          "url": "https://dexscreener.com/solana/hmzvseemtzhhvznw9uwbag85hctmfnkbhzux16cy7ca3",
+          "labels": [],
+          "quote": {
+            "address": "So11111111111111111111111111111111111111112",
+            "symbol": "SOL",
+            "name": "Wrapped SOL"
+          },
+          "volume24h": 1210413.99,
+          "liquidityUsd": 2935725.09,
+          "priceUsd": 0.06552,
+          "change24h": 8.73,
+          "marketCap": 63178221,
+          "fdv": 63176785,
+          "pairCreatedAt": "2026-07-26T16:32:43.000Z"
+        }
+      ],
+      "alsoQuotedIn": [],
+      "info": {
+        "websites": [
+          {
+            "url": "https://cate.meme/",
+            "label": "Website"
+          }
+        ],
+        "socials": [
+          {
+            "url": "https://x.com/i/communities/2004330768022004131",
+            "type": "twitter"
+          },
+          {
+            "url": "https://t.me/catecoin_telegram",
+            "type": "telegram"
+          }
+        ]
+      },
+      "hidden": false,
+      "hiddenReason": null
+    },
+    {
+      "id": "solana:HZ1JovNiVvGrGNiiYvEozEVgZ58xaU3RKwX8eACQBCt3",
+      "chain": "solana",
+      "address": "HZ1JovNiVvGrGNiiYvEozEVgZ58xaU3RKwX8eACQBCt3",
+      "name": "Pyth Network",
+      "symbol": "PYTH",
+      "url": "https://dexscreener.com/solana/9n3dslrerzqp95dhxywft7xv8d8xngflauhtehqvaxac",
+      "discoveryRank": 36,
+      "volume24h": {
+        "value": 1189224.8,
+        "poolsWithValue": 1,
+        "poolsTotal": 1,
+        "partial": false
+      },
+      "liquidity": {
+        "value": 451484.43,
+        "poolsWithValue": 1,
+        "poolsTotal": 1,
+        "partial": false
+      },
+      "price": 0.09284,
+      "change24h": 5.04,
+      "change24hRange": null,
+      "marketCap": 731156546,
+      "fdv": 928456467,
+      "valuation": {
+        "metric": "marketCap",
+        "value": 731156546,
+        "source": {
+          "pairAddress": "9n3dSLrERZQp95dHXywft7xV8D8xnGFLaUHtEhQVaXaC",
+          "dexId": "raydium",
+          "quoteSymbol": "SOL",
+          "rule": "most liquid returned pool"
+        }
+      },
+      "oldestPoolAt": "2024-08-15T05:41:15.000Z",
+      "oldestPoolAtLabel": "pool creation time (not a project launch date)",
+      "flags": [],
+      "pools": [
+        {
+          "pairAddress": "9n3dSLrERZQp95dHXywft7xV8D8xnGFLaUHtEhQVaXaC",
+          "discoverySlug": "9n3dslrerzqp95dhxywft7xv8d8xngflauhtehqvaxac",
+          "dexId": "raydium",
+          "url": "https://dexscreener.com/solana/9n3dslrerzqp95dhxywft7xv8d8xngflauhtehqvaxac",
+          "labels": [
+            "CLMM"
+          ],
+          "quote": {
+            "address": "So11111111111111111111111111111111111111112",
+            "symbol": "SOL",
+            "name": "Wrapped SOL"
+          },
+          "volume24h": 1189224.8,
+          "liquidityUsd": 451484.43,
+          "priceUsd": 0.09284,
+          "change24h": 5.04,
+          "marketCap": 731156546,
+          "fdv": 928456467,
+          "pairCreatedAt": "2024-08-15T05:41:15.000Z"
+        }
+      ],
+      "alsoQuotedIn": [],
+      "info": {
+        "websites": [
+          {
+            "url": "https://pyth.network",
+            "label": "Website"
+          }
+        ],
+        "socials": [
+          {
+            "url": "https://twitter.com/PythNetwork",
+            "type": "twitter"
+          },
+          {
+            "url": "https://telegram.me/Pyth_Network",
+            "type": "telegram"
+          },
+          {
+            "url": "https://discord.com/invite/PythNetwork",
+            "type": "discord"
+          }
+        ]
+      },
+      "hidden": false,
+      "hiddenReason": null
+    },
+    {
+      "id": "solana:Hg5Ja55T5wESq4vyFoiVCMeHXtGyVA69X2UHq8hgpump",
+      "chain": "solana",
+      "address": "Hg5Ja55T5wESq4vyFoiVCMeHXtGyVA69X2UHq8hgpump",
+      "name": "baton",
+      "symbol": "baton",
+      "url": "https://dexscreener.com/solana/cb7zrgplhji3th7htxykeqbxvnjppetvckxuwakbuhxu",
+      "discoveryRank": 11,
+      "volume24h": {
+        "value": 1135736.36,
+        "poolsWithValue": 1,
+        "poolsTotal": 1,
+        "partial": false
+      },
+      "liquidity": {
+        "value": 598654.41,
+        "poolsWithValue": 1,
+        "poolsTotal": 1,
+        "partial": false
+      },
+      "price": 0.009867,
+      "change24h": 15.56,
+      "change24hRange": null,
+      "marketCap": 9855147,
+      "fdv": 9855138,
+      "valuation": {
+        "metric": "marketCap",
+        "value": 9855147,
+        "source": {
+          "pairAddress": "Cb7ZRgPLhji3Th7htXyKEqbXvNjPpeTvckXuWakBUhXu",
+          "dexId": "pumpswap",
+          "quoteSymbol": "PUMP",
+          "rule": "most liquid returned pool"
+        }
+      },
+      "oldestPoolAt": "2026-09-09T20:32:14.000Z",
+      "oldestPoolAtLabel": "pool creation time (not a project launch date)",
+      "flags": [],
+      "pools": [
+        {
+          "pairAddress": "Cb7ZRgPLhji3Th7htXyKEqbXvNjPpeTvckXuWakBUhXu",
+          "discoverySlug": "cb7zrgplhji3th7htxykeqbxvnjppetvckxuwakbuhxu",
+          "dexId": "pumpswap",
+          "url": "https://dexscreener.com/solana/cb7zrgplhji3th7htxykeqbxvnjppetvckxuwakbuhxu",
+          "labels": [],
+          "quote": {
+            "address": "pumpCmXqMfrsAkQ5r49WcJnRayYRqmXz6ae8H7H9Dfn",
+            "symbol": "PUMP",
+            "name": "Pump"
+          },
+          "volume24h": 1135736.36,
+          "liquidityUsd": 598654.41,
+          "priceUsd": 0.009867,
+          "change24h": 15.56,
+          "marketCap": 9855147,
+          "fdv": 9855138,
+          "pairCreatedAt": "2026-09-09T20:32:14.000Z"
+        }
+      ],
+      "alsoQuotedIn": [],
+      "info": {
+        "websites": [
+          {
+            "url": "https://www.baton.meme/",
+            "label": "Website"
+          }
+        ],
+        "socials": [
+          {
+            "url": "https://x.com/baton_meme",
+            "type": "twitter"
+          },
+          {
+            "url": "https://t.me/baton_memes",
+            "type": "telegram"
+          }
+        ]
+      },
+      "hidden": false,
+      "hiddenReason": null
+    },
+    {
+      "id": "solana:HuAXPyDWDaMYFKuwQHpqL1oPnj93zdzWmtvFGzCeCUa7",
+      "chain": "solana",
+      "address": "HuAXPyDWDaMYFKuwQHpqL1oPnj93zdzWmtvFGzCeCUa7",
+      "name": "Nullmask",
+      "symbol": "MASK",
+      "url": "https://dexscreener.com/solana/4gwh5sakgzoukhhj4rh3p5fmpu6ypuaexv6fah5jqyfm",
+      "discoveryRank": 13,
+      "volume24h": {
+        "value": 1131288.69,
+        "poolsWithValue": 1,
+        "poolsTotal": 1,
+        "partial": false
+      },
+      "liquidity": {
+        "value": 708620.9,
+        "poolsWithValue": 1,
+        "poolsTotal": 1,
+        "partial": false
+      },
+      "price": 0.03544,
+      "change24h": 10.08,
+      "change24hRange": null,
+      "marketCap": 35121509,
+      "fdv": 35440676,
+      "valuation": {
+        "metric": "marketCap",
+        "value": 35121509,
+        "source": {
+          "pairAddress": "4GWh5saKgzoukhhj4Rh3p5FmPU6yPuAexV6FaH5JQYfm",
+          "dexId": "raydium",
+          "quoteSymbol": "ZEC",
+          "rule": "most liquid returned pool"
+        }
+      },
+      "oldestPoolAt": "2026-09-23T11:04:23.000Z",
+      "oldestPoolAtLabel": "pool creation time (not a project launch date)",
+      "flags": [],
+      "pools": [
+        {
+          "pairAddress": "4GWh5saKgzoukhhj4Rh3p5FmPU6yPuAexV6FaH5JQYfm",
+          "discoverySlug": "4gwh5sakgzoukhhj4rh3p5fmpu6ypuaexv6fah5jqyfm",
+          "dexId": "raydium",
+          "url": "https://dexscreener.com/solana/4gwh5sakgzoukhhj4rh3p5fmpu6ypuaexv6fah5jqyfm",
+          "labels": [
+            "CPMM"
+          ],
+          "quote": {
+            "address": "A7bdiYdS5GjqGFtxf17ppRHtDKPkkRqbKtR27dxvQXaS",
+            "symbol": "ZEC",
+            "name": "Zcash"
+          },
+          "volume24h": 1131288.69,
+          "liquidityUsd": 708620.9,
+          "priceUsd": 0.03544,
+          "change24h": 10.08,
+          "marketCap": 35121509,
+          "fdv": 35440676,
+          "pairCreatedAt": "2026-09-23T11:04:23.000Z"
+        }
+      ],
+      "alsoQuotedIn": [],
+      "info": {
+        "websites": [
+          {
+            "url": "https://nullmask.io/",
+            "label": "Website"
+          }
+        ],
+        "socials": [
+          {
+            "url": "https://x.com/NullMaskio",
+            "type": "twitter"
+          },
+          {
+            "url": "https://t.me/NullMask_io",
+            "type": "telegram"
+          }
+        ]
+      },
+      "hidden": false,
+      "hiddenReason": null
+    },
+    {
+      "id": "solana:CWZ6BsdnjkDVTGkmL6bGbJXXig6ceef12KvyGQW14cMt",
+      "chain": "solana",
+      "address": "CWZ6BsdnjkDVTGkmL6bGbJXXig6ceef12KvyGQW14cMt",
+      "name": "AntFun BlockChain",
+      "symbol": "ANTFUN",
+      "url": "https://dexscreener.com/solana/54vp27ulaw4wnlo5n7r4fcc6zlamoqc28xbarjss4euj",
+      "discoveryRank": 12,
+      "volume24h": {
+        "value": 1104227.56,
+        "poolsWithValue": 1,
+        "poolsTotal": 1,
+        "partial": false
+      },
+      "liquidity": {
+        "value": 12440521.5,
+        "poolsWithValue": 1,
+        "poolsTotal": 1,
+        "partial": false
+      },
+      "price": 0.01005,
+      "change24h": 2.92,
+      "change24hRange": null,
+      "marketCap": 18989029,
+      "fdv": 100596665,
+      "valuation": {
+        "metric": "marketCap",
+        "value": 18989029,
+        "source": {
+          "pairAddress": "54Vp27uLaw4wNLo5n7r4fcC6zLamoQc28xBARjss4EUJ",
+          "dexId": "meteora",
+          "quoteSymbol": "USDT",
+          "rule": "most liquid returned pool"
+        }
+      },
+      "oldestPoolAt": "2026-07-10T06:47:24.000Z",
+      "oldestPoolAtLabel": "pool creation time (not a project launch date)",
+      "flags": [],
+      "pools": [
+        {
+          "pairAddress": "54Vp27uLaw4wNLo5n7r4fcC6zLamoQc28xBARjss4EUJ",
+          "discoverySlug": "54vp27ulaw4wnlo5n7r4fcc6zlamoqc28xbarjss4euj",
+          "dexId": "meteora",
+          "url": "https://dexscreener.com/solana/54vp27ulaw4wnlo5n7r4fcc6zlamoqc28xbarjss4euj",
+          "labels": [
+            "DLMM"
+          ],
+          "quote": {
+            "address": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+            "symbol": "USDT",
+            "name": "USDT"
+          },
+          "volume24h": 1104227.56,
+          "liquidityUsd": 12440521.5,
+          "priceUsd": 0.01005,
+          "change24h": 2.92,
+          "marketCap": 18989029,
+          "fdv": 100596665,
+          "pairCreatedAt": "2026-07-10T06:47:24.000Z"
+        }
+      ],
+      "alsoQuotedIn": [],
+      "info": {
+        "websites": [
+          {
+            "url": "https://ant.fun",
+            "label": "Website"
+          }
+        ],
+        "socials": [
+          {
+            "url": "https://x.com/ant_fun_trade",
+            "type": "twitter"
+          },
+          {
+            "url": "https://t.me/antfun",
+            "type": "telegram"
+          }
+        ]
+      },
+      "hidden": false,
+      "hiddenReason": null
+    },
+    {
+      "id": "solana:9cRCn9rGT8V2imeM2BaKs13yhMEais3ruM3rPvTGpump",
+      "chain": "solana",
+      "address": "9cRCn9rGT8V2imeM2BaKs13yhMEais3ruM3rPvTGpump",
+      "name": "The Black Bull",
+      "symbol": "ANSEM",
+      "url": "https://dexscreener.com/solana/6e7v9eegchw997t72mxgwwjipz6gjyzf8nvjkzt1rvpn",
+      "discoveryRank": 31,
+      "volume24h": {
+        "value": 1050669.39,
+        "poolsWithValue": 1,
+        "poolsTotal": 1,
+        "partial": false
+      },
+      "liquidity": {
+        "value": 603427.65,
+        "poolsWithValue": 1,
+        "poolsTotal": 1,
+        "partial": false
+      },
+      "price": 0.1129,
+      "change24h": 4.58,
+      "change24hRange": null,
+      "marketCap": 112948009,
+      "fdv": 112948009,
+      "valuation": {
+        "metric": "marketCap",
+        "value": 112948009,
+        "source": {
+          "pairAddress": "6e7V9eegCHw997T72MxgwwJipZ6GJyZF8NvjkzT1rvpN",
+          "dexId": "meteora",
+          "quoteSymbol": "SOL",
+          "rule": "most liquid returned pool"
+        }
+      },
+      "oldestPoolAt": "2026-06-28T06:38:56.000Z",
+      "oldestPoolAtLabel": "pool creation time (not a project launch date)",
+      "flags": [],
+      "pools": [
+        {
+          "pairAddress": "6e7V9eegCHw997T72MxgwwJipZ6GJyZF8NvjkzT1rvpN",
+          "discoverySlug": "6e7v9eegchw997t72mxgwwjipz6gjyzf8nvjkzt1rvpn",
+          "dexId": "meteora",
+          "url": "https://dexscreener.com/solana/6e7v9eegchw997t72mxgwwjipz6gjyzf8nvjkzt1rvpn",
+          "labels": [
+            "DLMM"
+          ],
+          "quote": {
+            "address": "So11111111111111111111111111111111111111112",
+            "symbol": "SOL",
+            "name": "Wrapped SOL"
+          },
+          "volume24h": 1050669.39,
+          "liquidityUsd": 603427.65,
+          "priceUsd": 0.1129,
+          "change24h": 4.58,
+          "marketCap": 112948009,
+          "fdv": 112948009,
+          "pairCreatedAt": "2026-06-28T06:38:56.000Z"
+        }
+      ],
+      "alsoQuotedIn": [],
+      "info": {
+        "websites": [],
+        "socials": [
+          {
+            "url": "https://x.com/blackbullsol",
+            "type": "twitter"
+          },
+          {
+            "url": "https://t.me/+LuzxBagQydQ1NzMx",
+            "type": "telegram"
+          }
+        ]
+      },
+      "hidden": false,
+      "hiddenReason": null
+    },
+    {
+      "id": "solana:GTBxUiw6wJdmmkCGZgRHLyYxqu1vG4KtRpeox6yDpump",
+      "chain": "solana",
+      "address": "GTBxUiw6wJdmmkCGZgRHLyYxqu1vG4KtRpeox6yDpump",
+      "name": "Jean Phil",
+      "symbol": "JEANPHIL",
+      "url": "https://dexscreener.com/solana/4r8cimnjwdnoes3fqi1ccpfjygpxazahawphrn3rzenj",
+      "discoveryRank": 8,
+      "volume24h": {
+        "value": 1027944.81,
+        "poolsWithValue": 1,
+        "poolsTotal": 1,
+        "partial": false
+      },
+      "liquidity": {
+        "value": 415932.29,
+        "poolsWithValue": 1,
+        "poolsTotal": 1,
+        "partial": false
+      },
+      "price": 0.006972,
+      "change24h": 13.05,
+      "change24hRange": null,
+      "marketCap": 6760063,
+      "fdv": 6760063,
+      "valuation": {
+        "metric": "marketCap",
+        "value": 6760063,
+        "source": {
+          "pairAddress": "4R8CiMnJWDNoes3fQi1ccPFJygPXazaHaWpHrN3rZeNj",
+          "dexId": "pumpswap",
+          "quoteSymbol": "SOL",
+          "rule": "most liquid returned pool"
+        }
+      },
+      "oldestPoolAt": "2026-09-19T19:06:59.000Z",
+      "oldestPoolAtLabel": "pool creation time (not a project launch date)",
+      "flags": [],
+      "pools": [
+        {
+          "pairAddress": "4R8CiMnJWDNoes3fQi1ccPFJygPXazaHaWpHrN3rZeNj",
+          "discoverySlug": "4r8cimnjwdnoes3fqi1ccpfjygpxazahawphrn3rzenj",
+          "dexId": "pumpswap",
+          "url": "https://dexscreener.com/solana/4r8cimnjwdnoes3fqi1ccpfjygpxazahawphrn3rzenj",
+          "labels": [],
+          "quote": {
+            "address": "So11111111111111111111111111111111111111112",
+            "symbol": "SOL",
+            "name": "Wrapped SOL"
+          },
+          "volume24h": 1027944.81,
+          "liquidityUsd": 415932.29,
+          "priceUsd": 0.006972,
+          "change24h": 13.05,
+          "marketCap": 6760063,
+          "fdv": 6760063,
+          "pairCreatedAt": "2026-09-19T19:06:59.000Z"
+        }
+      ],
+      "alsoQuotedIn": [],
+      "info": {
+        "websites": [
+          {
+            "url": "https://jeanphilmadame.com/",
+            "label": "Website"
+          }
+        ],
+        "socials": [
+          {
+            "url": "https://x.com/JeanPhilMadame",
+            "type": "twitter"
+          },
+          {
+            "url": "https://www.instagram.com/jean_philanthrope/",
+            "type": "instagram"
+          }
+        ]
+      },
+      "hidden": false,
+      "hiddenReason": null
+    }
+  ],
+  "compatibilityKey": "4af947c15a9f098b"
+}

@@ -1,0 +1,2067 @@
+{
+  "schemaVersion": 1,
+  "scope": "sol",
+  "stage": "final",
+  "title": "Solana market brief",
+  "chainLabel": "Solana",
+  "runId": "2026-10-16T131120-claude-daily",
+  "producer": "claude-local",
+  "timezone": "Asia/Yerevan",
+  "discoveryUrl": "https://dexscreener.com/solana?rankBy=trendingScoreH6&order=desc&minMarketCap=1000000&minAge=72&min24HVol=1000000&profile=1",
+  "discoveryAt": "2026-10-16T09:11:34.111Z",
+  "metricsAt": "2026-10-16T09:12:31.831Z",
+  "researchCompletedAt": "2026-10-16T09:24:00.000Z",
+  "dateLabel": "16 Oct 2026",
+  "timeLabels": {
+    "discovery": "13:11",
+    "metrics": "13:12",
+    "research": "13:24"
+  },
+  "coverage": {
+    "displayed": 19,
+    "hidden": 7,
+    "discoveredPools": 59,
+    "resolvedPools": 59,
+    "marketStatus": "complete"
+  },
+  "research": {
+    "complete": 14,
+    "partial": 1,
+    "incomplete": 4
+  },
+  "comparison": {
+    "prior": null,
+    "newlySurfaced": [],
+    "noLongerQualifying": [],
+    "reason": "no compatible prior Claude scan (same scope, discovery URL and schema) is available"
+  },
+  "materialLabels": [],
+  "pageSize": 12,
+  "disclaimer": "Not financial advice. Market data from Dexscreener; project statements are the projects' own claims unless marked verified.",
+  "rows": [
+    {
+      "rank": 1,
+      "id": "solana:oreoU2P8bN6jkk3jbaiVxYnG1dCXcYxwhwyK9jSybcp",
+      "name": "ORE",
+      "symbol": "ORE",
+      "url": "https://dexscreener.com/solana/6imksfakkvxs6e1q4hyharqkln3hflrwto1jstlw5q2p",
+      "valuation": {
+        "metric": "marketCap",
+        "value": 61998816,
+        "text": "$62.0M",
+        "label": ">FDV"
+      },
+      "volume24h": {
+        "value": 18451342.15,
+        "text": "$18.5M",
+        "label": null
+      },
+      "liquidity": {
+        "value": 143488.19,
+        "text": "$143K",
+        "label": null
+      },
+      "change24h": {
+        "value": 13.38,
+        "text": "+13.4%"
+      },
+      "price": {
+        "value": 121.94,
+        "text": "$121.94"
+      },
+      "pools": 4,
+      "comment": "Volume is 128.6× its $143K pooled liquidity. The set mint authority fits the GitHub's described mining mint but means supply can grow; market cap above FDV is unreconciled.",
+      "note": {
+        "status": "complete",
+        "launchLabel": null,
+        "measured": [
+          "24h volume $18.5M is 128.6× pooled liquidity $143K",
+          "4 qualifying pools on meteora, orca, quoted in GLDx, JitoSOL, USDv, STONK",
+          "Oldest qualifying pool created 2026-09-01 (44.7 days before the read); pool creation, not a launch date",
+          "Reported market cap $62.0M exceeds FDV $32.7M (1.89×) on the most liquid pool; valuation unreconciled",
+          "SPL token mint: mint authority set, freeze authority none, 11 decimals"
+        ],
+        "claims": [
+          {
+            "field": "purpose",
+            "kind": "project_claim",
+            "status": "claimed_unverified",
+            "text": "Its site describes ORE as a 'future-proof store of value'; its GitHub README calls it 'Hard Money for the Digital Age'.",
+            "sources": [
+              {
+                "label": "ore.com",
+                "url": "https://ore.com/"
+              },
+              {
+                "label": "github.com (webfetch)",
+                "url": "https://github.com/regolith-labs/ore"
+              }
+            ]
+          },
+          {
+            "field": "mechanics",
+            "kind": "project_claim",
+            "status": "claimed_unverified",
+            "text": "Its GitHub lists program instructions that deploy SOL to claim space on a board, claim ORE mining rewards, and mint, burn and escrow ORE via a treasury.",
+            "sources": [
+              {
+                "label": "github.com (webfetch)",
+                "url": "https://github.com/regolith-labs/ore"
+              }
+            ]
+          },
+          {
+            "field": "mechanics",
+            "kind": "third_party",
+            "status": "claimed_unverified",
+            "text": "Third-party guides describe rounds of about a minute where SOL is placed on a 5×5 grid, with winners sharing losing stakes plus newly minted ORE.",
+            "sources": []
+          },
+          {
+            "field": "supply",
+            "kind": "measured",
+            "status": "verified",
+            "text": "Mint authority is still set on the SPL mint (not renounced); freeze authority is none.",
+            "sources": [
+              {
+                "label": "Solana RPC",
+                "url": null
+              },
+              {
+                "label": "Dexscreener",
+                "url": "https://dexscreener.com/solana/6imksfakkvxs6e1q4hyharqkln3hflrwto1jstlw5q2p"
+              }
+            ]
+          },
+          {
+            "field": "risk",
+            "kind": "measured",
+            "status": "verified",
+            "text": "Reported market cap exceeds FDV (1.89×) on the most liquid pool, so the valuation is unreconciled.",
+            "sources": [
+              {
+                "label": "Dexscreener",
+                "url": "https://dexscreener.com/solana/6imksfakkvxs6e1q4hyharqkln3hflrwto1jstlw5q2p"
+              }
+            ]
+          }
+        ],
+        "aiView": {
+          "text": "Volume is 128.6× its $143K pooled liquidity. The set mint authority fits the GitHub's described mining mint but means supply can grow; market cap above FDV is unreconciled.",
+          "sources": [
+            {
+              "label": "Dexscreener",
+              "url": "https://dexscreener.com/solana/6imksfakkvxs6e1q4hyharqkln3hflrwto1jstlw5q2p"
+            },
+            {
+              "label": "github.com (webfetch)",
+              "url": "https://github.com/regolith-labs/ore"
+            }
+          ]
+        },
+        "gaps": [
+          {
+            "what": "listed X",
+            "reason": "@OREsupply has moved to @ORE and has no posts; the site is JavaScript-only beyond its tagline",
+            "source": "https://x.com/OREsupply"
+          }
+        ]
+      }
+    },
+    {
+      "rank": 2,
+      "id": "solana:8x5VqbHA8D7NkD52uNuS5nnt3PwA8pLD34ymskeSo2Wn",
+      "name": "zerebro",
+      "symbol": "ZEREBRO",
+      "url": "https://dexscreener.com/solana/3sjnocnkkhwpvxygdtem8rccihsgc9jsfzuuazkbvrvp",
+      "valuation": {
+        "metric": "marketCap",
+        "value": 48191928,
+        "text": "$48.2M",
+        "label": null
+      },
+      "volume24h": {
+        "value": 13297785.86,
+        "text": "$13.3M",
+        "label": null
+      },
+      "liquidity": {
+        "value": 3857969.07,
+        "text": "$3.9M",
+        "label": null
+      },
+      "change24h": {
+        "value": 5.59,
+        "text": "+5.6%"
+      },
+      "price": {
+        "value": 0.04819,
+        "text": "$0.04819"
+      },
+      "pools": 1,
+      "comment": "Volume runs 3.4× liquidity in a single SOL pool almost two years old; the project's own pages gave no readable text, so its purpose here comes only from third-party coverage.",
+      "note": {
+        "status": "incomplete",
+        "launchLabel": null,
+        "measured": [
+          "24h volume $13.3M is 3.4× pooled liquidity $3.9M",
+          "1 qualifying pool on raydium, quoted in SOL",
+          "Oldest qualifying pool created 2024-10-28 (717.6 days before the read); pool creation, not a launch date",
+          "SPL token mint: mint authority none, freeze authority none, 6 decimals"
+        ],
+        "claims": [
+          {
+            "field": "purpose",
+            "kind": "third_party",
+            "status": "claimed_unverified",
+            "text": "Search results (Bankless, FXEmpire) describe Zerebro as an autonomous AI agent that creates and distributes content such as music and art.",
+            "sources": []
+          },
+          {
+            "field": "supply",
+            "kind": "measured",
+            "status": "verified",
+            "text": "Mint authority and freeze authority are both none on the SPL mint.",
+            "sources": [
+              {
+                "label": "Solana RPC",
+                "url": null
+              },
+              {
+                "label": "Dexscreener",
+                "url": "https://dexscreener.com/solana/3sjnocnkkhwpvxygdtem8rccihsgc9jsfzuuazkbvrvp"
+              }
+            ]
+          }
+        ],
+        "aiView": {
+          "text": "Volume runs 3.4× liquidity in a single SOL pool almost two years old; the project's own pages gave no readable text, so its purpose here comes only from third-party coverage.",
+          "sources": [
+            {
+              "label": "Dexscreener",
+              "url": "https://dexscreener.com/solana/3sjnocnkkhwpvxygdtem8rccihsgc9jsfzuuazkbvrvp"
+            }
+          ]
+        },
+        "gaps": [
+          {
+            "what": "purpose",
+            "reason": "zerebro.org and farcaster.xyz/zerebro returned no readable text",
+            "source": "https://zerebro.org/"
+          },
+          {
+            "what": "mechanics",
+            "reason": "listed X posts are slogans only; no docs found by one web search",
+            "source": "https://x.com/0xzerebro"
+          }
+        ]
+      }
+    },
+    {
+      "rank": 3,
+      "id": "solana:nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump",
+      "name": "Dacity Coin",
+      "symbol": "Dacity",
+      "url": "https://dexscreener.com/solana/g2uurbmvdzdfp4qyobjrskbxsi7d6v4bpp9thps36y4b",
+      "valuation": {
+        "metric": "marketCap",
+        "value": 1492311,
+        "text": "$1.5M",
+        "label": null
+      },
+      "volume24h": {
+        "value": 9952703.31,
+        "text": "$10.0M",
+        "label": null
+      },
+      "liquidity": {
+        "value": 268509.52,
+        "text": "$269K",
+        "label": null
+      },
+      "change24h": {
+        "value": 1094,
+        "text": "+1094%"
+      },
+      "price": {
+        "value": 0.001519,
+        "text": "$0.001519"
+      },
+      "pools": 2,
+      "comment": "A pool first seen 4.9 days ago trades 37× its liquidity, with a >600-point change gap between pools, on a GTA 6 leak rumour that one search did not corroborate.",
+      "note": {
+        "status": "incomplete",
+        "launchLabel": "launch date unverified",
+        "measured": [
+          "24h volume $10.0M is 37.1× pooled liquidity $269K",
+          "2 qualifying pools on pumpswap, meteora, quoted in TTWO, SOL",
+          "Oldest qualifying pool created 2026-10-11 (4.9 days before the read); pool creation, not a launch date; recent pool",
+          "24h change ranges +458% to +1094% across pools",
+          "Token-2022 mint: mint authority none, freeze authority none, 6 decimals"
+        ],
+        "claims": [
+          {
+            "field": "provenance",
+            "kind": "third_party",
+            "status": "claimed_unverified",
+            "text": "The profile's only link is a streamer's X post claiming a meme coin called 'Dacity Coin' appears in a GTA 6 leak; a web search found no source on it.",
+            "sources": [
+              {
+                "label": "x.com (X)",
+                "url": "https://x.com/robtmb1/status/2109241600002118071?s=20"
+              }
+            ]
+          },
+          {
+            "field": "risk",
+            "kind": "measured",
+            "status": "verified",
+            "text": "24h change ranges from +458% to +1094% across its two pools.",
+            "sources": [
+              {
+                "label": "Dexscreener",
+                "url": "https://dexscreener.com/solana/g2uurbmvdzdfp4qyobjrskbxsi7d6v4bpp9thps36y4b"
+              }
+            ]
+          },
+          {
+            "field": "supply",
+            "kind": "measured",
+            "status": "verified",
+            "text": "Token-2022 mint with mint authority and freeze authority none.",
+            "sources": [
+              {
+                "label": "Solana RPC",
+                "url": null
+              },
+              {
+                "label": "Dexscreener",
+                "url": "https://dexscreener.com/solana/g2uurbmvdzdfp4qyobjrskbxsi7d6v4bpp9thps36y4b"
+              }
+            ]
+          }
+        ],
+        "aiView": {
+          "text": "A pool first seen 4.9 days ago trades 37× its liquidity, with a >600-point change gap between pools, on a GTA 6 leak rumour that one search did not corroborate.",
+          "sources": [
+            {
+              "label": "Dexscreener",
+              "url": "https://dexscreener.com/solana/g2uurbmvdzdfp4qyobjrskbxsi7d6v4bpp9thps36y4b"
+            }
+          ]
+        },
+        "gaps": [
+          {
+            "what": "purpose",
+            "reason": "no website listed; the listed X link is a third-party streamer's post",
+            "source": "https://x.com/robtmb1/status/2109241600002118071"
+          },
+          {
+            "what": "mechanics",
+            "reason": "no project page exists to read; web search returned nothing on Dacity Coin",
+            "source": null
+          }
+        ]
+      }
+    },
+    {
+      "rank": 4,
+      "id": "solana:6GmAFSYs4gk3FDao5FzzySQpPZaWsa4rUJHacpMpUNgx",
+      "name": "STONK",
+      "symbol": "STONK",
+      "url": "https://dexscreener.com/solana/zxtpi4btawx3mgdapoezkmd1hxx8cdecfrqxmwvsclx",
+      "valuation": {
+        "metric": "marketCap",
+        "value": 96256162,
+        "text": "$96.3M",
+        "label": null
+      },
+      "volume24h": {
+        "value": 7626451.6,
+        "text": "$7.6M",
+        "label": null
+      },
+      "liquidity": {
+        "value": 5094166.19,
+        "text": "$5.1M",
+        "label": null
+      },
+      "change24h": {
+        "value": 13.06,
+        "text": "+13.1%"
+      },
+      "price": {
+        "value": 0.1214,
+        "text": "$0.1214"
+      },
+      "pools": 2,
+      "comment": "STONK is also the quote asset in an ORE pool not counted here, so its liquidity partly backs other launches. Buyback and burn figures are self-reported revenue posts, not measured.",
+      "note": {
+        "status": "complete",
+        "launchLabel": null,
+        "measured": [
+          "24h volume $7.6M is 1.5× pooled liquidity $5.1M",
+          "2 qualifying pools on meteora, orca, quoted in SOL",
+          "Oldest qualifying pool created 2026-08-05 (72.2 days before the read); pool creation, not a launch date",
+          "Also the quote token in 1 pool credited to ORE ($2.3M 24h volume, not counted here)",
+          "SPL token mint: mint authority none, freeze authority none, 9 decimals"
+        ],
+        "claims": [
+          {
+            "field": "purpose",
+            "kind": "project_claim",
+            "status": "claimed_unverified",
+            "text": "Describes StonkFun as a Solana launchpad for coins paired with anything: memes, stocks, currencies, commodities and more.",
+            "sources": [
+              {
+                "label": "stonkfun.xyz",
+                "url": "https://www.stonkfun.xyz/"
+              },
+              {
+                "label": "x.com (X)",
+                "url": "https://x.com/LaunchOnSF"
+              }
+            ]
+          },
+          {
+            "field": "mechanics",
+            "kind": "project_claim",
+            "status": "claimed_unverified",
+            "text": "Its X reports Oct 15 revenue of $159,090 with $94,629 used for buybacks and 876.73K STONK burned, and says it added multi-asset Baskets.",
+            "sources": [
+              {
+                "label": "x.com (X)",
+                "url": "https://x.com/LaunchOnSF"
+              }
+            ]
+          },
+          {
+            "field": "supply",
+            "kind": "measured",
+            "status": "verified",
+            "text": "Mint authority and freeze authority are both none on the SPL mint.",
+            "sources": [
+              {
+                "label": "Solana RPC",
+                "url": null
+              },
+              {
+                "label": "Dexscreener",
+                "url": "https://dexscreener.com/solana/zxtpi4btawx3mgdapoezkmd1hxx8cdecfrqxmwvsclx"
+              }
+            ]
+          }
+        ],
+        "aiView": {
+          "text": "STONK is also the quote asset in an ORE pool not counted here, so its liquidity partly backs other launches. Buyback and burn figures are self-reported revenue posts, not measured.",
+          "sources": [
+            {
+              "label": "Dexscreener",
+              "url": "https://dexscreener.com/solana/zxtpi4btawx3mgdapoezkmd1hxx8cdecfrqxmwvsclx"
+            },
+            {
+              "label": "x.com (X)",
+              "url": "https://x.com/LaunchOnSF"
+            }
+          ]
+        },
+        "gaps": []
+      }
+    },
+    {
+      "rank": 5,
+      "id": "solana:CARDSccUMFKoPRZxt5vt3ksUbxEFEcnZ3H2pd3dKxYjp",
+      "name": "Collector Crypt",
+      "symbol": "CARDS",
+      "url": "https://dexscreener.com/solana/hnhpjpjgbg2kwnimtnw8cvbhvk1hfog3rc3kjnyc23td",
+      "valuation": {
+        "metric": "marketCap",
+        "value": 307655501,
+        "text": "$308M",
+        "label": null
+      },
+      "volume24h": {
+        "value": 7326653.19,
+        "text": "$7.3M",
+        "label": null
+      },
+      "liquidity": {
+        "value": 4835195.9,
+        "text": "$4.8M",
+        "label": null
+      },
+      "change24h": {
+        "value": 16.5,
+        "text": "+16.5%"
+      },
+      "price": {
+        "value": 0.3408,
+        "text": "$0.3408"
+      },
+      "pools": 2,
+      "comment": "Among the oldest pools here (over a year) with volume only 1.5× liquidity in USDC pairs; the pages read give no token role, so how CARDS ties to card sales is unstated.",
+      "note": {
+        "status": "complete",
+        "launchLabel": null,
+        "measured": [
+          "24h volume $7.3M is 1.5× pooled liquidity $4.8M",
+          "2 qualifying pools on raydium, meteora, quoted in USDC",
+          "Oldest qualifying pool created 2025-08-29 (412.6 days before the read); pool creation, not a launch date",
+          "SPL token mint: mint authority none, freeze authority none, 6 decimals"
+        ],
+        "claims": [
+          {
+            "field": "purpose",
+            "kind": "project_claim",
+            "status": "claimed_unverified",
+            "text": "Describes Collector Crypt as a bridge for real-world collectibles: digitize collections, trade them and collateralize them for loans.",
+            "sources": [
+              {
+                "label": "collectorcrypt.com",
+                "url": "https://collectorcrypt.com/"
+              }
+            ]
+          },
+          {
+            "field": "mechanics",
+            "kind": "project_claim",
+            "status": "claimed_unverified",
+            "text": "Its X says it sells RWA Pokémon cards on Solana and runs gacha machines with $50, $100 and $250 packs.",
+            "sources": [
+              {
+                "label": "x.com (X)",
+                "url": "https://x.com/Collector_crypt"
+              },
+              {
+                "label": "gacha.collectorcrypt.com",
+                "url": "https://gacha.collectorcrypt.com/"
+              }
+            ]
+          },
+          {
+            "field": "supply",
+            "kind": "measured",
+            "status": "verified",
+            "text": "Mint authority and freeze authority are both none on the SPL mint.",
+            "sources": [
+              {
+                "label": "Solana RPC",
+                "url": null
+              },
+              {
+                "label": "Dexscreener",
+                "url": "https://dexscreener.com/solana/hnhpjpjgbg2kwnimtnw8cvbhvk1hfog3rc3kjnyc23td"
+              }
+            ]
+          }
+        ],
+        "aiView": {
+          "text": "Among the oldest pools here (over a year) with volume only 1.5× liquidity in USDC pairs; the pages read give no token role, so how CARDS ties to card sales is unstated.",
+          "sources": [
+            {
+              "label": "Dexscreener",
+              "url": "https://dexscreener.com/solana/hnhpjpjgbg2kwnimtnw8cvbhvk1hfog3rc3kjnyc23td"
+            },
+            {
+              "label": "collectorcrypt.com",
+              "url": "https://collectorcrypt.com/"
+            },
+            {
+              "label": "x.com (X)",
+              "url": "https://x.com/Collector_crypt"
+            }
+          ]
+        },
+        "gaps": []
+      }
+    },
+    {
+      "rank": 6,
+      "id": "solana:DEW9dSN6QpWyNthphCpMmAbZP1Q4cEKR9xQXAri98WDP",
+      "name": "Super Inu",
+      "symbol": "SI",
+      "url": "https://dexscreener.com/solana/ag1ehpjsbrkxqwkviulxf6pqnhwfr9f9sdnneeoykcej",
+      "valuation": {
+        "metric": "marketCap",
+        "value": 17008816,
+        "text": "$17.0M",
+        "label": null
+      },
+      "volume24h": {
+        "value": 4750068.04,
+        "text": "$4.8M",
+        "label": null
+      },
+      "liquidity": {
+        "value": 1665806.19,
+        "text": "$1.7M",
+        "label": null
+      },
+      "change24h": {
+        "value": 23.56,
+        "text": "+23.6%"
+      },
+      "price": {
+        "value": 0.01707,
+        "text": "$0.01707"
+      },
+      "pools": 3,
+      "comment": "Three pools including an NVDAx pair, consistent with the NVDAx holder-reward claim; the $3M distribution figure is attributed to Stonk and not measured here.",
+      "note": {
+        "status": "complete",
+        "launchLabel": null,
+        "measured": [
+          "24h volume $4.8M is 2.9× pooled liquidity $1.7M",
+          "3 qualifying pools on meteora, raydium, quoted in SOL, NVDAx",
+          "Oldest qualifying pool created 2026-09-21 (24.7 days before the read); pool creation, not a launch date",
+          "Token-2022 mint: mint authority none, freeze authority none, 6 decimals"
+        ],
+        "claims": [
+          {
+            "field": "purpose",
+            "kind": "project_claim",
+            "status": "claimed_unverified",
+            "text": "Describes Super Inu as a community-run parody meme token on Solana, built on the September 2026 'SI' (super intelligence) meme.",
+            "sources": [
+              {
+                "label": "superinuofficial.com",
+                "url": "https://superinuofficial.com/"
+              }
+            ]
+          },
+          {
+            "field": "mechanics",
+            "kind": "project_claim",
+            "status": "claimed_unverified",
+            "text": "Says NVDAx (tokenized NVIDIA stock) is sent to $SI holders, citing over $3M distributed as of Oct 5 per Stonk; says rewards are not guaranteed.",
+            "sources": [
+              {
+                "label": "superinuofficial.com",
+                "url": "https://superinuofficial.com/"
+              }
+            ]
+          },
+          {
+            "field": "risk",
+            "kind": "project_claim",
+            "status": "claimed_unverified",
+            "text": "The site says it is not affiliated with Donald Trump, any political figure or the U.S. government.",
+            "sources": [
+              {
+                "label": "superinuofficial.com",
+                "url": "https://superinuofficial.com/"
+              }
+            ]
+          },
+          {
+            "field": "supply",
+            "kind": "measured",
+            "status": "verified",
+            "text": "Token-2022 mint with mint authority and freeze authority none.",
+            "sources": [
+              {
+                "label": "Solana RPC",
+                "url": null
+              },
+              {
+                "label": "Dexscreener",
+                "url": "https://dexscreener.com/solana/ag1ehpjsbrkxqwkviulxf6pqnhwfr9f9sdnneeoykcej"
+              }
+            ]
+          }
+        ],
+        "aiView": {
+          "text": "Three pools including an NVDAx pair, consistent with the NVDAx holder-reward claim; the $3M distribution figure is attributed to Stonk and not measured here.",
+          "sources": [
+            {
+              "label": "Dexscreener",
+              "url": "https://dexscreener.com/solana/ag1ehpjsbrkxqwkviulxf6pqnhwfr9f9sdnneeoykcej"
+            },
+            {
+              "label": "superinuofficial.com",
+              "url": "https://superinuofficial.com/"
+            }
+          ]
+        },
+        "gaps": []
+      }
+    },
+    {
+      "rank": 7,
+      "id": "solana:33jENUQnjoitkMFpvNJcSHyLAHFWJuHwT6E3E8CNpump",
+      "name": "Doge Pepe",
+      "symbol": "DOPE",
+      "url": "https://dexscreener.com/solana/fprcdzegihlpo4lptwdkhq86fcuwoejfxnmoh9cszz6q",
+      "valuation": {
+        "metric": "marketCap",
+        "value": 4921776,
+        "text": "$4.9M",
+        "label": null
+      },
+      "volume24h": {
+        "value": 4522850.62,
+        "text": "$4.5M",
+        "label": null
+      },
+      "liquidity": {
+        "value": 731849.75,
+        "text": "$732K",
+        "label": null
+      },
+      "change24h": {
+        "value": 7.44,
+        "text": "+7.4%"
+      },
+      "price": {
+        "value": 0.004983,
+        "text": "$0.004983"
+      },
+      "pools": 2,
+      "comment": "A pool first seen 4.8 days ago with volume 6.2× liquidity; the reward basket is the site's claim, and payouts are not measured in this run.",
+      "note": {
+        "status": "complete",
+        "launchLabel": "launch date unverified",
+        "measured": [
+          "24h volume $4.5M is 6.2× pooled liquidity $732K",
+          "2 qualifying pools on meteora, pumpswap, quoted in SOL",
+          "Oldest qualifying pool created 2026-10-11 (4.8 days before the read); pool creation, not a launch date; recent pool",
+          "Token-2022 mint: mint authority none, freeze authority none, 6 decimals"
+        ],
+        "claims": [
+          {
+            "field": "purpose",
+            "kind": "project_claim",
+            "status": "claimed_unverified",
+            "text": "Describes Doge Pepe as a meme launched on OTC on Solana, 'the most expensive accident in meme history'.",
+            "sources": [
+              {
+                "label": "dopeonotc.lol",
+                "url": "https://dopeonotc.lol/"
+              }
+            ]
+          },
+          {
+            "field": "mechanics",
+            "kind": "project_claim",
+            "status": "claimed_unverified",
+            "text": "Says holders receive a basket of ANTHROPIC, DOGE and PEPE rewards paid automatically.",
+            "sources": [
+              {
+                "label": "dopeonotc.lol",
+                "url": "https://dopeonotc.lol/"
+              }
+            ]
+          },
+          {
+            "field": "supply",
+            "kind": "measured",
+            "status": "verified",
+            "text": "Token-2022 mint with mint authority and freeze authority none.",
+            "sources": [
+              {
+                "label": "Solana RPC",
+                "url": null
+              },
+              {
+                "label": "Dexscreener",
+                "url": "https://dexscreener.com/solana/fprcdzegihlpo4lptwdkhq86fcuwoejfxnmoh9cszz6q"
+              }
+            ]
+          }
+        ],
+        "aiView": {
+          "text": "A pool first seen 4.8 days ago with volume 6.2× liquidity; the reward basket is the site's claim, and payouts are not measured in this run.",
+          "sources": [
+            {
+              "label": "Dexscreener",
+              "url": "https://dexscreener.com/solana/fprcdzegihlpo4lptwdkhq86fcuwoejfxnmoh9cszz6q"
+            },
+            {
+              "label": "dopeonotc.lol",
+              "url": "https://dopeonotc.lol/"
+            }
+          ]
+        },
+        "gaps": []
+      }
+    },
+    {
+      "rank": 8,
+      "id": "solana:61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump",
+      "name": "AI Rig Complex",
+      "symbol": "arc",
+      "url": "https://dexscreener.com/solana/j3b6dvhes2y1cbmtvz5tcwxnegsjjdbukxduvdpoqms7",
+      "valuation": {
+        "metric": "marketCap",
+        "value": 38823211,
+        "text": "$38.8M",
+        "label": null
+      },
+      "volume24h": {
+        "value": 4166233.28,
+        "text": "$4.2M",
+        "label": null
+      },
+      "liquidity": {
+        "value": 3546950.68,
+        "text": "$3.5M",
+        "label": null
+      },
+      "change24h": {
+        "value": -5.27,
+        "text": "-5.3%"
+      },
+      "price": {
+        "value": 0.03882,
+        "text": "$0.03882"
+      },
+      "pools": 1,
+      "comment": "Tied to a public open-source library, unlike most rows, but no page read explains what the arc token does within Rig. Volume runs 1.2× liquidity.",
+      "note": {
+        "status": "complete",
+        "launchLabel": null,
+        "measured": [
+          "24h volume $4.2M is 1.2× pooled liquidity $3.5M",
+          "1 qualifying pool on raydium, quoted in SOL",
+          "Oldest qualifying pool created 2024-12-10 (674.5 days before the read); pool creation, not a launch date",
+          "SPL token mint: mint authority none, freeze authority none, 6 decimals"
+        ],
+        "claims": [
+          {
+            "field": "purpose",
+            "kind": "project_claim",
+            "status": "claimed_unverified",
+            "text": "Its site presents AI Rig Complex as the 'Arc Registry' of ecosystem partners and agents; its X says 'we build rig'.",
+            "sources": [
+              {
+                "label": "arc.fun",
+                "url": "https://www.arc.fun/"
+              },
+              {
+                "label": "x.com (X)",
+                "url": "https://x.com/arcdotfun"
+              }
+            ]
+          },
+          {
+            "field": "mechanics",
+            "kind": "project_claim",
+            "status": "claimed_unverified",
+            "text": "Its linked GitHub hosts Rig, a Rust library to 'build modular and scalable LLM applications'; its X cites two million downloads.",
+            "sources": [
+              {
+                "label": "github.com",
+                "url": "https://github.com/0xPlaygrounds/rig"
+              },
+              {
+                "label": "x.com (X)",
+                "url": "https://x.com/arcdotfun"
+              }
+            ]
+          },
+          {
+            "field": "supply",
+            "kind": "measured",
+            "status": "verified",
+            "text": "Mint authority and freeze authority are both none on the SPL mint.",
+            "sources": [
+              {
+                "label": "Solana RPC",
+                "url": null
+              },
+              {
+                "label": "Dexscreener",
+                "url": "https://dexscreener.com/solana/j3b6dvhes2y1cbmtvz5tcwxnegsjjdbukxduvdpoqms7"
+              }
+            ]
+          }
+        ],
+        "aiView": {
+          "text": "Tied to a public open-source library, unlike most rows, but no page read explains what the arc token does within Rig. Volume runs 1.2× liquidity.",
+          "sources": [
+            {
+              "label": "github.com",
+              "url": "https://github.com/0xPlaygrounds/rig"
+            },
+            {
+              "label": "Dexscreener",
+              "url": "https://dexscreener.com/solana/j3b6dvhes2y1cbmtvz5tcwxnegsjjdbukxduvdpoqms7"
+            }
+          ]
+        },
+        "gaps": [
+          {
+            "what": "token role",
+            "reason": "manifesto page returned HTTP 404; no page read explains the token's function",
+            "source": "https://www.arc.fun/manifesto.html"
+          }
+        ]
+      }
+    },
+    {
+      "rank": 9,
+      "id": "solana:CzLSujWBLFsSjncfkh59rUFqvafWcY5tzedWJSuypump",
+      "name": "Goatseus Maximus",
+      "symbol": "GOAT",
+      "url": "https://dexscreener.com/solana/9tb2ohu5p16bpbarqd3n27wnkf51ukfs8z1gzzldxvzw",
+      "valuation": {
+        "metric": "marketCap",
+        "value": 15482834,
+        "text": "$15.5M",
+        "label": null
+      },
+      "volume24h": {
+        "value": 2725206.11,
+        "text": "$2.7M",
+        "label": null
+      },
+      "liquidity": {
+        "value": 1536868.14,
+        "text": "$1.5M",
+        "label": null
+      },
+      "change24h": {
+        "value": 2.87,
+        "text": "+2.9%"
+      },
+      "price": {
+        "value": 0.01548,
+        "text": "$0.01548"
+      },
+      "pools": 1,
+      "comment": "The oldest pool dates to 2024-10-10, the day press says it was created on Pump.fun. The listed X is an AI account with no token details, and the site failed twice.",
+      "note": {
+        "status": "incomplete",
+        "launchLabel": null,
+        "measured": [
+          "24h volume $2.7M is 1.8× pooled liquidity $1.5M",
+          "1 qualifying pool on raydium, quoted in SOL",
+          "Oldest qualifying pool created 2024-10-10 (735.5 days before the read); pool creation, not a launch date",
+          "SPL token mint: mint authority none, freeze authority none, 6 decimals"
+        ],
+        "claims": [
+          {
+            "field": "provenance",
+            "kind": "third_party",
+            "status": "claimed_unverified",
+            "text": "2024 coverage (Cointelegraph) says GOAT was created on Pump.fun on Oct 10, 2024 by another user, and the AI account Truth Terminal promoted rather than launched it.",
+            "sources": []
+          },
+          {
+            "field": "supply",
+            "kind": "measured",
+            "status": "verified",
+            "text": "Mint authority and freeze authority are both none on the SPL mint.",
+            "sources": [
+              {
+                "label": "Solana RPC",
+                "url": null
+              },
+              {
+                "label": "Dexscreener",
+                "url": "https://dexscreener.com/solana/9tb2ohu5p16bpbarqd3n27wnkf51ukfs8z1gzzldxvzw"
+              }
+            ]
+          }
+        ],
+        "aiView": {
+          "text": "The oldest pool dates to 2024-10-10, the day press says it was created on Pump.fun. The listed X is an AI account with no token details, and the site failed twice.",
+          "sources": [
+            {
+              "label": "Dexscreener",
+              "url": "https://dexscreener.com/solana/9tb2ohu5p16bpbarqd3n27wnkf51ukfs8z1gzzldxvzw"
+            }
+          ]
+        },
+        "gaps": [
+          {
+            "what": "purpose",
+            "reason": "goatchan.xyz failed (ECONNRESET in the script read, socket closed on WebFetch)",
+            "source": "https://goatchan.xyz/"
+          },
+          {
+            "what": "mechanics",
+            "reason": "listed X (@truth_terminal) posts do not describe the token",
+            "source": "https://x.com/truth_terminal"
+          }
+        ]
+      }
+    },
+    {
+      "rank": 10,
+      "id": "solana:2j5SaS7xy776qCBpyPQbZjyQSAtKiFgrwjfErthnW2ZM",
+      "name": "Claudia",
+      "symbol": "CLAUDIA",
+      "url": "https://dexscreener.com/solana/fe7bpdycs74gqicuf14hwgumtopkv1d9mdyvx5btohfr",
+      "valuation": {
+        "metric": "marketCap",
+        "value": 5345020,
+        "text": "$5.3M",
+        "label": null
+      },
+      "volume24h": {
+        "value": 2514188.63,
+        "text": "$2.5M",
+        "label": null
+      },
+      "liquidity": {
+        "value": 313939.84,
+        "text": "$314K",
+        "label": null
+      },
+      "change24h": {
+        "value": 61,
+        "text": "+61.0%"
+      },
+      "price": {
+        "value": 0.005648,
+        "text": "$0.005648"
+      },
+      "pools": 1,
+      "comment": "The character site shows this contract, while the listed X calls itself a fan account routing fees to @anabology; who issued the token is not stated. Volume runs 8× liquidity in one pool.",
+      "note": {
+        "status": "complete",
+        "launchLabel": null,
+        "measured": [
+          "24h volume $2.5M is 8× pooled liquidity $314K",
+          "1 qualifying pool on pumpswap, quoted in SOL",
+          "Oldest qualifying pool created 2026-10-07 (9.3 days before the read); pool creation, not a launch date",
+          "Token-2022 mint: mint authority none, freeze authority none, 6 decimals"
+        ],
+        "claims": [
+          {
+            "field": "purpose",
+            "kind": "project_claim",
+            "status": "claimed_unverified",
+            "text": "claudia.gallery describes Claudia as an open AI character, singer of four music videos it says were made with Claude in Sep–Oct 2026.",
+            "sources": [
+              {
+                "label": "claudia.gallery",
+                "url": "https://claudia.gallery/"
+              }
+            ]
+          },
+          {
+            "field": "mechanics",
+            "kind": "project_claim",
+            "status": "claimed_unverified",
+            "text": "Its listed X calls itself a fan/art account and says all fees go to @anabology; useclaudia.xyz describes an AI influencer platform for agents.",
+            "sources": [
+              {
+                "label": "x.com (X)",
+                "url": "https://x.com/SolClaudia_"
+              },
+              {
+                "label": "useclaudia.xyz",
+                "url": "https://useclaudia.xyz/"
+              }
+            ]
+          },
+          {
+            "field": "supply",
+            "kind": "measured",
+            "status": "verified",
+            "text": "Token-2022 mint with mint authority and freeze authority none.",
+            "sources": [
+              {
+                "label": "Solana RPC",
+                "url": null
+              },
+              {
+                "label": "Dexscreener",
+                "url": "https://dexscreener.com/solana/fe7bpdycs74gqicuf14hwgumtopkv1d9mdyvx5btohfr"
+              }
+            ]
+          }
+        ],
+        "aiView": {
+          "text": "The character site shows this contract, while the listed X calls itself a fan account routing fees to @anabology; who issued the token is not stated. Volume runs 8× liquidity in one pool.",
+          "sources": [
+            {
+              "label": "claudia.gallery",
+              "url": "https://claudia.gallery/"
+            },
+            {
+              "label": "x.com (X)",
+              "url": "https://x.com/SolClaudia_"
+            },
+            {
+              "label": "Dexscreener",
+              "url": "https://dexscreener.com/solana/fe7bpdycs74gqicuf14hwgumtopkv1d9mdyvx5btohfr"
+            }
+          ]
+        },
+        "gaps": []
+      }
+    },
+    {
+      "rank": 11,
+      "id": "solana:MukLDtJ8Cx9DxLbeyLRSWPSposTMWuwHANbuaudpump",
+      "name": "OTC",
+      "symbol": "OTC",
+      "url": "https://dexscreener.com/solana/da4pm4xsdy4m9v4cgakkbvh1pw1ysctqqa5nekghukpt",
+      "valuation": {
+        "metric": "marketCap",
+        "value": 6125340,
+        "text": "$6.1M",
+        "label": null
+      },
+      "volume24h": {
+        "value": 1865396.12,
+        "text": "$1.9M",
+        "label": null
+      },
+      "liquidity": {
+        "value": 593267.88,
+        "text": "$593K",
+        "label": null
+      },
+      "change24h": {
+        "value": 44.62,
+        "text": "+44.6%"
+      },
+      "price": {
+        "value": 0.009218,
+        "text": "$0.009218"
+      },
+      "pools": 1,
+      "comment": "Neither the site nor the X shows this contract, so the link between the desks programme and the OTC token is not confirmed by the pages read; revenue figures are self-reported.",
+      "note": {
+        "status": "complete",
+        "launchLabel": null,
+        "measured": [
+          "24h volume $1.9M is 3.1× pooled liquidity $593K",
+          "1 qualifying pool on pumpswap, quoted in SOL",
+          "Oldest qualifying pool created 2026-08-28 (48.8 days before the read); pool creation, not a launch date",
+          "Token-2022 mint: mint authority none, freeze authority none, 6 decimals"
+        ],
+        "claims": [
+          {
+            "field": "purpose",
+            "kind": "project_claim",
+            "status": "claimed_unverified",
+            "text": "Describes OTC as 'the everything protocol' that builds whatever captures volume and revenue on Solana; its X says 'earn stocks, pre-ipo, and yield'.",
+            "sources": [
+              {
+                "label": "otcdesks.cash",
+                "url": "https://otcdesks.cash/"
+              },
+              {
+                "label": "x.com (X)",
+                "url": "https://x.com/otc_labs"
+              }
+            ]
+          },
+          {
+            "field": "mechanics",
+            "kind": "project_claim",
+            "status": "claimed_unverified",
+            "text": "Says every product sends a share of earnings to owners of minted 'desks'; its X reports 690.9 SOL paid to holders and 1.4M OTC bought back on Oct 15.",
+            "sources": [
+              {
+                "label": "otcdesks.cash",
+                "url": "https://otcdesks.cash/"
+              },
+              {
+                "label": "x.com (X)",
+                "url": "https://x.com/otc_labs"
+              }
+            ]
+          },
+          {
+            "field": "supply",
+            "kind": "measured",
+            "status": "verified",
+            "text": "Token-2022 mint with mint authority and freeze authority none.",
+            "sources": [
+              {
+                "label": "Solana RPC",
+                "url": null
+              },
+              {
+                "label": "Dexscreener",
+                "url": "https://dexscreener.com/solana/da4pm4xsdy4m9v4cgakkbvh1pw1ysctqqa5nekghukpt"
+              }
+            ]
+          }
+        ],
+        "aiView": {
+          "text": "Neither the site nor the X shows this contract, so the link between the desks programme and the OTC token is not confirmed by the pages read; revenue figures are self-reported.",
+          "sources": [
+            {
+              "label": "otcdesks.cash",
+              "url": "https://otcdesks.cash/"
+            },
+            {
+              "label": "x.com (X)",
+              "url": "https://x.com/otc_labs"
+            }
+          ]
+        },
+        "gaps": []
+      }
+    },
+    {
+      "rank": 12,
+      "id": "solana:ApZuxdpzMrbEYTGEzeY9afh5pj9d6qPRJCTgQYiipbKg",
+      "name": "CyberLeek",
+      "symbol": "CYBERLEEK",
+      "url": "https://dexscreener.com/solana/g8kgi7aupex8evr8vmkrth9skev5bietwc33ujaiimgh",
+      "valuation": {
+        "metric": "marketCap",
+        "value": 1920483,
+        "text": "$1.9M",
+        "label": null
+      },
+      "volume24h": {
+        "value": 1246943.55,
+        "text": "$1.2M",
+        "label": null
+      },
+      "liquidity": {
+        "value": 526051.51,
+        "text": "$526K",
+        "label": null
+      },
+      "change24h": {
+        "value": 66.52,
+        "text": "+66.5%"
+      },
+      "price": {
+        "value": 0.002631,
+        "text": "$0.002631"
+      },
+      "pools": 1,
+      "comment": "No website or socials are listed, and search found only same-name tokens on other contracts, so nothing identifies who is behind this mint. Volume runs 2.4× liquidity.",
+      "note": {
+        "status": "incomplete",
+        "launchLabel": null,
+        "measured": [
+          "24h volume $1.2M is 2.4× pooled liquidity $526K",
+          "1 qualifying pool on raydium, quoted in SOL",
+          "Oldest qualifying pool created 2026-08-15 (61.5 days before the read); pool creation, not a launch date",
+          "SPL token mint: mint authority none, freeze authority none, 9 decimals"
+        ],
+        "claims": [
+          {
+            "field": "risk",
+            "kind": "third_party",
+            "status": "claimed_unverified",
+            "text": "A web search found several 'CyberLeek' tokens on other contracts (DexPaprika) but no page for this one, so copycats share the name.",
+            "sources": []
+          },
+          {
+            "field": "supply",
+            "kind": "measured",
+            "status": "verified",
+            "text": "Mint authority and freeze authority are both none on the SPL mint.",
+            "sources": [
+              {
+                "label": "Solana RPC",
+                "url": null
+              },
+              {
+                "label": "Dexscreener",
+                "url": "https://dexscreener.com/solana/g8kgi7aupex8evr8vmkrth9skev5bietwc33ujaiimgh"
+              }
+            ]
+          }
+        ],
+        "aiView": {
+          "text": "No website or socials are listed, and search found only same-name tokens on other contracts, so nothing identifies who is behind this mint. Volume runs 2.4× liquidity.",
+          "sources": [
+            {
+              "label": "Dexscreener",
+              "url": "https://dexscreener.com/solana/g8kgi7aupex8evr8vmkrth9skev5bietwc33ujaiimgh"
+            }
+          ]
+        },
+        "gaps": [
+          {
+            "what": "purpose",
+            "reason": "no website or socials in the Dexscreener profile",
+            "source": null
+          },
+          {
+            "what": "mechanics",
+            "reason": "one web search found no page for this contract",
+            "source": null
+          }
+        ]
+      }
+    },
+    {
+      "rank": 13,
+      "id": "solana:Ai66LHZG9MCzg1WKdawwqduVAXpNDUuV8M3uyq5ppump",
+      "name": "Catecoin",
+      "symbol": "CATE",
+      "url": "https://dexscreener.com/solana/hmzvseemtzhhvznw9uwbag85hctmfnkbhzux16cy7ca3",
+      "valuation": {
+        "metric": "marketCap",
+        "value": 63178221,
+        "text": "$63.2M",
+        "label": null
+      },
+      "volume24h": {
+        "value": 1210413.99,
+        "text": "$1.2M",
+        "label": null
+      },
+      "liquidity": {
+        "value": 2935725.09,
+        "text": "$2.9M",
+        "label": null
+      },
+      "change24h": {
+        "value": 8.73,
+        "text": "+8.7%"
+      },
+      "price": {
+        "value": 0.06552,
+        "text": "$0.06552"
+      },
+      "pools": 1,
+      "comment": "Liquidity is about 2.5× daily volume, deep for a meme; the revoked mint checks out on chain, while the burned-LP claim is not measured.",
+      "note": {
+        "status": "complete",
+        "launchLabel": null,
+        "measured": [
+          "24h volume $1.2M is 0.4× pooled liquidity $2.9M",
+          "1 qualifying pool on pumpswap, quoted in SOL",
+          "Oldest qualifying pool created 2026-07-26 (81.7 days before the read); pool creation, not a launch date",
+          "Token-2022 mint: mint authority none, freeze authority none, 6 decimals"
+        ],
+        "claims": [
+          {
+            "field": "purpose",
+            "kind": "project_claim",
+            "status": "claimed_unverified",
+            "text": "Describes Catecoin as the 'cat sister of Dogecoin', a meme fair-launched on pump.fun with no presale or team allocation.",
+            "sources": [
+              {
+                "label": "cate.meme",
+                "url": "https://cate.meme/"
+              }
+            ]
+          },
+          {
+            "field": "mechanics",
+            "kind": "project_claim",
+            "status": "claimed_unverified",
+            "text": "Says the mint authority is revoked, the liquidity pool is burned, supply is fixed at one billion, and buy and sell tax are 0%.",
+            "sources": [
+              {
+                "label": "cate.meme",
+                "url": "https://cate.meme/"
+              }
+            ]
+          },
+          {
+            "field": "supply",
+            "kind": "measured",
+            "status": "verified",
+            "text": "Mint authority and freeze authority are none, consistent with the site's revoked-mint claim.",
+            "sources": [
+              {
+                "label": "Solana RPC",
+                "url": null
+              },
+              {
+                "label": "Dexscreener",
+                "url": "https://dexscreener.com/solana/hmzvseemtzhhvznw9uwbag85hctmfnkbhzux16cy7ca3"
+              }
+            ]
+          },
+          {
+            "field": "adoption",
+            "kind": "third_party",
+            "status": "claimed_unverified",
+            "text": "A Birdeye post shown in its X community claims over 140,000 holders.",
+            "sources": [
+              {
+                "label": "x.com (X)",
+                "url": "https://x.com/i/communities/2004330768022004131"
+              }
+            ]
+          }
+        ],
+        "aiView": {
+          "text": "Liquidity is about 2.5× daily volume, deep for a meme; the revoked mint checks out on chain, while the burned-LP claim is not measured.",
+          "sources": [
+            {
+              "label": "Dexscreener",
+              "url": "https://dexscreener.com/solana/hmzvseemtzhhvznw9uwbag85hctmfnkbhzux16cy7ca3"
+            },
+            {
+              "label": "cate.meme",
+              "url": "https://cate.meme/"
+            }
+          ]
+        },
+        "gaps": []
+      }
+    },
+    {
+      "rank": 14,
+      "id": "solana:HZ1JovNiVvGrGNiiYvEozEVgZ58xaU3RKwX8eACQBCt3",
+      "name": "Pyth Network",
+      "symbol": "PYTH",
+      "url": "https://dexscreener.com/solana/9n3dslrerzqp95dhxywft7xv8d8xngflauhtehqvaxac",
+      "valuation": {
+        "metric": "marketCap",
+        "value": 731156546,
+        "text": "$731M",
+        "label": null
+      },
+      "volume24h": {
+        "value": 1189224.8,
+        "text": "$1.2M",
+        "label": null
+      },
+      "liquidity": {
+        "value": 451484.43,
+        "text": "$451K",
+        "label": null
+      },
+      "change24h": {
+        "value": 5.04,
+        "text": "+5.0%"
+      },
+      "price": {
+        "value": 0.09284,
+        "text": "$0.09284"
+      },
+      "pools": 1,
+      "comment": "A large-cap token whose one qualifying Solana pool is small, so this scan sees only a slice of PYTH trading; the DAO buyback rule is stated policy, not measured here.",
+      "note": {
+        "status": "complete",
+        "launchLabel": null,
+        "measured": [
+          "24h volume $1.2M is 2.6× pooled liquidity $451K",
+          "1 qualifying pool on raydium, quoted in SOL",
+          "Oldest qualifying pool created 2024-08-15 (792.1 days before the read); pool creation, not a launch date",
+          "SPL token mint: mint authority none, freeze authority none, 6 decimals"
+        ],
+        "claims": [
+          {
+            "field": "purpose",
+            "kind": "project_claim",
+            "status": "claimed_unverified",
+            "text": "Describes Pyth as 'the price layer for global finance', delivering real-time market data across crypto, equities, FX and commodities.",
+            "sources": [
+              {
+                "label": "pyth.network",
+                "url": "https://www.pyth.network/"
+              },
+              {
+                "label": "x.com (X)",
+                "url": "https://x.com/PythNetwork"
+              }
+            ]
+          },
+          {
+            "field": "mechanics",
+            "kind": "project_claim",
+            "status": "claimed_unverified",
+            "text": "Says over 130 publishers supply data through Pyth Pro APIs; its X says under 'The 100% Rule' every dollar the DAO receives buys PYTH monthly.",
+            "sources": [
+              {
+                "label": "pyth.network",
+                "url": "https://www.pyth.network/"
+              },
+              {
+                "label": "x.com (X)",
+                "url": "https://x.com/PythNetwork"
+              }
+            ]
+          },
+          {
+            "field": "supply",
+            "kind": "measured",
+            "status": "verified",
+            "text": "Mint authority and freeze authority are both none on the SPL mint.",
+            "sources": [
+              {
+                "label": "Solana RPC",
+                "url": null
+              },
+              {
+                "label": "Dexscreener",
+                "url": "https://dexscreener.com/solana/9n3dslrerzqp95dhxywft7xv8d8xngflauhtehqvaxac"
+              }
+            ]
+          }
+        ],
+        "aiView": {
+          "text": "A large-cap token whose one qualifying Solana pool is small, so this scan sees only a slice of PYTH trading; the DAO buyback rule is stated policy, not measured here.",
+          "sources": [
+            {
+              "label": "Dexscreener",
+              "url": "https://dexscreener.com/solana/9n3dslrerzqp95dhxywft7xv8d8xngflauhtehqvaxac"
+            },
+            {
+              "label": "x.com (X)",
+              "url": "https://x.com/PythNetwork"
+            }
+          ]
+        },
+        "gaps": []
+      }
+    },
+    {
+      "rank": 15,
+      "id": "solana:Hg5Ja55T5wESq4vyFoiVCMeHXtGyVA69X2UHq8hgpump",
+      "name": "baton",
+      "symbol": "baton",
+      "url": "https://dexscreener.com/solana/cb7zrgplhji3th7htxykeqbxvnjppetvckxuwakbuhxu",
+      "valuation": {
+        "metric": "marketCap",
+        "value": 9855147,
+        "text": "$9.9M",
+        "label": null
+      },
+      "volume24h": {
+        "value": 1135736.36,
+        "text": "$1.1M",
+        "label": null
+      },
+      "liquidity": {
+        "value": 598654.41,
+        "text": "$599K",
+        "label": null
+      },
+      "change24h": {
+        "value": 15.56,
+        "text": "+15.6%"
+      },
+      "price": {
+        "value": 0.009867,
+        "text": "$0.009867"
+      },
+      "pools": 1,
+      "comment": "Its only qualifying pool is quoted in PUMP rather than SOL, so its price also moves with PUMP. The dividend total is self-reported.",
+      "note": {
+        "status": "complete",
+        "launchLabel": null,
+        "measured": [
+          "24h volume $1.1M is 1.9× pooled liquidity $599K",
+          "1 qualifying pool on pumpswap, quoted in PUMP",
+          "Oldest qualifying pool created 2026-09-09 (36.5 days before the read); pool creation, not a launch date",
+          "Token-2022 mint: mint authority none, freeze authority none, 6 decimals"
+        ],
+        "claims": [
+          {
+            "field": "purpose",
+            "kind": "project_claim",
+            "status": "claimed_unverified",
+            "text": "Describes Baton as a community meme named for pump.fun's original name, 'the first $PUMP-paired meme', not affiliated with pump.fun.",
+            "sources": [
+              {
+                "label": "baton.meme",
+                "url": "https://www.baton.meme/"
+              },
+              {
+                "label": "x.com (X)",
+                "url": "https://x.com/baton_meme"
+              }
+            ]
+          },
+          {
+            "field": "mechanics",
+            "kind": "project_claim",
+            "status": "claimed_unverified",
+            "text": "Its X says it carries a 1% tax and claims $518K in holder dividends, 'number one holder rewards on Pumpfun'.",
+            "sources": [
+              {
+                "label": "x.com (X)",
+                "url": "https://x.com/baton_meme"
+              }
+            ]
+          },
+          {
+            "field": "supply",
+            "kind": "measured",
+            "status": "verified",
+            "text": "Token-2022 mint with mint authority and freeze authority none.",
+            "sources": [
+              {
+                "label": "Solana RPC",
+                "url": null
+              },
+              {
+                "label": "Dexscreener",
+                "url": "https://dexscreener.com/solana/cb7zrgplhji3th7htxykeqbxvnjppetvckxuwakbuhxu"
+              }
+            ]
+          }
+        ],
+        "aiView": {
+          "text": "Its only qualifying pool is quoted in PUMP rather than SOL, so its price also moves with PUMP. The dividend total is self-reported.",
+          "sources": [
+            {
+              "label": "Dexscreener",
+              "url": "https://dexscreener.com/solana/cb7zrgplhji3th7htxykeqbxvnjppetvckxuwakbuhxu"
+            },
+            {
+              "label": "x.com (X)",
+              "url": "https://x.com/baton_meme"
+            }
+          ]
+        },
+        "gaps": []
+      }
+    },
+    {
+      "rank": 16,
+      "id": "solana:HuAXPyDWDaMYFKuwQHpqL1oPnj93zdzWmtvFGzCeCUa7",
+      "name": "Nullmask",
+      "symbol": "MASK",
+      "url": "https://dexscreener.com/solana/4gwh5sakgzoukhhj4rh3p5fmpu6ypuaexv6fah5jqyfm",
+      "valuation": {
+        "metric": "marketCap",
+        "value": 35121509,
+        "text": "$35.1M",
+        "label": null
+      },
+      "volume24h": {
+        "value": 1131288.69,
+        "text": "$1.1M",
+        "label": null
+      },
+      "liquidity": {
+        "value": 708620.9,
+        "text": "$709K",
+        "label": null
+      },
+      "change24h": {
+        "value": 10.08,
+        "text": "+10.1%"
+      },
+      "price": {
+        "value": 0.03544,
+        "text": "$0.03544"
+      },
+      "pools": 1,
+      "comment": "The site names Ethereum and Base and the X BNB Chain, yet this token trades on Solana in a ZEC-quoted pool; the burn is self-reported with a cited transaction, not checked here.",
+      "note": {
+        "status": "complete",
+        "launchLabel": null,
+        "measured": [
+          "24h volume $1.1M is 1.6× pooled liquidity $709K",
+          "1 qualifying pool on raydium, quoted in ZEC",
+          "Oldest qualifying pool created 2026-09-23 (22.9 days before the read); pool creation, not a launch date",
+          "Token-2022 mint: mint authority none, freeze authority none, 6 decimals"
+        ],
+        "claims": [
+          {
+            "field": "purpose",
+            "kind": "project_claim",
+            "status": "claimed_unverified",
+            "text": "Describes NullMask as a private 'VPN for crypto' for confidential transfers, swaps and bridging from any wallet, built by core $ZEC contributors.",
+            "sources": [
+              {
+                "label": "nullmask.io",
+                "url": "https://nullmask.io/"
+              },
+              {
+                "label": "x.com (X)",
+                "url": "https://x.com/NullMaskio"
+              }
+            ]
+          },
+          {
+            "field": "mechanics",
+            "kind": "project_claim",
+            "status": "claimed_unverified",
+            "text": "Its X calls it a ZK privacy protocol and says $30K of 24h revenue was swapped for MASK and burned, with daily buybacks to continue.",
+            "sources": [
+              {
+                "label": "x.com (X)",
+                "url": "https://x.com/NullMaskio"
+              }
+            ]
+          },
+          {
+            "field": "supply",
+            "kind": "measured",
+            "status": "verified",
+            "text": "Token-2022 mint with mint authority and freeze authority none.",
+            "sources": [
+              {
+                "label": "Solana RPC",
+                "url": null
+              },
+              {
+                "label": "Dexscreener",
+                "url": "https://dexscreener.com/solana/4gwh5sakgzoukhhj4rh3p5fmpu6ypuaexv6fah5jqyfm"
+              }
+            ]
+          }
+        ],
+        "aiView": {
+          "text": "The site names Ethereum and Base and the X BNB Chain, yet this token trades on Solana in a ZEC-quoted pool; the burn is self-reported with a cited transaction, not checked here.",
+          "sources": [
+            {
+              "label": "nullmask.io",
+              "url": "https://nullmask.io/"
+            },
+            {
+              "label": "x.com (X)",
+              "url": "https://x.com/NullMaskio"
+            },
+            {
+              "label": "Dexscreener",
+              "url": "https://dexscreener.com/solana/4gwh5sakgzoukhhj4rh3p5fmpu6ypuaexv6fah5jqyfm"
+            }
+          ]
+        },
+        "gaps": []
+      }
+    },
+    {
+      "rank": 17,
+      "id": "solana:CWZ6BsdnjkDVTGkmL6bGbJXXig6ceef12KvyGQW14cMt",
+      "name": "AntFun BlockChain",
+      "symbol": "ANTFUN",
+      "url": "https://dexscreener.com/solana/54vp27ulaw4wnlo5n7r4fcc6zlamoqc28xbarjss4euj",
+      "valuation": {
+        "metric": "marketCap",
+        "value": 18989029,
+        "text": "$19.0M",
+        "label": null
+      },
+      "volume24h": {
+        "value": 1104227.56,
+        "text": "$1.1M",
+        "label": null
+      },
+      "liquidity": {
+        "value": 12440521.5,
+        "text": "$12.4M",
+        "label": null
+      },
+      "change24h": {
+        "value": 2.92,
+        "text": "+2.9%"
+      },
+      "price": {
+        "value": 0.01005,
+        "text": "$0.01005"
+      },
+      "pools": 1,
+      "comment": "Liquidity is about 11× daily volume in one USDT pool, unusual depth for its size; neither page read shows this contract or the token's role in the wallet.",
+      "note": {
+        "status": "complete",
+        "launchLabel": null,
+        "measured": [
+          "24h volume $1.1M is 0.1× pooled liquidity $12.4M",
+          "1 qualifying pool on meteora, quoted in USDT",
+          "Oldest qualifying pool created 2026-07-10 (98.1 days before the read); pool creation, not a launch date",
+          "SPL token mint: mint authority none, freeze authority none, 6 decimals"
+        ],
+        "claims": [
+          {
+            "field": "purpose",
+            "kind": "project_claim",
+            "status": "claimed_unverified",
+            "text": "Its X describes AntFun as a Web3 wallet focused on social and AI features; the site calls it 'a human social network for the post-AI world'.",
+            "sources": [
+              {
+                "label": "x.com (X)",
+                "url": "https://x.com/ant_fun_trade"
+              },
+              {
+                "label": "ant.fun",
+                "url": "https://ant.fun/"
+              }
+            ]
+          },
+          {
+            "field": "mechanics",
+            "kind": "project_claim",
+            "status": "claimed_unverified",
+            "text": "Says it offers standard multi-chain wallet functionality, and its X announces a token-listing vote with Bingan running Oct 16 to Nov 26.",
+            "sources": [
+              {
+                "label": "x.com (X)",
+                "url": "https://x.com/ant_fun_trade"
+              }
+            ]
+          },
+          {
+            "field": "supply",
+            "kind": "measured",
+            "status": "verified",
+            "text": "Mint authority and freeze authority are both none on the SPL mint.",
+            "sources": [
+              {
+                "label": "Solana RPC",
+                "url": null
+              },
+              {
+                "label": "Dexscreener",
+                "url": "https://dexscreener.com/solana/54vp27ulaw4wnlo5n7r4fcc6zlamoqc28xbarjss4euj"
+              }
+            ]
+          }
+        ],
+        "aiView": {
+          "text": "Liquidity is about 11× daily volume in one USDT pool, unusual depth for its size; neither page read shows this contract or the token's role in the wallet.",
+          "sources": [
+            {
+              "label": "Dexscreener",
+              "url": "https://dexscreener.com/solana/54vp27ulaw4wnlo5n7r4fcc6zlamoqc28xbarjss4euj"
+            },
+            {
+              "label": "ant.fun",
+              "url": "https://ant.fun/"
+            },
+            {
+              "label": "x.com (X)",
+              "url": "https://x.com/ant_fun_trade"
+            }
+          ]
+        },
+        "gaps": [
+          {
+            "what": "token role",
+            "reason": "site body was JavaScript-only; neither page shows the contract or explains what the token does",
+            "source": "https://ant.fun/"
+          }
+        ]
+      }
+    },
+    {
+      "rank": 18,
+      "id": "solana:9cRCn9rGT8V2imeM2BaKs13yhMEais3ruM3rPvTGpump",
+      "name": "The Black Bull",
+      "symbol": "ANSEM",
+      "url": "https://dexscreener.com/solana/6e7v9eegchw997t72mxgwwjipz6gjyzf8nvjkzt1rvpn",
+      "valuation": {
+        "metric": "marketCap",
+        "value": 112948009,
+        "text": "$113M",
+        "label": null
+      },
+      "volume24h": {
+        "value": 1050669.39,
+        "text": "$1.1M",
+        "label": null
+      },
+      "liquidity": {
+        "value": 603427.65,
+        "text": "$603K",
+        "label": null
+      },
+      "change24h": {
+        "value": 4.58,
+        "text": "+4.6%"
+      },
+      "price": {
+        "value": 0.1129,
+        "text": "$0.1129"
+      },
+      "pools": 1,
+      "comment": "A nine-figure meme whose one qualifying pool holds $603K; its own site was JavaScript-only, so the 'index layer' description comes only from a MEXC article.",
+      "note": {
+        "status": "partial",
+        "launchLabel": null,
+        "measured": [
+          "24h volume $1.1M is 1.7× pooled liquidity $603K",
+          "1 qualifying pool on meteora, quoted in SOL",
+          "Oldest qualifying pool created 2026-06-28 (110.1 days before the read); pool creation, not a launch date",
+          "Token-2022 mint: mint authority none, freeze authority none, 6 decimals"
+        ],
+        "claims": [
+          {
+            "field": "purpose",
+            "kind": "project_claim",
+            "status": "claimed_unverified",
+            "text": "Its listed X presents $ANSEM as a meme ('coldest bull breathing') and posts slogans such as 'all time highs by christmas'.",
+            "sources": [
+              {
+                "label": "x.com (X)",
+                "url": "https://x.com/blackbullsol"
+              }
+            ]
+          },
+          {
+            "field": "provenance",
+            "kind": "third_party",
+            "status": "claimed_unverified",
+            "text": "A MEXC article says an anonymous developer created it on Pump.fun and airdropped supply to influencer Ansem, who did not create it.",
+            "sources": [
+              {
+                "label": "mexc.com (webfetch)",
+                "url": "https://www.mexc.com/crypto-pulse/article/what-is-the-black-bull-how-it-became-one-of-solana-s-hottest-meme-coins-124996"
+              }
+            ]
+          },
+          {
+            "field": "mechanics",
+            "kind": "third_party",
+            "status": "claimed_unverified",
+            "text": "The same article says Ansem pledged weekly random airdrops of creator fees, and quotes the site as 'a liquidity and index layer for creator ecosystems'.",
+            "sources": [
+              {
+                "label": "mexc.com (webfetch)",
+                "url": "https://www.mexc.com/crypto-pulse/article/what-is-the-black-bull-how-it-became-one-of-solana-s-hottest-meme-coins-124996"
+              }
+            ]
+          },
+          {
+            "field": "supply",
+            "kind": "measured",
+            "status": "verified",
+            "text": "Token-2022 mint with mint authority and freeze authority none.",
+            "sources": [
+              {
+                "label": "Solana RPC",
+                "url": null
+              },
+              {
+                "label": "Dexscreener",
+                "url": "https://dexscreener.com/solana/6e7v9eegchw997t72mxgwwjipz6gjyzf8nvjkzt1rvpn"
+              }
+            ]
+          }
+        ],
+        "aiView": {
+          "text": "A nine-figure meme whose one qualifying pool holds $603K; its own site was JavaScript-only, so the 'index layer' description comes only from a MEXC article.",
+          "sources": [
+            {
+              "label": "Dexscreener",
+              "url": "https://dexscreener.com/solana/6e7v9eegchw997t72mxgwwjipz6gjyzf8nvjkzt1rvpn"
+            },
+            {
+              "label": "mexc.com (webfetch)",
+              "url": "https://www.mexc.com/crypto-pulse/article/what-is-the-black-bull-how-it-became-one-of-solana-s-hottest-meme-coins-124996"
+            }
+          ]
+        },
+        "gaps": [
+          {
+            "what": "mechanics",
+            "reason": "no website in the Dexscreener profile; blackbullsol.com returned only a page title",
+            "source": "https://www.blackbullsol.com/"
+          }
+        ]
+      }
+    },
+    {
+      "rank": 19,
+      "id": "solana:GTBxUiw6wJdmmkCGZgRHLyYxqu1vG4KtRpeox6yDpump",
+      "name": "Jean Phil",
+      "symbol": "JEANPHIL",
+      "url": "https://dexscreener.com/solana/4r8cimnjwdnoes3fqi1ccpfjygpxazahawphrn3rzenj",
+      "valuation": {
+        "metric": "marketCap",
+        "value": 6760063,
+        "text": "$6.8M",
+        "label": null
+      },
+      "volume24h": {
+        "value": 1027944.81,
+        "text": "$1.0M",
+        "label": null
+      },
+      "liquidity": {
+        "value": 415932.29,
+        "text": "$416K",
+        "label": null
+      },
+      "change24h": {
+        "value": 13.05,
+        "text": "+13.1%"
+      },
+      "price": {
+        "value": 0.006972,
+        "text": "$0.006972"
+      },
+      "pools": 1,
+      "comment": "A creator-launched character token in a pool about 27 days old; 'no team allocation' can't be checked from this run's reads, and the listed Instagram was reported suspended.",
+      "note": {
+        "status": "complete",
+        "launchLabel": null,
+        "measured": [
+          "24h volume $1.0M is 2.5× pooled liquidity $416K",
+          "1 qualifying pool on pumpswap, quoted in SOL",
+          "Oldest qualifying pool created 2026-09-19 (26.6 days before the read); pool creation, not a launch date",
+          "Token-2022 mint: mint authority none, freeze authority none, 6 decimals"
+        ],
+        "claims": [
+          {
+            "field": "purpose",
+            "kind": "project_claim",
+            "status": "claimed_unverified",
+            "text": "Describes $JEANPHIL as the token of Jean Phil, a Paris 'gentleman-boxer' internet character, launched by the creator himself.",
+            "sources": [
+              {
+                "label": "jeanphilmadame.com",
+                "url": "https://jeanphilmadame.com/"
+              }
+            ]
+          },
+          {
+            "field": "mechanics",
+            "kind": "project_claim",
+            "status": "claimed_unverified",
+            "text": "Says it was a fair launch on Solana with no team allocation.",
+            "sources": [
+              {
+                "label": "jeanphilmadame.com",
+                "url": "https://jeanphilmadame.com/"
+              }
+            ]
+          },
+          {
+            "field": "risk",
+            "kind": "project_claim",
+            "status": "claimed_unverified",
+            "text": "Its X says the linked Instagram account was temporarily suspended after many reports.",
+            "sources": [
+              {
+                "label": "x.com (X)",
+                "url": "https://x.com/JeanPhilMadame"
+              }
+            ]
+          },
+          {
+            "field": "supply",
+            "kind": "measured",
+            "status": "verified",
+            "text": "Token-2022 mint with mint authority and freeze authority none.",
+            "sources": [
+              {
+                "label": "Solana RPC",
+                "url": null
+              },
+              {
+                "label": "Dexscreener",
+                "url": "https://dexscreener.com/solana/4r8cimnjwdnoes3fqi1ccpfjygpxazahawphrn3rzenj"
+              }
+            ]
+          }
+        ],
+        "aiView": {
+          "text": "A creator-launched character token in a pool about 27 days old; 'no team allocation' can't be checked from this run's reads, and the listed Instagram was reported suspended.",
+          "sources": [
+            {
+              "label": "Dexscreener",
+              "url": "https://dexscreener.com/solana/4r8cimnjwdnoes3fqi1ccpfjygpxazahawphrn3rzenj"
+            },
+            {
+              "label": "jeanphilmadame.com",
+              "url": "https://jeanphilmadame.com/"
+            },
+            {
+              "label": "x.com (X)",
+              "url": "https://x.com/JeanPhilMadame"
+            }
+          ]
+        },
+        "gaps": []
+      }
+    }
+  ]
+}

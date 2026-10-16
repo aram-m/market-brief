@@ -1,0 +1,822 @@
+{
+  "schemaVersion": 1,
+  "scope": "rh",
+  "stage": "final",
+  "title": "Robinhood market brief",
+  "chainLabel": "Robinhood",
+  "runId": "2026-10-16T131120-claude-daily",
+  "producer": "claude-local",
+  "timezone": "Asia/Yerevan",
+  "discoveryUrl": "https://dexscreener.com/robinhood?rankBy=trendingScoreH6&order=desc&minMarketCap=1000000&minAge=72&min24HVol=1000000&profile=1",
+  "discoveryAt": "2026-10-16T09:12:14.808Z",
+  "metricsAt": "2026-10-16T09:12:32.161Z",
+  "researchCompletedAt": "2026-10-16T09:20:00.000Z",
+  "dateLabel": "16 Oct 2026",
+  "timeLabels": {
+    "discovery": "13:12",
+    "metrics": "13:12",
+    "research": "13:20"
+  },
+  "coverage": {
+    "displayed": 8,
+    "hidden": 2,
+    "discoveredPools": 18,
+    "resolvedPools": 18,
+    "marketStatus": "complete"
+  },
+  "research": {
+    "complete": 5,
+    "partial": 2,
+    "incomplete": 1
+  },
+  "comparison": {
+    "prior": null,
+    "newlySurfaced": [],
+    "noLongerQualifying": [],
+    "reason": "no compatible prior Claude scan (same scope, discovery URL and schema) is available"
+  },
+  "materialLabels": [],
+  "pageSize": 12,
+  "disclaimer": "Not financial advice. Market data from Dexscreener; project statements are the projects' own claims unless marked verified.",
+  "rows": [
+    {
+      "rank": 1,
+      "id": "robinhood:0x39dbed3a2bd333467115de45665cc57f813c4571",
+      "name": "Pons",
+      "symbol": "PONS",
+      "url": "https://dexscreener.com/robinhood/0x486435a1f76cd58193f854c6e6213cd05fd58d637865d02065ff558b387fa6ea",
+      "valuation": {
+        "metric": "marketCap",
+        "value": 229362491,
+        "text": "$229M",
+        "label": null
+      },
+      "volume24h": {
+        "value": 19130440.81,
+        "text": "$19.1M",
+        "label": null
+      },
+      "liquidity": {
+        "value": 6797357.84,
+        "text": "$6.8M",
+        "label": null
+      },
+      "change24h": {
+        "value": 8.61,
+        "text": "+8.6%"
+      },
+      "price": {
+        "value": 0.3395,
+        "text": "$0.3395"
+      },
+      "pools": 5,
+      "comment": "Volume runs 2.8× liquidity across five pools, and FDV ranges $229M–$339M between pools, so the valuation depends on which pool is read. PONS is also the quote asset in an AI pool not counted here.",
+      "note": {
+        "status": "complete",
+        "launchLabel": null,
+        "measured": [
+          "24h volume $19.1M is 2.8× pooled liquidity $6.8M",
+          "5 qualifying pools on uniswap, ramses, metric, quoted in USDG, WETH",
+          "Oldest qualifying pool created 2026-07-16 (91.7 days before the read); pool creation, not a launch date",
+          "FDV differs across pools: $229M to $339M",
+          "Also the quote token in 1 pool credited to AI ($2.3M 24h volume, not counted here)"
+        ],
+        "claims": [
+          {
+            "field": "purpose",
+            "kind": "project_claim",
+            "status": "claimed_unverified",
+            "text": "Describes Pons as the token launchpad on Robinhood Chain: launch a token in two steps and follow each launch as it raises, graduates and lists.",
+            "sources": [
+              {
+                "label": "ponsfamily.com",
+                "url": "https://ponsfamily.com/launchpad"
+              }
+            ]
+          },
+          {
+            "field": "mechanics",
+            "kind": "project_claim",
+            "status": "claimed_unverified",
+            "text": "Says new tokens trade on a bonding curve until they graduate; its X says launches pair with supported assets on Uniswap v4 and earn creator fees.",
+            "sources": [
+              {
+                "label": "ponsfamily.com",
+                "url": "https://ponsfamily.com/launchpad"
+              },
+              {
+                "label": "x.com (X)",
+                "url": "https://x.com/ponsdotfamily"
+              }
+            ]
+          },
+          {
+            "field": "adoption",
+            "kind": "project_claim",
+            "status": "claimed_unverified",
+            "text": "Its X claims Pons accounts for about 16.7% of Robinhood Chain's cumulative DEX volume.",
+            "sources": [
+              {
+                "label": "x.com (X)",
+                "url": "https://x.com/ponsdotfamily"
+              }
+            ]
+          },
+          {
+            "field": "risk",
+            "kind": "project_claim",
+            "status": "claimed_unverified",
+            "text": "The site says Pons is noncustodial, tokens are issued by their creators, and Pons is not affiliated with Robinhood Markets.",
+            "sources": [
+              {
+                "label": "ponsfamily.com",
+                "url": "https://ponsfamily.com/launchpad"
+              }
+            ]
+          }
+        ],
+        "aiView": {
+          "text": "Volume runs 2.8× liquidity across five pools, and FDV ranges $229M–$339M between pools, so the valuation depends on which pool is read. PONS is also the quote asset in an AI pool not counted here.",
+          "sources": [
+            {
+              "label": "Dexscreener",
+              "url": "https://dexscreener.com/robinhood/0x486435a1f76cd58193f854c6e6213cd05fd58d637865d02065ff558b387fa6ea"
+            }
+          ]
+        },
+        "gaps": []
+      }
+    },
+    {
+      "rank": 2,
+      "id": "robinhood:0x020bfc650a365f8bb26819deaabf3e21291018b4",
+      "name": "Cash Cat",
+      "symbol": "CASHCAT",
+      "url": "https://dexscreener.com/robinhood/0xd42a491087a15e5afd51feb3606066cc152d2b09",
+      "valuation": {
+        "metric": "marketCap",
+        "value": 117965673,
+        "text": "$118M",
+        "label": null
+      },
+      "volume24h": {
+        "value": 6093946.51,
+        "text": "$6.1M",
+        "label": null
+      },
+      "liquidity": {
+        "value": 2062752.47,
+        "text": "$2.1M",
+        "label": null
+      },
+      "change24h": {
+        "value": 8.34,
+        "text": "+8.3%"
+      },
+      "price": {
+        "value": 0.1194,
+        "text": "$0.1194"
+      },
+      "pools": 2,
+      "comment": "Volume runs 3× liquidity across two pools. The buyback-and-burn depends on letscash.fun activity, and that page itself reported degraded Robinhood Chain nodes at read time; the burn flow is not measured.",
+      "note": {
+        "status": "complete",
+        "launchLabel": null,
+        "measured": [
+          "24h volume $6.1M is 3× pooled liquidity $2.1M",
+          "2 qualifying pools on uniswap, quoted in WETH, USDG",
+          "Oldest qualifying pool created 2026-07-01 (106.6 days before the read); pool creation, not a launch date"
+        ],
+        "claims": [
+          {
+            "field": "purpose",
+            "kind": "project_claim",
+            "status": "claimed_unverified",
+            "text": "Describes $CASHCAT as a memecoin honoring Robinhood's original name, Cash Cat, native to Robinhood Chain.",
+            "sources": [
+              {
+                "label": "cashcat.cc",
+                "url": "https://cashcat.cc/"
+              }
+            ]
+          },
+          {
+            "field": "mechanics",
+            "kind": "project_claim",
+            "status": "claimed_unverified",
+            "text": "letscash.fun, linked from its site, says launched coins get permanently locked pools and the platform's cut buys back and burns CASHCAT.",
+            "sources": [
+              {
+                "label": "letscash.fun",
+                "url": "https://www.letscash.fun/"
+              }
+            ]
+          },
+          {
+            "field": "adoption",
+            "kind": "project_claim",
+            "status": "claimed_unverified",
+            "text": "Its X says CASHCAT was listed in the Robinhood app on Aug 6 and that perpetual futures went live on Coinbase and Deribit.",
+            "sources": [
+              {
+                "label": "x.com (X)",
+                "url": "https://x.com/cashcat_token"
+              }
+            ]
+          }
+        ],
+        "aiView": {
+          "text": "Volume runs 3× liquidity across two pools. The buyback-and-burn depends on letscash.fun activity, and that page itself reported degraded Robinhood Chain nodes at read time; the burn flow is not measured.",
+          "sources": [
+            {
+              "label": "Dexscreener",
+              "url": "https://dexscreener.com/robinhood/0xd42a491087a15e5afd51feb3606066cc152d2b09"
+            },
+            {
+              "label": "letscash.fun",
+              "url": "https://www.letscash.fun/"
+            }
+          ]
+        },
+        "gaps": []
+      }
+    },
+    {
+      "rank": 3,
+      "id": "robinhood:0x2e8c31162b855a2ffa90f6f8634643ad6f111e18",
+      "name": "Artificial Inu",
+      "symbol": "AI",
+      "url": "https://dexscreener.com/robinhood/0x230bc4a0fb5fb7ab27f6e72350dfa3f2489b0cdbaf34f0189d68672086ccb919",
+      "valuation": {
+        "metric": "marketCap",
+        "value": 108638396,
+        "text": "$109M",
+        "label": null
+      },
+      "volume24h": {
+        "value": 4561996.02,
+        "text": "$4.6M",
+        "label": null
+      },
+      "liquidity": {
+        "value": 1270699.96,
+        "text": "$1.3M",
+        "label": null
+      },
+      "change24h": {
+        "value": 21.61,
+        "text": "+21.6%"
+      },
+      "price": {
+        "value": 0.1098,
+        "text": "$0.1098"
+      },
+      "pools": 2,
+      "comment": "The qualifying pools are quoted in PONS and USDG, so the NVDA pairing the site centres on is not among the pools this scan measured. Volume runs 3.6× liquidity.",
+      "note": {
+        "status": "complete",
+        "launchLabel": null,
+        "measured": [
+          "24h volume $4.6M is 3.6× pooled liquidity $1.3M",
+          "2 qualifying pools on uniswap, quoted in PONS, USDG",
+          "Oldest qualifying pool created 2026-09-04 (42.3 days before the read); pool creation, not a launch date"
+        ],
+        "claims": [
+          {
+            "field": "purpose",
+            "kind": "project_claim",
+            "status": "claimed_unverified",
+            "text": "Describes Artificial Inu as 'the onchain $NVDA community': a memecoin paired with tokenized NVDA stock.",
+            "sources": [
+              {
+                "label": "artificialinu.com",
+                "url": "https://artificialinu.com/"
+              },
+              {
+                "label": "x.com (X)",
+                "url": "https://x.com/artificiallyinu"
+              }
+            ]
+          },
+          {
+            "field": "mechanics",
+            "kind": "project_claim",
+            "status": "claimed_unverified",
+            "text": "Says every trade routes a cut into a community Vault holding NVDA, and fees collected in $AI are burned or locked permanently.",
+            "sources": [
+              {
+                "label": "artificialinu.com",
+                "url": "https://artificialinu.com/"
+              }
+            ]
+          },
+          {
+            "field": "adoption",
+            "kind": "project_claim",
+            "status": "claimed_unverified",
+            "text": "The site shows a Vault of 1,264.28 NVDA and 10,512 NVDA in liquidity pools; these are the site's figures.",
+            "sources": [
+              {
+                "label": "artificialinu.com",
+                "url": "https://artificialinu.com/"
+              }
+            ]
+          }
+        ],
+        "aiView": {
+          "text": "The qualifying pools are quoted in PONS and USDG, so the NVDA pairing the site centres on is not among the pools this scan measured. Volume runs 3.6× liquidity.",
+          "sources": [
+            {
+              "label": "Dexscreener",
+              "url": "https://dexscreener.com/robinhood/0x230bc4a0fb5fb7ab27f6e72350dfa3f2489b0cdbaf34f0189d68672086ccb919"
+            },
+            {
+              "label": "artificialinu.com",
+              "url": "https://artificialinu.com/"
+            }
+          ]
+        },
+        "gaps": []
+      }
+    },
+    {
+      "rank": 4,
+      "id": "robinhood:0x94641b97010608c3827fb058074889f19868ff33",
+      "name": "Commander Vrax",
+      "symbol": "VRAX",
+      "url": "https://dexscreener.com/robinhood/0x435ea42b2792a22de296bee4e8013f4fa102f0cc04983443ff79549f847db577",
+      "valuation": {
+        "metric": "marketCap",
+        "value": 6704857,
+        "text": "$6.7M",
+        "label": null
+      },
+      "volume24h": {
+        "value": 2659426.96,
+        "text": "$2.7M",
+        "label": null
+      },
+      "liquidity": {
+        "value": 590554.95,
+        "text": "$591K",
+        "label": null
+      },
+      "change24h": {
+        "value": -4.06,
+        "text": "-4.1%"
+      },
+      "price": {
+        "value": 0.006704,
+        "text": "$0.006704"
+      },
+      "pools": 2,
+      "comment": "Volume runs 4.5× liquidity in pools about 16 days old, and the only listed channel is an October-2026 parody account created after a suspension. No page describes token mechanics.",
+      "note": {
+        "status": "partial",
+        "launchLabel": null,
+        "measured": [
+          "24h volume $2.7M is 4.5× pooled liquidity $591K",
+          "2 qualifying pools on uniswap, quoted in USDG",
+          "Oldest qualifying pool created 2026-09-29 (16.4 days before the read); pool creation, not a launch date"
+        ],
+        "claims": [
+          {
+            "field": "purpose",
+            "kind": "project_claim",
+            "status": "claimed_unverified",
+            "text": "Its listed X is a self-described parody account ('Not actually Commander Vrax') that posts the contract and character memes.",
+            "sources": [
+              {
+                "label": "x.com (X)",
+                "url": "https://x.com/1commandervrax"
+              }
+            ]
+          },
+          {
+            "field": "provenance",
+            "kind": "project_claim",
+            "status": "claimed_unverified",
+            "text": "Says the account replaced @VraxOnRobinhood, which it says was suspended after impersonation reports.",
+            "sources": [
+              {
+                "label": "x.com (X)",
+                "url": "https://x.com/1commandervrax"
+              }
+            ]
+          },
+          {
+            "field": "purpose",
+            "kind": "third_party",
+            "status": "claimed_unverified",
+            "text": "Search results (Phantom, CoinGape, DexTools) describe a Robinhood Chain cat-character memecoin; listings disagree on market cap.",
+            "sources": []
+          }
+        ],
+        "aiView": {
+          "text": "Volume runs 4.5× liquidity in pools about 16 days old, and the only listed channel is an October-2026 parody account created after a suspension. No page describes token mechanics.",
+          "sources": [
+            {
+              "label": "Dexscreener",
+              "url": "https://dexscreener.com/robinhood/0x435ea42b2792a22de296bee4e8013f4fa102f0cc04983443ff79549f847db577"
+            },
+            {
+              "label": "x.com (X)",
+              "url": "https://x.com/1commandervrax"
+            }
+          ]
+        },
+        "gaps": [
+          {
+            "what": "mechanics",
+            "reason": "no website in the Dexscreener profile; the X profile and one web search describe no token mechanics",
+            "source": "https://x.com/1commandervrax"
+          }
+        ]
+      }
+    },
+    {
+      "rank": 5,
+      "id": "robinhood:0x5b81efe5e0ba2b31c0ed843b908a2c45fe6e14c5",
+      "name": "astronaut",
+      "symbol": "astro",
+      "url": "https://dexscreener.com/robinhood/0x3416b8d8aa6ae642ffdc2f65165ff479d4bd3007",
+      "valuation": {
+        "metric": "marketCap",
+        "value": 1703784,
+        "text": "$1.7M",
+        "label": null
+      },
+      "volume24h": {
+        "value": 1979628.71,
+        "text": "$2.0M",
+        "label": null
+      },
+      "liquidity": {
+        "value": 130734.52,
+        "text": "$131K",
+        "label": null
+      },
+      "change24h": {
+        "value": -66.93,
+        "text": "-66.9%"
+      },
+      "price": {
+        "value": 0.002954,
+        "text": "$0.002954"
+      },
+      "pools": 1,
+      "comment": "Volume runs 15.1× its single WETH pool's liquidity, so modest orders move price. The profile links only a celebrity repost, leaving no project-owned site or account to check claims against.",
+      "note": {
+        "status": "incomplete",
+        "launchLabel": null,
+        "measured": [
+          "24h volume $2.0M is 15.1× pooled liquidity $131K",
+          "1 qualifying pool on uniswap, quoted in WETH",
+          "Oldest qualifying pool created 2026-09-08 (37.7 days before the read); pool creation, not a launch date"
+        ],
+        "claims": [
+          {
+            "field": "provenance",
+            "kind": "third_party",
+            "status": "claimed_unverified",
+            "text": "The profile's only social link is an Elon Musk repost about kids painting astronauts; it does not mention the token.",
+            "sources": [
+              {
+                "label": "x.com (X)",
+                "url": "https://x.com/elonmusk/status/2097366345390186641"
+              }
+            ]
+          },
+          {
+            "field": "purpose",
+            "kind": "third_party",
+            "status": "claimed_unverified",
+            "text": "A search summary cites a Blockspot listing with this contract describing a space-themed Robinhood Chain memecoin with 1B supply.",
+            "sources": []
+          }
+        ],
+        "aiView": {
+          "text": "Volume runs 15.1× its single WETH pool's liquidity, so modest orders move price. The profile links only a celebrity repost, leaving no project-owned site or account to check claims against.",
+          "sources": [
+            {
+              "label": "Dexscreener",
+              "url": "https://dexscreener.com/robinhood/0x3416b8d8aa6ae642ffdc2f65165ff479d4bd3007"
+            },
+            {
+              "label": "x.com (X)",
+              "url": "https://x.com/elonmusk/status/2097366345390186641"
+            }
+          ]
+        },
+        "gaps": [
+          {
+            "what": "purpose",
+            "reason": "no website listed; the listed social is an unrelated Elon Musk repost",
+            "source": "https://x.com/elonmusk/status/2097366345390186641"
+          },
+          {
+            "what": "mechanics",
+            "reason": "no project page found; the Blockspot listing returned HTTP 403",
+            "source": "https://blockspot.io/coin/astronaut-astro/"
+          }
+        ]
+      }
+    },
+    {
+      "rank": 6,
+      "id": "robinhood:0x18e674231a58c239dc7daedcffe15ec3a24cff5c",
+      "name": "Hookr.fun",
+      "symbol": "HOOKR",
+      "url": "https://dexscreener.com/robinhood/0x590dcb6a87828bf688b48089a62239b693378f1fb64d2286e6a399ed8c005fdf",
+      "valuation": {
+        "metric": "marketCap",
+        "value": 31248048,
+        "text": "$31.2M",
+        "label": null
+      },
+      "volume24h": {
+        "value": 1867973.24,
+        "text": "$1.9M",
+        "label": null
+      },
+      "liquidity": {
+        "value": 1356438.23,
+        "text": "$1.4M",
+        "label": null
+      },
+      "change24h": {
+        "value": 29.96,
+        "text": "+30.0%"
+      },
+      "price": {
+        "value": 0.03144,
+        "text": "$0.03144"
+      },
+      "pools": 1,
+      "comment": "One of few rows with developer docs and a named builder. Volume is only 1.4× liquidity, deeper than most rows; the text read does not explain how the HOOKR token captures hook fees.",
+      "note": {
+        "status": "complete",
+        "launchLabel": null,
+        "measured": [
+          "24h volume $1.9M is 1.4× pooled liquidity $1.4M",
+          "1 qualifying pool on uniswap, quoted in ETH",
+          "Oldest qualifying pool created 2026-08-06 (71.2 days before the read); pool creation, not a launch date"
+        ],
+        "claims": [
+          {
+            "field": "purpose",
+            "kind": "project_claim",
+            "status": "claimed_unverified",
+            "text": "Describes Hookr.fun as modular infrastructure for surfacing, composing and integrating custom Uniswap v4 hooks, live on Robinhood Chain.",
+            "sources": [
+              {
+                "label": "hookr.fun",
+                "url": "https://hookr.fun/"
+              }
+            ]
+          },
+          {
+            "field": "mechanics",
+            "kind": "project_claim",
+            "status": "claimed_unverified",
+            "text": "Says pools combine 'Hook Blocks' such as anti-snipe caps, dynamic fees, auto-burn, LP rewards and arbitrage recapture; docs list an SDK and contracts.",
+            "sources": [
+              {
+                "label": "hookr.fun",
+                "url": "https://hookr.fun/"
+              },
+              {
+                "label": "hookr.fun",
+                "url": "https://hookr.fun/docs"
+              }
+            ]
+          },
+          {
+            "field": "provenance",
+            "kind": "project_claim",
+            "status": "claimed_unverified",
+            "text": "The listed X belongs to Nodar, who describes himself as creator of DeFi Zaps and a former Zapper co-founder, now building Hookr.",
+            "sources": [
+              {
+                "label": "x.com (X)",
+                "url": "https://x.com/nodarj"
+              }
+            ]
+          }
+        ],
+        "aiView": {
+          "text": "One of few rows with developer docs and a named builder. Volume is only 1.4× liquidity, deeper than most rows; the text read does not explain how the HOOKR token captures hook fees.",
+          "sources": [
+            {
+              "label": "hookr.fun",
+              "url": "https://hookr.fun/docs"
+            },
+            {
+              "label": "x.com (X)",
+              "url": "https://x.com/nodarj"
+            },
+            {
+              "label": "Dexscreener",
+              "url": "https://dexscreener.com/robinhood/0x590dcb6a87828bf688b48089a62239b693378f1fb64d2286e6a399ed8c005fdf"
+            }
+          ]
+        },
+        "gaps": []
+      }
+    },
+    {
+      "rank": 7,
+      "id": "robinhood:0x385f4f8ae47651ce5f58f5265395a669f8281e18",
+      "name": "A Meme Coin",
+      "symbol": "MEME",
+      "url": "https://dexscreener.com/robinhood/0xe2c12a7379706a291cadaaec1d22458be2f7239d",
+      "valuation": {
+        "metric": "marketCap",
+        "value": 13099282,
+        "text": "$13.1M",
+        "label": null
+      },
+      "volume24h": {
+        "value": 1326461.87,
+        "text": "$1.3M",
+        "label": null
+      },
+      "liquidity": {
+        "value": 79212.42,
+        "text": "$79.2K",
+        "label": null
+      },
+      "change24h": {
+        "value": 28.02,
+        "text": "+28.0%"
+      },
+      "price": {
+        "value": 0.01309,
+        "text": "$0.01309"
+      },
+      "pools": 1,
+      "comment": "The X says it is paired with $AMC, but the only qualifying pool is quoted in WETH, and volume runs 16.7× that pool's liquidity, so price is fragile to modest trades.",
+      "note": {
+        "status": "partial",
+        "launchLabel": null,
+        "measured": [
+          "24h volume $1.3M is 16.7× pooled liquidity $79.2K",
+          "1 qualifying pool on uniswap, quoted in WETH",
+          "Oldest qualifying pool created 2026-09-07 (39.1 days before the read); pool creation, not a launch date"
+        ],
+        "claims": [
+          {
+            "field": "purpose",
+            "kind": "project_claim",
+            "status": "claimed_unverified",
+            "text": "Its X presents $MEME, 'A Meme Coin', as an AMC-themed meme ('The theater was a front') and says it is paired with $AMC.",
+            "sources": [
+              {
+                "label": "x.com (X)",
+                "url": "https://x.com/amemecoinrh"
+              }
+            ]
+          },
+          {
+            "field": "risk",
+            "kind": "project_claim",
+            "status": "claimed_unverified",
+            "text": "Its posts engage AMC CEO Adam Aron's objection to Robinhood creating AMC stock tokens without AMC's consent.",
+            "sources": [
+              {
+                "label": "x.com (X)",
+                "url": "https://x.com/amemecoinrh"
+              }
+            ]
+          }
+        ],
+        "aiView": {
+          "text": "The X says it is paired with $AMC, but the only qualifying pool is quoted in WETH, and volume runs 16.7× that pool's liquidity, so price is fragile to modest trades.",
+          "sources": [
+            {
+              "label": "Dexscreener",
+              "url": "https://dexscreener.com/robinhood/0xe2c12a7379706a291cadaaec1d22458be2f7239d"
+            },
+            {
+              "label": "x.com (X)",
+              "url": "https://x.com/amemecoinrh"
+            }
+          ]
+        },
+        "gaps": [
+          {
+            "what": "mechanics",
+            "reason": "no website listed; the X names an AMC pairing but describes no other mechanics",
+            "source": "https://x.com/amemecoinrh"
+          }
+        ]
+      }
+    },
+    {
+      "rank": 8,
+      "id": "robinhood:0x88ad8ddf1e3898412146a534538d418c6f8a9062",
+      "name": "STANDARD",
+      "symbol": "STANDARD",
+      "url": "https://dexscreener.com/robinhood/0xc73f3cd3fb68288e63f008e08ef69caa0437224e420963c6aeb4526178e87ad9",
+      "valuation": {
+        "metric": "marketCap",
+        "value": 20261687,
+        "text": "$20.3M",
+        "label": null
+      },
+      "volume24h": {
+        "value": 1279817.93,
+        "text": "$1.3M",
+        "label": null
+      },
+      "liquidity": {
+        "value": 13359498.5,
+        "text": "$13.4M",
+        "label": null
+      },
+      "change24h": {
+        "value": -9.94,
+        "text": "-9.9%"
+      },
+      "price": {
+        "value": 0.2454,
+        "text": "$0.2454"
+      },
+      "pools": 1,
+      "comment": "Liquidity is about 10× daily volume, the inverse of most rows, which fits the X claim that the Reserve owns deep pools; ownership is not measured, and neither page read shows this contract.",
+      "note": {
+        "status": "complete",
+        "launchLabel": null,
+        "measured": [
+          "24h volume $1.3M is 0.1× pooled liquidity $13.4M",
+          "1 qualifying pool on uniswap, quoted in ETH",
+          "Oldest qualifying pool created 2026-09-15 (31.3 days before the read); pool creation, not a launch date"
+        ],
+        "claims": [
+          {
+            "field": "purpose",
+            "kind": "project_claim",
+            "status": "claimed_unverified",
+            "text": "Describes The Standard Reserve as 'the sovereign onchain central bank' and a liquidity engine for onchain capital markets on Robinhood Chain.",
+            "sources": [
+              {
+                "label": "standardreserve.xyz",
+                "url": "https://www.standardreserve.xyz/liquidity/"
+              },
+              {
+                "label": "x.com (X)",
+                "url": "https://x.com/standard_rsv"
+              }
+            ]
+          },
+          {
+            "field": "mechanics",
+            "kind": "project_claim",
+            "status": "claimed_unverified",
+            "text": "Says traders swap tokens paired with $SPCX, $BABA and $SKHY through the Reserve's pools, and that burns outpace issuance with ~$1M put into buybacks.",
+            "sources": [
+              {
+                "label": "standardreserve.xyz",
+                "url": "https://www.standardreserve.xyz/liquidity/"
+              },
+              {
+                "label": "x.com (X)",
+                "url": "https://x.com/standard_rsv"
+              }
+            ]
+          },
+          {
+            "field": "adoption",
+            "kind": "project_claim",
+            "status": "claimed_unverified",
+            "text": "Its X says King of the Markets, its launchpad and stock-token liquidity pilot, runs a rewards pool starting at 1M+ USDG.",
+            "sources": [
+              {
+                "label": "x.com (X)",
+                "url": "https://x.com/standard_rsv"
+              }
+            ]
+          }
+        ],
+        "aiView": {
+          "text": "Liquidity is about 10× daily volume, the inverse of most rows, which fits the X claim that the Reserve owns deep pools; ownership is not measured, and neither page read shows this contract.",
+          "sources": [
+            {
+              "label": "Dexscreener",
+              "url": "https://dexscreener.com/robinhood/0xc73f3cd3fb68288e63f008e08ef69caa0437224e420963c6aeb4526178e87ad9"
+            },
+            {
+              "label": "standardreserve.xyz",
+              "url": "https://www.standardreserve.xyz/liquidity/"
+            },
+            {
+              "label": "x.com (X)",
+              "url": "https://x.com/standard_rsv"
+            }
+          ]
+        },
+        "gaps": []
+      }
+    }
+  ]
+}

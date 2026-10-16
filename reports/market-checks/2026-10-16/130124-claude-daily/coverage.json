@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "runId": "2026-10-16T130124-claude-daily",
+  "producer": "claude-local",
+  "finishedAt": "2026-10-16T09:02:48.513Z",
+  "scopes": {
+    "sol": {
+      "discovery": {
+        "status": "blocked",
+        "reason": "Cloudflare or bot challenge shown instead of the discovery table",
+        "observedAt": "2026-10-16T09:01:43.814Z",
+        "rows": 0,
+        "method": "claude-built-in-browser",
+        "url": "https://dexscreener.com/solana?rankBy=trendingScoreH6&order=desc&minMarketCap=1000000&minAge=72&min24HVol=1000000&profile=1",
+        "possibleTruncation": false
+      },
+      "market": {
+        "status": "not run"
+      },
+      "evidence": null,
+      "research": {
+        "status": "not run",
+        "completedAt": null,
+        "counts": {
+          "displayed": 0,
+          "complete": 0,
+          "partial": 0,
+          "incomplete": 0,
+          "missing": 0
+        },
+        "gaps": [],
+        "webReads": 0
+      },
+      "comparison": null
+    },
+    "rh": {
+      "discovery": {
+        "status": "blocked",
+        "reason": "Cloudflare or bot challenge shown instead of the discovery table",
+        "observedAt": "2026-10-16T09:02:35.425Z",
+        "rows": 0,
+        "method": "claude-built-in-browser",
+        "url": "https://dexscreener.com/robinhood?rankBy=trendingScoreH6&order=desc&minMarketCap=1000000&minAge=72&min24HVol=1000000&profile=1",
+        "possibleTruncation": false
+      },
+      "market": {
+        "status": "not run"
+      },
+      "evidence": null,
+      "research": {
+        "status": "not run",
+        "completedAt": null,
+        "counts": {
+          "displayed": 0,
+          "complete": 0,
+          "partial": 0,
+          "incomplete": 0,
+          "missing": 0
+        },
+        "gaps": [],
+        "webReads": 0
+      },
+      "comparison": null
+    }
+  },
+  "budget": {
+    "limits": {
+      "discoveryPageLoadsPerScope": 1,
+      "extraDiscoveryPageIfFull": true,
+      "fullPageRows": 100,
+      "pairCallsPerRun": 10,
+      "retriesPerCall": 2,
+      "researchReadsPerProject": 3,
+      "xReadsPerProject": 1,
+      "solanaRpcCallsPerRun": 1,
+      "robinhoodRegistryReadsPerRun": 1,
+      "webSearchesPerIncompleteRow": 1
+    },
+    "used": {
+      "discoveryPageLoads:sol": 1,
+      "discoveryPageLoads:rh": 1
+    }
+  }
+}

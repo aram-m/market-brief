@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "note": "Display exclusions chosen by the user. Hidden rows stay in observations. BOME, Bonk, DarkSwap and Grass were made visible again on 2026-10-16.",
+  "hidden": [
+    {
+      "id": "solana:pumpCmXqMfrsAkQ5r49WcJnRayYRqmXz6ae8H7H9Dfn",
+      "name": "Pump",
+      "reason": "user display preference",
+      "addedAt": "2026-10-04"
+    },
+    {
+      "id": "solana:4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R",
+      "name": "Raydium",
+      "reason": "user display preference",
+      "addedAt": "2026-10-04"
+    },
+    {
+      "id": "solana:JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN",
+      "name": "Jupiter",
+      "reason": "user display preference",
+      "addedAt": "2026-10-04"
+    },
+    {
+      "id": "solana:BPxxfRCXkUVhig4HS1Lh7kZqV6SPJhzfEk4x6fVBjPCy",
+      "name": "Backpack",
+      "reason": "user display preference",
+      "addedAt": "2026-10-04"
+    },
+    {
+      "id": "solana:KMNo3nJsBXfcpJTVhZcXLW7RmTwTt4GVFE7suUBo9sS",
+      "name": "Kamino",
+      "reason": "user display preference",
+      "addedAt": "2026-10-04"
+    },
+    {
+      "id": "solana:3ZLekZYq2qkZiSpnSvabjit34tUkjSwD1JFuW9as9wBG",
+      "name": "NEAR",
+      "reason": "user display preference",
+      "addedAt": "2026-10-04"
+    },
+    {
+      "id": "solana:6p6xgHyF7AeE6TZkSmFsko444wqoP15icUSqi2jfGiPN",
+      "name": "OFFICIAL TRUMP",
+      "reason": "user display preference",
+      "addedAt": "2026-10-04"
+    },
+    {
+      "id": "solana:METvsvVRapdj9cFLzq4Tr43xK4tAjQfwX76z3n6mWQL",
+      "name": "Meteora",
+      "reason": "user display preference",
+      "addedAt": "2026-10-04"
+    },
+    {
+      "id": "solana:2zMMhcVQEXDtdE6vsFS7S7D5oUodfJHE8vd1gnBouauv",
+      "name": "Pudgy Penguins (PENGU)",
+      "reason": "user display preference",
+      "addedAt": "2026-10-04"
+    },
+    {
+      "id": "solana:orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE",
+      "name": "Orca (ORCA)",
+      "reason": "user display preference",
+      "addedAt": "2026-10-05"
+    },
+    {
+      "id": "robinhood:0xad25ac6c84d497db898fa1e8387bf6af3532a1c4",
+      "name": "Alibaba (BABA)",
+      "reason": "user display preference",
+      "addedAt": "2026-10-15"
+    },
+    {
+      "id": "robinhood:0xdf0992e440dd0be65bd8439b609d6d4366bf1cb5",
+      "name": "Circle Internet Group (CRCL)",
+      "reason": "user display preference",
+      "addedAt": "2026-10-15"
+    }
+  ]
+}
