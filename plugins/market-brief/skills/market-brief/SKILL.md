@@ -27,14 +27,25 @@ Reports go to the data folder: `--data DIR`, else `$MARKET_BRIEF_DATA`, else `./
 ## List (every run)
 
 1. **Start:** `mb new-run --scopes sol,rh` (or one scope). Keep the printed `runDir`.
-2. **Discover each scope in a real browser.** Use the browser the user names, otherwise `discoveryBrowser.default` in config.json (Claude's built-in browser). Load each page once per run, in a fresh tab. Never switch browsers on your own. If the chosen browser isn't connected, record discovery as blocked with that reason.
-   - Built-in browser: open the page with the browser pane's preview_start (url) or navigate tool. Claude in Chrome: get the tab context, open a new tab in the MCP group, and close it when discovery is done.
-   - Navigate to the scope's `discoveryUrl` from config.json.
-   - Run the script printed by `mb discovery-script` with the browser's JavaScript tool. It waits for the table and returns JSON.
+2. **Discover each scope in a real browser.** Use the browser the user names, otherwise `discoveryBrowser.default` in config.json (Claude in Chrome). Load each page once per run. Never switch browsers on your own.
+   - Claude in Chrome (default): call the Chrome tab-context tool with `createIfEmpty: true` and use one tab in the MCP group. Navigate it to the Solana `discoveryUrl`, then to the Robinhood one. Close the tab when discovery is done.
+   - Built-in browser (only if named): open the page with the browser pane's preview_start (url) or navigate tool.
+   - If the chosen browser isn't connected, don't try another. Run `mb save-discovery --run <runDir> --scope <scope> --unavailable "Claude in Chrome not connected"` for each scope, then continue with step 3.
+   - After navigating to the scope's `discoveryUrl` from config.json, wait about 3 seconds.
+   - Run the script printed by `mb discovery-script` with the browser's JavaScript tool. It starts with `await`; it waits for the table and returns JSON. If the tool says the page isn't loaded yet (a `chrome://` page), wait a few seconds and run it again on the same tab without reloading.
    - If `challenge` is true ("Just a moment", "Verify you are human"): don't click, solve or retry around it. Save the JSON anyway; that scope then reports `discovery blocked`. The user may clear the check themselves and ask for a rerun.
-   - Write the returned JSON verbatim to `<runDir>/work/discovery-page-<scope>.json`, then run `mb save-discovery --run <runDir> --scope <scope> --input <that file> --method <claude-in-chrome|claude-built-in-browser>`. A checksum mismatch means the list was copied wrongly: run the extraction script again on the same page (no reload) and save again.
+   - Claude in Chrome redacts the pool addresses and the full URL in JavaScript output (`[BLOCKED: …]`). The other fields, including `rowCount`, `checksum`, `path` and `params`, come through. Read the addresses from the page's accessibility tree instead:
+     1. Use the find tool for "the main content area containing the pair table".
+     2. Run the page-reading tool on that ref with `filter: "all"` and `depth: 2`.
+     3. Copy every `/solana/…` or `/robinhood/…` row link `href`, in order, one per line, into `<runDir>/work/discovery-slugs-<scope>.txt`.
+     4. Pass that file to `save-discovery --slugs`.
+
+     Don't encode, split or otherwise reshape the addresses in JavaScript to get them past the filter. The page's checksum proves the copied list is complete and in order.
+   - Write the returned JSON verbatim to `<runDir>/work/discovery-page-<scope>.json`, then run `mb save-discovery --run <runDir> --scope <scope> --input <that file> [--slugs <slugs file>] --method <claude-in-chrome|claude-built-in-browser>`.
+   - A checksum mismatch means the list was copied wrongly. Re-read the links once (no reload) and save again. If it still fails, record `--unavailable "pool addresses could not be read reliably"` for that scope.
    - Load a second page only if the first returned 100 rows and `nextPage: true`. Pass both page results as a JSON array.
-3. **Market list:** `mb collect --run <runDir>`. Show each scope's `brief-<scope>.md` in chat. It has the table with real timestamps and no comment column, and ends with the "reply `research <symbol>`" line. Then go to step 8. Steps 4–7 run only when the user asks for research.
+   - `new-run` creates `<runDir>/work/`. `save-discovery` exits 0 whenever the result is recorded (`ok`, `blocked` or `empty`). It exits 3 only for `invalid`, such as a checksum mismatch; its `next` field says what to do.
+3. **Market list:** `mb collect --run <runDir>` (exit 0 even when a scope was blocked; that scope's brief says why). Show each scope's `brief-<scope>.md` in chat. It has the table with real timestamps and no comment column, and ends with the "reply `research <symbol>`" line. Then go to step 8. Steps 4–7 run only when the user asks for research.
 
 ## Deep dive (only on request)
 

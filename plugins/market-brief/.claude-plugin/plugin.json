@@ -1,6 +1,6 @@
 {
   "name": "market-brief",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Daily Solana and Robinhood token briefs: Dexscreener trending discovery, exact-identity pool aggregation, sourced project notes and AI commentary.",
   "author": {"name": "aram-m"},
   "repository": "https://github.com/aram-m/market-brief",

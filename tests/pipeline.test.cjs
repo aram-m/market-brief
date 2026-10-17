@@ -269,3 +269,45 @@ test("evidence for one row merges into earlier reads and skips rows already read
   assert.ok(second.evidence.reads.filter(r => r.tokenId === displayed[0].id).length >= 1);
   fs.rmSync(workTextDir, {recursive: true, force: true});
 });
+
+test("CLI: new-run creates work/, unavailable and blocked scopes exit 0, an invalid list exits 3", () => {
+  const {spawnSync} = require("node:child_process");
+  const os = require("node:os");
+  const MB = path.join(LIB, "..", "mb.cjs");
+  const data = fs.mkdtempSync(path.join(os.tmpdir(), "mb-cli-"));
+  const run = (...args) => spawnSync(process.execPath, [MB, ...args], {encoding: "utf8"});
+  const created = run("new-run", "--data", data, "--scopes", "sol,rh");
+  assert.equal(created.status, 0, created.stderr);
+  const {runDir} = JSON.parse(created.stdout);
+  assert.ok(fs.statSync(path.join(runDir, "work")).isDirectory());
+  const unavailable = run("save-discovery", "--run", runDir, "--scope", "sol", "--unavailable", "Claude in Chrome not connected");
+  assert.equal(unavailable.status, 0, unavailable.stderr);
+  assert.equal(JSON.parse(unavailable.stdout).status, "blocked");
+  const page = path.join(runDir, "work", "discovery-page-rh.json");
+  fs.writeFileSync(page, JSON.stringify({url: config.scopes.rh.discoveryUrl, observedAt: new Date().toISOString(), rankBy: "trendingScoreH6", rowCount: 1, slugs: ["0x590dcb6a87828bf688b48089a62239b693378f1fb64d2286e6a399ed8c005fdf"], checksum: "00000000"}));
+  const invalid = run("save-discovery", "--run", runDir, "--scope", "rh", "--input", page);
+  assert.equal(invalid.status, 3);
+  assert.match(JSON.parse(invalid.stdout).next, /Re-run the extraction script/);
+  const collected = run("collect", "--run", runDir);
+  assert.equal(collected.status, 0, collected.stderr);
+  assert.ok(JSON.parse(collected.stdout).results.every(r => r.skipped));
+  assert.match(fs.readFileSync(path.join(runDir, "brief-sol.md"), "utf8"), /no current market data \(discovery blocked: Claude in Chrome not connected\)/);
+  fs.rmSync(data, {recursive: true, force: true});
+});
+
+test("Chrome hybrid discovery: redacted URL is rebuilt from path and params; accessibility-tree slugs must match the page checksum", () => {
+  const scopeCfg = config.scopes.rh;
+  const slugs = ["0x338fce553e60c8b0acccde1956bc378586ef6f2935339ebae5804d429d461e44", "0x10cc6bd38112cac182db90b6a71d8bb5939526ba"];
+  const q = Object.fromEntries(new URL(scopeCfg.discoveryUrl).searchParams);
+  const page = {url: "[BLOCKED: Cookie/query string data]", origin: "https://dexscreener.com", path: "/robinhood", params: q, rankBy: q.rankBy, observedAt: "2026-10-17T08:46:10.532Z", rowCount: 2, slugs: ["[BLOCKED: Base64 encoded data]", "[BLOCKED: Base64 encoded data]"], checksum: fnv1a(slugs.join("\n"))};
+  const blocked = buildDiscovery({scope: "rh", scopeCfg, config, method: "claude-in-chrome", savedAt: "x", pages: page});
+  assert.equal(blocked.status, "invalid");
+  assert.match(blocked.reason, /redacted/);
+  const ok = buildDiscovery({scope: "rh", scopeCfg, config, method: "claude-in-chrome", savedAt: "x", pages: page, slugsOverride: slugs});
+  assert.equal(ok.status, "ok", ok.reason);
+  assert.equal(ok.slugSource, "accessibility-tree");
+  assert.equal(ok.pageUrl.includes("min24HVol=250000"), true);
+  const wrongOrder = buildDiscovery({scope: "rh", scopeCfg, config, method: "claude-in-chrome", savedAt: "x", pages: page, slugsOverride: [...slugs].reverse()});
+  assert.equal(wrongOrder.status, "invalid");
+  assert.match(wrongOrder.reason, /checksum mismatch/);
+});

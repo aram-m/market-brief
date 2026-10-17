@@ -26,9 +26,21 @@ function sameUrl(a, b) {
   }
 }
 
+// The page URL as the browser reported it; when a tool redacts the full URL, rebuild it from origin, path and params.
+function pageUrl(page) {
+  if (page.url && !/\[BLOCKED/.test(page.url)) return page.url;
+  if (page.path && page.params && typeof page.params === "object") {
+    const origin = page.origin && !/\[BLOCKED/.test(page.origin) ? page.origin : "https://dexscreener.com";
+    return `${origin}${page.path}?${new URLSearchParams(page.params).toString()}`;
+  }
+  return page.url || null;
+}
+
 // Validates one or more page extractions from the browser and returns the discovery record.
-function buildDiscovery({scope, scopeCfg, config, pages, method, savedAt}) {
-  const list = Array.isArray(pages) ? pages : [pages];
+// slugsOverride replaces page 1's slugs when the JavaScript tool redacted them (they are read from the accessibility tree instead).
+function buildDiscovery({scope, scopeCfg, config, pages, method, savedAt, slugsOverride = null}) {
+  const list = (Array.isArray(pages) ? pages : [pages]).map(p => ({...p}));
+  if (slugsOverride && list[0]) list[0] = {...list[0], slugs: slugsOverride, slugSource: "accessibility-tree"};
   const pattern = new RegExp(scopeCfg.pairSlugPattern);
   const problems = [];
   const pools = [];
@@ -41,7 +53,8 @@ function buildDiscovery({scope, scopeCfg, config, pages, method, savedAt}) {
     const slugs = Array.isArray(page.slugs) ? page.slugs : [];
     if (page.checksum && fnv1a(slugs.join("\n")) !== page.checksum) problems.push(`page ${pageIndex + 1}: checksum mismatch (pool list was altered after extraction)`);
     if (!page.checksum) problems.push(`page ${pageIndex + 1}: missing checksum`);
-    if (pageIndex === 0 && !sameUrl(page.url, scopeCfg.discoveryUrl)) problems.push(`page 1 URL differs from the configured discovery URL: ${page.url}`);
+    if (slugs.some(s => /\[BLOCKED/.test(String(s)))) problems.push(`page ${pageIndex + 1}: pool addresses were redacted by the browser tool; read them from the page's accessibility tree and pass --slugs`);
+    if (pageIndex === 0 && !sameUrl(pageUrl(page), scopeCfg.discoveryUrl)) problems.push(`page 1 URL differs from the configured discovery URL: ${pageUrl(page)}`);
     if (pageIndex === 0 && page.rankBy && page.rankBy !== scopeCfg.filters.rankBy) problems.push(`page ranks by ${page.rankBy}, expected ${scopeCfg.filters.rankBy}`);
     if (Number.isFinite(page.rowCount) && page.rowCount !== slugs.length) problems.push(`page ${pageIndex + 1}: rowCount ${page.rowCount} != ${slugs.length} slugs`);
     for (const slug of slugs) {
@@ -70,7 +83,8 @@ function buildDiscovery({scope, scopeCfg, config, pages, method, savedAt}) {
     reason,
     method,
     discoveryUrl: scopeCfg.discoveryUrl,
-    pageUrl: first.url || null,
+    pageUrl: pageUrl(first),
+    slugSource: first.slugSource || "javascript",
     pageTitle: first.title || null,
     extractor: first.extractor || null,
     filtersIndicator: first.filtersIndicator || null,
@@ -86,4 +100,13 @@ function buildDiscovery({scope, scopeCfg, config, pages, method, savedAt}) {
   };
 }
 
-module.exports = {fnv1a, extractionScript, buildDiscovery, sameUrl};
+// Discovery that could not be attempted (e.g. the chosen browser is not connected): recorded as blocked, no page load.
+function unavailableDiscovery({scope, scopeCfg, config, method, reason, savedAt}) {
+  return {
+    schemaVersion: config.schemaVersion, scope, chain: scopeCfg.chain, status: "blocked", reason: String(reason), method,
+    discoveryUrl: scopeCfg.discoveryUrl, pageUrl: null, pageTitle: null, extractor: null, filtersIndicator: null, rankBy: null,
+    observedAt: savedAt, savedAt, pageLoads: 0, rowCount: 0, possibleTruncation: false, pools: [], invalidSlugs: [], problems: [],
+  };
+}
+
+module.exports = {fnv1a, extractionScript, buildDiscovery, unavailableDiscovery, sameUrl};

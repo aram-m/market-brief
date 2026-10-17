@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "skillVersion": "0.2.0",
+  "skillVersion": "0.2.1",
   "timezone": "Asia/Yerevan",
   "pageSize": 12,
   "producer": "claude-local",
@@ -8,12 +8,12 @@
   "reportsPath": "reports/market-checks",
   "discoveryMaxAgeMinutes": 60,
   "discoveryBrowser": {
-    "default": "claude-built-in-browser",
+    "default": "claude-in-chrome",
     "allowed": [
-      "claude-built-in-browser",
-      "claude-in-chrome"
+      "claude-in-chrome",
+      "claude-built-in-browser"
     ],
-    "note": "One fresh load per page per run. A run that meets a Cloudflare challenge records discovery as blocked; never click or solve it, never switch browsers automatically. Name claude-in-chrome in the invocation to use your own Chrome profile instead."
+    "note": "Claude in Chrome uses the user's own Chrome profile; the built-in browser was challenged by Cloudflare even in a fresh session (17 Oct 2026). One load per page per run. Never click or solve a challenge and never switch browsers automatically; if the chosen browser is not connected, record discovery as blocked with save-discovery --unavailable."
   },
   "filtersNote": "Each scope's filters must match its discoveryUrl (tests check this). The Dexscreener page applies them; scripts re-check them at metric time and record failures, never filtering rows.",
   "scopes": {

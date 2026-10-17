@@ -4,7 +4,7 @@ const fs = require("node:fs");
 const path = require("node:path");
 const util = require("./lib/util.cjs");
 const cfg = require("./lib/config.cjs");
-const {buildDiscovery, extractionScript} = require("./lib/discovery.cjs");
+const {buildDiscovery, unavailableDiscovery, extractionScript} = require("./lib/discovery.cjs");
 const {fetchPairs} = require("./lib/metrics.cjs");
 const {aggregate} = require("./lib/aggregate.cjs");
 const {collectEvidence} = require("./lib/evidence.cjs");
@@ -20,7 +20,7 @@ const USAGE = `Market Brief pipeline (Node ${">="}18, no dependencies)
   mb.cjs init-data [--data DIR]                      create the data folder with preferences.json
   mb.cjs new-run [--data DIR] [--label daily] [--scopes sol,rh]
   mb.cjs discovery-script                            print the browser extraction script
-  mb.cjs save-discovery --run DIR --scope sol --input FILE [--method NAME]
+  mb.cjs save-discovery --run DIR --scope sol --input FILE [--slugs FILE] [--method NAME]   (or --unavailable REASON)
   mb.cjs collect --run DIR [--scope sol|rh|both]     pair API metrics, aggregation, comparison, list brief
   mb.cjs evidence --run DIR [--scope ...] [--id SYMBOL|ID,...]   primary reads and chain facts; --id for a deep dive on chosen rows
   mb.cjs validate --run DIR [--scope ...] [--all]    check research-<scope>.json; --all requires every displayed row
@@ -132,7 +132,8 @@ const commands = {
     };
     util.writeJson(path.join(runDir, "run.json"), run);
     util.writeJson(path.join(runDir, "budget.json"), {limits: config.budget, used: {}});
-    out({runDir, runId: run.runId, scopes, preferences: run.preferencesSource});
+    fs.mkdirSync(path.join(runDir, "work"), {recursive: true});
+    out({runDir, runId: run.runId, scopes, preferences: run.preferencesSource, workDir: path.join(runDir, "work")});
   },
 
   "discovery-script"() {
@@ -143,14 +144,27 @@ const commands = {
     const {runDir} = needRun(args);
     const scope = cfg.scopeList(args.scope, config);
     if (scope.length !== 1) fail("--scope must name one scope");
-    if (!args.input) fail("--input FILE is required (JSON returned by the extraction script; an array for several pages)");
-    const pages = util.readJson(path.resolve(args.input));
-    const discovery = buildDiscovery({scope: scope[0], scopeCfg: config.scopes[scope[0]], config, pages, method: args.method || config.discoveryBrowser.default, savedAt: new Date().toISOString()});
+    const method = args.method || config.discoveryBrowser.default;
+    const savedAt = new Date().toISOString();
+    let discovery;
+    if (args.unavailable) {
+      discovery = unavailableDiscovery({scope: scope[0], scopeCfg: config.scopes[scope[0]], config, method, reason: args.unavailable === true ? "browser unavailable" : args.unavailable, savedAt});
+    } else {
+      if (!args.input) fail("--input FILE is required (JSON returned by the extraction script; an array for several pages), or --unavailable REASON when no page could be loaded");
+      let slugsOverride = null;
+      if (args.slugs) {
+        // One pool per line, as /chain/<pair> hrefs or bare pair addresses, in page order.
+        slugsOverride = fs.readFileSync(path.resolve(args.slugs), "utf8").split(/\r?\n/).map(l => l.trim().replace(/^.*\//, "").replace(/["'\s].*$/, "")).filter(Boolean);
+      }
+      discovery = buildDiscovery({scope: scope[0], scopeCfg: config.scopes[scope[0]], config, pages: util.readJson(path.resolve(args.input)), method, savedAt, slugsOverride});
+    }
     const budget = cfg.openBudget(runDir, config);
     budget.add(`discoveryPageLoads:${scope[0]}`, discovery.pageLoads);
     util.writeJson(cfg.runPaths(runDir, scope[0]).discovery, discovery);
-    out({scope: scope[0], status: discovery.status, reason: discovery.reason, pools: discovery.rowCount, observedAt: discovery.observedAt, possibleTruncation: discovery.possibleTruncation});
-    if (discovery.status !== "ok") process.exitCode = 2;
+    const next = discovery.status === "invalid" ? "Re-run the extraction script on the same page (no reload) and save again." : discovery.status === "ok" ? "Continue with collect." : "Recorded as blocked; continue with the other scope, then collect.";
+    out({scope: scope[0], status: discovery.status, reason: discovery.reason, pools: discovery.rowCount, observedAt: discovery.observedAt, possibleTruncation: discovery.possibleTruncation, next});
+    // Exit 0 whenever the result is recorded (ok, blocked, empty); 3 only when the saved list is invalid and must be re-extracted.
+    if (discovery.status === "invalid") process.exitCode = 3;
   },
 
   async collect(args, config) {
@@ -179,8 +193,8 @@ const commands = {
       const rendered = renderScope({runDir, run, scope, config, stage: "market"});
       results.push({scope, marketStatus: observations.marketStatus, counts: observations.counts, window: observations.metrics.window, failedRequests: observations.metrics.failedRequests.length, comparison: comparison.prior ? comparison.prior.path : comparison.reason, markdown: rendered.markdown, widget: rendered.widget});
     }
+    // A blocked or skipped scope is a recorded outcome, not a script error, so the exit code stays 0.
     out({runDir, budgetUsed: budget.state.used, results});
-    if (results.some(r => r.skipped || r.marketStatus === "failed")) process.exitCode = 2;
   },
 
   async evidence(args, config) {

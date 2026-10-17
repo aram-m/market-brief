@@ -1,4 +1,4 @@
-(async () => {
+await (async () => {
   const fnv1a = s => { let h = 0x811c9dc5; for (let i = 0; i < s.length; i++) { h ^= s.charCodeAt(i); h = Math.imul(h, 0x01000193) >>> 0; } return h.toString(16).padStart(8, "0"); };
   const rowSelector = ".ds-dex-table > a[href]";
   const blocked = () => /just a moment|attention required/i.test(document.title) || !!document.querySelector('iframe[src*="challenges.cloudflare.com"], .cf-turnstile, #challenge-form') || /verify you are human/i.test(document.body ? document.body.innerText : "");
@@ -16,6 +16,9 @@
   return {
     extractor: "market-brief/discovery-extract@1",
     url: location.href,
+    origin: location.origin,
+    path: location.pathname,
+    params: Object.fromEntries(new URL(location.href).searchParams),
     title: document.title,
     observedAt: new Date().toISOString(),
     challenge: blocked(),

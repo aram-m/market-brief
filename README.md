@@ -24,7 +24,7 @@ Or clone this repository and open it in Claude Code; the skill is also available
 Requirements:
 
 - **Node.js 18 or later.** The scripts use only built-in modules.
-- **A browser Claude can drive.** The discovery page is behind a Cloudflare challenge for plain HTTP, so it needs a real browser. The default is the Claude Desktop built-in browser, with one load per page. Claude in Chrome also works if you name it. Repeated loads can trigger an interactive check; the skill reports that and never solves it.
+- **A browser Claude can drive.** The discovery page is behind a Cloudflare challenge for plain HTTP, so it needs a real browser. The default is Claude in Chrome: install the extension, sign in with your Claude account and keep Chrome open. The Claude Desktop built-in browser works if you name it, but Cloudflare challenged it even in fresh sessions. The skill reports a challenge and never solves it.
 - **Unrestricted network access** to `api.dexscreener.com`, project websites, `api.mainnet-beta.solana.com` and `api.robinhood.com`.
 
 Cloud sessions are not supported. Discovery needs the browser, and the default cloud network allowlist blocks these hosts.
